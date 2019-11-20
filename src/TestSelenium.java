@@ -6,12 +6,19 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import javax.swing.*;
+
 public class TestSelenium {
     public static void main(String [] args) throws InterruptedException {
 
         //AnmForm anmForm = new AnmForm();
 
-        executeANMLogin();
+        JFrame anmForm = new JFrame("ANM");
+        anmForm.setContentPane(new AnmForm().rootPanel);
+        anmForm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        anmForm.pack();
+        anmForm.setVisible(true);
+        //executeANMLogin();
     }
 
 
@@ -87,7 +94,7 @@ public class TestSelenium {
         WebElement btnMap = driver.findElementById("uploadShapeFileMapButtonId");
         btnMap.click();
 
-        Thread.sleep(35000);
+        Thread.sleep(30000);
 
         driver.switchTo().frame("mapIframeId");
         Select selectTypeMap = new Select(driver.findElementByXPath("//select[@data-gcx-form-item='ListBox1']"));
@@ -367,16 +374,72 @@ public class TestSelenium {
         Select selectTPD = new Select(driver.findElementById("techProfessionalDesignationId"));
         selectTPD.selectByVisibleText("Geólogo");
 
+        Thread.sleep(2000);
+
         Select selectTAN = new Select(driver.findElementById("techApplicantNameId"));
-        selectTAN.selectByVisibleText(" Pepito  Pérez  (70314)");
+        selectTAN.selectByVisibleText("Pepito  Pérez  (70314)");
 
-
-
+        WebElement buttonAdd =driver.findElementByXPath("//div[@class='tab-pane ng-scope active']//button[@class='btn btn-labeled bg-color-greenDark txt-color-white']");
+        buttonAdd.click();
 
         WebElement checkboxAccept =driver.findElementById("technicalCheckboxId");
         checkboxAccept.click();
 
+        /**********************************************************
+         * Información del area
+         **********************************************************/
+
+        WebElement tabArea = driver.findElementByXPath("//form[@name='p_CaaIataInputAreaDetailsForm']//li[2]");
+        tabArea.click();
+
+        Thread.sleep(2000);
+
+        WebElement additionalEthnicGroupsInSelectedAreaIndId =driver.findElementById("additionalEthnicGroupsInSelectedAreaIndId");
+        additionalEthnicGroupsInSelectedAreaIndId.click();
+
+        /**********************************************************
+         * Información economica
+         **********************************************************/
+
+        WebElement tabEco = driver.findElementByXPath("//form[@name='p_CaaIataInputAreaDetailsForm']//li[4]");
+        tabEco.click();
+
+        Thread.sleep(2000);
+
+        Select selectPC = new Select(driver.findElementById("personClassificationId0"));
+        selectPC.selectByVisibleText("Persona jurídica");
+
+        WebElement currentAssetId0=driver.findElementById("currentAssetId0");
+        currentAssetId0.sendKeys("1000000");
+
+        WebElement currentLiabilitiesId0=driver.findElementById("currentLiabilitiesId0");
+        currentLiabilitiesId0.sendKeys("1000000");
+
+        WebElement totalAssetId0=driver.findElementById("totalAssetId0");
+        totalAssetId0.sendKeys("1000000");
+
+        WebElement totalLiabilitiesId0=driver.findElementById("totalLiabilitiesId0");
+        totalLiabilitiesId0.sendKeys("1000000");
+
+        Select selectEPD = new Select(driver.findElementById("ecoProfessionalDesignationId"));
+        selectEPD.selectByVisibleText("Contador");
+
+        Thread.sleep(2000);
+
+        Select selectEAN = new Select(driver.findElementById("ecoApplicantNameId"));
+        selectEAN.selectByVisibleText("Pepito  Pérez  (70314)");
+
+        WebElement buttonAdd2 =driver.findElementByXPath(" //div[@class='tab-pane ng-scope active']//span[@class='btn-label ng-binding'][contains(text(),'Agregar')]");
+        buttonAdd2.click();
+
         WebElement buttonNext3 =driver.findElementByXPath("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]");
         buttonNext3.click();
+
+        /**********************************************************
+         * Resumen
+         **********************************************************/
+
+        //WebElement buttonRadicar =driver.findElementByXPath("//span[contains(text(),'Radicar')]");
+        //buttonRadicar.click();
     }
 }
