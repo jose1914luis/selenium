@@ -9,6 +9,14 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class TestSelenium {
     public static void main(String [] args) throws InterruptedException {
 
+        //AnmForm anmForm = new AnmForm();
+
+        executeANMLogin();
+    }
+
+
+    private static void executeANMLogin() throws InterruptedException{
+
         System.setProperty("webdriver.chrome.driver","C:\\Users\\jose\\Downloads\\chromedriver_win32\\chromedriver.exe");
 
 
@@ -22,10 +30,10 @@ public class TestSelenium {
          * Login
          **********************************************************/
         WebElement user=driver.findElementById("username");
-        user.sendKeys("70146");
+        user.sendKeys("70321");
 
         WebElement password = driver.findElementById("password");
-        password.sendKeys("Jvelasquez1-");
+        password.sendKeys("Juancho1-2345");
 
         //element.sendKeys("abc@gmail.com");
         WebElement buttonLogin=driver.findElementById("loginButton");
@@ -49,12 +57,12 @@ public class TestSelenium {
          **********************************************************/
 
         Select selectPIN = new Select(driver.findElementById("pinSlctId"));
-        selectPIN.selectByVisibleText("2701406, 06/NOV/2020");
+        selectPIN.selectByVisibleText("2710151, 19/NOV/2020");
 
         WebElement buttonNext1 =driver.findElementByCssSelector(".btn > .ng-binding");
         buttonNext1.click();
 
-        Thread.sleep(3000);
+        Thread.sleep(4000);
         /**********************************************************
          * Ingresar detalles del área
          **********************************************************/
@@ -319,14 +327,14 @@ public class TestSelenium {
         Select selectEYOD11 = new Select(driver.findElementById("envYearOfDeliveryId11"));
         selectEYOD11.selectByVisibleText("1");
         Select selectELS11 = new Select(driver.findElementById("envLaborSuitabilityId11"));
-        selectELS11.selectByVisibleText("Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental");
+        selectELS11.selectByVisibleText("Ingeniero forestal, Ecologo o Biologo");
 
         Select selectEYOE12 = new Select(driver.findElementById("envYearOfExecutionId12"));
         selectEYOE12.selectByVisibleText("1");
         Select selectEYOD12 = new Select(driver.findElementById("envYearOfDeliveryId12"));
         selectEYOD12.selectByVisibleText("1");
         Select selectELS12 = new Select(driver.findElementById("envLaborSuitabilityId12"));
-        selectELS12.selectByVisibleText("Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental");
+        selectELS12.selectByVisibleText("Trabajador social o Comunicador o Antropologo");
 
         Select selectEYOE13 = new Select(driver.findElementById("envYearOfExecutionId13"));
         selectEYOE13.selectByVisibleText("1");
@@ -347,7 +355,7 @@ public class TestSelenium {
         Select selectEYOD15 = new Select(driver.findElementById("envYearOfDeliveryId15"));
         selectEYOD15.selectByVisibleText("1");
         Select selectELS15 = new Select(driver.findElementById("envLaborSuitabilityId15"));
-        selectELS15.selectByVisibleText("Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental");
+        selectELS15.selectByVisibleText("Arquelogo");
 
         Select selectEYOE16 = new Select(driver.findElementById("envYearOfExecutionId16"));
         selectEYOE16.selectByVisibleText("1");
@@ -356,6 +364,19 @@ public class TestSelenium {
         Select selectELS16 = new Select(driver.findElementById("envLaborSuitabilityId16"));
         selectELS16.selectByVisibleText("Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental");
 
+        Select selectTPD = new Select(driver.findElementById("techProfessionalDesignationId"));
+        selectTPD.selectByVisibleText("Geólogo");
 
+        Select selectTAN = new Select(driver.findElementById("techApplicantNameId"));
+        selectTAN.selectByVisibleText(" Pepito  Pérez  (70314)");
+
+
+
+
+        WebElement checkboxAccept =driver.findElementById("technicalCheckboxId");
+        checkboxAccept.click();
+
+        WebElement buttonNext3 =driver.findElementByXPath("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]");
+        buttonNext3.click();
     }
 }
