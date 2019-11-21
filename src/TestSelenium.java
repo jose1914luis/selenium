@@ -1,24 +1,34 @@
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import javax.swing.*;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.util.Properties;
 
 public class TestSelenium {
-    public static void main(String [] args) throws InterruptedException {
+    public static void main(String [] args) throws InterruptedException, IOException {
 
         //AnmForm anmForm = new AnmForm();
 
-        JFrame anmForm = new JFrame("ANM");
+        /*JFrame anmForm = new JFrame("ANM");
         anmForm.setContentPane(new AnmForm().rootPanel);
         anmForm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         anmForm.pack();
         anmForm.setVisible(true);
-        //executeANMLogin();
+        //executeANMLogin();*/
+
+        FileInputStream in = new FileInputStream("anm.properties");
+        Properties props = new Properties();
+        props.load(in);
+        in.close();
+
+        FileOutputStream out = new FileOutputStream("anm.properties");
+        props.setProperty("country", "peru");
+        props.store(out, null);
+        out.close();
     }
 
 
@@ -106,7 +116,7 @@ public class TestSelenium {
         //driver.switchTo().frame("mapIframeId");
         Thread.sleep(2000);
         WebElement pikerLoad = driver.findElementByXPath("//input[@data-gcx-form-item='FilePicker1']");
-        pikerLoad.sendKeys(" C:\\Users\\jose\\Downloads\\RI9-15531 Pros.zip");
+        pikerLoad.sendKeys("C:\\Users\\jose\\Downloads\\RI9-15531 Pros.zip");
 
         WebElement btnLoad = driver.findElementByCssSelector("form:nth-child(2) .button");
         btnLoad.click();
