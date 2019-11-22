@@ -20,7 +20,7 @@ public class TestSelenium {
         props.load(in);
         in.close();
 
-        AnmForm anmForm = new AnmForm();
+        /*AnmForm anmForm = new AnmForm();
         anmForm.username.setText(props.getProperty("username"));
         anmForm.password.setText(props.getProperty("password"));
         JFrame jFrame = new JFrame("ANM");
@@ -32,8 +32,8 @@ public class TestSelenium {
         UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
 
 
-        jFrame.setVisible(true);
-        //executeANMLogin();
+        jFrame.setVisible(true);*/
+        executeANMLogin();
 
 /*
         FileOutputStream out = new FileOutputStream("anm.properties");
@@ -70,7 +70,7 @@ public class TestSelenium {
         /**********************************************************
          * Panel
          **********************************************************/
-        Thread.sleep(5000);
+        Thread.sleep(6000);
 
         WebElement menu = driver.findElement(By.xpath("//li[4]/a[2]/span"));
         menu.click();
@@ -78,7 +78,7 @@ public class TestSelenium {
         WebElement submenu = driver.findElement(By.linkText("Radicar solicitud de propuesta de contrato de concesión"));
         submenu.click();
 
-        Thread.sleep(2000);
+        Thread.sleep(4000);
 
         /**********************************************************
          * Seleccionar usuario
@@ -115,7 +115,7 @@ public class TestSelenium {
         WebElement btnMap = driver.findElementById("uploadShapeFileMapButtonId");
         btnMap.click();
 
-        Thread.sleep(30000);
+        Thread.sleep(50000);
 
         driver.switchTo().frame("mapIframeId");
         Select selectTypeMap = new Select(driver.findElementByXPath("//select[@data-gcx-form-item='ListBox1']"));
@@ -132,7 +132,7 @@ public class TestSelenium {
         WebElement btnLoad = driver.findElementByCssSelector("form:nth-child(2) .button");
         btnLoad.click();
 
-        Thread.sleep(10000);
+        Thread.sleep(20000);
 
         driver.switchTo().defaultContent();
         WebElement btnConfirm = driver.findElementById("confirmBtnId");
