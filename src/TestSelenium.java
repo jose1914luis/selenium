@@ -3,32 +3,43 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
+import javax.swing.*;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Properties;
 
 public class TestSelenium {
-    public static void main(String [] args) throws InterruptedException, IOException {
+    public static void main(String [] args) throws InterruptedException, IOException, ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException, IllegalAccessException {
 
         //AnmForm anmForm = new AnmForm();
 
-        /*JFrame anmForm = new JFrame("ANM");
-        anmForm.setContentPane(new AnmForm().rootPanel);
-        anmForm.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        anmForm.pack();
-        anmForm.setVisible(true);
-        //executeANMLogin();*/
 
         FileInputStream in = new FileInputStream("anm.properties");
         Properties props = new Properties();
         props.load(in);
         in.close();
 
+        AnmForm anmForm = new AnmForm();
+        anmForm.username.setText(props.getProperty("username"));
+        anmForm.password.setText(props.getProperty("password"));
+        JFrame jFrame = new JFrame("ANM");
+        jFrame.setContentPane(anmForm.rootPanel);
+        //jFrame.setExtendedState(JFrame.MAXIMIZED_BOTH);
+        jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        jFrame.pack();
+
+        UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+
+
+        jFrame.setVisible(true);
+        //executeANMLogin();
+
+/*
         FileOutputStream out = new FileOutputStream("anm.properties");
-        props.setProperty("country", "peru");
+        props.setProperty("country", "peru2");
         props.store(out, null);
-        out.close();
+        out.close();*/
     }
 
 
