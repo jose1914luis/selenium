@@ -22,20 +22,21 @@ public class TestSelenium {
         props.load(in);
         in.close();
 
-        /*AnmForm anmForm = new AnmForm();
-        anmForm.username.setText(props.getProperty("username"));
-        anmForm.password.setText(props.getProperty("password"));
+
+        UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
+
+        AnmForm anmForm = new AnmForm(props);
         JFrame jFrame = new JFrame("ANM");
         jFrame.setContentPane(anmForm.rootPanel);
         //jFrame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         jFrame.pack();
 
-        UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
 
 
-        jFrame.setVisible(true);*/
-        executeANMLogin();
+
+        jFrame.setVisible(true);
+        //executeANMLogin();
 
 /*
         FileOutputStream out = new FileOutputStream("anm.properties");
