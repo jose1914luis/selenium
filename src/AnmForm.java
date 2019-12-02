@@ -115,11 +115,11 @@ public class AnmForm {
     private JComboBox envLaborSuitabilityId3;
     private JComboBox envLaborSuitabilityId4;
     private JComboBox comboBox2;
-    private JTextField textField7;
-    private JTextField textField9;
-    private JTextField textField10;
-    private JTextField textField11;
-    private JTextField textField12;
+    private JTextField currentAssetId0;
+    private JTextField ecoApplicantNameId;
+    private JTextField totalLiabilitiesId0;
+    private JTextField totalAssetId0;
+    private JTextField currentLiabilitiesId0;
     private JComboBox comboBox3;
 
     public AnmForm(Properties props) {
@@ -127,9 +127,15 @@ public class AnmForm {
     }
 
     private void createUIComponents(Properties props) {
+
+        rootPanel.setAutoscrolls(true);
+        //rootPanel.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_NEVER);
+        //rootPanel.setBounds(50, 30, 300, 50);
+
         // TODO: place custom component creation code here
         username.setText(props.getProperty("username"));
         password.setText(props.getProperty("password"));
+
         pinSlctId.setText(props.getProperty("pinSlctId"));
         mineral.setText(props.getProperty("mineral"));
         areaOfConcessionSlctId.setText(props.getProperty("areaOfConcessionSlctId"));
@@ -137,61 +143,20 @@ public class AnmForm {
         selectTypeMap.setText(props.getProperty("selectTypeMap"));
         pikerLoad.setText(props.getProperty("pikerLoad"));
 
-        yearOfExecutionId0.addItem("1");
-        yearOfExecutionId0.addItem("2");
-        yearOfExecutionId0.addItem("3");
+        currentAssetId0.setText(props.getProperty("currentAssetId0"));
+        totalLiabilitiesId0.setText(props.getProperty("totalLiabilitiesId0"));
+        totalAssetId0.setText(props.getProperty("totalAssetId0"));
+        currentLiabilitiesId0.setText(props.getProperty("currentLiabilitiesId0"));
+
+        ecoApplicantNameId.setText(props.getProperty("ecoApplicantNameId"));
+
         yearOfExecutionId0.setSelectedItem(props.getProperty("yearOfExecutionId0"));
 
-         yearOfExecutionId1.addItem("1");
-         yearOfExecutionId2.addItem("1");
-         yearOfExecutionId4.addItem("1");
-         yearOfExecutionId5.addItem("1");
-         yearOfExecutionId6.addItem("1");
-         yearOfExecutionId7.addItem("1");
-         yearOfExecutionId8.addItem("1");
-         yearOfExecutionId9.addItem("1");
-         yearOfExecutionId10.addItem("1");
-         yearOfExecutionId11.addItem("1");
-         yearOfExecutionId12.addItem("1");
-         yearOfExecutionId13.addItem("1");
-         yearOfExecutionId14.addItem("1");
-         yearOfExecutionId15.addItem("1");
-         yearOfExecutionId16.addItem("1");
 
-        yearOfExecutionId1.addItem("2");
-        yearOfExecutionId2.addItem("2");
-        yearOfExecutionId4.addItem("2");
-        yearOfExecutionId5.addItem("2");
-        yearOfExecutionId6.addItem("2");
-        yearOfExecutionId7.addItem("2");
-        yearOfExecutionId8.addItem("2");
-        yearOfExecutionId9.addItem("2");
-        yearOfExecutionId10.addItem("2");
-        yearOfExecutionId11.addItem("2");
-        yearOfExecutionId12.addItem("2");
-        yearOfExecutionId13.addItem("2");
-        yearOfExecutionId14.addItem("2");
-        yearOfExecutionId15.addItem("2");
-        yearOfExecutionId16.addItem("2");
-
-        yearOfExecutionId1.addItem("3");
-        yearOfExecutionId2.addItem("3");
-        yearOfExecutionId4.addItem("3");
-        yearOfExecutionId5.addItem("3");
-        yearOfExecutionId6.addItem("3");
-        yearOfExecutionId7.addItem("3");
-        yearOfExecutionId8.addItem("3");
-        yearOfExecutionId9.addItem("3");
-        yearOfExecutionId10.addItem("3");
-        yearOfExecutionId11.addItem("3");
-        yearOfExecutionId12.addItem("3");
-        yearOfExecutionId13.addItem("3");
-        yearOfExecutionId14.addItem("3");
-        yearOfExecutionId15.addItem("3");
-        yearOfExecutionId16.addItem("3");
 
         yearOfExecutionId1.setSelectedItem(props.getProperty("yearOfExecutionId1"));
         yearOfExecutionId2.setSelectedItem(props.getProperty("yearOfExecutionId2"));
+        yearOfExecutionId3.setSelectedItem(props.getProperty("yearOfExecutionId2"));
         yearOfExecutionId4.setSelectedItem(props.getProperty("yearOfExecutionId4"));
         yearOfExecutionId5.setSelectedItem(props.getProperty("yearOfExecutionId5"));
         yearOfExecutionId6.setSelectedItem(props.getProperty("yearOfExecutionId6"));
@@ -207,60 +172,10 @@ public class AnmForm {
         yearOfExecutionId16.setSelectedItem(props.getProperty("yearOfExecutionId16"));
 
 
-        yearOfDeliveryId0.addItem("1");
-        yearOfDeliveryId1.addItem("1");
-        yearOfDeliveryId2.addItem("1");
-        yearOfDeliveryId4.addItem("1");
-        yearOfDeliveryId5.addItem("1");
-        yearOfDeliveryId6.addItem("1");
-        yearOfDeliveryId7.addItem("1");
-        yearOfDeliveryId8.addItem("1");
-        yearOfDeliveryId9.addItem("1");
-        yearOfDeliveryId10.addItem("1");
-        yearOfDeliveryId11.addItem("1");
-        yearOfDeliveryId12.addItem("1");
-        yearOfDeliveryId13.addItem("1");
-        yearOfDeliveryId14.addItem("1");
-        yearOfDeliveryId15.addItem("1");
-        yearOfDeliveryId16.addItem("1");
-
-        yearOfDeliveryId0.addItem("2");
-        yearOfDeliveryId1.addItem("2");
-        yearOfDeliveryId2.addItem("2");
-        yearOfDeliveryId4.addItem("2");
-        yearOfDeliveryId5.addItem("2");
-        yearOfDeliveryId6.addItem("2");
-        yearOfDeliveryId7.addItem("2");
-        yearOfDeliveryId8.addItem("2");
-        yearOfDeliveryId9.addItem("2");
-        yearOfDeliveryId10.addItem("2");
-        yearOfDeliveryId11.addItem("2");
-        yearOfDeliveryId12.addItem("2");
-        yearOfDeliveryId13.addItem("2");
-        yearOfDeliveryId14.addItem("2");
-        yearOfDeliveryId15.addItem("2");
-        yearOfDeliveryId16.addItem("2");
-
-        yearOfDeliveryId1.addItem("3");
-        yearOfDeliveryId0.addItem("3");
-        yearOfDeliveryId2.addItem("3");
-        yearOfDeliveryId4.addItem("3");
-        yearOfDeliveryId5.addItem("3");
-        yearOfDeliveryId6.addItem("3");
-        yearOfDeliveryId7.addItem("3");
-        yearOfDeliveryId8.addItem("3");
-        yearOfDeliveryId9.addItem("3");
-        yearOfDeliveryId10.addItem("3");
-        yearOfDeliveryId11.addItem("3");
-        yearOfDeliveryId12.addItem("3");
-        yearOfDeliveryId13.addItem("3");
-        yearOfDeliveryId14.addItem("3");
-        yearOfDeliveryId15.addItem("3");
-        yearOfDeliveryId16.addItem("3");
-
         yearOfDeliveryId1.setSelectedItem(props.getProperty("yearOfDeliveryId1"));
         yearOfDeliveryId0.setSelectedItem(props.getProperty("yearOfDeliveryId0"));
         yearOfDeliveryId2.setSelectedItem(props.getProperty("yearOfDeliveryId2"));
+        yearOfDeliveryId3.setSelectedItem(props.getProperty("yearOfDeliveryId2"));
         yearOfDeliveryId4.setSelectedItem(props.getProperty("yearOfDeliveryId4"));
         yearOfDeliveryId5.setSelectedItem(props.getProperty("yearOfDeliveryId5"));
         yearOfDeliveryId6.setSelectedItem(props.getProperty("yearOfDeliveryId6"));
@@ -274,58 +189,6 @@ public class AnmForm {
         yearOfDeliveryId14.setSelectedItem(props.getProperty("yearOfDeliveryId14"));
         yearOfDeliveryId15.setSelectedItem(props.getProperty("yearOfDeliveryId15"));
         yearOfDeliveryId16.setSelectedItem(props.getProperty("yearOfDeliveryId16"));
-
-
-        envYearOfExecutionId1.addItem("1");
-        envYearOfExecutionId2.addItem("1");
-        envYearOfExecutionId3.addItem("1");
-        envYearOfExecutionId4.addItem("1");
-        envYearOfExecutionId5.addItem("1");
-        envYearOfExecutionId6.addItem("1");
-        envYearOfExecutionId7.addItem("1");
-        envYearOfExecutionId8.addItem("1");
-        envYearOfExecutionId9.addItem("1");
-        envYearOfExecutionId10.addItem("1");
-        envYearOfExecutionId11.addItem("1");
-        envYearOfExecutionId12.addItem("1");
-        envYearOfExecutionId13.addItem("1");
-        envYearOfExecutionId14.addItem("1");
-        envYearOfExecutionId15.addItem("1");
-        envYearOfExecutionId16.addItem("1");
-
-        envYearOfExecutionId1.addItem("2");
-        envYearOfExecutionId2.addItem("2");
-        envYearOfExecutionId3.addItem("2");
-        envYearOfExecutionId4.addItem("2");
-        envYearOfExecutionId5.addItem("2");
-        envYearOfExecutionId6.addItem("2");
-        envYearOfExecutionId7.addItem("2");
-        envYearOfExecutionId8.addItem("2");
-        envYearOfExecutionId9.addItem("2");
-        envYearOfExecutionId10.addItem("2");
-        envYearOfExecutionId11.addItem("2");
-        envYearOfExecutionId12.addItem("2");
-        envYearOfExecutionId13.addItem("2");
-        envYearOfExecutionId14.addItem("2");
-        envYearOfExecutionId15.addItem("2");
-        envYearOfExecutionId16.addItem("2");
-
-        envYearOfExecutionId1.addItem("3");
-        envYearOfExecutionId2.addItem("3");
-        envYearOfExecutionId3.addItem("3");
-        envYearOfExecutionId4.addItem("3");
-        envYearOfExecutionId5.addItem("3");
-        envYearOfExecutionId6.addItem("3");
-        envYearOfExecutionId7.addItem("3");
-        envYearOfExecutionId8.addItem("3");
-        envYearOfExecutionId9.addItem("3");
-        envYearOfExecutionId10.addItem("3");
-        envYearOfExecutionId11.addItem("3");
-        envYearOfExecutionId12.addItem("3");
-        envYearOfExecutionId13.addItem("3");
-        envYearOfExecutionId14.addItem("3");
-        envYearOfExecutionId15.addItem("3");
-        envYearOfExecutionId16.addItem("3");
 
         envYearOfExecutionId1.setSelectedItem(props.getProperty("envYearOfExecutionId16"));
         envYearOfExecutionId2.setSelectedItem(props.getProperty("envYearOfExecutionId16"));
@@ -344,57 +207,6 @@ public class AnmForm {
         envYearOfExecutionId15.setSelectedItem(props.getProperty("envYearOfExecutionId16"));
         envYearOfExecutionId16.setSelectedItem(props.getProperty("envYearOfExecutionId16"));
 
-
-        envYearOfDeliveryId0.addItem("1");
-        envYearOfDeliveryId1.addItem("1");
-        envYearOfDeliveryId2.addItem("1");
-        envYearOfDeliveryId4.addItem("1");
-        envYearOfDeliveryId5.addItem("1");
-        envYearOfDeliveryId6.addItem("1");
-        envYearOfDeliveryId7.addItem("1");
-        envYearOfDeliveryId8.addItem("1");
-        envYearOfDeliveryId9.addItem("1");
-        envYearOfDeliveryId10.addItem("1");
-        envYearOfDeliveryId11.addItem("1");
-        envYearOfDeliveryId12.addItem("1");
-        envYearOfDeliveryId13.addItem("1");
-        envYearOfDeliveryId14.addItem("1");
-        envYearOfDeliveryId15.addItem("1");
-        envYearOfDeliveryId16.addItem("1");
-
-        envYearOfDeliveryId0.addItem("2");
-        envYearOfDeliveryId1.addItem("2");
-        envYearOfDeliveryId2.addItem("2");
-        envYearOfDeliveryId4.addItem("2");
-        envYearOfDeliveryId5.addItem("2");
-        envYearOfDeliveryId6.addItem("2");
-        envYearOfDeliveryId7.addItem("2");
-        envYearOfDeliveryId8.addItem("2");
-        envYearOfDeliveryId9.addItem("2");
-        envYearOfDeliveryId10.addItem("2");
-        envYearOfDeliveryId11.addItem("2");
-        envYearOfDeliveryId12.addItem("2");
-        envYearOfDeliveryId13.addItem("2");
-        envYearOfDeliveryId14.addItem("2");
-        envYearOfDeliveryId15.addItem("2");
-        envYearOfDeliveryId16.addItem("2");
-
-        envYearOfDeliveryId1.addItem("3");
-        envYearOfDeliveryId0.addItem("3");
-        envYearOfDeliveryId2.addItem("3");
-        envYearOfDeliveryId4.addItem("3");
-        envYearOfDeliveryId5.addItem("3");
-        envYearOfDeliveryId6.addItem("3");
-        envYearOfDeliveryId7.addItem("3");
-        envYearOfDeliveryId8.addItem("3");
-        envYearOfDeliveryId9.addItem("3");
-        envYearOfDeliveryId10.addItem("3");
-        envYearOfDeliveryId11.addItem("3");
-        envYearOfDeliveryId12.addItem("3");
-        envYearOfDeliveryId13.addItem("3");
-        envYearOfDeliveryId14.addItem("3");
-        envYearOfDeliveryId15.addItem("3");
-        envYearOfDeliveryId16.addItem("3");
 
         envYearOfDeliveryId1.setSelectedItem(props.getProperty("envYearOfDeliveryId1"));
         envYearOfDeliveryId0.setSelectedItem(props.getProperty("envYearOfDeliveryId0"));

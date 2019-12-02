@@ -25,8 +25,8 @@ public class TestSelenium {
 
         UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
 
-        AnmForm anmForm = new AnmForm(props);
-        JFrame jFrame = new JFrame("ANM");
+        AnmForm anmForm = new AnmForm( props);
+        JFrame jFrame = new JFrame();
         jFrame.setContentPane(anmForm.rootPanel);
         //jFrame.setExtendedState(JFrame.MAXIMIZED_BOTH);
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
