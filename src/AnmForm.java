@@ -147,6 +147,7 @@ public class AnmForm {
     private JTextField timer16;
     private JTextField webdriver;
     private JLabel Webdriver;
+    public JButton play2Button;
 
     public AnmForm(Properties props) {
         createUIComponents(props);

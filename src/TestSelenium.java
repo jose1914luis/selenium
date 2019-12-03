@@ -19,11 +19,20 @@ public class TestSelenium {
 
     private static Properties props= new Properties();
 
+    private static ChromeDriver driver;
+
+
+
     public static void main(String [] args) throws InterruptedException, IOException, ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException, IllegalAccessException {
+
+
 
         FileInputStream in = new FileInputStream("anm.properties");
         props.load(in);
         in.close();
+
+        System.setProperty("webdriver.chrome.driver",props.getProperty("webdriver"));
+        driver = new ChromeDriver();
 
         UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
         AnmForm anmForm = new AnmForm( props);
@@ -41,6 +50,19 @@ public class TestSelenium {
             }
         });
 
+
+        anmForm.play2Button.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    executeANMFinish();
+                } catch (InterruptedException ex) {
+                    ex.printStackTrace();
+                }
+            }
+        });
+
         jFrame.setPreferredSize(new Dimension(1200, 600));
         JScrollPane scrollPane = new JScrollPane(anmForm.rootPanel);
         jFrame.add(scrollPane);
@@ -48,20 +70,10 @@ public class TestSelenium {
         jFrame.pack();
         jFrame.setVisible(true);
 
-
-        //
-
-       // executeANMLogin();
-    }
-
-    private static void executeANMFinish() throws InterruptedException{
-
     }
 
     private static void executeANMLogin() throws InterruptedException{
 
-        System.setProperty("webdriver.chrome.driver",props.getProperty("webdriver"));
-        ChromeDriver driver = new ChromeDriver();
         driver.get("http://ambprubsigm.anm.gov.co/sigm/externalLogin?lang=es");
 
         /**********************************************************
@@ -77,6 +89,7 @@ public class TestSelenium {
         WebElement buttonLogin=driver.findElementById("loginButton");
         buttonLogin.click();
 
+
         /**********************************************************
          * Panel
          **********************************************************/
@@ -87,6 +100,10 @@ public class TestSelenium {
 
         WebElement menu = driver.findElement(By.xpath("//li[4]/a[2]/span"));
         menu.click();
+
+    }
+
+    private static void executeANMFinish() throws InterruptedException{
 
         WebElement submenu = driver.findElement(By.linkText("Radicar solicitud de propuesta de contrato de concesión"));
         submenu.click();
