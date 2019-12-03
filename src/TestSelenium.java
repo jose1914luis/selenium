@@ -1,9 +1,15 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import javax.swing.*;
+import javax.swing.border.Border;
+import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -15,47 +21,48 @@ public class TestSelenium {
 
     public static void main(String [] args) throws InterruptedException, IOException, ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException, IllegalAccessException {
 
-        //AnmForm anmForm = new AnmForm();
-
-
         FileInputStream in = new FileInputStream("anm.properties");
         props.load(in);
         in.close();
 
-
         UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
-
         AnmForm anmForm = new AnmForm( props);
         JFrame jFrame = new JFrame();
-        jFrame.setContentPane(anmForm.rootPanel);
-        //jFrame.setExtendedState(JFrame.MAXIMIZED_BOTH);
+
+        anmForm.playButton.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    executeANMLogin();
+                } catch (InterruptedException ex) {
+                    ex.printStackTrace();
+                }
+            }
+        });
+
+        jFrame.setPreferredSize(new Dimension(1200, 600));
+        JScrollPane scrollPane = new JScrollPane(anmForm.rootPanel);
+        jFrame.add(scrollPane);
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         jFrame.pack();
-
-
-
-
         jFrame.setVisible(true);
-        //executeANMLogin();
 
-/*
-        FileOutputStream out = new FileOutputStream("anm.properties");
-        props.setProperty("country", "peru2");
-        props.store(out, null);
-        out.close();*/
+
+        //
+
+       // executeANMLogin();
     }
 
+    private static void executeANMFinish() throws InterruptedException{
+
+    }
 
     private static void executeANMLogin() throws InterruptedException{
 
-        System.setProperty("webdriver.chrome.driver","C:\\Users\\jose\\Downloads\\chromedriver_win32\\chromedriver.exe");
-
-
+        System.setProperty("webdriver.chrome.driver",props.getProperty("webdriver"));
         ChromeDriver driver = new ChromeDriver();
-
         driver.get("http://ambprubsigm.anm.gov.co/sigm/externalLogin?lang=es");
-
-        //WebElement user=driver.findElement(By.xpath("//input[@id='username']"));
 
         /**********************************************************
          * Login
@@ -73,7 +80,10 @@ public class TestSelenium {
         /**********************************************************
          * Panel
          **********************************************************/
-        Thread.sleep(6000);
+        Thread.sleep(Integer.parseInt(props.getProperty("timer1"))*1000);
+
+        /*WebDriverWait wait = new WebDriverWait(driver, 10);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[4]/a[2]/span")));*/
 
         WebElement menu = driver.findElement(By.xpath("//li[4]/a[2]/span"));
         menu.click();
@@ -81,7 +91,7 @@ public class TestSelenium {
         WebElement submenu = driver.findElement(By.linkText("Radicar solicitud de propuesta de contrato de concesión"));
         submenu.click();
 
-        Thread.sleep(4000);
+        Thread.sleep(Integer.parseInt(props.getProperty("timer2"))*1000);
 
         /**********************************************************
          * Seleccionar usuario
@@ -93,21 +103,21 @@ public class TestSelenium {
         WebElement buttonNext1 =driver.findElementByCssSelector(".btn > .ng-binding");
         buttonNext1.click();
 
-        Thread.sleep(4000);
+        Thread.sleep(Integer.parseInt(props.getProperty("timer3"))*1000);
         /**********************************************************
          * Ingresar detalles del área
          **********************************************************/
         WebElement btnMineral = driver.findElementByCssSelector(".btn-default");
         btnMineral.click();
 
-        Thread.sleep(1000);
+        Thread.sleep(Integer.parseInt(props.getProperty("timer4"))*1000);
         WebElement labelMineral = driver.findElement(By.linkText((props.getProperty("mineral"))));
         labelMineral.click();
 
         Select selectArea = new Select(driver.findElementById("areaOfConcessionSlctId"));
         selectArea.selectByVisibleText(props.getProperty("areaOfConcessionSlctId"));
 
-        Thread.sleep(2000);
+        Thread.sleep(Integer.parseInt(props.getProperty("timer5"))*1000);
 
         WebElement tabMap = driver.findElementByCssSelector(".uib-tab:nth-child(2) > .nav-link > .ng-binding");
         tabMap.click();
@@ -118,7 +128,7 @@ public class TestSelenium {
         WebElement btnMap = driver.findElementById("uploadShapeFileMapButtonId");
         btnMap.click();
 
-        Thread.sleep(40000);
+        Thread.sleep(Integer.parseInt(props.getProperty("timer6"))*1000);
 
         driver.switchTo().frame("mapIframeId");
         Select selectTypeMap = new Select(driver.findElementByXPath("//select[@data-gcx-form-item='ListBox1']"));
@@ -128,24 +138,24 @@ public class TestSelenium {
         btnContinue.click();
 
         //driver.switchTo().frame("mapIframeId");
-        Thread.sleep(2000);
+        Thread.sleep(Integer.parseInt(props.getProperty("timer7"))*1000);
         WebElement pikerLoad = driver.findElementByXPath("//input[@data-gcx-form-item='FilePicker1']");
         pikerLoad.sendKeys(props.getProperty("pikerLoad"));
 
         WebElement btnLoad = driver.findElementByCssSelector("form:nth-child(2) .button");
         btnLoad.click();
 
-        Thread.sleep(10000);
+        Thread.sleep(Integer.parseInt(props.getProperty("timer8"))*1000);
 
         driver.switchTo().defaultContent();
         WebElement btnConfirm = driver.findElementById("confirmBtnId");
         btnConfirm.click();
 
-        Thread.sleep(1000);
+        Thread.sleep(Integer.parseInt(props.getProperty("timer9"))*1000);
         WebElement buttonNext2 =driver.findElementByXPath("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]");
         buttonNext2.click();
 
-        Thread.sleep(3000);
+        Thread.sleep(Integer.parseInt(props.getProperty("timer10"))*1000);
 
         /**********************************************************
          * Información técnica
@@ -154,7 +164,7 @@ public class TestSelenium {
         WebElement tabInfoTec = driver.findElementByXPath(" //div[@id='main']//li[3]//a[1]");
         tabInfoTec.click();
 
-        Thread.sleep(1000);
+        Thread.sleep(Integer.parseInt(props.getProperty("timer11"))*1000);
         Select selectYOE0 = new Select(driver.findElementById("yearOfExecutionId0"));
         selectYOE0.selectByVisibleText(props.getProperty("yearOfExecutionId0"));
         Select selectYOD0 = new Select(driver.findElementById("yearOfDeliveryId0"));
@@ -398,7 +408,7 @@ public class TestSelenium {
         Select selectTPD = new Select(driver.findElementById("techProfessionalDesignationId"));
         selectTPD.selectByVisibleText(props.getProperty("techProfessionalDesignationId"));
 
-        Thread.sleep(2000);
+        Thread.sleep(Integer.parseInt(props.getProperty("timer12"))*1000);
 
         Select selectTAN = new Select(driver.findElementById("techApplicantNameId"));
         selectTAN.selectByVisibleText(props.getProperty("techApplicantNameId"));
@@ -416,7 +426,7 @@ public class TestSelenium {
         WebElement tabArea = driver.findElementByXPath("//form[@name='p_CaaIataInputAreaDetailsForm']//li[2]");
         tabArea.click();
 
-        Thread.sleep(2000);
+        Thread.sleep(Integer.parseInt(props.getProperty("timer13"))*1000);
 
         WebElement additionalEthnicGroupsInSelectedAreaIndId =driver.findElementById("additionalEthnicGroupsInSelectedAreaIndId");
         additionalEthnicGroupsInSelectedAreaIndId.click();
@@ -428,7 +438,7 @@ public class TestSelenium {
         WebElement tabEco = driver.findElementByXPath("//form[@name='p_CaaIataInputAreaDetailsForm']//li[4]");
         tabEco.click();
 
-        Thread.sleep(5000);
+        Thread.sleep(Integer.parseInt(props.getProperty("timer14"))*1000);
 
         Select selectPC = new Select(driver.findElementById("personClassificationId0"));
         selectPC.selectByVisibleText(props.getProperty("personClassificationId0"));
@@ -448,7 +458,7 @@ public class TestSelenium {
         Select selectEPD = new Select(driver.findElementById("ecoProfessionalDesignationId"));
         selectEPD.selectByVisibleText(props.getProperty("ecoProfessionalDesignationId"));
 
-        Thread.sleep(2000);
+        Thread.sleep(Integer.parseInt(props.getProperty("timer15"))*1000);
 
         Select selectEAN = new Select(driver.findElementById("ecoApplicantNameId"));
         selectEAN.selectByVisibleText(props.getProperty("ecoApplicantNameId"));
