@@ -15,7 +15,7 @@ public class AnmForm {
     private JComboBox selectedCellInputMethodSlctId;
     private JComboBox selectTypeMap;
     private JTextField pikerLoad;
-    private JComboBox comboBox1;
+    private JComboBox additionalEthnicGroupsInSelectedAreaIndId;
     private JComboBox yearOfExecutionId0;
     private JComboBox yearOfExecutionId1;
     private JComboBox yearOfExecutionId2;
@@ -119,7 +119,7 @@ public class AnmForm {
     private JComboBox envLaborSuitabilityId3;
     private JComboBox envLaborSuitabilityId4;
     private JComboBox areaOfConcessionSlctId;
-    private JComboBox comboBox2;
+    private JComboBox declareIndId0;
     private JTextField currentAssetId0;
     private JTextField ecoApplicantNameId;
     private JTextField totalLiabilitiesId0;
@@ -162,6 +162,8 @@ public class AnmForm {
                     FileOutputStream out = new FileOutputStream("anm.properties");
 
 
+                    props.setProperty("declareIndId0", declareIndId0.getSelectedItem().toString());
+                    props.setProperty("additionalEthnicGroupsInSelectedAreaIndId", additionalEthnicGroupsInSelectedAreaIndId.getSelectedItem().toString());
                     props.setProperty("webdriver", webdriver.getText());
                     props.setProperty("cambiarUsuario", cambiarUsuario.getText());
                     props.setProperty("timer1", timer1.getText());
@@ -358,6 +360,8 @@ public class AnmForm {
         areaOfConcessionSlctId.setSelectedItem(props.getProperty("areaOfConcessionSlctId"));
         selectedCellInputMethodSlctId.setSelectedItem(props.getProperty("selectedCellInputMethodSlctId"));
         selectTypeMap.setSelectedItem(props.getProperty("selectTypeMap"));
+        declareIndId0.setSelectedItem(props.getProperty("declareIndId0"));
+        additionalEthnicGroupsInSelectedAreaIndId.setSelectedItem(props.getProperty("additionalEthnicGroupsInSelectedAreaIndId"));
         personClassificationId0.setSelectedItem(props.getProperty("personClassificationId0"));
         pikerLoad.setText(props.getProperty("pikerLoad"));
 

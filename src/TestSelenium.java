@@ -488,8 +488,15 @@ public class TestSelenium {
 
         //Thread.sleep(Integer.parseInt(props.getProperty("timer13"))*1000);
 
-        WebElement additionalEthnicGroupsInSelectedAreaIndId =waitElement("additionalEthnicGroupsInSelectedAreaIndId", "id", "timer13");
-        additionalEthnicGroupsInSelectedAreaIndId.click();
+        if(props.getProperty("additionalEthnicGroupsInSelectedAreaIndId") == "SI"){
+
+            WebElement additionalEthnicGroupsInSelectedAreaIndId =waitElement("//div[@class='tab-pane ng-scope active']//input[1]", "path", "timer13");
+            additionalEthnicGroupsInSelectedAreaIndId.click();
+        }else{
+            WebElement additionalEthnicGroupsInSelectedAreaIndId =waitElement("//input[2]", "path", "timer13");
+            additionalEthnicGroupsInSelectedAreaIndId.click();
+        }
+
 
         /**********************************************************
          * Información economica
@@ -502,6 +509,13 @@ public class TestSelenium {
 
         Select selectPC = new Select(waitElement("personClassificationId0", "id", "timer14"));
         selectPC.selectByVisibleText(props.getProperty("personClassificationId0"));
+
+        if(props.getProperty("declareIndId0") == "SI"){
+
+            WebElement declareIndId0=driver.findElementById("declareIndId0");
+            declareIndId0.click();
+        }
+
 
         WebElement currentAssetId0=driver.findElementById("currentAssetId0");
         currentAssetId0.sendKeys(props.getProperty("currentAssetId0"));
