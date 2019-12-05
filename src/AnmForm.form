@@ -1909,7 +1909,7 @@
           <grid row="18" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Timer 1"/>
+          <text value="Timer 1 - menu lateral"/>
         </properties>
       </component>
       <component id="5bf5e" class="javax.swing.JLabel">
@@ -1917,7 +1917,7 @@
           <grid row="19" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Timer 2"/>
+          <text value="Timer 2 - seleccion PIN"/>
         </properties>
       </component>
       <component id="712f1" class="javax.swing.JLabel">
@@ -1925,7 +1925,7 @@
           <grid row="20" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Timer 3"/>
+          <text value="Timer 3 - carga mineral"/>
         </properties>
       </component>
       <component id="dadb8" class="javax.swing.JLabel">
@@ -1933,7 +1933,7 @@
           <grid row="21" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Timer 4"/>
+          <text value="Timer 4 - seleccion mineral"/>
         </properties>
       </component>
       <component id="104b" class="javax.swing.JTextField" binding="timer1">
@@ -1977,7 +1977,7 @@
           <grid row="18" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Timer 5"/>
+          <text value="Timer 5 - seleccion tipo mapa"/>
         </properties>
       </component>
       <component id="4bf53" class="javax.swing.JLabel">
@@ -1985,7 +1985,7 @@
           <grid row="19" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Timer 6 - Mapa"/>
+          <text value="Timer 6 - entra mapa"/>
         </properties>
       </component>
       <component id="4a1b9" class="javax.swing.JLabel">
@@ -1993,7 +1993,7 @@
           <grid row="20" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Timer 7"/>
+          <text value="Timer 7 - ruta mapa"/>
         </properties>
       </component>
       <component id="c969a" class="javax.swing.JLabel">
@@ -2001,7 +2001,7 @@
           <grid row="21" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Timer 8"/>
+          <text value="Timer 8 - cargar area"/>
         </properties>
       </component>
       <component id="d6621" class="javax.swing.JTextField" binding="timer5">
@@ -2045,7 +2045,7 @@
           <grid row="18" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Timer 9"/>
+          <text value="Timer 9 - sale mapa"/>
         </properties>
       </component>
       <component id="9fe5f" class="javax.swing.JLabel">
@@ -2053,7 +2053,7 @@
           <grid row="19" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Timer 10"/>
+          <text value="Timer 10 - tag info"/>
         </properties>
       </component>
       <component id="e9261" class="javax.swing.JLabel">
@@ -2225,6 +2225,32 @@
         </constraints>
         <properties>
           <text value="Play 2"/>
+        </properties>
+      </component>
+      <component id="8e92a" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="22" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Cambiar Usuario"/>
+        </properties>
+      </component>
+      <component id="9c3b3" class="javax.swing.JTextField" binding="cambiarUsuario">
+        <constraints>
+          <grid row="22" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="9aeac" class="javax.swing.JButton" binding="Emergencia">
+        <constraints>
+          <grid row="23" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Button"/>
         </properties>
       </component>
     </children>

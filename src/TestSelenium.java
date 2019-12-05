@@ -43,6 +43,7 @@ public class TestSelenium {
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
+
                     executeANMLogin();
                 } catch (InterruptedException ex) {
                     ex.printStackTrace();
@@ -52,6 +53,19 @@ public class TestSelenium {
 
 
         anmForm.play2Button.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    executeMapa();
+                    executeANMFinish();
+                } catch (InterruptedException ex) {
+                    ex.printStackTrace();
+                }
+            }
+        });
+
+        anmForm.Emergencia.addActionListener(new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -95,48 +109,71 @@ public class TestSelenium {
          **********************************************************/
         Thread.sleep(Integer.parseInt(props.getProperty("timer1"))*1000);
 
-        /*WebDriverWait wait = new WebDriverWait(driver, 10);
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//li[4]/a[2]/span")));*/
-
         WebElement menu = driver.findElement(By.xpath("//li[4]/a[2]/span"));
         menu.click();
 
+        Thread.sleep(10000);
+
+        Select selectCambiarUsuario = new Select(driver.findElement(By.xpath("//select[@aria-label='Cambiar el usuario:']")));
+        selectCambiarUsuario.selectByVisibleText(props.getProperty("cambiarUsuario"));
     }
 
-    private static void executeANMFinish() throws InterruptedException{
 
-        WebElement submenu = driver.findElement(By.linkText("Radicar solicitud de propuesta de contrato de concesión"));
+    private static WebElement waitElement(String search, String type, String timer) throws InterruptedException {
+
+        Thread.sleep(Integer.parseInt(props.getProperty(timer))*1000);
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+
+        switch (type){
+            case "id":
+                return wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(search)));
+            case "css":
+                return wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(search)));
+            case "path":
+                return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(search)));
+            case "link":
+                return  wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(props.getProperty(search))));
+        }
+        return null;
+    }
+
+    private static void executeMapa() throws InterruptedException {
+
+        WebElement submenu = driver.findElement(By.xpath("//li[4]//ul[1]//li[1]"));
         submenu.click();
-
-        Thread.sleep(Integer.parseInt(props.getProperty("timer2"))*1000);
 
         /**********************************************************
          * Seleccionar usuario
          **********************************************************/
 
-        Select selectPIN = new Select(driver.findElementById("pinSlctId"));
+        Select selectPIN = new Select(waitElement("pinSlctId", "id", "timer2"));
+
+        //Select selectPIN = new Select(driver.findElementById("pinSlctId"));
         selectPIN.selectByVisibleText(props.getProperty("pinSlctId"));
 
         WebElement buttonNext1 =driver.findElementByCssSelector(".btn > .ng-binding");
         buttonNext1.click();
 
-        Thread.sleep(Integer.parseInt(props.getProperty("timer3"))*1000);
+        //Thread.sleep(Integer.parseInt(props.getProperty("timer3"))*1000);
         /**********************************************************
          * Ingresar detalles del área
          **********************************************************/
-        WebElement btnMineral = driver.findElementByCssSelector(".btn-default");
+
+        WebElement btnMineral =  waitElement(".btn-default", "css", "timer3");
         btnMineral.click();
 
-        Thread.sleep(Integer.parseInt(props.getProperty("timer4"))*1000);
-        WebElement labelMineral = driver.findElement(By.linkText((props.getProperty("mineral"))));
+        //Thread.sleep(Integer.parseInt(props.getProperty("timer4"))*1000);
+
+        WebElement labelMineral = waitElement("mineral", "link", "timer4");
         labelMineral.click();
 
         Select selectArea = new Select(driver.findElementById("areaOfConcessionSlctId"));
         selectArea.selectByVisibleText(props.getProperty("areaOfConcessionSlctId"));
 
-        Thread.sleep(Integer.parseInt(props.getProperty("timer5"))*1000);
+        //Thread.sleep(Integer.parseInt(props.getProperty("timer5"))*1000);
 
-        WebElement tabMap = driver.findElementByCssSelector(".uib-tab:nth-child(2) > .nav-link > .ng-binding");
+
+        WebElement tabMap = waitElement(".uib-tab:nth-child(2) > .nav-link > .ng-binding", "css", "timer5");
         tabMap.click();
 
         Select selectTypeCoord = new Select(driver.findElementById("selectedCellInputMethodSlctId"));
@@ -155,8 +192,9 @@ public class TestSelenium {
         btnContinue.click();
 
         //driver.switchTo().frame("mapIframeId");
-        Thread.sleep(Integer.parseInt(props.getProperty("timer7"))*1000);
-        WebElement pikerLoad = driver.findElementByXPath("//input[@data-gcx-form-item='FilePicker1']");
+        //Thread.sleep(Integer.parseInt(props.getProperty("timer7"))*1000);
+
+        WebElement pikerLoad = waitElement("//input[@data-gcx-form-item='FilePicker1']", "path", "timer7");
         pikerLoad.sendKeys(props.getProperty("pikerLoad"));
 
         WebElement btnLoad = driver.findElementByCssSelector("form:nth-child(2) .button");
@@ -168,21 +206,25 @@ public class TestSelenium {
         WebElement btnConfirm = driver.findElementById("confirmBtnId");
         btnConfirm.click();
 
-        Thread.sleep(Integer.parseInt(props.getProperty("timer9"))*1000);
-        WebElement buttonNext2 =driver.findElementByXPath("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]");
-        buttonNext2.click();
+        //Thread.sleep(Integer.parseInt(props.getProperty("timer9"))*1000);
 
-        Thread.sleep(Integer.parseInt(props.getProperty("timer10"))*1000);
+        WebElement buttonNext2 = waitElement("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]", "path", "timer9");
+        buttonNext2.click();
+    }
+
+    private static void executeANMFinish() throws InterruptedException{
+
+        //Thread.sleep(Integer.parseInt(props.getProperty("timer10"))*1000);
 
         /**********************************************************
          * Información técnica
          **********************************************************/
 
-        WebElement tabInfoTec = driver.findElementByXPath(" //div[@id='main']//li[3]//a[1]");
+        WebElement tabInfoTec = waitElement("//div[@id='main']//li[3]//a[1]", "path", "timer10");
         tabInfoTec.click();
 
-        Thread.sleep(Integer.parseInt(props.getProperty("timer11"))*1000);
-        Select selectYOE0 = new Select(driver.findElementById("yearOfExecutionId0"));
+        //Thread.sleep(Integer.parseInt(props.getProperty("timer11"))*1000);
+        Select selectYOE0 = new Select(waitElement("yearOfExecutionId0", "id", "timer11"));
         selectYOE0.selectByVisibleText(props.getProperty("yearOfExecutionId0"));
         Select selectYOD0 = new Select(driver.findElementById("yearOfDeliveryId0"));
         selectYOD0.selectByVisibleText(props.getProperty("yearOfDeliveryId0"));
@@ -425,9 +467,10 @@ public class TestSelenium {
         Select selectTPD = new Select(driver.findElementById("techProfessionalDesignationId"));
         selectTPD.selectByVisibleText(props.getProperty("techProfessionalDesignationId"));
 
-        Thread.sleep(Integer.parseInt(props.getProperty("timer12"))*1000);
+        //Thread.sleep(Integer.parseInt(props.getProperty(""))*1000);
 
-        Select selectTAN = new Select(driver.findElementById("techApplicantNameId"));
+
+        Select selectTAN = new Select(waitElement("techApplicantNameId", "id", "timer12"));
         selectTAN.selectByVisibleText(props.getProperty("techApplicantNameId"));
 
         WebElement buttonAdd =driver.findElementByXPath("//div[@class='tab-pane ng-scope active']//button[@class='btn btn-labeled bg-color-greenDark txt-color-white']");
@@ -443,9 +486,9 @@ public class TestSelenium {
         WebElement tabArea = driver.findElementByXPath("//form[@name='p_CaaIataInputAreaDetailsForm']//li[2]");
         tabArea.click();
 
-        Thread.sleep(Integer.parseInt(props.getProperty("timer13"))*1000);
+        //Thread.sleep(Integer.parseInt(props.getProperty("timer13"))*1000);
 
-        WebElement additionalEthnicGroupsInSelectedAreaIndId =driver.findElementById("additionalEthnicGroupsInSelectedAreaIndId");
+        WebElement additionalEthnicGroupsInSelectedAreaIndId =waitElement("additionalEthnicGroupsInSelectedAreaIndId", "id", "timer13");
         additionalEthnicGroupsInSelectedAreaIndId.click();
 
         /**********************************************************
@@ -455,9 +498,9 @@ public class TestSelenium {
         WebElement tabEco = driver.findElementByXPath("//form[@name='p_CaaIataInputAreaDetailsForm']//li[4]");
         tabEco.click();
 
-        Thread.sleep(Integer.parseInt(props.getProperty("timer14"))*1000);
+        //Thread.sleep(Integer.parseInt(props.getProperty("timer14"))*1000);
 
-        Select selectPC = new Select(driver.findElementById("personClassificationId0"));
+        Select selectPC = new Select(waitElement("personClassificationId0", "id", "timer14"));
         selectPC.selectByVisibleText(props.getProperty("personClassificationId0"));
 
         WebElement currentAssetId0=driver.findElementById("currentAssetId0");
@@ -477,7 +520,8 @@ public class TestSelenium {
 
         Thread.sleep(Integer.parseInt(props.getProperty("timer15"))*1000);
 
-        Select selectEAN = new Select(driver.findElementById("ecoApplicantNameId"));
+
+        Select selectEAN = new Select(waitElement("ecoApplicantNameId", "id", "timer15"));
         selectEAN.selectByVisibleText(props.getProperty("ecoApplicantNameId"));
 
         WebElement buttonAdd2 =driver.findElementByXPath(" //div[@class='tab-pane ng-scope active']//span[@class='btn-label ng-binding'][contains(text(),'Agregar')]");

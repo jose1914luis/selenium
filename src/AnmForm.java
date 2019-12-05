@@ -148,6 +148,8 @@ public class AnmForm {
     private JTextField webdriver;
     private JLabel Webdriver;
     public JButton play2Button;
+    private JTextField cambiarUsuario;
+    public JButton Emergencia;
 
     public AnmForm(Properties props) {
         createUIComponents(props);
@@ -161,6 +163,7 @@ public class AnmForm {
 
 
                     props.setProperty("webdriver", webdriver.getText());
+                    props.setProperty("cambiarUsuario", cambiarUsuario.getText());
                     props.setProperty("timer1", timer1.getText());
                     props.setProperty("timer2", timer2.getText());
                     props.setProperty("timer3", timer3.getText());
@@ -327,6 +330,7 @@ public class AnmForm {
 
 
         webdriver.setText(props.getProperty("webdriver"));
+        cambiarUsuario.setText(props.getProperty("cambiarUsuario"));
 
         timer1.setText(props.getProperty("timer1"));
         timer2.setText(props.getProperty("timer2"));
