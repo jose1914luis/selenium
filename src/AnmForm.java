@@ -127,7 +127,7 @@ public class AnmForm {
     private JTextField currentLiabilitiesId0;
     private JComboBox comboBox3;
     private JButton guardarButton;
-    public JButton playButton;
+    public JButton loginButton;
     private JComboBox personClassificationId0;
     private JTextField timer1;
     private JTextField timer2;
@@ -147,9 +147,12 @@ public class AnmForm {
     private JTextField timer16;
     private JTextField webdriver;
     private JLabel Webdriver;
-    public JButton play2Button;
+    public JButton ejecutarButton;
     private JTextField cambiarUsuario;
-    public JButton Emergencia;
+    public JButton paso1Button;
+    public JButton paso2Button;
+    public JButton paso3Button;
+    public JButton paso4Button;
 
     public AnmForm(Properties props) {
         createUIComponents(props);

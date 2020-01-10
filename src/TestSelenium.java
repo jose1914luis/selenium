@@ -6,12 +6,10 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import javax.swing.*;
-import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileInputStream;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -38,7 +36,7 @@ public class TestSelenium {
         AnmForm anmForm = new AnmForm( props);
         JFrame jFrame = new JFrame();
 
-        anmForm.playButton.addActionListener(new ActionListener() {
+        anmForm.loginButton.addActionListener(new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -52,25 +50,63 @@ public class TestSelenium {
         });
 
 
-        anmForm.play2Button.addActionListener(new ActionListener() {
+        anmForm.ejecutarButton.addActionListener(new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    executeMapa();
-                    executeANMFinish();
+                    paso1();
+                    paso2();
+                    paso3();
+                    paso4();
                 } catch (InterruptedException ex) {
                     ex.printStackTrace();
                 }
             }
         });
 
-        anmForm.Emergencia.addActionListener(new ActionListener() {
+        anmForm.paso1Button.addActionListener(new ActionListener() {
 
             @Override
             public void actionPerformed(ActionEvent e) {
                 try {
-                    executeANMFinish();
+                    paso1();
+                } catch (InterruptedException ex) {
+                    ex.printStackTrace();
+                }
+            }
+        });
+
+        anmForm.paso2Button.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    paso2();
+                } catch (InterruptedException ex) {
+                    ex.printStackTrace();
+                }
+            }
+        });
+
+        anmForm.paso3Button.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    paso3();
+                } catch (InterruptedException ex) {
+                    ex.printStackTrace();
+                }
+            }
+        });
+
+        anmForm.paso4Button.addActionListener(new ActionListener() {
+
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    paso4();
                 } catch (InterruptedException ex) {
                     ex.printStackTrace();
                 }
@@ -137,8 +173,7 @@ public class TestSelenium {
         return null;
     }
 
-    private static void executeMapa() throws InterruptedException {
-
+    private static void paso1() throws InterruptedException{
         WebElement submenu = driver.findElement(By.xpath("//li[4]//ul[1]//li[1]"));
         submenu.click();
 
@@ -153,6 +188,10 @@ public class TestSelenium {
 
         WebElement buttonNext1 =driver.findElementByCssSelector(".btn > .ng-binding");
         buttonNext1.click();
+
+    }
+
+    private static void paso2() throws InterruptedException {
 
         //Thread.sleep(Integer.parseInt(props.getProperty("timer3"))*1000);
         /**********************************************************
@@ -210,9 +249,6 @@ public class TestSelenium {
 
         WebElement buttonNext2 = waitElement("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]", "path", "timer9");
         buttonNext2.click();
-    }
-
-    private static void executeANMFinish() throws InterruptedException{
 
         //Thread.sleep(Integer.parseInt(props.getProperty("timer10"))*1000);
 
@@ -222,6 +258,9 @@ public class TestSelenium {
 
         WebElement tabInfoTec = waitElement("//div[@id='main']//li[3]//a[1]", "path", "timer10");
         tabInfoTec.click();
+    }
+
+    private static void paso3() throws InterruptedException {
 
         //Thread.sleep(Integer.parseInt(props.getProperty("timer11"))*1000);
         Select selectYOE0 = new Select(waitElement("yearOfExecutionId0", "id", "timer11"));
@@ -496,7 +535,9 @@ public class TestSelenium {
             WebElement additionalEthnicGroupsInSelectedAreaIndId =waitElement("//input[2]", "path", "timer13");
             additionalEthnicGroupsInSelectedAreaIndId.click();
         }
+    }
 
+    private static void paso4() throws InterruptedException {
 
         /**********************************************************
          * Información economica
@@ -550,5 +591,7 @@ public class TestSelenium {
 
         //WebElement buttonRadicar =driver.findElementByXPath("//span[contains(text(),'Radicar')]");
         //buttonRadicar.click();
+
     }
+
 }
