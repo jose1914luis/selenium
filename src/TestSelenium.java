@@ -33,6 +33,8 @@ public class TestSelenium {
         System.setProperty("webdriver.chrome.driver",props.getProperty("webdriver"));
         driver = new ChromeDriver();
 
+        driver.get(props.getProperty("url"));
+
         UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
         anmForm = new AnmForm( props);
         JFrame jFrame = new JFrame();
@@ -125,7 +127,6 @@ public class TestSelenium {
 
     private static void executeANMLogin() throws InterruptedException{
 
-        driver.get("http://ambprubsigm.anm.gov.co/sigm/externalLogin?lang=es");
 
         /**********************************************************
          * Login
@@ -536,6 +537,9 @@ public class TestSelenium {
             WebElement additionalEthnicGroupsInSelectedAreaIndId =waitElement("//input[2]", "path", "timer13");
             additionalEthnicGroupsInSelectedAreaIndId.click();
         }
+
+        WebElement tabEco = driver.findElementByXPath("//form[@name='p_CaaIataInputAreaDetailsForm']//li[4]");
+        tabEco.click();
     }
 
     private static void paso4() throws InterruptedException {
@@ -543,9 +547,6 @@ public class TestSelenium {
         /**********************************************************
          * Información economica
          **********************************************************/
-
-        WebElement tabEco = driver.findElementByXPath("//form[@name='p_CaaIataInputAreaDetailsForm']//li[4]");
-        tabEco.click();
 
         //Thread.sleep(Integer.parseInt(props.getProperty("timer14"))*1000);
 

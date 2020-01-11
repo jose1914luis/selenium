@@ -154,6 +154,7 @@ public class AnmForm {
     public JButton paso3Button;
     public JButton paso4Button;
     public JCheckBox radicarCheck;
+    private JTextField url;
 
     public AnmForm(Properties props) {
         createUIComponents(props);
@@ -169,6 +170,7 @@ public class AnmForm {
                     props.setProperty("declareIndId0", declareIndId0.getSelectedItem().toString());
                     props.setProperty("additionalEthnicGroupsInSelectedAreaIndId", additionalEthnicGroupsInSelectedAreaIndId.getSelectedItem().toString());
                     props.setProperty("webdriver", webdriver.getText());
+                    props.setProperty("url", url.getText());
                     props.setProperty("cambiarUsuario", cambiarUsuario.getText());
                     props.setProperty("timer1", timer1.getText());
                     props.setProperty("timer2", timer2.getText());
@@ -337,6 +339,8 @@ public class AnmForm {
 
         webdriver.setText(props.getProperty("webdriver"));
         cambiarUsuario.setText(props.getProperty("cambiarUsuario"));
+
+        url.setText(props.getProperty("url"));
 
         timer1.setText(props.getProperty("timer1"));
         timer2.setText(props.getProperty("timer2"));
