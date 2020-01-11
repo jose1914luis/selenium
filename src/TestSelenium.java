@@ -19,6 +19,7 @@ public class TestSelenium {
 
     private static ChromeDriver driver;
 
+    private static AnmForm anmForm;
 
 
     public static void main(String [] args) throws InterruptedException, IOException, ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException, IllegalAccessException {
@@ -33,7 +34,7 @@ public class TestSelenium {
         driver = new ChromeDriver();
 
         UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
-        AnmForm anmForm = new AnmForm( props);
+        anmForm = new AnmForm( props);
         JFrame jFrame = new JFrame();
 
         anmForm.loginButton.addActionListener(new ActionListener() {
@@ -589,9 +590,11 @@ public class TestSelenium {
          * Resumen
          **********************************************************/
 
-        //WebElement buttonRadicar =driver.findElementByXPath("//span[contains(text(),'Radicar')]");
-        //buttonRadicar.click();
+        if(anmForm.radicarCheck.isSelected()){
 
+            WebElement buttonRadicar =driver.findElementByXPath("//span[contains(text(),'Radicar')]");
+            buttonRadicar.click();
+        }
     }
 
 }

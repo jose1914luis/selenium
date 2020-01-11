@@ -153,6 +153,7 @@ public class AnmForm {
     public JButton paso2Button;
     public JButton paso3Button;
     public JButton paso4Button;
+    public JCheckBox radicarCheck;
 
     public AnmForm(Properties props) {
         createUIComponents(props);

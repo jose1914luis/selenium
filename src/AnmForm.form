@@ -2277,6 +2277,15 @@
           <text value="Paso 4"/>
         </properties>
       </component>
+      <component id="88928" class="javax.swing.JCheckBox" binding="radicarCheck">
+        <constraints>
+          <grid row="22" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <selected value="true"/>
+          <text value="Radicar"/>
+        </properties>
+      </component>
     </children>
   </grid>
 </form>
