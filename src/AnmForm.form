@@ -16,7 +16,7 @@
     <children>
       <component id="341ec" class="javax.swing.JTextField" binding="username">
         <constraints>
-          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <minimum-size width="-1" height="20"/>
             <maximum-size width="200" height="-1"/>
           </grid>
@@ -27,7 +27,7 @@
       </component>
       <component id="2c093" class="javax.swing.JLabel">
         <constraints>
-          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Contraseña"/>
@@ -35,7 +35,7 @@
       </component>
       <component id="e571e" class="javax.swing.JTextField" binding="password">
         <constraints>
-          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <minimum-size width="-1" height="20"/>
             <maximum-size width="200" height="-1"/>
           </grid>
@@ -47,7 +47,7 @@
       </component>
       <component id="190e4" class="javax.swing.JLabel">
         <constraints>
-          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Pin"/>
@@ -55,7 +55,7 @@
       </component>
       <component id="16395" class="javax.swing.JTextField" binding="pinSlctId">
         <constraints>
-          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <minimum-size width="-1" height="20"/>
             <maximum-size width="200" height="-1"/>
           </grid>
@@ -64,7 +64,7 @@
       </component>
       <component id="a8f68" class="javax.swing.JLabel">
         <constraints>
-          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Mineral"/>
@@ -72,7 +72,7 @@
       </component>
       <component id="89013" class="javax.swing.JTextField" binding="mineral">
         <constraints>
-          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <minimum-size width="-1" height="20"/>
             <maximum-size width="200" height="-1"/>
           </grid>
@@ -81,7 +81,7 @@
       </component>
       <component id="a6c11" class="javax.swing.JLabel">
         <constraints>
-          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Área de concesión"/>
@@ -89,7 +89,7 @@
       </component>
       <component id="8da4d" class="javax.swing.JLabel">
         <constraints>
-          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Área de interés"/>
@@ -97,7 +97,7 @@
       </component>
       <component id="b8054" class="javax.swing.JLabel">
         <constraints>
-          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Usuario"/>
@@ -105,7 +105,7 @@
       </component>
       <component id="e864a" class="javax.swing.JLabel">
         <constraints>
-          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value=" Tipo de archivo"/>
@@ -113,7 +113,7 @@
       </component>
       <component id="8ca0b" class="javax.swing.JLabel">
         <constraints>
-          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Ruta del archivo"/>
@@ -121,7 +121,7 @@
       </component>
       <component id="388d7" class="javax.swing.JTextField" binding="pikerLoad">
         <constraints>
-          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <minimum-size width="-1" height="20"/>
             <maximum-size width="200" height="-1"/>
           </grid>
@@ -130,7 +130,7 @@
       </component>
       <component id="c5e18" class="javax.swing.JLabel">
         <constraints>
-          <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Hay grupos étnicos?"/>
@@ -138,7 +138,7 @@
       </component>
       <component id="3a4dd" class="javax.swing.JComboBox" binding="additionalEthnicGroupsInSelectedAreaIndId">
         <constraints>
-          <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <minimum-size width="40" height="20"/>
             <maximum-size width="40" height="-1"/>
           </grid>
@@ -166,6 +166,307 @@
           <text value="Actividades exploratorias"/>
         </properties>
       </component>
+      <component id="e9169" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Actividades Ambientales"/>
+        </properties>
+      </component>
+      <component id="166fd" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Clasificación de persona"/>
+        </properties>
+      </component>
+      <component id="5a6e6" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="¿Es declarante?"/>
+        </properties>
+      </component>
+      <component id="86d2c" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Activo corriente"/>
+        </properties>
+      </component>
+      <component id="1a956" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="15" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Pasivo corriente"/>
+        </properties>
+      </component>
+      <component id="768e1" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="16" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Activo total"/>
+        </properties>
+      </component>
+      <component id="ecf0b" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="17" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Pasivo total"/>
+        </properties>
+      </component>
+      <component id="1128" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="18" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Prefesiòn"/>
+        </properties>
+      </component>
+      <component id="38ec3" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="19" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Seleccione Profesional"/>
+        </properties>
+      </component>
+      <component id="498c8" class="javax.swing.JComboBox" binding="declareIndId0">
+        <constraints>
+          <grid row="13" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="20"/>
+            <maximum-size width="40" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="SI"/>
+            <item value="NO"/>
+          </model>
+        </properties>
+      </component>
+      <component id="7b15c" class="javax.swing.JTextField" binding="currentAssetId0">
+        <constraints>
+          <grid row="14" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="20"/>
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="a34bc" class="javax.swing.JTextField" binding="ecoApplicantNameId">
+        <constraints>
+          <grid row="19" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="20"/>
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="3c1db" class="javax.swing.JTextField" binding="totalLiabilitiesId0">
+        <constraints>
+          <grid row="17" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="20"/>
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="ed1fd" class="javax.swing.JTextField" binding="totalAssetId0">
+        <constraints>
+          <grid row="16" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="20"/>
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="36c7b" class="javax.swing.JTextField" binding="currentLiabilitiesId0">
+        <constraints>
+          <grid row="15" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="20"/>
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="d9a97" class="javax.swing.JComboBox" binding="comboBox3" default-binding="true">
+        <constraints>
+          <grid row="18" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="20"/>
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Contador"/>
+          </model>
+        </properties>
+      </component>
+      <component id="abbe0" class="javax.swing.JComboBox" binding="areaOfConcessionSlctId">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Cauce"/>
+            <item value="Cauce y Ribera"/>
+            <item value="Otro tipo de terreno"/>
+          </model>
+        </properties>
+      </component>
+      <component id="3594e" class="javax.swing.JComboBox" binding="selectedCellInputMethodSlctId">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Cargando o ingresando coordenadas"/>
+            <item value="Usando el mapa de selección para dibujar un polígono o ingresar celdas"/>
+            <item value="Cargando archivo 'Shapefile' o 'KML'"/>
+          </model>
+        </properties>
+      </component>
+      <component id="cf08e" class="javax.swing.JComboBox" binding="selectTypeMap">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="KML"/>
+            <item value="Shapefile"/>
+          </model>
+        </properties>
+      </component>
+      <component id="d511e" class="javax.swing.JComboBox" binding="personClassificationId0">
+        <constraints>
+          <grid row="12" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Persona jurídica"/>
+            <item value="Persona natural régimen común"/>
+            <item value="Persona natural régimen simplificado"/>
+          </model>
+        </properties>
+      </component>
+      <component id="90d5f" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="20" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Timer 13 - grupo etnico"/>
+        </properties>
+      </component>
+      <component id="2b7bb" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="21" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Timer 14 - tag economico"/>
+        </properties>
+      </component>
+      <component id="a0d28" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="22" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Timer 15 - profesional"/>
+        </properties>
+      </component>
+      <component id="37bc2" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="23" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Timer 16"/>
+        </properties>
+      </component>
+      <component id="dbb2" class="javax.swing.JTextField" binding="timer13">
+        <constraints>
+          <grid row="20" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+            <maximum-size width="40" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="130e7" class="javax.swing.JTextField" binding="timer14">
+        <constraints>
+          <grid row="21" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+            <maximum-size width="40" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="47760" class="javax.swing.JTextField" binding="timer15">
+        <constraints>
+          <grid row="22" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+            <maximum-size width="40" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="f1839" class="javax.swing.JTextField" binding="timer16">
+        <constraints>
+          <grid row="23" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+            <maximum-size width="40" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="8e92a" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Cambiar Usuario"/>
+        </properties>
+      </component>
+      <component id="9c3b3" class="javax.swing.JTextField" binding="cambiarUsuario">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="20"/>
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="a6561" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="URL"/>
+        </properties>
+      </component>
+      <component id="2336f" class="javax.swing.JTextField" binding="url">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="-1" height="20"/>
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
       <component id="3e96" class="javax.swing.JLabel">
         <constraints>
           <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
@@ -174,12 +475,36 @@
           <text value="Revisión bibliográfica "/>
         </properties>
       </component>
+      <component id="5fda0" class="javax.swing.JComboBox" binding="yearOfExecutionId0">
+        <constraints>
+          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="1"/>
+            <item value="2"/>
+            <item value="3"/>
+          </model>
+        </properties>
+      </component>
       <component id="47c17" class="javax.swing.JLabel">
         <constraints>
           <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Contactos con la comunidad"/>
+        </properties>
+      </component>
+      <component id="4c886" class="javax.swing.JComboBox" binding="yearOfExecutionId1">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="1"/>
+            <item value="2"/>
+            <item value="3"/>
+          </model>
         </properties>
       </component>
       <component id="afb4a" class="javax.swing.JLabel">
@@ -198,12 +523,84 @@
           <text value="Cartografía geológica"/>
         </properties>
       </component>
+      <component id="4b4d9" class="javax.swing.JComboBox" binding="yearOfExecutionId2">
+        <constraints>
+          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="1"/>
+            <item value="2"/>
+            <item value="3"/>
+          </model>
+        </properties>
+      </component>
+      <component id="3a3c3" class="javax.swing.JComboBox" binding="yearOfExecutionId3">
+        <constraints>
+          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="1"/>
+            <item value="2"/>
+            <item value="3"/>
+          </model>
+        </properties>
+      </component>
       <component id="488c3" class="javax.swing.JLabel">
         <constraints>
           <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Excavación de trincheras y apiques "/>
+        </properties>
+      </component>
+      <component id="72a05" class="javax.swing.JComboBox" binding="yearOfExecutionId4">
+        <constraints>
+          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="1"/>
+            <item value="2"/>
+            <item value="3"/>
+          </model>
+        </properties>
+      </component>
+      <component id="a6d6c" class="javax.swing.JComboBox" binding="yearOfExecutionId5">
+        <constraints>
+          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="1"/>
+            <item value="2"/>
+            <item value="3"/>
+          </model>
+        </properties>
+      </component>
+      <component id="7e8e1" class="javax.swing.JComboBox" binding="yearOfExecutionId6">
+        <constraints>
+          <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="1"/>
+            <item value="2"/>
+            <item value="3"/>
+          </model>
+        </properties>
+      </component>
+      <component id="a29da" class="javax.swing.JComboBox" binding="yearOfExecutionId7">
+        <constraints>
+          <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="1"/>
+            <item value="2"/>
+            <item value="3"/>
+          </model>
         </properties>
       </component>
       <component id="907c7" class="javax.swing.JLabel">
@@ -238,152 +635,24 @@
           <text value="Características hidrológicas"/>
         </properties>
       </component>
+      <component id="fe676" class="javax.swing.JComboBox" binding="yearOfExecutionId8">
+        <constraints>
+          <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="1"/>
+            <item value="2"/>
+            <item value="3"/>
+          </model>
+        </properties>
+      </component>
       <component id="29c87" class="javax.swing.JLabel">
         <constraints>
           <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Pozos y Galerías Exploratorias &#9;"/>
-        </properties>
-      </component>
-      <component id="c6e9" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="11" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Perforaciones profundas"/>
-        </properties>
-      </component>
-      <component id="1fc8b" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="13" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Estudio geotécnico "/>
-        </properties>
-      </component>
-      <component id="73290" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="12" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Muestreo y análisis de calidad"/>
-        </properties>
-      </component>
-      <component id="b34e4" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="14" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Estudio Hidrológico "/>
-        </properties>
-      </component>
-      <component id="b29a" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="15" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Estudio Hidrogeológico "/>
-        </properties>
-      </component>
-      <component id="66270" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="16" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Evaluación del modelo geológico"/>
-        </properties>
-      </component>
-      <component id="e0daf" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="17" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Actividades exploratorias adicionales"/>
-        </properties>
-      </component>
-      <component id="5fda0" class="javax.swing.JComboBox" binding="yearOfExecutionId0">
-        <constraints>
-          <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <model>
-            <item value="1"/>
-            <item value="2"/>
-            <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="4c886" class="javax.swing.JComboBox" binding="yearOfExecutionId1">
-        <constraints>
-          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <model>
-            <item value="1"/>
-            <item value="2"/>
-            <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="4b4d9" class="javax.swing.JComboBox" binding="yearOfExecutionId2">
-        <constraints>
-          <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <model>
-            <item value="1"/>
-            <item value="2"/>
-            <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="3a3c3" class="javax.swing.JComboBox" binding="yearOfExecutionId3">
-        <constraints>
-          <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <model>
-            <item value="1"/>
-            <item value="2"/>
-            <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="72a05" class="javax.swing.JComboBox" binding="yearOfExecutionId4">
-        <constraints>
-          <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <model>
-            <item value="1"/>
-            <item value="2"/>
-            <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="7e8e1" class="javax.swing.JComboBox" binding="yearOfExecutionId6">
-        <constraints>
-          <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <model>
-            <item value="1"/>
-            <item value="2"/>
-            <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="a29da" class="javax.swing.JComboBox" binding="yearOfExecutionId7">
-        <constraints>
-          <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <model>
-            <item value="1"/>
-            <item value="2"/>
-            <item value="3"/>
-          </model>
         </properties>
       </component>
       <component id="bbe62" class="javax.swing.JComboBox" binding="yearOfExecutionId9">
@@ -398,6 +667,14 @@
           </model>
         </properties>
       </component>
+      <component id="c6e9" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="11" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Perforaciones profundas"/>
+        </properties>
+      </component>
       <component id="a8a46" class="javax.swing.JComboBox" binding="yearOfExecutionId10">
         <constraints>
           <grid row="11" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
@@ -408,6 +685,14 @@
             <item value="2"/>
             <item value="3"/>
           </model>
+        </properties>
+      </component>
+      <component id="73290" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="12" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Muestreo y análisis de calidad"/>
         </properties>
       </component>
       <component id="ffcc3" class="javax.swing.JComboBox" binding="yearOfExecutionId11">
@@ -422,6 +707,14 @@
           </model>
         </properties>
       </component>
+      <component id="1fc8b" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="13" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Estudio geotécnico "/>
+        </properties>
+      </component>
       <component id="3e142" class="javax.swing.JComboBox" binding="yearOfExecutionId12">
         <constraints>
           <grid row="13" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
@@ -432,6 +725,14 @@
             <item value="2"/>
             <item value="3"/>
           </model>
+        </properties>
+      </component>
+      <component id="b34e4" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="14" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Estudio Hidrológico "/>
         </properties>
       </component>
       <component id="b75d6" class="javax.swing.JComboBox" binding="yearOfExecutionId13">
@@ -446,6 +747,14 @@
           </model>
         </properties>
       </component>
+      <component id="b29a" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="15" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Estudio Hidrogeológico "/>
+        </properties>
+      </component>
       <component id="5c420" class="javax.swing.JComboBox" binding="yearOfExecutionId14">
         <constraints>
           <grid row="15" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
@@ -458,6 +767,14 @@
           </model>
         </properties>
       </component>
+      <component id="66270" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="16" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Evaluación del modelo geológico"/>
+        </properties>
+      </component>
       <component id="74cd5" class="javax.swing.JComboBox" binding="yearOfExecutionId15">
         <constraints>
           <grid row="16" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
@@ -468,6 +785,14 @@
             <item value="2"/>
             <item value="3"/>
           </model>
+        </properties>
+      </component>
+      <component id="e0daf" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="17" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Actividades exploratorias adicionales"/>
         </properties>
       </component>
       <component id="53b17" class="javax.swing.JComboBox" binding="yearOfExecutionId16">
@@ -602,122 +927,6 @@
           </model>
         </properties>
       </component>
-      <component id="80779" class="javax.swing.JComboBox" binding="laborSuitabilityId0">
-        <constraints>
-          <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model>
-            <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
-          </model>
-        </properties>
-      </component>
-      <component id="61924" class="javax.swing.JComboBox" binding="laborSuitabilityId1">
-        <constraints>
-          <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model>
-            <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
-            <item value="Trabajador social o Comunicador o Antropologo"/>
-          </model>
-        </properties>
-      </component>
-      <component id="1f617" class="javax.swing.JComboBox" binding="laborSuitabilityId2">
-        <constraints>
-          <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model>
-            <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
-            <item value="Topografo"/>
-          </model>
-        </properties>
-      </component>
-      <component id="66169" class="javax.swing.JComboBox" binding="laborSuitabilityId3">
-        <constraints>
-          <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model>
-            <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
-          </model>
-        </properties>
-      </component>
-      <component id="904ea" class="javax.swing.JComboBox" binding="laborSuitabilityId4">
-        <constraints>
-          <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model>
-            <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
-          </model>
-        </properties>
-      </component>
-      <component id="4da99" class="javax.swing.JComboBox" binding="laborSuitabilityId6">
-        <constraints>
-          <grid row="7" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <minimum-size width="200" height="-1"/>
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model>
-            <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
-          </model>
-        </properties>
-      </component>
-      <component id="a4f12" class="javax.swing.JComboBox" binding="laborSuitabilityId7">
-        <constraints>
-          <grid row="8" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model>
-            <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
-            <item value="Hidrogeologo"/>
-            <item value="Hidrologo"/>
-            <item value="Topografo"/>
-          </model>
-        </properties>
-      </component>
-      <component id="7dc9a" class="javax.swing.JComboBox" binding="laborSuitabilityId8">
-        <constraints>
-          <grid row="9" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model>
-            <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
-            <item value="Hidrogeologo"/>
-            <item value="Hidrologo"/>
-          </model>
-        </properties>
-      </component>
-      <component id="f5678" class="javax.swing.JComboBox" binding="laborSuitabilityId9">
-        <constraints>
-          <grid row="10" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model>
-            <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
-          </model>
-        </properties>
-      </component>
       <component id="92a48" class="javax.swing.JComboBox" binding="yearOfDeliveryId10">
         <constraints>
           <grid row="11" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
@@ -802,6 +1011,134 @@
           </model>
         </properties>
       </component>
+      <component id="80779" class="javax.swing.JComboBox" binding="laborSuitabilityId0">
+        <constraints>
+          <grid row="1" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
+          </model>
+        </properties>
+      </component>
+      <component id="61924" class="javax.swing.JComboBox" binding="laborSuitabilityId1">
+        <constraints>
+          <grid row="2" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
+            <item value="Trabajador social o Comunicador o Antropologo"/>
+          </model>
+        </properties>
+      </component>
+      <component id="1f617" class="javax.swing.JComboBox" binding="laborSuitabilityId2">
+        <constraints>
+          <grid row="3" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
+            <item value="Topografo"/>
+          </model>
+        </properties>
+      </component>
+      <component id="66169" class="javax.swing.JComboBox" binding="laborSuitabilityId3">
+        <constraints>
+          <grid row="4" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
+          </model>
+        </properties>
+      </component>
+      <component id="904ea" class="javax.swing.JComboBox" binding="laborSuitabilityId4">
+        <constraints>
+          <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
+          </model>
+        </properties>
+      </component>
+      <component id="a6e14" class="javax.swing.JComboBox" binding="laborSuitabilityId5">
+        <constraints>
+          <grid row="6" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
+          </model>
+        </properties>
+      </component>
+      <component id="4da99" class="javax.swing.JComboBox" binding="laborSuitabilityId6">
+        <constraints>
+          <grid row="7" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="200" height="-1"/>
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
+          </model>
+        </properties>
+      </component>
+      <component id="a4f12" class="javax.swing.JComboBox" binding="laborSuitabilityId7">
+        <constraints>
+          <grid row="8" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
+            <item value="Hidrogeologo"/>
+            <item value="Hidrologo"/>
+            <item value="Topografo"/>
+          </model>
+        </properties>
+      </component>
+      <component id="7dc9a" class="javax.swing.JComboBox" binding="laborSuitabilityId8">
+        <constraints>
+          <grid row="9" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
+            <item value="Hidrogeologo"/>
+            <item value="Hidrologo"/>
+          </model>
+        </properties>
+      </component>
+      <component id="f5678" class="javax.swing.JComboBox" binding="laborSuitabilityId9">
+        <constraints>
+          <grid row="10" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
+          </model>
+        </properties>
+      </component>
       <component id="18c61" class="javax.swing.JComboBox" binding="laborSuitabilityId10">
         <constraints>
           <grid row="11" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
@@ -823,6 +1160,20 @@
         <properties>
           <model>
             <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
+          </model>
+        </properties>
+      </component>
+      <component id="cacd6" class="javax.swing.JComboBox" binding="laborSuitabilityId12">
+        <constraints>
+          <grid row="13" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="200" height="-1"/>
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
+            <item value="Geotecnista"/>
           </model>
         </properties>
       </component>
@@ -877,14 +1228,6 @@
           </model>
         </properties>
       </component>
-      <component id="e9169" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Actividades Ambientales"/>
-        </properties>
-      </component>
       <component id="e3584" class="javax.swing.JLabel">
         <constraints>
           <grid row="1" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
@@ -901,6 +1244,86 @@
           <text value="Manejo de Aguas Lluvias "/>
         </properties>
       </component>
+      <component id="60d54" class="javax.swing.JComboBox" binding="envYearOfExecutionId0">
+        <constraints>
+          <grid row="1" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="1"/>
+            <item value="2"/>
+            <item value="3"/>
+          </model>
+        </properties>
+      </component>
+      <component id="4017" class="javax.swing.JComboBox" binding="envYearOfExecutionId1">
+        <constraints>
+          <grid row="2" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="1"/>
+            <item value="2"/>
+            <item value="3"/>
+          </model>
+        </properties>
+      </component>
+      <component id="ea535" class="javax.swing.JComboBox" binding="envYearOfDeliveryId0">
+        <constraints>
+          <grid row="1" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="1"/>
+            <item value="2"/>
+            <item value="3"/>
+          </model>
+        </properties>
+      </component>
+      <component id="df604" class="javax.swing.JComboBox" binding="envYearOfDeliveryId1">
+        <constraints>
+          <grid row="2" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="1"/>
+            <item value="2"/>
+            <item value="3"/>
+          </model>
+        </properties>
+      </component>
+      <component id="fc4e1" class="javax.swing.JComboBox" binding="envLaborSuitabilityId0">
+        <constraints>
+          <grid row="1" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Ingeniero ambiental"/>
+            <item value="Ingeniero civil"/>
+            <item value="Ingeniero forestal, Ecologo o Biologo"/>
+            <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
+            <item value="Profesional (GIS)SIG"/>
+          </model>
+        </properties>
+      </component>
+      <component id="78c2b" class="javax.swing.JComboBox" binding="envLaborSuitabilityId1">
+        <constraints>
+          <grid row="2" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Hidrogeologo"/>
+            <item value="Hidrologo"/>
+            <item value="Ingeniero ambiental"/>
+            <item value="Ingeniero civil"/>
+            <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
+          </model>
+        </properties>
+      </component>
       <component id="e6ab4" class="javax.swing.JLabel">
         <constraints>
           <grid row="3" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
@@ -915,6 +1338,85 @@
         </constraints>
         <properties>
           <text value="Manejo de Cuerpos de Agua"/>
+        </properties>
+      </component>
+      <component id="42124" class="javax.swing.JComboBox" binding="envYearOfExecutionId2">
+        <constraints>
+          <grid row="3" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="1"/>
+            <item value="2"/>
+            <item value="3"/>
+          </model>
+        </properties>
+      </component>
+      <component id="7cfd8" class="javax.swing.JComboBox" binding="envYearOfExecutionId3">
+        <constraints>
+          <grid row="4" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="1"/>
+            <item value="2"/>
+            <item value="3"/>
+          </model>
+        </properties>
+      </component>
+      <component id="5b3dc" class="javax.swing.JComboBox" binding="envYearOfDeliveryId2">
+        <constraints>
+          <grid row="3" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="1"/>
+            <item value="2"/>
+            <item value="3"/>
+          </model>
+        </properties>
+      </component>
+      <component id="86483" class="javax.swing.JComboBox" binding="envYearOfDeliveryId3">
+        <constraints>
+          <grid row="4" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="1"/>
+            <item value="2"/>
+            <item value="3"/>
+          </model>
+        </properties>
+      </component>
+      <component id="597d3" class="javax.swing.JComboBox" binding="envLaborSuitabilityId2">
+        <constraints>
+          <grid row="3" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Hidrologo"/>
+            <item value="Ingeniero ambiental"/>
+            <item value="Ingeniero civil"/>
+            <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
+          </model>
+        </properties>
+      </component>
+      <component id="98695" class="javax.swing.JComboBox" binding="envLaborSuitabilityId3">
+        <constraints>
+          <grid row="4" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Hidrogeologo"/>
+            <item value="Hidrologo"/>
+            <item value="Ingeniero ambiental"/>
+            <item value="Ingeniero civil"/>
+            <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
+          </model>
         </properties>
       </component>
       <component id="d1118" class="javax.swing.JLabel">
@@ -1013,157 +1515,6 @@
           <text value="Rescate Arqueológico"/>
         </properties>
       </component>
-      <component id="1e593" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="17" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Manejo de Hundimientos "/>
-        </properties>
-      </component>
-      <component id="60d54" class="javax.swing.JComboBox" binding="envYearOfExecutionId0">
-        <constraints>
-          <grid row="1" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <model>
-            <item value="1"/>
-            <item value="2"/>
-            <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="ea535" class="javax.swing.JComboBox" binding="envYearOfDeliveryId0">
-        <constraints>
-          <grid row="1" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <model>
-            <item value="1"/>
-            <item value="2"/>
-            <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="fc4e1" class="javax.swing.JComboBox" binding="envLaborSuitabilityId0">
-        <constraints>
-          <grid row="1" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model>
-            <item value="Ingeniero ambiental"/>
-            <item value="Ingeniero civil"/>
-            <item value="Ingeniero forestal, Ecologo o Biologo"/>
-            <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
-            <item value="Profesional (GIS)SIG"/>
-          </model>
-        </properties>
-      </component>
-      <component id="4017" class="javax.swing.JComboBox" binding="envYearOfExecutionId1">
-        <constraints>
-          <grid row="2" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <model>
-            <item value="1"/>
-            <item value="2"/>
-            <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="df604" class="javax.swing.JComboBox" binding="envYearOfDeliveryId1">
-        <constraints>
-          <grid row="2" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <model>
-            <item value="1"/>
-            <item value="2"/>
-            <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="42124" class="javax.swing.JComboBox" binding="envYearOfExecutionId2">
-        <constraints>
-          <grid row="3" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <model>
-            <item value="1"/>
-            <item value="2"/>
-            <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="5b3dc" class="javax.swing.JComboBox" binding="envYearOfDeliveryId2">
-        <constraints>
-          <grid row="3" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <model>
-            <item value="1"/>
-            <item value="2"/>
-            <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="597d3" class="javax.swing.JComboBox" binding="envLaborSuitabilityId2">
-        <constraints>
-          <grid row="3" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model>
-            <item value="Hidrologo"/>
-            <item value="Ingeniero ambiental"/>
-            <item value="Ingeniero civil"/>
-            <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
-          </model>
-        </properties>
-      </component>
-      <component id="7cfd8" class="javax.swing.JComboBox" binding="envYearOfExecutionId3">
-        <constraints>
-          <grid row="4" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <model>
-            <item value="1"/>
-            <item value="2"/>
-            <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="86483" class="javax.swing.JComboBox" binding="envYearOfDeliveryId3">
-        <constraints>
-          <grid row="4" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <model>
-            <item value="1"/>
-            <item value="2"/>
-            <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="98695" class="javax.swing.JComboBox" binding="envLaborSuitabilityId3">
-        <constraints>
-          <grid row="4" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model>
-            <item value="Hidrogeologo"/>
-            <item value="Hidrologo"/>
-            <item value="Ingeniero ambiental"/>
-            <item value="Ingeniero civil"/>
-            <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
-          </model>
-        </properties>
-      </component>
       <component id="ff936" class="javax.swing.JComboBox" binding="envYearOfExecutionId4">
         <constraints>
           <grid row="5" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
@@ -1173,32 +1524,6 @@
             <item value="1"/>
             <item value="2"/>
             <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="b88bd" class="javax.swing.JComboBox" binding="envYearOfDeliveryId4">
-        <constraints>
-          <grid row="5" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <model>
-            <item value="1"/>
-            <item value="2"/>
-            <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="6d48d" class="javax.swing.JComboBox" binding="envLaborSuitabilityId4">
-        <constraints>
-          <grid row="5" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model>
-            <item value="Ingeniero ambiental"/>
-            <item value="Ingeniero civil"/>
-            <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
           </model>
         </properties>
       </component>
@@ -1214,32 +1539,6 @@
           </model>
         </properties>
       </component>
-      <component id="34684" class="javax.swing.JComboBox" binding="envYearOfDeliveryId5">
-        <constraints>
-          <grid row="6" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <model>
-            <item value="1"/>
-            <item value="2"/>
-            <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="d8c5" class="javax.swing.JComboBox" binding="envLaborSuitabilityId5">
-        <constraints>
-          <grid row="6" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model>
-            <item value="Ingeniero ambiental"/>
-            <item value="Ingeniero civil"/>
-            <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
-          </model>
-        </properties>
-      </component>
       <component id="85611" class="javax.swing.JComboBox" binding="envYearOfExecutionId6">
         <constraints>
           <grid row="7" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
@@ -1249,32 +1548,6 @@
             <item value="1"/>
             <item value="2"/>
             <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="6a53c" class="javax.swing.JComboBox" binding="envYearOfDeliveryId6">
-        <constraints>
-          <grid row="7" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <model>
-            <item value="1"/>
-            <item value="2"/>
-            <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="fef2b" class="javax.swing.JComboBox" binding="envLaborSuitabilityId6">
-        <constraints>
-          <grid row="7" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model>
-            <item value="Ingeniero ambiental"/>
-            <item value="Ingeniero civil"/>
-            <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
           </model>
         </properties>
       </component>
@@ -1290,31 +1563,6 @@
           </model>
         </properties>
       </component>
-      <component id="164e0" class="javax.swing.JComboBox" binding="envYearOfDeliveryId7">
-        <constraints>
-          <grid row="8" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <model>
-            <item value="1"/>
-            <item value="2"/>
-            <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="67a1b" class="javax.swing.JComboBox" binding="envLaborSuitabilityId7">
-        <constraints>
-          <grid row="8" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model>
-            <item value="Ingeniero civil"/>
-            <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
-          </model>
-        </properties>
-      </component>
       <component id="c9a18" class="javax.swing.JComboBox" binding="envYearOfExecutionId8">
         <constraints>
           <grid row="9" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
@@ -1324,32 +1572,6 @@
             <item value="1"/>
             <item value="2"/>
             <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="fd3b9" class="javax.swing.JComboBox" binding="envYearOfDeliveryId8">
-        <constraints>
-          <grid row="9" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <model>
-            <item value="1"/>
-            <item value="2"/>
-            <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="2b036" class="javax.swing.JComboBox" binding="envLaborSuitabilityId8">
-        <constraints>
-          <grid row="9" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model>
-            <item value="Ingeniero ambiental"/>
-            <item value="Ingeniero civil"/>
-            <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
           </model>
         </properties>
       </component>
@@ -1365,32 +1587,6 @@
           </model>
         </properties>
       </component>
-      <component id="7122b" class="javax.swing.JComboBox" binding="envYearOfDeliveryId9">
-        <constraints>
-          <grid row="10" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <model>
-            <item value="1"/>
-            <item value="2"/>
-            <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="99edc" class="javax.swing.JComboBox" binding="envLaborSuitabilityId9">
-        <constraints>
-          <grid row="10" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model>
-            <item value="Ingeniero ambiental"/>
-            <item value="Ingeniero civil"/>
-            <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
-          </model>
-        </properties>
-      </component>
       <component id="b77cd" class="javax.swing.JComboBox" binding="envYearOfExecutionId10">
         <constraints>
           <grid row="11" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
@@ -1403,33 +1599,6 @@
           </model>
         </properties>
       </component>
-      <component id="7c4b" class="javax.swing.JComboBox" binding="envYearOfDeliveryId10">
-        <constraints>
-          <grid row="11" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <model>
-            <item value="1"/>
-            <item value="2"/>
-            <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="db4f0" class="javax.swing.JComboBox" binding="envLaborSuitabilityId10">
-        <constraints>
-          <grid row="11" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model>
-            <item value="Ingeniero ambiental"/>
-            <item value="Ingeniero civil"/>
-            <item value="Ingeniero forestal, Ecologo o Biologo"/>
-            <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
-          </model>
-        </properties>
-      </component>
       <component id="a69ae" class="javax.swing.JComboBox" binding="envYearOfExecutionId11">
         <constraints>
           <grid row="12" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
@@ -1439,30 +1608,6 @@
             <item value="1"/>
             <item value="2"/>
             <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="bb5ba" class="javax.swing.JComboBox" binding="envYearOfDeliveryId11">
-        <constraints>
-          <grid row="12" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <model>
-            <item value="1"/>
-            <item value="2"/>
-            <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="42a21" class="javax.swing.JComboBox" binding="envLaborSuitabilityId11">
-        <constraints>
-          <grid row="12" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model>
-            <item value="Ingeniero forestal, Ecologo o Biologo"/>
           </model>
         </properties>
       </component>
@@ -1490,122 +1635,9 @@
           </model>
         </properties>
       </component>
-      <component id="bea69" class="javax.swing.JComboBox" binding="envYearOfDeliveryId12">
-        <constraints>
-          <grid row="13" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <model>
-            <item value="1"/>
-            <item value="2"/>
-            <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="10ac2" class="javax.swing.JComboBox" binding="envLaborSuitabilityId12">
-        <constraints>
-          <grid row="13" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model>
-            <item value="Trabajador social o Comunicador o Antropologo"/>
-          </model>
-        </properties>
-      </component>
-      <component id="5e1d" class="javax.swing.JComboBox" binding="envYearOfDeliveryId13">
-        <constraints>
-          <grid row="14" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <model>
-            <item value="1"/>
-            <item value="2"/>
-            <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="f1a49" class="javax.swing.JComboBox" binding="envLaborSuitabilityId13">
-        <constraints>
-          <grid row="14" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model>
-            <item value="Ingeniero civil"/>
-            <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
-            <item value="Trabajador social o Comunicador o Antropologo"/>
-          </model>
-        </properties>
-      </component>
       <component id="b0061" class="javax.swing.JComboBox" binding="envYearOfExecutionId14">
         <constraints>
           <grid row="15" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <model>
-            <item value="1"/>
-            <item value="2"/>
-            <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="f017" class="javax.swing.JComboBox" binding="envYearOfDeliveryId14">
-        <constraints>
-          <grid row="15" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <model>
-            <item value="1"/>
-            <item value="2"/>
-            <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="e30f0" class="javax.swing.JComboBox" binding="envLaborSuitabilityId14">
-        <constraints>
-          <grid row="15" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model>
-            <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
-            <item value="Trabajador social o Comunicador o Antropologo"/>
-          </model>
-        </properties>
-      </component>
-      <component id="7564" class="javax.swing.JComboBox" binding="envLaborSuitabilityId16">
-        <constraints>
-          <grid row="17" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model>
-            <item value="Geotecnista"/>
-            <item value="Ingeniero civil"/>
-            <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
-          </model>
-        </properties>
-      </component>
-      <component id="b9cfb" class="javax.swing.JComboBox" binding="envLaborSuitabilityId15">
-        <constraints>
-          <grid row="16" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model>
-            <item value="Arquelogo"/>
-          </model>
-        </properties>
-      </component>
-      <component id="1d0a2" class="javax.swing.JComboBox" binding="envYearOfDeliveryId15">
-        <constraints>
-          <grid row="16" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <model>
@@ -1627,18 +1659,6 @@
           </model>
         </properties>
       </component>
-      <component id="dcaad" class="javax.swing.JComboBox" binding="envYearOfDeliveryId16">
-        <constraints>
-          <grid row="17" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <model>
-            <item value="1"/>
-            <item value="2"/>
-            <item value="3"/>
-          </model>
-        </properties>
-      </component>
       <component id="35654" class="javax.swing.JComboBox" binding="envYearOfExecutionId16">
         <constraints>
           <grid row="17" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
@@ -1651,430 +1671,373 @@
           </model>
         </properties>
       </component>
-      <component id="166fd" class="javax.swing.JLabel">
+      <component id="1e593" class="javax.swing.JLabel">
         <constraints>
-          <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="17" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Clasificación de persona"/>
+          <text value="Manejo de Hundimientos "/>
         </properties>
       </component>
-      <component id="5a6e6" class="javax.swing.JLabel">
+      <component id="b88bd" class="javax.swing.JComboBox" binding="envYearOfDeliveryId4">
         <constraints>
-          <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="¿Es declarante?"/>
-        </properties>
-      </component>
-      <component id="86d2c" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Activo corriente"/>
-        </properties>
-      </component>
-      <component id="1a956" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Pasivo corriente"/>
-        </properties>
-      </component>
-      <component id="768e1" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Activo total"/>
-        </properties>
-      </component>
-      <component id="ecf0b" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="15" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Pasivo total"/>
-        </properties>
-      </component>
-      <component id="1128" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="16" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Prefesiòn"/>
-        </properties>
-      </component>
-      <component id="38ec3" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="17" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Seleccione Profesional"/>
-        </properties>
-      </component>
-      <component id="498c8" class="javax.swing.JComboBox" binding="declareIndId0">
-        <constraints>
-          <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <minimum-size width="-1" height="20"/>
-            <maximum-size width="40" height="-1"/>
-          </grid>
+          <grid row="5" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <model>
-            <item value="SI"/>
-            <item value="NO"/>
+            <item value="1"/>
+            <item value="2"/>
+            <item value="3"/>
           </model>
         </properties>
       </component>
-      <component id="7b15c" class="javax.swing.JTextField" binding="currentAssetId0">
+      <component id="34684" class="javax.swing.JComboBox" binding="envYearOfDeliveryId5">
         <constraints>
-          <grid row="12" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <minimum-size width="-1" height="20"/>
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="a34bc" class="javax.swing.JTextField" binding="ecoApplicantNameId">
-        <constraints>
-          <grid row="17" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <minimum-size width="-1" height="20"/>
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="3c1db" class="javax.swing.JTextField" binding="totalLiabilitiesId0">
-        <constraints>
-          <grid row="15" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <minimum-size width="-1" height="20"/>
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="ed1fd" class="javax.swing.JTextField" binding="totalAssetId0">
-        <constraints>
-          <grid row="14" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <minimum-size width="-1" height="20"/>
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="36c7b" class="javax.swing.JTextField" binding="currentLiabilitiesId0">
-        <constraints>
-          <grid row="13" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <minimum-size width="-1" height="20"/>
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="d9a97" class="javax.swing.JComboBox" binding="comboBox3" default-binding="true">
-        <constraints>
-          <grid row="16" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <minimum-size width="-1" height="20"/>
-            <maximum-size width="200" height="-1"/>
-          </grid>
+          <grid row="6" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <model>
-            <item value="Contador"/>
+            <item value="1"/>
+            <item value="2"/>
+            <item value="3"/>
           </model>
         </properties>
       </component>
-      <component id="78c2b" class="javax.swing.JComboBox" binding="envLaborSuitabilityId1">
+      <component id="6a53c" class="javax.swing.JComboBox" binding="envYearOfDeliveryId6">
         <constraints>
-          <grid row="2" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="7" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="1"/>
+            <item value="2"/>
+            <item value="3"/>
+          </model>
+        </properties>
+      </component>
+      <component id="164e0" class="javax.swing.JComboBox" binding="envYearOfDeliveryId7">
+        <constraints>
+          <grid row="8" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="1"/>
+            <item value="2"/>
+            <item value="3"/>
+          </model>
+        </properties>
+      </component>
+      <component id="fd3b9" class="javax.swing.JComboBox" binding="envYearOfDeliveryId8">
+        <constraints>
+          <grid row="9" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="1"/>
+            <item value="2"/>
+            <item value="3"/>
+          </model>
+        </properties>
+      </component>
+      <component id="7122b" class="javax.swing.JComboBox" binding="envYearOfDeliveryId9">
+        <constraints>
+          <grid row="10" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="1"/>
+            <item value="2"/>
+            <item value="3"/>
+          </model>
+        </properties>
+      </component>
+      <component id="7c4b" class="javax.swing.JComboBox" binding="envYearOfDeliveryId10">
+        <constraints>
+          <grid row="11" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="1"/>
+            <item value="2"/>
+            <item value="3"/>
+          </model>
+        </properties>
+      </component>
+      <component id="bb5ba" class="javax.swing.JComboBox" binding="envYearOfDeliveryId11">
+        <constraints>
+          <grid row="12" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="1"/>
+            <item value="2"/>
+            <item value="3"/>
+          </model>
+        </properties>
+      </component>
+      <component id="bea69" class="javax.swing.JComboBox" binding="envYearOfDeliveryId12">
+        <constraints>
+          <grid row="13" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="1"/>
+            <item value="2"/>
+            <item value="3"/>
+          </model>
+        </properties>
+      </component>
+      <component id="5e1d" class="javax.swing.JComboBox" binding="envYearOfDeliveryId13">
+        <constraints>
+          <grid row="14" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="1"/>
+            <item value="2"/>
+            <item value="3"/>
+          </model>
+        </properties>
+      </component>
+      <component id="f017" class="javax.swing.JComboBox" binding="envYearOfDeliveryId14">
+        <constraints>
+          <grid row="15" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="1"/>
+            <item value="2"/>
+            <item value="3"/>
+          </model>
+        </properties>
+      </component>
+      <component id="1d0a2" class="javax.swing.JComboBox" binding="envYearOfDeliveryId15">
+        <constraints>
+          <grid row="16" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="1"/>
+            <item value="2"/>
+            <item value="3"/>
+          </model>
+        </properties>
+      </component>
+      <component id="dcaad" class="javax.swing.JComboBox" binding="envYearOfDeliveryId16">
+        <constraints>
+          <grid row="17" column="8" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="1"/>
+            <item value="2"/>
+            <item value="3"/>
+          </model>
+        </properties>
+      </component>
+      <component id="6d48d" class="javax.swing.JComboBox" binding="envLaborSuitabilityId4">
+        <constraints>
+          <grid row="5" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <maximum-size width="200" height="-1"/>
           </grid>
         </constraints>
         <properties>
           <model>
-            <item value="Hidrogeologo"/>
-            <item value="Hidrologo"/>
             <item value="Ingeniero ambiental"/>
             <item value="Ingeniero civil"/>
             <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
           </model>
         </properties>
       </component>
-      <component id="cacd6" class="javax.swing.JComboBox" binding="laborSuitabilityId12">
+      <component id="d8c5" class="javax.swing.JComboBox" binding="envLaborSuitabilityId5">
         <constraints>
-          <grid row="13" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <minimum-size width="200" height="-1"/>
+          <grid row="6" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <maximum-size width="200" height="-1"/>
           </grid>
         </constraints>
         <properties>
           <model>
-            <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
+            <item value="Ingeniero ambiental"/>
+            <item value="Ingeniero civil"/>
+            <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
+          </model>
+        </properties>
+      </component>
+      <component id="fef2b" class="javax.swing.JComboBox" binding="envLaborSuitabilityId6">
+        <constraints>
+          <grid row="7" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Ingeniero ambiental"/>
+            <item value="Ingeniero civil"/>
+            <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
+          </model>
+        </properties>
+      </component>
+      <component id="67a1b" class="javax.swing.JComboBox" binding="envLaborSuitabilityId7">
+        <constraints>
+          <grid row="8" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Ingeniero civil"/>
+            <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
+          </model>
+        </properties>
+      </component>
+      <component id="2b036" class="javax.swing.JComboBox" binding="envLaborSuitabilityId8">
+        <constraints>
+          <grid row="9" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Ingeniero ambiental"/>
+            <item value="Ingeniero civil"/>
+            <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
+          </model>
+        </properties>
+      </component>
+      <component id="99edc" class="javax.swing.JComboBox" binding="envLaborSuitabilityId9">
+        <constraints>
+          <grid row="10" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Ingeniero ambiental"/>
+            <item value="Ingeniero civil"/>
+            <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
+          </model>
+        </properties>
+      </component>
+      <component id="db4f0" class="javax.swing.JComboBox" binding="envLaborSuitabilityId10">
+        <constraints>
+          <grid row="11" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Ingeniero ambiental"/>
+            <item value="Ingeniero civil"/>
+            <item value="Ingeniero forestal, Ecologo o Biologo"/>
+            <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
+          </model>
+        </properties>
+      </component>
+      <component id="42a21" class="javax.swing.JComboBox" binding="envLaborSuitabilityId11">
+        <constraints>
+          <grid row="12" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Ingeniero forestal, Ecologo o Biologo"/>
+          </model>
+        </properties>
+      </component>
+      <component id="10ac2" class="javax.swing.JComboBox" binding="envLaborSuitabilityId12">
+        <constraints>
+          <grid row="13" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Trabajador social o Comunicador o Antropologo"/>
+          </model>
+        </properties>
+      </component>
+      <component id="f1a49" class="javax.swing.JComboBox" binding="envLaborSuitabilityId13">
+        <constraints>
+          <grid row="14" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Ingeniero civil"/>
+            <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
+            <item value="Trabajador social o Comunicador o Antropologo"/>
+          </model>
+        </properties>
+      </component>
+      <component id="e30f0" class="javax.swing.JComboBox" binding="envLaborSuitabilityId14">
+        <constraints>
+          <grid row="15" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
+            <item value="Trabajador social o Comunicador o Antropologo"/>
+          </model>
+        </properties>
+      </component>
+      <component id="b9cfb" class="javax.swing.JComboBox" binding="envLaborSuitabilityId15">
+        <constraints>
+          <grid row="16" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
+            <item value="Arquelogo"/>
+          </model>
+        </properties>
+      </component>
+      <component id="7564" class="javax.swing.JComboBox" binding="envLaborSuitabilityId16">
+        <constraints>
+          <grid row="17" column="9" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <model>
             <item value="Geotecnista"/>
+            <item value="Ingeniero civil"/>
+            <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
           </model>
-        </properties>
-      </component>
-      <component id="d83c5" class="javax.swing.JButton" binding="guardarButton" default-binding="true">
-        <constraints>
-          <grid row="23" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <text value="Guardar"/>
-        </properties>
-      </component>
-      <component id="13bd5" class="javax.swing.JButton" binding="loginButton">
-        <constraints>
-          <grid row="23" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <text value="Login"/>
-        </properties>
-      </component>
-      <component id="abbe0" class="javax.swing.JComboBox" binding="areaOfConcessionSlctId">
-        <constraints>
-          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model>
-            <item value="Cauce"/>
-            <item value="Cauce y Ribera"/>
-            <item value="Otro tipo de terreno"/>
-          </model>
-        </properties>
-      </component>
-      <component id="3594e" class="javax.swing.JComboBox" binding="selectedCellInputMethodSlctId">
-        <constraints>
-          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model>
-            <item value="Cargando o ingresando coordenadas"/>
-            <item value="Usando el mapa de selección para dibujar un polígono o ingresar celdas"/>
-            <item value="Cargando archivo 'Shapefile' o 'KML'"/>
-          </model>
-        </properties>
-      </component>
-      <component id="cf08e" class="javax.swing.JComboBox" binding="selectTypeMap">
-        <constraints>
-          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model>
-            <item value="KML"/>
-            <item value="Shapefile"/>
-          </model>
-        </properties>
-      </component>
-      <component id="a6e14" class="javax.swing.JComboBox" binding="laborSuitabilityId5">
-        <constraints>
-          <grid row="6" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model>
-            <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
-          </model>
-        </properties>
-      </component>
-      <component id="d511e" class="javax.swing.JComboBox" binding="personClassificationId0">
-        <constraints>
-          <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <model>
-            <item value="Persona jurídica"/>
-            <item value="Persona natural régimen común"/>
-            <item value="Persona natural régimen simplificado"/>
-          </model>
-        </properties>
-      </component>
-      <component id="73176" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="18" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Timer 1 - menu lateral"/>
-        </properties>
-      </component>
-      <component id="5bf5e" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="19" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Timer 2 - seleccion PIN"/>
-        </properties>
-      </component>
-      <component id="712f1" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="20" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Timer 3 - carga mineral"/>
-        </properties>
-      </component>
-      <component id="dadb8" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="21" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Timer 4 - seleccion mineral"/>
-        </properties>
-      </component>
-      <component id="104b" class="javax.swing.JTextField" binding="timer1">
-        <constraints>
-          <grid row="18" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-            <maximum-size width="40" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="2d8c0" class="javax.swing.JTextField" binding="timer2">
-        <constraints>
-          <grid row="19" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-            <maximum-size width="40" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="d6e4d" class="javax.swing.JTextField" binding="timer3">
-        <constraints>
-          <grid row="20" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-            <maximum-size width="40" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="d5a56" class="javax.swing.JTextField" binding="timer4">
-        <constraints>
-          <grid row="21" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-            <maximum-size width="40" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="84d35" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="18" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Timer 5 - seleccion tipo mapa"/>
-        </properties>
-      </component>
-      <component id="4bf53" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="19" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Timer 6 - entra mapa"/>
-        </properties>
-      </component>
-      <component id="4a1b9" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="20" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Timer 7 - ruta mapa"/>
-        </properties>
-      </component>
-      <component id="c969a" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="21" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Timer 8 - cargar area"/>
-        </properties>
-      </component>
-      <component id="d6621" class="javax.swing.JTextField" binding="timer5">
-        <constraints>
-          <grid row="18" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-            <maximum-size width="40" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="a88e6" class="javax.swing.JTextField" binding="timer6">
-        <constraints>
-          <grid row="19" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-            <maximum-size width="40" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="9711c" class="javax.swing.JTextField" binding="timer7">
-        <constraints>
-          <grid row="20" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-            <maximum-size width="40" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="220d" class="javax.swing.JTextField" binding="timer8">
-        <constraints>
-          <grid row="21" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <preferred-size width="150" height="-1"/>
-            <maximum-size width="40" height="-1"/>
-          </grid>
-        </constraints>
-        <properties/>
-      </component>
-      <component id="c3091" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="18" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Timer 9 - sale mapa"/>
-        </properties>
-      </component>
-      <component id="9fe5f" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="19" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Timer 10 - tag info"/>
-        </properties>
-      </component>
-      <component id="e9261" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="20" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Timer 11 - pri sel"/>
         </properties>
       </component>
       <component id="86c94" class="javax.swing.JLabel">
         <constraints>
-          <grid row="21" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="19" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Timer 12 - sel tec"/>
         </properties>
       </component>
-      <component id="eea2a" class="javax.swing.JTextField" binding="timer9">
+      <component id="ede97" class="javax.swing.JTextField" binding="timer12">
         <constraints>
-          <grid row="18" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="19" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+            <maximum-size width="40" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="e9261" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="18" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Timer 11 - pri sel"/>
+        </properties>
+      </component>
+      <component id="e3adf" class="javax.swing.JTextField" binding="timer11">
+        <constraints>
+          <grid row="18" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
             <maximum-size width="40" height="-1"/>
           </grid>
@@ -2083,169 +2046,187 @@
       </component>
       <component id="cca38" class="javax.swing.JTextField" binding="timer10">
         <constraints>
-          <grid row="19" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="23" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
             <maximum-size width="40" height="-1"/>
           </grid>
         </constraints>
         <properties/>
       </component>
-      <component id="e3adf" class="javax.swing.JTextField" binding="timer11">
+      <component id="9fe5f" class="javax.swing.JLabel">
         <constraints>
-          <grid row="20" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="23" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Timer 10 - tag info"/>
+        </properties>
+      </component>
+      <component id="eea2a" class="javax.swing.JTextField" binding="timer9">
+        <constraints>
+          <grid row="22" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
             <maximum-size width="40" height="-1"/>
           </grid>
         </constraints>
         <properties/>
       </component>
-      <component id="ede97" class="javax.swing.JTextField" binding="timer12">
+      <component id="c3091" class="javax.swing.JLabel">
         <constraints>
-          <grid row="21" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="22" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Timer 9 - sale mapa"/>
+        </properties>
+      </component>
+      <component id="220d" class="javax.swing.JTextField" binding="timer8">
+        <constraints>
+          <grid row="21" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
             <maximum-size width="40" height="-1"/>
           </grid>
         </constraints>
         <properties/>
       </component>
-      <component id="90d5f" class="javax.swing.JLabel">
+      <component id="c969a" class="javax.swing.JLabel">
         <constraints>
-          <grid row="18" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="21" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Timer 13 - grupo etnico"/>
+          <text value="Timer 8 - cargar area"/>
         </properties>
       </component>
-      <component id="2b7bb" class="javax.swing.JLabel">
+      <component id="9711c" class="javax.swing.JTextField" binding="timer7">
         <constraints>
-          <grid row="19" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Timer 14 - tag economico"/>
-        </properties>
-      </component>
-      <component id="a0d28" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="20" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Timer 15 - profesional"/>
-        </properties>
-      </component>
-      <component id="37bc2" class="javax.swing.JLabel">
-        <constraints>
-          <grid row="21" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="Timer 16"/>
-        </properties>
-      </component>
-      <component id="dbb2" class="javax.swing.JTextField" binding="timer13">
-        <constraints>
-          <grid row="18" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+          <grid row="20" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
             <maximum-size width="40" height="-1"/>
           </grid>
         </constraints>
         <properties/>
       </component>
-      <component id="130e7" class="javax.swing.JTextField" binding="timer14">
+      <component id="4a1b9" class="javax.swing.JLabel">
         <constraints>
-          <grid row="19" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+          <grid row="20" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Timer 7 - ruta mapa"/>
+        </properties>
+      </component>
+      <component id="a88e6" class="javax.swing.JTextField" binding="timer6">
+        <constraints>
+          <grid row="19" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
             <maximum-size width="40" height="-1"/>
           </grid>
         </constraints>
         <properties/>
       </component>
-      <component id="47760" class="javax.swing.JTextField" binding="timer15">
+      <component id="4bf53" class="javax.swing.JLabel">
         <constraints>
-          <grid row="20" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+          <grid row="19" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Timer 6 - entra mapa"/>
+        </properties>
+      </component>
+      <component id="d6621" class="javax.swing.JTextField" binding="timer5">
+        <constraints>
+          <grid row="18" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
             <maximum-size width="40" height="-1"/>
           </grid>
         </constraints>
         <properties/>
       </component>
-      <component id="f1839" class="javax.swing.JTextField" binding="timer16">
+      <component id="84d35" class="javax.swing.JLabel">
         <constraints>
-          <grid row="21" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+          <grid row="18" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Timer 5 - seleccion tipo mapa"/>
+        </properties>
+      </component>
+      <component id="d5a56" class="javax.swing.JTextField" binding="timer4">
+        <constraints>
+          <grid row="23" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
             <maximum-size width="40" height="-1"/>
           </grid>
         </constraints>
         <properties/>
       </component>
-      <component id="a6d6c" class="javax.swing.JComboBox" binding="yearOfExecutionId5">
+      <component id="dadb8" class="javax.swing.JLabel">
         <constraints>
-          <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="23" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <model>
-            <item value="1"/>
-            <item value="2"/>
-            <item value="3"/>
-          </model>
+          <text value="Timer 4 - seleccion mineral"/>
         </properties>
       </component>
-      <component id="fe676" class="javax.swing.JComboBox" binding="yearOfExecutionId8">
+      <component id="d6e4d" class="javax.swing.JTextField" binding="timer3">
         <constraints>
-          <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <model>
-            <item value="1"/>
-            <item value="2"/>
-            <item value="3"/>
-          </model>
-        </properties>
-      </component>
-      <component id="5aef8" class="javax.swing.JLabel" binding="Webdriver">
-        <constraints>
-          <grid row="22" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <text value="WebDrive"/>
-        </properties>
-      </component>
-      <component id="958ce" class="javax.swing.JTextField" binding="webdriver">
-        <constraints>
-          <grid row="22" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+          <grid row="22" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
-            <maximum-size width="300" height="-1"/>
+            <maximum-size width="40" height="-1"/>
           </grid>
         </constraints>
         <properties/>
       </component>
-      <component id="d569" class="javax.swing.JButton" binding="ejecutarButton">
-        <constraints>
-          <grid row="23" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
-            <maximum-size width="200" height="-1"/>
-          </grid>
-        </constraints>
-        <properties>
-          <text value="Ejecutar"/>
-        </properties>
-      </component>
-      <component id="8e92a" class="javax.swing.JLabel">
+      <component id="712f1" class="javax.swing.JLabel">
         <constraints>
           <grid row="22" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Cambiar Usuario"/>
+          <text value="Timer 3 - carga mineral"/>
         </properties>
       </component>
-      <component id="9c3b3" class="javax.swing.JTextField" binding="cambiarUsuario">
+      <component id="2d8c0" class="javax.swing.JTextField" binding="timer2">
         <constraints>
-          <grid row="22" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="21" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
+            <maximum-size width="40" height="-1"/>
           </grid>
         </constraints>
         <properties/>
       </component>
+      <component id="5bf5e" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="21" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Timer 2 - seleccion PIN"/>
+        </properties>
+      </component>
+      <component id="104b" class="javax.swing.JTextField" binding="timer1">
+        <constraints>
+          <grid row="20" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+            <maximum-size width="40" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+      </component>
+      <component id="73176" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="20" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Timer 1 - menu lateral"/>
+        </properties>
+      </component>
+      <component id="d83c5" class="javax.swing.JButton" binding="guardarButton" default-binding="true">
+        <constraints>
+          <grid row="20" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Guardar"/>
+        </properties>
+      </component>
       <component id="9aeac" class="javax.swing.JButton" binding="paso1Button">
         <constraints>
-          <grid row="23" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+          <grid row="20" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <maximum-size width="200" height="-1"/>
           </grid>
         </constraints>
@@ -2255,7 +2236,7 @@
       </component>
       <component id="d9273" class="javax.swing.JButton" binding="paso2Button" default-binding="true">
         <constraints>
-          <grid row="23" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="21" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Paso 2"/>
@@ -2263,7 +2244,7 @@
       </component>
       <component id="33b88" class="javax.swing.JButton" binding="paso3Button" default-binding="true">
         <constraints>
-          <grid row="23" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="22" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Paso 3"/>
@@ -2271,7 +2252,7 @@
       </component>
       <component id="e2e6f" class="javax.swing.JButton" binding="paso4Button" default-binding="true">
         <constraints>
-          <grid row="23" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="23" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <text value="Paso 4"/>
@@ -2279,25 +2260,46 @@
       </component>
       <component id="88928" class="javax.swing.JCheckBox" binding="radicarCheck">
         <constraints>
-          <grid row="22" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="19" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <selected value="true"/>
           <text value="Radicar"/>
         </properties>
       </component>
-      <component id="a6561" class="javax.swing.JLabel">
+      <component id="13bd5" class="javax.swing.JButton" binding="loginButton">
         <constraints>
-          <grid row="22" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="21" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
         </constraints>
         <properties>
-          <text value="URL"/>
+          <text value="Login"/>
         </properties>
       </component>
-      <component id="2336f" class="javax.swing.JTextField" binding="url">
+      <component id="d569" class="javax.swing.JButton" binding="ejecutarButton">
         <constraints>
-          <grid row="22" column="7" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+          <grid row="22" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <maximum-size width="200" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Ejecutar"/>
+        </properties>
+      </component>
+      <component id="5aef8" class="javax.swing.JLabel" binding="Webdriver">
+        <constraints>
+          <grid row="18" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="WebDrive"/>
+        </properties>
+      </component>
+      <component id="958ce" class="javax.swing.JTextField" binding="webdriver">
+        <constraints>
+          <grid row="18" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="-1"/>
+            <maximum-size width="300" height="-1"/>
           </grid>
         </constraints>
         <properties/>

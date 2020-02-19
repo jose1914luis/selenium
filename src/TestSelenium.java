@@ -147,12 +147,16 @@ public class TestSelenium {
          **********************************************************/
         Thread.sleep(Integer.parseInt(props.getProperty("timer1"))*1000);
 
-        WebElement menu = driver.findElement(By.xpath("//li[4]/a[2]/span"));
+        //WebElement menu = driver.findElement(By.xpath("//li[4]/a[2]/span"));
+
+        WebElement menu = driver.findElement(By.xpath("//a[@class='cata-collapse-click menu ng-scope']//span[@class='menu-item-parent ng-binding'][contains(text(),'Solicitudes')]"));
         menu.click();
 
         Thread.sleep(10000);
 
+        //Select selectCambiarUsuario = new Select(driver.findElement(By.xpath("//select[@aria-label='Cambiar el usuario:']")));
         Select selectCambiarUsuario = new Select(driver.findElement(By.xpath("//select[@aria-label='Cambiar el usuario:']")));
+        //Select selectCambiarUsuario = new Select(driver.findElement(By.xpath("//select[@class='form-control input-sm dashboard-display-inline ng-pristine ng-valid ng-not-empty ng-touched']")));
         selectCambiarUsuario.selectByVisibleText(props.getProperty("cambiarUsuario"));
     }
 
@@ -176,7 +180,8 @@ public class TestSelenium {
     }
 
     private static void paso1() throws InterruptedException{
-        WebElement submenu = driver.findElement(By.xpath("//li[4]//ul[1]//li[1]"));
+        //WebElement submenu = driver.findElement(By.xpath("//li[4]//ul[1]//li[1]"));
+        WebElement submenu = driver.findElement(By.xpath("//a[contains(text(),'Radicar solicitud de propuesta')]"));
         submenu.click();
 
         /**********************************************************
@@ -188,7 +193,11 @@ public class TestSelenium {
         //Select selectPIN = new Select(driver.findElementById("pinSlctId"));
         selectPIN.selectByVisibleText(props.getProperty("pinSlctId"));
 
-        WebElement buttonNext1 =driver.findElementByCssSelector(".btn > .ng-binding");
+        //Thread.sleep(1000);
+
+
+        //WebElement buttonNext1 =driver.findElementByCssSelector(".btn > .ng-binding");
+        WebElement buttonNext1 = driver.findElement(By.xpath("//span[@class='btn-label ng-binding']"));
         buttonNext1.click();
 
     }
