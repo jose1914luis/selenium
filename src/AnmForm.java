@@ -155,6 +155,7 @@ public class AnmForm {
     public JButton paso4Button;
     public JCheckBox radicarCheck;
     private JTextField url;
+    private JTextField techApplicantNameId;
 
     public AnmForm(Properties props) {
         createUIComponents(props);
@@ -205,6 +206,7 @@ public class AnmForm {
                     props.setProperty("totalAssetId0", totalAssetId0.getText());
                     props.setProperty("currentLiabilitiesId0", currentLiabilitiesId0.getText());
                     props.setProperty("ecoApplicantNameId", ecoApplicantNameId.getText());
+                    props.setProperty("techApplicantNameId", techApplicantNameId.getText());
 
 
 
@@ -379,6 +381,7 @@ public class AnmForm {
         currentLiabilitiesId0.setText(props.getProperty("currentLiabilitiesId0"));
 
         ecoApplicantNameId.setText(props.getProperty("ecoApplicantNameId"));
+        techApplicantNameId.setText(props.getProperty("techApplicantNameId"));
 
         yearOfExecutionId0.setSelectedItem(props.getProperty("yearOfExecutionId0"));
 

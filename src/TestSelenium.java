@@ -600,11 +600,11 @@ public class TestSelenium {
          * Resumen
          **********************************************************/
 
-        if(anmForm.radicarCheck.isSelected()){
+        /*if(anmForm.radicarCheck.isSelected()){
 
             WebElement buttonRadicar =driver.findElementByXPath("//span[contains(text(),'Radicar')]");
             buttonRadicar.click();
-        }
+        }*/
     }
 
 }
