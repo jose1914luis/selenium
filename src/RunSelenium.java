@@ -10,34 +10,44 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
-public class TestSelenium {
+public class RunSelenium extends JFrame{
 
     private static Properties props= new Properties();
 
     private static ChromeDriver driver;
 
-    private static AnmForm anmForm;
+    private  AnmForm anmForm;
 
-
-    public static void main(String [] args) throws InterruptedException, IOException, ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException, IllegalAccessException {
-
-
+    public RunSelenium() throws IOException, ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException, IllegalAccessException {
 
         FileInputStream in = new FileInputStream("anm.properties");
         props.load(in);
         in.close();
+
+        UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        anmForm = new AnmForm( props);
+
+        setPreferredSize(new Dimension(1200, 600));
+        JScrollPane scrollPane = new JScrollPane(anmForm.rootPanel);
+        setTitle("Radicador");
+        add(scrollPane);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        pack();
+        setVisible(true);
+
+
 
         System.setProperty("webdriver.chrome.driver",props.getProperty("webdriver"));
         driver = new ChromeDriver();
 
         driver.get(props.getProperty("url"));
 
-        UIManager.setLookAndFeel("com.sun.java.swing.plaf.windows.WindowsLookAndFeel");
-        anmForm = new AnmForm( props);
-        JFrame jFrame = new JFrame();
+
+
 
         anmForm.loginButton.addActionListener(new ActionListener() {
 
@@ -116,14 +126,9 @@ public class TestSelenium {
             }
         });
 
-        jFrame.setPreferredSize(new Dimension(1200, 600));
-        JScrollPane scrollPane = new JScrollPane(anmForm.rootPanel);
-        jFrame.add(scrollPane);
-        jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        jFrame.pack();
-        jFrame.setVisible(true);
 
     }
+
 
     private static void executeANMLogin() throws InterruptedException{
 
@@ -395,122 +400,122 @@ public class TestSelenium {
 
         //#####################################################################################
 
-        Select selectEYOE0 = new Select(driver.findElementById("envYearOfExecutionId0"));
+        /*Select selectEYOE0 = new Select(driver.findElementById("envYearOfExecutionId0"));
         selectEYOE0.selectByVisibleText(props.getProperty("envYearOfExecutionId0"));
         Select selectEYOD0 = new Select(driver.findElementById("envYearOfDeliveryId0"));
-        selectEYOD0.selectByVisibleText(props.getProperty("envYearOfDeliveryId0"));
+        selectEYOD0.selectByVisibleText(props.getProperty("envYearOfDeliveryId0"));*/
         Select selectELS0 = new Select(driver.findElementById("envLaborSuitabilityId0"));
         selectELS0.selectByVisibleText(props.getProperty("envLaborSuitabilityId0"));
 
-        Select selectEYOE1 = new Select(driver.findElementById("envYearOfExecutionId1"));
+        /*Select selectEYOE1 = new Select(driver.findElementById("envYearOfExecutionId1"));
         selectEYOE1.selectByVisibleText(props.getProperty("envYearOfExecutionId1"));
         Select selectEYOD1 = new Select(driver.findElementById("envYearOfDeliveryId1"));
-        selectEYOD1.selectByVisibleText(props.getProperty("envYearOfDeliveryId1"));
+        selectEYOD1.selectByVisibleText(props.getProperty("envYearOfDeliveryId1"));*/
         Select selectELS1 = new Select(driver.findElementById("envLaborSuitabilityId1"));
         selectELS1.selectByVisibleText(props.getProperty("envLaborSuitabilityId1"));
 
-        Select selectEYOE2 = new Select(driver.findElementById("envYearOfExecutionId2"));
+        /*Select selectEYOE2 = new Select(driver.findElementById("envYearOfExecutionId2"));
         selectEYOE2.selectByVisibleText(props.getProperty("envYearOfExecutionId2"));
         Select selectEYOD2 = new Select(driver.findElementById("envYearOfDeliveryId2"));
-        selectEYOD2.selectByVisibleText(props.getProperty("envYearOfDeliveryId2"));
+        selectEYOD2.selectByVisibleText(props.getProperty("envYearOfDeliveryId2"));*/
         Select selectELS2 = new Select(driver.findElementById("envLaborSuitabilityId2"));
         selectELS2.selectByVisibleText(props.getProperty("envLaborSuitabilityId2"));
 
-        Select selectEYOE3 = new Select(driver.findElementById("envYearOfExecutionId3"));
+        /*Select selectEYOE3 = new Select(driver.findElementById("envYearOfExecutionId3"));
         selectEYOE3.selectByVisibleText(props.getProperty("envYearOfExecutionId3"));
         Select selectEYOD3 = new Select(driver.findElementById("envYearOfDeliveryId3"));
-        selectEYOD3.selectByVisibleText(props.getProperty("envYearOfDeliveryId3"));
+        selectEYOD3.selectByVisibleText(props.getProperty("envYearOfDeliveryId3"));*/
         Select selectELS3 = new Select(driver.findElementById("envLaborSuitabilityId3"));
         selectELS3.selectByVisibleText(props.getProperty("envLaborSuitabilityId3"));
 
-        Select selectEYOE4 = new Select(driver.findElementById("envYearOfExecutionId4"));
+        /*Select selectEYOE4 = new Select(driver.findElementById("envYearOfExecutionId4"));
         selectEYOE4.selectByVisibleText(props.getProperty("envYearOfExecutionId4"));
         Select selectEYOD4 = new Select(driver.findElementById("envYearOfDeliveryId4"));
-        selectEYOD4.selectByVisibleText(props.getProperty("envYearOfDeliveryId4"));
+        selectEYOD4.selectByVisibleText(props.getProperty("envYearOfDeliveryId4"));*/
         Select selectELS4 = new Select(driver.findElementById("envLaborSuitabilityId4"));
         selectELS4.selectByVisibleText(props.getProperty("envLaborSuitabilityId4"));
 
-        Select selectEYOE5 = new Select(driver.findElementById("envYearOfExecutionId5"));
+        /*Select selectEYOE5 = new Select(driver.findElementById("envYearOfExecutionId5"));
         selectEYOE5.selectByVisibleText(props.getProperty("envYearOfExecutionId5"));
         Select selectEYOD5 = new Select(driver.findElementById("envYearOfDeliveryId5"));
-        selectEYOD5.selectByVisibleText(props.getProperty("envYearOfDeliveryId5"));
+        selectEYOD5.selectByVisibleText(props.getProperty("envYearOfDeliveryId5"));*/
         Select selectELS5 = new Select(driver.findElementById("envLaborSuitabilityId5"));
         selectELS5.selectByVisibleText(props.getProperty("envLaborSuitabilityId5"));
 
-        Select selectEYOE6 = new Select(driver.findElementById("envYearOfExecutionId6"));
+        /*Select selectEYOE6 = new Select(driver.findElementById("envYearOfExecutionId6"));
         selectEYOE6.selectByVisibleText(props.getProperty("envYearOfExecutionId6"));
         Select selectEYOD6 = new Select(driver.findElementById("envYearOfDeliveryId6"));
-        selectEYOD6.selectByVisibleText(props.getProperty("envYearOfDeliveryId6"));
+        selectEYOD6.selectByVisibleText(props.getProperty("envYearOfDeliveryId6"));*/
         Select selectELS6 = new Select(driver.findElementById("envLaborSuitabilityId6"));
         selectELS6.selectByVisibleText(props.getProperty("envLaborSuitabilityId6"));
 
-        Select selectEYOE7 = new Select(driver.findElementById("envYearOfExecutionId7"));
+        /*Select selectEYOE7 = new Select(driver.findElementById("envYearOfExecutionId7"));
         selectEYOE7.selectByVisibleText(props.getProperty("envYearOfExecutionId7"));
         Select selectEYOD7 = new Select(driver.findElementById("envYearOfDeliveryId7"));
-        selectEYOD7.selectByVisibleText(props.getProperty("envYearOfDeliveryId7"));
+        selectEYOD7.selectByVisibleText(props.getProperty("envYearOfDeliveryId7"));*/
         Select selectELS7 = new Select(driver.findElementById("envLaborSuitabilityId7"));
         selectELS7.selectByVisibleText(props.getProperty("envLaborSuitabilityId7"));
 
-        Select selectEYOE8 = new Select(driver.findElementById("envYearOfExecutionId8"));
+        /*Select selectEYOE8 = new Select(driver.findElementById("envYearOfExecutionId8"));
         selectEYOE8.selectByVisibleText(props.getProperty("envYearOfExecutionId8"));
         Select selectEYOD8 = new Select(driver.findElementById("envYearOfDeliveryId8"));
-        selectEYOD8.selectByVisibleText(props.getProperty("envYearOfDeliveryId8"));
+        selectEYOD8.selectByVisibleText(props.getProperty("envYearOfDeliveryId8"));*/
         Select selectELS8 = new Select(driver.findElementById("envLaborSuitabilityId8"));
         selectELS8.selectByVisibleText(props.getProperty("envLaborSuitabilityId8"));
 
-        Select selectEYOE9 = new Select(driver.findElementById("envYearOfExecutionId9"));
+        /*Select selectEYOE9 = new Select(driver.findElementById("envYearOfExecutionId9"));
         selectEYOE9.selectByVisibleText(props.getProperty("envYearOfExecutionId9"));
         Select selectEYOD9 = new Select(driver.findElementById("envYearOfDeliveryId9"));
-        selectEYOD9.selectByVisibleText(props.getProperty("envYearOfDeliveryId9"));
+        selectEYOD9.selectByVisibleText(props.getProperty("envYearOfDeliveryId9"));*/
         Select selectELS9 = new Select(driver.findElementById("envLaborSuitabilityId9"));
         selectELS9.selectByVisibleText(props.getProperty("envLaborSuitabilityId9"));
 
-        Select selectEYOE10 = new Select(driver.findElementById("envYearOfExecutionId10"));
+        /*Select selectEYOE10 = new Select(driver.findElementById("envYearOfExecutionId10"));
         selectEYOE10.selectByVisibleText(props.getProperty("envYearOfExecutionId10"));
         Select selectEYOD10 = new Select(driver.findElementById("envYearOfDeliveryId10"));
-        selectEYOD10.selectByVisibleText(props.getProperty("envYearOfDeliveryId10"));
+        selectEYOD10.selectByVisibleText(props.getProperty("envYearOfDeliveryId10"));*/
         Select selectELS10 = new Select(driver.findElementById("envLaborSuitabilityId10"));
         selectELS10.selectByVisibleText(props.getProperty("envLaborSuitabilityId10"));
 
-        Select selectEYOE11 = new Select(driver.findElementById("envYearOfExecutionId11"));
+        /*Select selectEYOE11 = new Select(driver.findElementById("envYearOfExecutionId11"));
         selectEYOE11.selectByVisibleText(props.getProperty("envYearOfExecutionId11"));
         Select selectEYOD11 = new Select(driver.findElementById("envYearOfDeliveryId11"));
-        selectEYOD11.selectByVisibleText(props.getProperty("envYearOfDeliveryId11"));
+        selectEYOD11.selectByVisibleText(props.getProperty("envYearOfDeliveryId11"));*/
         Select selectELS11 = new Select(driver.findElementById("envLaborSuitabilityId11"));
         selectELS11.selectByVisibleText(props.getProperty("envLaborSuitabilityId11"));
 
-        Select selectEYOE12 = new Select(driver.findElementById("envYearOfExecutionId12"));
+        /*Select selectEYOE12 = new Select(driver.findElementById("envYearOfExecutionId12"));
         selectEYOE12.selectByVisibleText(props.getProperty("envYearOfExecutionId12"));
         Select selectEYOD12 = new Select(driver.findElementById("envYearOfDeliveryId12"));
-        selectEYOD12.selectByVisibleText(props.getProperty("envYearOfDeliveryId12"));
+        selectEYOD12.selectByVisibleText(props.getProperty("envYearOfDeliveryId12"));*/
         Select selectELS12 = new Select(driver.findElementById("envLaborSuitabilityId12"));
         selectELS12.selectByVisibleText(props.getProperty("envLaborSuitabilityId12"));
 
-        Select selectEYOE13 = new Select(driver.findElementById("envYearOfExecutionId13"));
+        /*Select selectEYOE13 = new Select(driver.findElementById("envYearOfExecutionId13"));
         selectEYOE13.selectByVisibleText(props.getProperty("envYearOfExecutionId13"));
         Select selectEYOD13 = new Select(driver.findElementById("envYearOfDeliveryId13"));
-        selectEYOD13.selectByVisibleText(props.getProperty("envYearOfDeliveryId13"));
+        selectEYOD13.selectByVisibleText(props.getProperty("envYearOfDeliveryId13"));*/
         Select selectELS13 = new Select(driver.findElementById("envLaborSuitabilityId13"));
         selectELS13.selectByVisibleText(props.getProperty("envLaborSuitabilityId13"));
 
-        Select selectEYOE14 = new Select(driver.findElementById("envYearOfExecutionId14"));
+        /*Select selectEYOE14 = new Select(driver.findElementById("envYearOfExecutionId14"));
         selectEYOE14.selectByVisibleText(props.getProperty("envYearOfExecutionId14"));
         Select selectEYOD14 = new Select(driver.findElementById("envYearOfDeliveryId14"));
-        selectEYOD14.selectByVisibleText(props.getProperty("envYearOfDeliveryId14"));
+        selectEYOD14.selectByVisibleText(props.getProperty("envYearOfDeliveryId14"));*/
         Select selectELS14 = new Select(driver.findElementById("envLaborSuitabilityId14"));
         selectELS14.selectByVisibleText(props.getProperty("envLaborSuitabilityId14"));
 
-        Select selectEYOE15 = new Select(driver.findElementById("envYearOfExecutionId15"));
+        /*Select selectEYOE15 = new Select(driver.findElementById("envYearOfExecutionId15"));
         selectEYOE15.selectByVisibleText(props.getProperty("envYearOfExecutionId15"));
         Select selectEYOD15 = new Select(driver.findElementById("envYearOfDeliveryId15"));
-        selectEYOD15.selectByVisibleText(props.getProperty("envYearOfDeliveryId15"));
+        selectEYOD15.selectByVisibleText(props.getProperty("envYearOfDeliveryId15"));*/
         Select selectELS15 = new Select(driver.findElementById("envLaborSuitabilityId15"));
         selectELS15.selectByVisibleText(props.getProperty("envLaborSuitabilityId15"));
 
-        Select selectEYOE16 = new Select(driver.findElementById("envYearOfExecutionId16"));
+        /*Select selectEYOE16 = new Select(driver.findElementById("envYearOfExecutionId16"));
         selectEYOE16.selectByVisibleText(props.getProperty("envYearOfExecutionId16"));
         Select selectEYOD16 = new Select(driver.findElementById("envYearOfDeliveryId16"));
-        selectEYOD16.selectByVisibleText(props.getProperty("envYearOfDeliveryId16"));
+        selectEYOD16.selectByVisibleText(props.getProperty("envYearOfDeliveryId16"));*/
         Select selectELS16 = new Select(driver.findElementById("envLaborSuitabilityId16"));
         selectELS16.selectByVisibleText(props.getProperty("envLaborSuitabilityId16"));
 

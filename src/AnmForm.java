@@ -32,7 +32,6 @@ public class AnmForm {
     private JComboBox yearOfExecutionId14;
     private JComboBox yearOfExecutionId15;
     private JComboBox yearOfExecutionId16;
-    private JComboBox envYearOfExecutionId0;
     private JComboBox envYearOfDeliveryId0;
     private JComboBox envLaborSuitabilityId0;
     private JComboBox envYearOfDeliveryId5;
@@ -91,7 +90,6 @@ public class AnmForm {
     private JComboBox laborSuitabilityId0;
     private JComboBox laborSuitabilityId1;
     private JComboBox laborSuitabilityId2;
-    private JComboBox laborSuitabilityId3;
     private JComboBox laborSuitabilityId4;
     private JComboBox laborSuitabilityId5;
     private JComboBox laborSuitabilityId6;
@@ -112,11 +110,9 @@ public class AnmForm {
     private JComboBox envYearOfExecutionId5;
     private JComboBox envYearOfDeliveryId1;
     private JComboBox envYearOfDeliveryId2;
-    private JComboBox envYearOfDeliveryId3;
     private JComboBox envYearOfDeliveryId4;
     private JComboBox envLaborSuitabilityId1;
     private JComboBox envLaborSuitabilityId2;
-    private JComboBox envLaborSuitabilityId3;
     private JComboBox envLaborSuitabilityId4;
     private JComboBox areaOfConcessionSlctId;
     private JComboBox declareIndId0;
@@ -125,7 +121,6 @@ public class AnmForm {
     private JTextField totalLiabilitiesId0;
     private JTextField totalAssetId0;
     private JTextField currentLiabilitiesId0;
-    private JComboBox comboBox3;
     private JButton guardarButton;
     public JButton loginButton;
     private JComboBox personClassificationId0;
@@ -144,7 +139,6 @@ public class AnmForm {
     private JTextField timer13;
     private JTextField timer14;
     private JTextField timer15;
-    private JTextField timer16;
     private JTextField webdriver;
     private JLabel Webdriver;
     public JButton ejecutarButton;
@@ -153,9 +147,15 @@ public class AnmForm {
     public JButton paso2Button;
     public JButton paso3Button;
     public JButton paso4Button;
-    public JCheckBox radicarCheck;
     private JTextField url;
     private JTextField techApplicantNameId;
+    private JTabbedPane tabbedPane1;
+    private JComboBox envYearOfExecutionId0;
+    private JComboBox laborSuitabilityId3;
+    private JComboBox envYearOfDeliveryId3;
+    private JComboBox envLaborSuitabilityId3;
+    private JComboBox comboBox3;
+    private JCheckBox radicarCheck;
 
     public AnmForm(Properties props) {
         createUIComponents(props);
@@ -338,6 +338,13 @@ public class AnmForm {
         /*JScrollPane jScrollPane = new JScrollPane(rootPanel);
         rootPanel.add(jScrollPane);*/
 
+        ejecutarButton.setIcon(new ImageIcon("Resources/Button-Play-icon.png"));
+        loginButton.setIcon(new ImageIcon("Resources/cs-login-icon.png"));
+        paso1Button.setIcon(new ImageIcon("Resources/Numbers-1-Black-icon.png"));
+        paso2Button.setIcon(new ImageIcon("Resources/Numbers-2-Black-icon.png"));
+        paso3Button.setIcon(new ImageIcon("Resources/Numbers-3-Black-icon.png"));
+        paso4Button.setIcon(new ImageIcon("Resources/Numbers-4-Black-icon.png"));
+        guardarButton.setIcon(new ImageIcon("Resources/Actions-document-save-icon.png"));
 
         webdriver.setText(props.getProperty("webdriver"));
         cambiarUsuario.setText(props.getProperty("cambiarUsuario"));
@@ -495,4 +502,5 @@ public class AnmForm {
         envLaborSuitabilityId16.setSelectedItem(props.getProperty("envLaborSuitabilityId16"));
 
     }
+
 }
