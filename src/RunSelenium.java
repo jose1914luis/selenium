@@ -564,10 +564,10 @@ public class RunSelenium extends JFrame{
 
         //Thread.sleep(Integer.parseInt(props.getProperty("timer14"))*1000);
 
-        Select selectPC = new Select(waitElement("personClassificationId0", "id", "timer14"));
-        selectPC.selectByVisibleText(props.getProperty("personClassificationId0"));
+        //Select selectPC = new Select(waitElement("personClassificationId0", "id", "timer14"));
+        //selectPC.selectByVisibleText(props.getProperty("personClassificationId0"));
 
-        if(props.getProperty("declareIndId0") == "SI"){
+        if(props.getProperty("declareIndId0").toString().equals("SI")){
 
             WebElement declareIndId0=driver.findElementById("declareIndId0");
             declareIndId0.click();
