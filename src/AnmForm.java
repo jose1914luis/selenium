@@ -156,8 +156,10 @@ public class AnmForm {
     private JComboBox envLaborSuitabilityId3;
     private JComboBox comboBox3;
     private JCheckBox radicarCheck;
+    private JTextArea txtCells;
 
     public AnmForm(Properties props) {
+
         createUIComponents(props);
         guardarButton.addActionListener(new ActionListener() {
             @Override
@@ -165,6 +167,7 @@ public class AnmForm {
 
 
                 try {
+
                     FileOutputStream out = new FileOutputStream("anm.properties");
 
 
@@ -208,7 +211,7 @@ public class AnmForm {
                     props.setProperty("ecoApplicantNameId", ecoApplicantNameId.getText());
                     props.setProperty("techApplicantNameId", techApplicantNameId.getText());
 
-
+                    props.setProperty("cells", txtCells.getText());
 
                     props.setProperty("yearOfExecutionId0", yearOfExecutionId0.getSelectedItem().toString());
                     props.setProperty("personClassificationId0", personClassificationId0.getSelectedItem().toString());
@@ -330,6 +333,13 @@ public class AnmForm {
 
             }
         });
+        selectedCellInputMethodSlctId.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                //String selected = selectedCellInputMethodSlctId.getSelectedItem().toString();
+
+            }
+        });
     }
 
     private void createUIComponents(Properties props) {
@@ -381,6 +391,8 @@ public class AnmForm {
         additionalEthnicGroupsInSelectedAreaIndId.setSelectedItem(props.getProperty("additionalEthnicGroupsInSelectedAreaIndId"));
         personClassificationId0.setSelectedItem(props.getProperty("personClassificationId0"));
         pikerLoad.setText(props.getProperty("pikerLoad"));
+
+        txtCells.setText(props.getProperty("cells"));
 
         currentAssetId0.setText(props.getProperty("currentAssetId0"));
         totalLiabilitiesId0.setText(props.getProperty("totalLiabilitiesId0"));
