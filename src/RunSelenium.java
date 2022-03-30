@@ -35,7 +35,7 @@ public class RunSelenium extends JFrame{
         setIconImage(img.getImage());
         setPreferredSize(new Dimension(900, 650));
         JScrollPane scrollPane = new JScrollPane(anmForm.rootPanel);
-        setTitle("Radicador");
+        setTitle("Radicador v. 2.0");
         add(scrollPane);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         pack();
@@ -631,8 +631,8 @@ public class RunSelenium extends JFrame{
         WebElement buttonAdd2 =driver.findElement(By.xpath(" //div[@class='tab-pane ng-scope active']//span[@class='btn-label ng-binding'][contains(text(),'Agregar')]"));
         buttonAdd2.click();
 
-        //WebElement buttonNext3 =driver.findElement(By.xpath("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]"));
-        //buttonNext3.click();
+        WebElement buttonNext3 =driver.findElement(By.xpath("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]"));
+        buttonNext3.click();
 
         /**********************************************************
          * Resumen
