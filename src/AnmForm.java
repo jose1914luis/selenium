@@ -157,6 +157,7 @@ public class AnmForm {
     private JComboBox comboBox3;
     private JCheckBox radicarCheck;
     private JTextArea txtCells;
+    private JComboBox techProfessionalDesignationId;
 
     public AnmForm(Properties props) {
 
@@ -215,7 +216,7 @@ public class AnmForm {
 
                     props.setProperty("yearOfExecutionId0", yearOfExecutionId0.getSelectedItem().toString());
                     props.setProperty("personClassificationId0", personClassificationId0.getSelectedItem().toString());
-
+                    props.setProperty("techProfessionalDesignationId", techProfessionalDesignationId.getSelectedItem().toString());
 
 
                     props.setProperty("yearOfExecutionId1", yearOfExecutionId1.getSelectedItem().toString());
@@ -393,6 +394,8 @@ public class AnmForm {
         pikerLoad.setText(props.getProperty("pikerLoad"));
 
         txtCells.setText(props.getProperty("cells"));
+
+        techProfessionalDesignationId.setSelectedItem(props.getProperty("techProfessionalDesignationId"));
 
         currentAssetId0.setText(props.getProperty("currentAssetId0"));
         totalLiabilitiesId0.setText(props.getProperty("totalLiabilitiesId0"));

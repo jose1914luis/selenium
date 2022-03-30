@@ -33,7 +33,7 @@ public class RunSelenium extends JFrame{
         anmForm = new AnmForm( props);
         ImageIcon img = new ImageIcon("Resources/Button-Play-icon.png");
         setIconImage(img.getImage());
-        setPreferredSize(new Dimension(850, 650));
+        setPreferredSize(new Dimension(900, 650));
         JScrollPane scrollPane = new JScrollPane(anmForm.rootPanel);
         setTitle("Radicador");
         add(scrollPane);
@@ -287,9 +287,20 @@ public class RunSelenium extends JFrame{
 
         //Thread.sleep(Integer.parseInt(props.getProperty("timer10"))*1000);
 
+
+
+        /*WebElement tabInfoDet = waitElement("//ul[@class='nav nav-tabs']//li[2]", "path", "timer10");
+        tabInfoDet.click();
+
+        WebElement checkGrupos = waitElement("additionalEthnicGroupsInSelectedAreaIndId", "id", "timer10");
+        checkGrupos.click();*/
+
+
+
         /**********************************************************
          * Información técnica
          **********************************************************/
+
 
         WebElement tabInfoTec = waitElement("//div[@id='main']//li[3]//a[1]", "path", "timer10");
         tabInfoTec.click();
@@ -543,15 +554,17 @@ public class RunSelenium extends JFrame{
 
         //Thread.sleep(Integer.parseInt(props.getProperty(""))*1000);
 
+        WebElement checkboxAccept =driver.findElement(By.id(("technicalCheckboxId")));
+        checkboxAccept.click();
 
         Select selectTAN = new Select(waitElement("techApplicantNameId", "id", "timer12"));
-        selectTAN.selectByVisibleText(props.getProperty("techApplicantNameId"));
+        selectTAN.selectByValue(props.getProperty("techApplicantNameId"));
+        //selectTAN.selectByVisibleText(props.getProperty("techApplicantNameId"));
 
         WebElement buttonAdd =driver.findElement(By.xpath("//div[@class='tab-pane ng-scope active']//button[@class='btn btn-labeled bg-color-greenDark txt-color-white']"));
         buttonAdd.click();
 
-        WebElement checkboxAccept =driver.findElement(By.id(("technicalCheckboxId")));
-        checkboxAccept.click();
+
 
         /**********************************************************
          * Información del area
@@ -612,13 +625,14 @@ public class RunSelenium extends JFrame{
 
 
         Select selectEAN = new Select(waitElement("ecoApplicantNameId", "id", "timer15"));
-        selectEAN.selectByVisibleText(props.getProperty("ecoApplicantNameId"));
+        //selectEAN.selectByVisibleText(props.getProperty("ecoApplicantNameId"));
+        selectEAN.selectByValue(props.getProperty("ecoApplicantNameId"));
 
         WebElement buttonAdd2 =driver.findElement(By.xpath(" //div[@class='tab-pane ng-scope active']//span[@class='btn-label ng-binding'][contains(text(),'Agregar')]"));
         buttonAdd2.click();
 
-        WebElement buttonNext3 =driver.findElement(By.xpath("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]"));
-        buttonNext3.click();
+        //WebElement buttonNext3 =driver.findElement(By.xpath("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]"));
+        //buttonNext3.click();
 
         /**********************************************************
          * Resumen
