@@ -212,6 +212,23 @@ public class Diferencial {
 
     private void paso3() throws InterruptedException {
 
+        WebElement tabArea = driver.findElement(By.xpath("//div[@id='main']//li[2]//a[1]"));
+        tabArea.click();
+
+        //Thread.sleep(Integer.parseInt(props.getProperty("timer13"))*1000);
+
+        if (props.getProperty("additionalEthnicGroupsInSelectedAreaIndId") == "SI") {
+
+            WebElement additionalEthnicGroupsInSelectedAreaIndId = waitElement("//div[@class='tab-pane ng-scope active']//input[1]", "path", "timer13");
+            additionalEthnicGroupsInSelectedAreaIndId.click();
+        } else {
+            WebElement additionalEthnicGroupsInSelectedAreaIndId = waitElement("//input[2]", "path", "timer13");
+            additionalEthnicGroupsInSelectedAreaIndId.click();
+        }
+
+        //WebElement tabEco = driver.findElement(By.xpath("//form[@name='p_CaaIataInputAreaDetailsForm']//li[4]"));
+        //tabEco.click();
+
         WebElement tabInfoDet = waitElement("//div[@id='main']//li[3]//a[1]", "path", "timer10");
         tabInfoDet.click();
 
@@ -228,31 +245,34 @@ public class Diferencial {
         WebElement labelMineral = waitElement("ANTRACITA", "link", "timer4");
         labelMineral.click();
 
+        //WebElement btnMineral = waitElement("//button[@class='dropdown-toggle ng-binding btn btn-default']", "path", "timer3");
+        btnMineral.click();
 
 
         WebElement mineralPriceInptId0 = driver.findElement(By.id(("mineralPriceInptId0")));
-        mineralPriceInptId0.sendKeys("100000");
+        mineralPriceInptId0.sendKeys("1000000");
 
         WebElement yearlyProduction1InptId0 = driver.findElement(By.id(("yearlyProduction1InptId0")));
-        yearlyProduction1InptId0.sendKeys("100000");
+        yearlyProduction1InptId0.sendKeys("1000000");
 
         WebElement yearlyProduction2InptId0 = driver.findElement(By.id(("yearlyProduction2InptId0")));
-        yearlyProduction2InptId0.sendKeys("100000");
+        yearlyProduction2InptId0.sendKeys("1000000");
 
         WebElement yearlyProduction3InptId0 = driver.findElement(By.id(("yearlyProduction3InptId0")));
-        yearlyProduction3InptId0.sendKeys("100000");
+        yearlyProduction3InptId0.sendKeys("1000000");
 
         WebElement explorationInvestmentYear1InptId = driver.findElement(By.id(("explorationInvestmentYear1InptId")));
-        explorationInvestmentYear1InptId.sendKeys("100000");
+        explorationInvestmentYear1InptId.sendKeys("1000000");
 
         WebElement explorationInvestmentYear2InptId = driver.findElement(By.id(("explorationInvestmentYear2InptId")));
-        explorationInvestmentYear2InptId.sendKeys("100000");
+        explorationInvestmentYear2InptId.sendKeys("1000000");
 
         WebElement explorationInvestmentYear3InptId = driver.findElement(By.id(("explorationInvestmentYear3InptId")));
-        explorationInvestmentYear3InptId.sendKeys("100000");
+        explorationInvestmentYear3InptId.sendKeys("1000000");
 
 
-        WebElement revision_bibliograficaCH = driver.findElement(By.xpath("//input[@class='ng-pristine ng-valid ng-empty ng-touched']"));
+        //**********************************************************************************************//
+        WebElement revision_bibliograficaCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/input[1]"));
         revision_bibliograficaCH.click();
 
         WebElement enfoque_socialCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[1]/tr[2]/td[2]/input[1]"));
@@ -341,10 +361,62 @@ public class Diferencial {
         WebElement manejoHundimientosCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[2]/tr[17]/td[2]/input[1]"));
         manejoHundimientosCH.click();
 
+        for (int i = 0; i < 34; i++){
+
+            Select yearOfExecutionId =new Select(driver.findElement(By.id("yearOfExecutionId" + i)));
+            //yearOfExecutionId.selectByVisibleText(props.getProperty("yearOfExecutionId" + i));
+            yearOfExecutionId.selectByVisibleText("1");
+        }
+
+
+        Select selectTPD = new Select(driver.findElement(By.id(("techProfessionalDesignationId"))));
+        selectTPD.selectByVisibleText(props.getProperty("techProfessionalDesignationId"));
+
+        //Thread.sleep(Integer.parseInt(props.getProperty(""))*1000);
+
+        WebElement techCheckboxId = driver.findElement(By.id(("techCheckboxId")));
+        techCheckboxId.click();
+
+        Select selectTAN = new Select(waitElement("techApplicantNameId", "id", "timer12"));
+        selectTAN.selectByValue(props.getProperty("techApplicantNameId"));
+
+        WebElement buttonAdd = driver.findElement(By.xpath("//button[@data-ng-click='addApplicationContractor(applicantVO); applicantVO=null; professionalDesignationVO=null']"));
+        buttonAdd.click();
+
+        /**********************************************************
+         * Información economica
+         **********************************************************/
+
+        //WebElement tabArea = driver.findElement(By.xpath("//form[@name='p_CaaIataInputAreaDetailsForm']//li[2]"));
+        //tabArea.click();
+        WebElement tabInfoEco = waitElement("//div[@id='main']//li[4]//a[1]", "path", "timer10");
+        tabInfoEco.click();
+
+        for(int i = 1; i < 4; i++){
+            WebElement operationIncomeYearInptId = driver.findElement(By.id("operationIncomeYear"+i+"InptId"));
+            operationIncomeYearInptId.sendKeys("1000000");
+            for(int j = 0; j < 7; j++){
+
+                WebElement yearInptId = driver.findElement(By.id(("year"+i+"InptId" + j)));
+                yearInptId.sendKeys("1000000");
+            }
+
+        }
+
+        //for(int i  =0;i<4;i++){
+
+        //}
+
+        WebElement declarationOfLegalOriginOfFundsChbxId = driver.findElement(By.id(("declarationOfLegalOriginOfFundsChbxId")));
+        declarationOfLegalOriginOfFundsChbxId.click();
 
 
 
+        WebElement buttonContinuar = driver.findElement(By.xpath("//button[@class='btn btn-labeled bg-color-greenDark txt-color-white ng-scope']"));
+        buttonContinuar.click();
 
+        //WebElement tabInfoEco = waitElement("//div[@id='main']//li[4]//a[1]", "path", "timer10");
+        //tabInfoEco.click();
         //******************************************
         /*Select selectYOE0 = new Select(waitElement("yearOfExecutionId0", "id", "timer11"));
         selectYOE0.selectByVisibleText(props.getProperty("yearOfExecutionId0"));
