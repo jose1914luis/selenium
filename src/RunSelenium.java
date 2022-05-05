@@ -97,7 +97,7 @@ public class RunSelenium extends JFrame {
 
         ImageIcon img = new ImageIcon("Resources/Button-Play-icon.png");
         setIconImage(img.getImage());
-        setPreferredSize(new Dimension(900, 700));
+        setPreferredSize(new Dimension(1000, 700));
 
         setTitle("Radicador v. 2.0");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

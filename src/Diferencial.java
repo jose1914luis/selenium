@@ -8,6 +8,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
@@ -16,15 +18,120 @@ import static javax.swing.JOptionPane.showMessageDialog;
 public class Diferencial {
     private JButton guardarButton;
     private JButton ejecutarButton;
+
     public JPanel getRootPanel() {
         return rootPanel;
     }
+
     private JPanel rootPanel;
     private JButton loginButton;
     private JButton paso1Button;
     private JButton paso2Button;
     private JButton paso3Button;
     private JButton paso4Button;
+    private JTabbedPane tabbedPane1;
+    private JComboBox systemOfExploitationId;
+    private JTextField yearlyProduction3InptId0;
+    private JCheckBox checkB1;
+    private JComboBox txtActA1;
+    private JTextField year1InptId0;
+    private JComboBox typeOfMiningId;
+    private JTextField mineralPriceInptId0;
+    private JTextField yearlyProduction1InptId0;
+    private JTextField yearlyProduction2InptId0;
+    private JTextField explorationInvestmentYear1InptId;
+    private JTextField explorationInvestmentYear2InptId;
+    private JTextField explorationInvestmentYear3InptId;
+    private JTextField mineral2;
+    private JCheckBox checkB2;
+    private JCheckBox checkB3;
+    private JCheckBox checkB4;
+    private JCheckBox checkB5;
+    private JCheckBox checkB6;
+    private JCheckBox checkB7;
+    private JCheckBox checkB8;
+    private JCheckBox checkB9;
+    private JCheckBox checkB10;
+    private JCheckBox checkB11;
+    private JCheckBox checkB12;
+    private JCheckBox checkB13;
+    private JCheckBox checkB14;
+    private JCheckBox checkB15;
+    private JCheckBox checkB16;
+    private JCheckBox checkB17;
+    private JCheckBox checkC1;
+    private JCheckBox checkC2;
+    private JCheckBox checkC3;
+    private JCheckBox checkC4;
+    private JCheckBox checkC5;
+    private JCheckBox checkC6;
+    private JCheckBox checkC7;
+    private JCheckBox checkC8;
+    private JCheckBox checkC9;
+    private JCheckBox checkC10;
+    private JCheckBox checkC11;
+    private JCheckBox checkC12;
+    private JCheckBox checkC13;
+    private JCheckBox checkC14;
+    private JCheckBox checkC15;
+    private JCheckBox checkC16;
+    private JCheckBox checkC17;
+    private JComboBox txtActA11;
+    private JComboBox txtActA2;
+    private JComboBox txtActA3;
+    private JComboBox txtActA4;
+    private JComboBox txtActA5;
+    private JComboBox txtActA6;
+    private JComboBox txtActA7;
+    private JComboBox txtActA8;
+    private JComboBox txtActA9;
+    private JComboBox txtActA10;
+    private JComboBox txtActA12;
+    private JComboBox txtActA13;
+    private JComboBox txtActA14;
+    private JComboBox txtActA15;
+    private JComboBox txtActA16;
+    private JComboBox txtActA17;
+    private JComboBox txtActB1;
+    private JComboBox txtActB2;
+    private JComboBox txtActB3;
+    private JComboBox txtActB4;
+    private JComboBox txtActB5;
+    private JComboBox txtActB6;
+    private JComboBox txtActB7;
+    private JComboBox txtActB8;
+    private JComboBox txtActB9;
+    private JComboBox txtActB10;
+    private JComboBox txtActB11;
+    private JComboBox txtActB12;
+    private JComboBox txtActB13;
+    private JComboBox txtActB14;
+    private JComboBox txtActB15;
+    private JComboBox txtActB16;
+    private JComboBox txtActB17;
+    private JTextField year2InptId0;
+    private JTextField year3InptId0;
+    private JTextField year1InptId1;
+    private JTextField year2InptId1;
+    private JTextField year3InptId1;
+    private JTextField year1InptId2;
+    private JTextField year2InptId2;
+    private JTextField year3InptId2;
+    private JTextField year1InptId3;
+    private JTextField year1InptId4;
+    private JTextField year1InptId5;
+    private JTextField year1InptId6;
+    private JTextField year2InptId3;
+    private JTextField year2InptId4;
+    private JTextField year2InptId5;
+    private JTextField year2InptId6;
+    private JTextField year3InptId3;
+    private JTextField year3InptId4;
+    private JTextField year3InptId5;
+    private JTextField year3InptId6;
+    private JTextField operationIncomeYear1InptId;
+    private JTextField operationIncomeYear2InptId;
+    private JTextField operationIncomeYear3InptId;
     private ChromeDriver driver;
     private Properties props;
 
@@ -32,6 +139,8 @@ public class Diferencial {
 
         this.props = props;
         this.driver = driver;
+
+        createUIComponents();
 
         ejecutarButton.addActionListener(new ActionListener() {
             @Override
@@ -101,9 +210,265 @@ public class Diferencial {
             }
         });
 
+        guardarButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                saveData();
+            }
+        });
 
     }
 
+    private void createUIComponents() {
+        ejecutarButton.setIcon(new ImageIcon("Resources/Button-Play-icon.png"));
+        loginButton.setIcon(new ImageIcon("Resources/cs-login-icon.png"));
+        paso1Button.setIcon(new ImageIcon("Resources/Numbers-1-Black-icon.png"));
+        paso2Button.setIcon(new ImageIcon("Resources/Numbers-2-Black-icon.png"));
+        paso3Button.setIcon(new ImageIcon("Resources/Numbers-3-Black-icon.png"));
+        paso4Button.setIcon(new ImageIcon("Resources/Numbers-4-Black-icon.png"));
+        guardarButton.setIcon(new ImageIcon("Resources/Actions-document-save-icon.png"));
+
+        typeOfMiningId.setSelectedItem(props.getProperty("typeOfMiningId"));
+        systemOfExploitationId.setSelectedItem(props.getProperty("systemOfExploitationId"));
+        mineral2.setText(props.getProperty("mineral2"));
+        mineralPriceInptId0.setText(props.getProperty("mineralPriceInptId0"));
+        yearlyProduction1InptId0.setText(props.getProperty("yearlyProduction1InptId0"));
+        yearlyProduction2InptId0.setText(props.getProperty("yearlyProduction2InptId0"));
+        yearlyProduction3InptId0.setText(props.getProperty("yearlyProduction3InptId0"));
+        explorationInvestmentYear1InptId.setText(props.getProperty("explorationInvestmentYear1InptId"));
+        explorationInvestmentYear2InptId.setText(props.getProperty("explorationInvestmentYear2InptId"));
+        explorationInvestmentYear3InptId.setText(props.getProperty("explorationInvestmentYear3InptId"));
+
+        checkB1.setSelected(Boolean.parseBoolean(props.getProperty("checkB1")));
+        checkB2.setSelected(Boolean.parseBoolean(props.getProperty("checkB2")));
+        checkB3.setSelected(Boolean.parseBoolean(props.getProperty("checkB3")));
+        checkB4.setSelected(Boolean.parseBoolean(props.getProperty("checkB4")));
+        checkB5.setSelected(Boolean.parseBoolean(props.getProperty("checkB5")));
+        checkB6.setSelected(Boolean.parseBoolean(props.getProperty("checkB6")));
+        checkB7.setSelected(Boolean.parseBoolean(props.getProperty("checkB7")));
+        checkB8.setSelected(Boolean.parseBoolean(props.getProperty("checkB8")));
+        checkB9.setSelected(Boolean.parseBoolean(props.getProperty("checkB9")));
+        checkB10.setSelected(Boolean.parseBoolean(props.getProperty("checkB10")));
+        checkB11.setSelected(Boolean.parseBoolean(props.getProperty("checkB11")));
+        checkB12.setSelected(Boolean.parseBoolean(props.getProperty("checkB12")));
+        checkB13.setSelected(Boolean.parseBoolean(props.getProperty("checkB13")));
+        checkB14.setSelected(Boolean.parseBoolean(props.getProperty("checkB14")));
+        checkB15.setSelected(Boolean.parseBoolean(props.getProperty("checkB15")));
+        checkB16.setSelected(Boolean.parseBoolean(props.getProperty("checkB16")));
+        checkB17.setSelected(Boolean.parseBoolean(props.getProperty("checkB17")));
+
+        checkC1.setSelected(Boolean.parseBoolean(props.getProperty("checkC1")));
+        checkC2.setSelected(Boolean.parseBoolean(props.getProperty("checkC2")));
+        checkC3.setSelected(Boolean.parseBoolean(props.getProperty("checkC3")));
+        checkC4.setSelected(Boolean.parseBoolean(props.getProperty("checkC4")));
+        checkC5.setSelected(Boolean.parseBoolean(props.getProperty("checkC5")));
+        checkC6.setSelected(Boolean.parseBoolean(props.getProperty("checkC6")));
+        checkC7.setSelected(Boolean.parseBoolean(props.getProperty("checkC7")));
+        checkC8.setSelected(Boolean.parseBoolean(props.getProperty("checkC8")));
+        checkC9.setSelected(Boolean.parseBoolean(props.getProperty("checkC9")));
+        checkC10.setSelected(Boolean.parseBoolean(props.getProperty("checkC10")));
+        checkC11.setSelected(Boolean.parseBoolean(props.getProperty("checkC11")));
+        checkC12.setSelected(Boolean.parseBoolean(props.getProperty("checkC12")));
+        checkC13.setSelected(Boolean.parseBoolean(props.getProperty("checkC13")));
+        checkC14.setSelected(Boolean.parseBoolean(props.getProperty("checkC14")));
+        checkC15.setSelected(Boolean.parseBoolean(props.getProperty("checkC15")));
+        checkC16.setSelected(Boolean.parseBoolean(props.getProperty("checkC16")));
+        checkC17.setSelected(Boolean.parseBoolean(props.getProperty("checkC17")));
+
+        txtActA1.setSelectedItem(props.getProperty("txtActA1"));
+        txtActA2.setSelectedItem(props.getProperty("txtActA2"));
+        txtActA3.setSelectedItem(props.getProperty("txtActA3"));
+        txtActA4.setSelectedItem(props.getProperty("txtActA4"));
+        txtActA5.setSelectedItem(props.getProperty("txtActA5"));
+        txtActA6.setSelectedItem(props.getProperty("txtActA6"));
+        txtActA7.setSelectedItem(props.getProperty("txtActA7"));
+        txtActA8.setSelectedItem(props.getProperty("txtActA8"));
+        txtActA9.setSelectedItem(props.getProperty("txtActA9"));
+        txtActA10.setSelectedItem(props.getProperty("txtActA10"));
+        txtActA11.setSelectedItem(props.getProperty("txtActA11"));
+        txtActA12.setSelectedItem(props.getProperty("txtActA12"));
+        txtActA13.setSelectedItem(props.getProperty("txtActA13"));
+        txtActA14.setSelectedItem(props.getProperty("txtActA14"));
+        txtActA15.setSelectedItem(props.getProperty("txtActA15"));
+        txtActA16.setSelectedItem(props.getProperty("txtActA16"));
+        txtActA17.setSelectedItem(props.getProperty("txtActA17"));
+
+        txtActB1.setSelectedItem(props.getProperty("txtActB1"));
+        txtActB2.setSelectedItem(props.getProperty("txtActB2"));
+        txtActB3.setSelectedItem(props.getProperty("txtActB3"));
+        txtActB4.setSelectedItem(props.getProperty("txtActB4"));
+        txtActB5.setSelectedItem(props.getProperty("txtActB5"));
+        txtActB6.setSelectedItem(props.getProperty("txtActB6"));
+        txtActB7.setSelectedItem(props.getProperty("txtActB7"));
+        txtActB8.setSelectedItem(props.getProperty("txtActB8"));
+        txtActB9.setSelectedItem(props.getProperty("txtActB9"));
+        txtActB10.setSelectedItem(props.getProperty("txtActB10"));
+        txtActB11.setSelectedItem(props.getProperty("txtActB11"));
+        txtActB12.setSelectedItem(props.getProperty("txtActB12"));
+        txtActB13.setSelectedItem(props.getProperty("txtActB13"));
+        txtActB14.setSelectedItem(props.getProperty("txtActB14"));
+        txtActB15.setSelectedItem(props.getProperty("txtActB15"));
+        txtActB16.setSelectedItem(props.getProperty("txtActB16"));
+        txtActB17.setSelectedItem(props.getProperty("txtActB17"));
+
+        year1InptId0.setText(props.getProperty("year1InptId0"));
+        year1InptId1.setText(props.getProperty("year1InptId1"));
+        year1InptId2.setText(props.getProperty("year1InptId2"));
+        year1InptId3.setText(props.getProperty("year1InptId3"));
+        year1InptId4.setText(props.getProperty("year1InptId4"));
+        year1InptId5.setText(props.getProperty("year1InptId5"));
+        year1InptId6.setText(props.getProperty("year1InptId6"));
+
+        year2InptId0.setText(props.getProperty("year2InptId0"));
+        year2InptId1.setText(props.getProperty("year2InptId1"));
+        year2InptId2.setText(props.getProperty("year2InptId2"));
+        year2InptId3.setText(props.getProperty("year2InptId3"));
+        year2InptId4.setText(props.getProperty("year2InptId4"));
+        year2InptId5.setText(props.getProperty("year2InptId5"));
+        year2InptId6.setText(props.getProperty("year2InptId6"));
+
+        year3InptId0.setText(props.getProperty("year3InptId0"));
+        year3InptId1.setText(props.getProperty("year3InptId1"));
+        year3InptId2.setText(props.getProperty("year3InptId2"));
+        year3InptId3.setText(props.getProperty("year3InptId3"));
+        year3InptId4.setText(props.getProperty("year3InptId4"));
+        year3InptId5.setText(props.getProperty("year3InptId5"));
+        year3InptId6.setText(props.getProperty("year3InptId6"));
+
+        operationIncomeYear1InptId.setText(props.getProperty("operationIncomeYear1InptId"));
+        operationIncomeYear2InptId.setText(props.getProperty("operationIncomeYear2InptId"));
+        operationIncomeYear3InptId.setText(props.getProperty("operationIncomeYear3InptId"));
+
+    }
+
+
+    private void saveData(){
+        try {
+            FileOutputStream out = new FileOutputStream("anm.properties");
+            props.setProperty("checkB1", Boolean.toString(checkB1.isSelected()));
+            props.setProperty("checkB2", Boolean.toString(checkB2.isSelected()));
+            props.setProperty("checkB3", Boolean.toString(checkB3.isSelected()));
+            props.setProperty("checkB4", Boolean.toString(checkB4.isSelected()));
+            props.setProperty("checkB5", Boolean.toString(checkB5.isSelected()));
+            props.setProperty("checkB6", Boolean.toString(checkB6.isSelected()));
+            props.setProperty("checkB7", Boolean.toString(checkB7.isSelected()));
+            props.setProperty("checkB8", Boolean.toString(checkB8.isSelected()));
+            props.setProperty("checkB9", Boolean.toString(checkB9.isSelected()));
+            props.setProperty("checkB10", Boolean.toString(checkB10.isSelected()));
+            props.setProperty("checkB11", Boolean.toString(checkB11.isSelected()));
+            props.setProperty("checkB12", Boolean.toString(checkB12.isSelected()));
+            props.setProperty("checkB13", Boolean.toString(checkB13.isSelected()));
+            props.setProperty("checkB14", Boolean.toString(checkB14.isSelected()));
+            props.setProperty("checkB15", Boolean.toString(checkB15.isSelected()));
+            props.setProperty("checkB16", Boolean.toString(checkB16.isSelected()));
+            props.setProperty("checkB17", Boolean.toString(checkB17.isSelected()));
+
+            props.setProperty("checkC1", Boolean.toString(checkC1.isSelected()));
+            props.setProperty("checkC2", Boolean.toString(checkC2.isSelected()));
+            props.setProperty("checkC3", Boolean.toString(checkC3.isSelected()));
+            props.setProperty("checkC4", Boolean.toString(checkC4.isSelected()));
+            props.setProperty("checkC5", Boolean.toString(checkC5.isSelected()));
+            props.setProperty("checkC6", Boolean.toString(checkC6.isSelected()));
+            props.setProperty("checkC7", Boolean.toString(checkC7.isSelected()));
+            props.setProperty("checkC8", Boolean.toString(checkC8.isSelected()));
+            props.setProperty("checkC9", Boolean.toString(checkC9.isSelected()));
+            props.setProperty("checkC10", Boolean.toString(checkC10.isSelected()));
+            props.setProperty("checkC11", Boolean.toString(checkC11.isSelected()));
+            props.setProperty("checkC12", Boolean.toString(checkC12.isSelected()));
+            props.setProperty("checkC13", Boolean.toString(checkC13.isSelected()));
+            props.setProperty("checkC14", Boolean.toString(checkC14.isSelected()));
+            props.setProperty("checkC15", Boolean.toString(checkC15.isSelected()));
+            props.setProperty("checkC16", Boolean.toString(checkC16.isSelected()));
+            props.setProperty("checkC17", Boolean.toString(checkC17.isSelected()));
+
+            props.setProperty("txtActA1", txtActA1.getSelectedItem().toString());
+            props.setProperty("txtActA2", txtActA2.getSelectedItem().toString());
+            props.setProperty("txtActA3", txtActA3.getSelectedItem().toString());
+            props.setProperty("txtActA4", txtActA4.getSelectedItem().toString());
+            props.setProperty("txtActA5", txtActA5.getSelectedItem().toString());
+            props.setProperty("txtActA6", txtActA6.getSelectedItem().toString());
+            props.setProperty("txtActA7", txtActA7.getSelectedItem().toString());
+            props.setProperty("txtActA8", txtActA8.getSelectedItem().toString());
+            props.setProperty("txtActA9", txtActA9.getSelectedItem().toString());
+            props.setProperty("txtActA10", txtActA10.getSelectedItem().toString());
+            props.setProperty("txtActA11", txtActA11.getSelectedItem().toString());
+            props.setProperty("txtActA12", txtActA12.getSelectedItem().toString());
+            props.setProperty("txtActA13", txtActA13.getSelectedItem().toString());
+            props.setProperty("txtActA14", txtActA14.getSelectedItem().toString());
+            props.setProperty("txtActA15", txtActA15.getSelectedItem().toString());
+            props.setProperty("txtActA16", txtActA16.getSelectedItem().toString());
+            props.setProperty("txtActA17", txtActA17.getSelectedItem().toString());
+
+            props.setProperty("txtActB1", txtActB1.getSelectedItem().toString());
+            props.setProperty("txtActB2", txtActB2.getSelectedItem().toString());
+            props.setProperty("txtActB3", txtActB3.getSelectedItem().toString());
+            props.setProperty("txtActB4", txtActB4.getSelectedItem().toString());
+            props.setProperty("txtActB5", txtActB5.getSelectedItem().toString());
+            props.setProperty("txtActB6", txtActB6.getSelectedItem().toString());
+            props.setProperty("txtActB7", txtActB7.getSelectedItem().toString());
+            props.setProperty("txtActB8", txtActB8.getSelectedItem().toString());
+            props.setProperty("txtActB9", txtActB9.getSelectedItem().toString());
+            props.setProperty("txtActB10", txtActB10.getSelectedItem().toString());
+            props.setProperty("txtActB11", txtActB11.getSelectedItem().toString());
+            props.setProperty("txtActB12", txtActB12.getSelectedItem().toString());
+            props.setProperty("txtActB13", txtActB13.getSelectedItem().toString());
+            props.setProperty("txtActB14", txtActB14.getSelectedItem().toString());
+            props.setProperty("txtActB15", txtActB15.getSelectedItem().toString());
+            props.setProperty("txtActB16", txtActB16.getSelectedItem().toString());
+            props.setProperty("txtActB17", txtActB17.getSelectedItem().toString());
+
+
+            props.setProperty("year1InptId0", year1InptId0.getText());
+            props.setProperty("year1InptId1", year1InptId1.getText());
+            props.setProperty("year1InptId2", year1InptId2.getText());
+            props.setProperty("year1InptId3", year1InptId3.getText());
+            props.setProperty("year1InptId4", year1InptId4.getText());
+            props.setProperty("year1InptId5", year1InptId5.getText());
+            props.setProperty("year1InptId6", year1InptId6.getText());
+
+            props.setProperty("year2InptId0", year2InptId0.getText());
+            props.setProperty("year2InptId1", year2InptId1.getText());
+            props.setProperty("year2InptId2", year2InptId2.getText());
+            props.setProperty("year2InptId3", year2InptId3.getText());
+            props.setProperty("year2InptId4", year2InptId4.getText());
+            props.setProperty("year2InptId5", year2InptId5.getText());
+            props.setProperty("year2InptId6", year2InptId6.getText());
+
+            props.setProperty("year3InptId0", year3InptId0.getText());
+            props.setProperty("year3InptId1", year3InptId1.getText());
+            props.setProperty("year3InptId2", year3InptId2.getText());
+            props.setProperty("year3InptId3", year3InptId3.getText());
+            props.setProperty("year3InptId4", year3InptId4.getText());
+            props.setProperty("year3InptId5", year3InptId5.getText());
+            props.setProperty("year3InptId6", year3InptId6.getText());
+
+            props.setProperty("operationIncomeYear1InptId", operationIncomeYear1InptId.getText());
+            props.setProperty("operationIncomeYear2InptId", operationIncomeYear2InptId.getText());
+            props.setProperty("operationIncomeYear3InptId", operationIncomeYear3InptId.getText());
+
+            props.setProperty("systemOfExploitationId", systemOfExploitationId.getSelectedItem().toString());
+            props.setProperty("typeOfMiningId", typeOfMiningId.getSelectedItem().toString());
+
+            props.setProperty("mineral2", mineral2.getText());
+            props.setProperty("mineralPriceInptId0", mineralPriceInptId0.getText());
+
+            props.setProperty("yearlyProduction1InptId0", yearlyProduction1InptId0.getText());
+            props.setProperty("yearlyProduction2InptId0", yearlyProduction2InptId0.getText());
+            props.setProperty("yearlyProduction3InptId0", yearlyProduction3InptId0.getText());
+
+            props.setProperty("explorationInvestmentYear1InptId", explorationInvestmentYear1InptId.getText());
+            props.setProperty("explorationInvestmentYear2InptId", explorationInvestmentYear2InptId.getText());
+            props.setProperty("explorationInvestmentYear3InptId", explorationInvestmentYear3InptId.getText());
+
+
+            props.store(out, null);
+            out.close();
+            showMessageDialog(null, "Datos guardados correctamente");
+        }catch (IOException e){
+            e.printStackTrace();
+            showMessageDialog(null, "Error guardando los datos");
+        }
+    }
 
     private void paso1() throws InterruptedException {
         //WebElement submenu = driver.findElement(By.xpath("//li[4]//ul[1]//li[1]"));
@@ -140,7 +505,7 @@ public class Diferencial {
 
         //Thread.sleep(Integer.parseInt(props.getProperty("timer4"))*1000);
 
-        WebElement labelMineral = waitElement("CARBÓN", "link", "timer4");
+        WebElement labelMineral = waitElement("mineral", "link", "timer4");
         labelMineral.click();
 
         Select selectArea = new Select(driver.findElement(By.id(("areaOfConcessionSlctId"))));
@@ -202,8 +567,8 @@ public class Diferencial {
 
         //if (props.getProperty("declareIndId0").toString().equals("SI")) {
 
-            WebElement declareIndId0 = driver.findElement(By.id(("earlyExploitationIndYesId")));
-            declareIndId0.click();
+        WebElement declareIndId0 = driver.findElement(By.id(("earlyExploitationIndYesId")));
+        declareIndId0.click();
         //}
 
         WebElement buttonNext2 = waitElement("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]", "path", "timer9");
@@ -233,16 +598,16 @@ public class Diferencial {
         tabInfoDet.click();
 
 
-        Select selectYOE0 = new Select(waitElement("typeOfMiningId", "id", "timer11"));
-        selectYOE0.selectByVisibleText("Cielo Abierto");
+        Select typeOfMiningId = new Select(waitElement("typeOfMiningId", "id", "timer11"));
+        typeOfMiningId.selectByVisibleText(props.getProperty("typeOfMiningId"));
 
-        Select systemOfExploitationId = new Select(waitElement("systemOfExploitationId", "id", "timer11"));
-        systemOfExploitationId.selectByVisibleText("Cantera");
+        Select systemOfExploitationId = new Select(driver.findElement(By.id("systemOfExploitationId")));
+        systemOfExploitationId.selectByVisibleText(props.getProperty("systemOfExploitationId"));
 
         WebElement btnMineral = waitElement("//button[@class='dropdown-toggle ng-binding btn btn-default']", "path", "timer3");
         btnMineral.click();
 
-        WebElement labelMineral = waitElement("ANTRACITA", "link", "timer4");
+        WebElement labelMineral = waitElement("mineral2", "link", "timer4");
         labelMineral.click();
 
         //WebElement btnMineral = waitElement("//button[@class='dropdown-toggle ng-binding btn btn-default']", "path", "timer3");
@@ -250,122 +615,48 @@ public class Diferencial {
 
 
         WebElement mineralPriceInptId0 = driver.findElement(By.id(("mineralPriceInptId0")));
-        mineralPriceInptId0.sendKeys("1000000");
+        mineralPriceInptId0.sendKeys(props.getProperty("mineralPriceInptId0"));
 
         WebElement yearlyProduction1InptId0 = driver.findElement(By.id(("yearlyProduction1InptId0")));
-        yearlyProduction1InptId0.sendKeys("1000000");
+        yearlyProduction1InptId0.sendKeys(props.getProperty(""));
 
         WebElement yearlyProduction2InptId0 = driver.findElement(By.id(("yearlyProduction2InptId0")));
-        yearlyProduction2InptId0.sendKeys("1000000");
+        yearlyProduction2InptId0.sendKeys(props.getProperty("yearlyProduction2InptId0"));
 
         WebElement yearlyProduction3InptId0 = driver.findElement(By.id(("yearlyProduction3InptId0")));
-        yearlyProduction3InptId0.sendKeys("1000000");
+        yearlyProduction3InptId0.sendKeys(props.getProperty("yearlyProduction3InptId0"));
 
         WebElement explorationInvestmentYear1InptId = driver.findElement(By.id(("explorationInvestmentYear1InptId")));
-        explorationInvestmentYear1InptId.sendKeys("1000000");
+        explorationInvestmentYear1InptId.sendKeys(props.getProperty("explorationInvestmentYear1InptId"));
 
         WebElement explorationInvestmentYear2InptId = driver.findElement(By.id(("explorationInvestmentYear2InptId")));
-        explorationInvestmentYear2InptId.sendKeys("1000000");
+        explorationInvestmentYear2InptId.sendKeys(props.getProperty("explorationInvestmentYear2InptId"));
 
         WebElement explorationInvestmentYear3InptId = driver.findElement(By.id(("explorationInvestmentYear3InptId")));
-        explorationInvestmentYear3InptId.sendKeys("1000000");
+        explorationInvestmentYear3InptId.sendKeys(props.getProperty("explorationInvestmentYear3InptId"));
 
 
         //**********************************************************************************************//
-        WebElement revision_bibliograficaCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[1]/tr[1]/td[2]/input[1]"));
-        revision_bibliograficaCH.click();
+        for (int i = 1; i < 18; i++) {
 
-        WebElement enfoque_socialCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[1]/tr[2]/td[2]/input[1]"));
-        enfoque_socialCH.click();
+            if(Boolean.parseBoolean(props.getProperty("checkB"+i))){
+                WebElement checkB1 = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[1]/tr[" + i + "]/td[2]/input[1]"));
+                checkB1.click();
+            }
+            //************Aspectos Ambientales Etapa de Exploración************/
+            if(Boolean.parseBoolean(props.getProperty("checkC"+i))){
+                WebElement revision_ambientalCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[2]/tr[" + i + "]/td[2]/input[1]"));
+                revision_ambientalCH.click();
+            }
 
-        WebElement  base_topogrAficaCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[1]/tr[3]/td[2]/input[1]"));
-        base_topogrAficaCH.click();
-        WebElement cartografía_geologicaCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[1]/tr[4]/td[2]/input[1]"));
-        cartografía_geologicaCH.click();
+        }
 
-        WebElement excavacion_trincherasCH  = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[1]/tr[5]/td[2]/input[1]"));
-        excavacion_trincherasCH.click();
 
-        WebElement geoquimicaCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[1]/tr[6]/td[2]/input[1]"));
-        geoquimicaCH.click();
 
-        WebElement geofisicaCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[1]/tr[7]/td[2]/input[1]"));
-        geofisicaCH.click();
-        WebElement  fluvial_cauceCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[1]/tr[8]/td[2]/input[1]"));
-        fluvial_cauceCH.click();
+        for (int i = 0; i < 34; i++) {
 
-        WebElement sedimentologicasCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[1]/tr[9]/td[2]/input[1]"));
-        sedimentologicasCH.click();
-
-        WebElement  galerias_ExploratoriasCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[1]/tr[10]/td[2]/input[1]"));
-        galerias_ExploratoriasCH.click();
-
-        WebElement perforaciones_profundasCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[1]/tr[11]/td[2]/input[1]"));
-        perforaciones_profundasCH.click();
-
-        WebElement  analisis_calidadCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[1]/tr[12]/td[2]/input[1]"));
-        analisis_calidadCH.click();
-
-        WebElement estudio_geotecnicoCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[1]/tr[13]/td[2]/input[1]"));
-        estudio_geotecnicoCH.click();
-
-        WebElement estudio_HidrologicoCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[1]/tr[14]/td[2]/input[1]"));
-        estudio_HidrologicoCH.click();
-
-        WebElement estudio_HidrogeologicoCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[1]/tr[15]/td[2]/input[1]"));
-        estudio_HidrogeologicoCH.click();
-
-        WebElement modelo_geologicoCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[1]/tr[16]/td[2]/input[1]"));
-        modelo_geologicoCH.click();
-
-        WebElement actividades_exploratoriasCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[1]/tr[17]/td[2]/input[1]"));
-        actividades_exploratoriasCH.click();
-
-        //************Aspectos Ambientales Etapa de Exploración************/
-
-        WebElement helipuertosCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[2]/tr[1]/td[2]/input[1]"));
-        helipuertosCH.click();
-        WebElement  aguas_LluviasCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[2]/tr[2]/td[2]/input[1]"));
-        aguas_LluviasCH.click();
-
-        WebElement  aguasresidualesCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[2]/tr[3]/td[2]/input[1]"));
-        aguasresidualesCH.click();
-
-        WebElement  cuerpos_AguaCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[2]/tr[4]/td[2]/input[1]"));
-        cuerpos_AguaCH.click();
-        WebElement materialParticuladoCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[2]/tr[5]/td[2]/input[1]"));
-        materialParticuladoCH.click();
-        WebElement manejoRuidoCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[2]/tr[6]/td[2]/input[1]"));
-        manejoRuidoCH.click();
-
-        WebElement manejoCombustiblesCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[2]/tr[7]/td[2]/input[1]"));
-        manejoCombustiblesCH.click();
-        WebElement manejoTaludesCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[2]/tr[8]/td[2]/input[1]"));
-        manejoTaludesCH.click();
-        WebElement manejoAccesosCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[2]/tr[9]/td[2]/input[1]"));
-        manejoAccesosCH.click();
-        WebElement manejoResiduosCH  = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[2]/tr[10]/td[2]/input[1]"));
-        manejoResiduosCH.click();
-        WebElement adecuaciónCH  = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[2]/tr[11]/td[2]/input[1]"));
-        adecuaciónCH.click();
-        WebElement manejoFaunaCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[2]/tr[12]/td[2]/input[1]"));
-        manejoFaunaCH.click();
-        WebElement planGestiónCH  = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[2]/tr[13]/td[2]/input[1]"));
-        planGestiónCH.click();
-        WebElement capacitaciónPersonalCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[2]/tr[14]/td[2]/input[1]"));
-        capacitaciónPersonalCH.click();
-        WebElement contrataciónManoCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[2]/tr[15]/td[2]/input[1]"));
-        contrataciónManoCH.click();
-        WebElement rescateArqueológicoCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[2]/tr[16]/td[2]/input[1]"));
-        rescateArqueológicoCH.click();
-        WebElement manejoHundimientosCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[2]/tr[17]/td[2]/input[1]"));
-        manejoHundimientosCH.click();
-
-        for (int i = 0; i < 34; i++){
-
-            Select yearOfExecutionId =new Select(driver.findElement(By.id("yearOfExecutionId" + i)));
-            //yearOfExecutionId.selectByVisibleText(props.getProperty("yearOfExecutionId" + i));
-            yearOfExecutionId.selectByVisibleText("1");
+            Select yearOfExecutionId = new Select(driver.findElement(By.id("yearOfExecutionId" + i)));
+            yearOfExecutionId.selectByVisibleText(props.getProperty("yearOfExecutionId" + i));
         }
 
 
@@ -392,215 +683,22 @@ public class Diferencial {
         WebElement tabInfoEco = waitElement("//div[@id='main']//li[4]//a[1]", "path", "timer10");
         tabInfoEco.click();
 
-        for(int i = 1; i < 4; i++){
-            WebElement operationIncomeYearInptId = driver.findElement(By.id("operationIncomeYear"+i+"InptId"));
-            operationIncomeYearInptId.sendKeys("1000000");
-            for(int j = 0; j < 7; j++){
+        for (int i = 1; i < 4; i++) {
+            WebElement operationIncomeYearInptId = driver.findElement(By.id("operationIncomeYear" + i + "InptId"));
+            operationIncomeYearInptId.sendKeys(props.getProperty("operationIncomeYear" + i + "InptId"));
+            for (int j = 0; j < 7; j++) {
 
-                WebElement yearInptId = driver.findElement(By.id(("year"+i+"InptId" + j)));
-                yearInptId.sendKeys("1000000");
+                WebElement yearInptId = driver.findElement(By.id("year" + i + "InptId" + j));
+                yearInptId.sendKeys(props.getProperty("year" + i + "InptId" + j));
             }
 
         }
-
-        //for(int i  =0;i<4;i++){
-
-        //}
-
         WebElement declarationOfLegalOriginOfFundsChbxId = driver.findElement(By.id(("declarationOfLegalOriginOfFundsChbxId")));
         declarationOfLegalOriginOfFundsChbxId.click();
 
 
-
         WebElement buttonContinuar = driver.findElement(By.xpath("//button[@class='btn btn-labeled bg-color-greenDark txt-color-white ng-scope']"));
         buttonContinuar.click();
-
-        //WebElement tabInfoEco = waitElement("//div[@id='main']//li[4]//a[1]", "path", "timer10");
-        //tabInfoEco.click();
-        //******************************************
-        /*Select selectYOE0 = new Select(waitElement("yearOfExecutionId0", "id", "timer11"));
-        selectYOE0.selectByVisibleText(props.getProperty("yearOfExecutionId0"));
-        Select selectYOD0 = new Select(driver.findElement(By.id(("yearOfDeliveryId0"))));
-        selectYOD0.selectByVisibleText(props.getProperty("yearOfDeliveryId0"));
-        Select selectLS0 = new Select(driver.findElement(By.id(("laborSuitabilityId0"))));
-        selectLS0.selectByVisibleText(props.getProperty("laborSuitabilityId0"));
-
-        Select selectYOE1 = new Select(driver.findElement(By.id(("yearOfExecutionId1"))));
-        selectYOE1.selectByVisibleText(props.getProperty("yearOfExecutionId1"));
-        Select selectYOD1 = new Select(driver.findElement(By.id(("yearOfDeliveryId1"))));
-        selectYOD1.selectByVisibleText(props.getProperty("yearOfDeliveryId1"));
-        Select selectLS1 = new Select(driver.findElement(By.id(("laborSuitabilityId1"))));
-        selectLS1.selectByVisibleText(props.getProperty("laborSuitabilityId1"));
-
-        Select selectYOE2 = new Select(driver.findElement(By.id(("yearOfExecutionId2"))));
-        selectYOE2.selectByVisibleText(props.getProperty("yearOfExecutionId2"));
-        Select selectYOD2 = new Select(driver.findElement(By.id(("yearOfDeliveryId2"))));
-        selectYOD2.selectByVisibleText(props.getProperty("yearOfDeliveryId2"));
-        Select selectLS2 = new Select(driver.findElement(By.id(("laborSuitabilityId2"))));
-        selectLS2.selectByVisibleText(props.getProperty("laborSuitabilityId2"));
-
-        Select selectYOE3 = new Select(driver.findElement(By.id(("yearOfExecutionId3"))));
-        selectYOE3.selectByVisibleText(props.getProperty("yearOfExecutionId3"));
-        Select selectYOD3 = new Select(driver.findElement(By.id(("yearOfDeliveryId3"))));
-        selectYOD3.selectByVisibleText(props.getProperty("yearOfDeliveryId3"));
-        Select selectLS3 = new Select(driver.findElement(By.id(("laborSuitabilityId3"))));
-        selectLS3.selectByVisibleText(props.getProperty("laborSuitabilityId3"));
-
-        Select selectYOE4 = new Select(driver.findElement(By.id(("yearOfExecutionId4"))));
-        selectYOE4.selectByVisibleText(props.getProperty("yearOfExecutionId4"));
-        Select selectYOD4 = new Select(driver.findElement(By.id(("yearOfDeliveryId4"))));
-        selectYOD4.selectByVisibleText(props.getProperty("yearOfDeliveryId4"));
-        Select selectLS4 = new Select(driver.findElement(By.id(("laborSuitabilityId4"))));
-        selectLS4.selectByVisibleText(props.getProperty("laborSuitabilityId4"));
-
-        Select selectYOE5 = new Select(driver.findElement(By.id(("yearOfExecutionId5"))));
-        selectYOE5.selectByVisibleText(props.getProperty("yearOfExecutionId5"));
-        Select selectYOD5 = new Select(driver.findElement(By.id(("yearOfDeliveryId5"))));
-        selectYOD5.selectByVisibleText(props.getProperty("yearOfDeliveryId5"));
-        Select selectLS5 = new Select(driver.findElement(By.id(("laborSuitabilityId5"))));
-        selectLS5.selectByVisibleText(props.getProperty("laborSuitabilityId5"));
-
-        Select selectYOE6 = new Select(driver.findElement(By.id(("yearOfExecutionId6"))));
-        selectYOE6.selectByVisibleText(props.getProperty("yearOfExecutionId6"));
-        Select selectYOD6 = new Select(driver.findElement(By.id(("yearOfDeliveryId6"))));
-        selectYOD6.selectByVisibleText(props.getProperty("yearOfDeliveryId6"));
-        Select selectLS6 = new Select(driver.findElement(By.id(("laborSuitabilityId6"))));
-        selectLS6.selectByVisibleText(props.getProperty("laborSuitabilityId6"));
-
-        Select selectYOE7 = new Select(driver.findElement(By.id(("yearOfExecutionId7"))));
-        selectYOE7.selectByVisibleText(props.getProperty("yearOfExecutionId7"));
-        Select selectYOD7 = new Select(driver.findElement(By.id(("yearOfDeliveryId7"))));
-        selectYOD7.selectByVisibleText(props.getProperty("yearOfDeliveryId7"));
-        Select selectLS7 = new Select(driver.findElement(By.id(("laborSuitabilityId7"))));
-        selectLS7.selectByVisibleText(props.getProperty("laborSuitabilityId7"));
-
-        Select selectYOE8 = new Select(driver.findElement(By.id(("yearOfExecutionId8"))));
-        selectYOE8.selectByVisibleText(props.getProperty("yearOfExecutionId8"));
-        Select selectYOD8 = new Select(driver.findElement(By.id(("yearOfDeliveryId8"))));
-        selectYOD8.selectByVisibleText(props.getProperty("yearOfDeliveryId8"));
-        Select selectLS8 = new Select(driver.findElement(By.id(("laborSuitabilityId8"))));
-        selectLS8.selectByVisibleText(props.getProperty("laborSuitabilityId8"));
-
-        Select selectYOE9 = new Select(driver.findElement(By.id(("yearOfExecutionId9"))));
-        selectYOE9.selectByVisibleText(props.getProperty("yearOfExecutionId9"));
-        Select selectYOD9 = new Select(driver.findElement(By.id(("yearOfDeliveryId9"))));
-        selectYOD9.selectByVisibleText(props.getProperty("yearOfDeliveryId9"));
-        Select selectLS9 = new Select(driver.findElement(By.id(("laborSuitabilityId9"))));
-        selectLS9.selectByVisibleText(props.getProperty("laborSuitabilityId9"));
-
-        Select selectYOE10 = new Select(driver.findElement(By.id(("yearOfExecutionId10"))));
-        selectYOE10.selectByVisibleText(props.getProperty("yearOfExecutionId10"));
-        Select selectYOD10 = new Select(driver.findElement(By.id(("yearOfDeliveryId10"))));
-        selectYOD10.selectByVisibleText(props.getProperty("yearOfDeliveryId10"));
-        Select selectLS10 = new Select(driver.findElement(By.id(("laborSuitabilityId10"))));
-        selectLS10.selectByVisibleText(props.getProperty("laborSuitabilityId10"));
-
-        Select selectYOE11 = new Select(driver.findElement(By.id(("yearOfExecutionId11"))));
-        selectYOE11.selectByVisibleText(props.getProperty("yearOfExecutionId11"));
-        Select selectYOD11 = new Select(driver.findElement(By.id(("yearOfDeliveryId11"))));
-        selectYOD11.selectByVisibleText(props.getProperty("yearOfDeliveryId11"));
-        Select selectLS11 = new Select(driver.findElement(By.id(("laborSuitabilityId11"))));
-        selectLS11.selectByVisibleText(props.getProperty("laborSuitabilityId11"));
-
-        Select selectYOE12 = new Select(driver.findElement(By.id(("yearOfExecutionId12"))));
-        selectYOE12.selectByVisibleText(props.getProperty("yearOfExecutionId12"));
-        Select selectYOD12 = new Select(driver.findElement(By.id(("yearOfDeliveryId12"))));
-        selectYOD12.selectByVisibleText(props.getProperty("yearOfDeliveryId12"));
-        Select selectLS12 = new Select(driver.findElement(By.id(("laborSuitabilityId12"))));
-        selectLS12.selectByVisibleText(props.getProperty("laborSuitabilityId12"));
-
-        Select selectYOE13 = new Select(driver.findElement(By.id(("yearOfExecutionId13"))));
-        selectYOE13.selectByVisibleText(props.getProperty("yearOfExecutionId13"));
-        Select selectYOD13 = new Select(driver.findElement(By.id(("yearOfDeliveryId13"))));
-        selectYOD13.selectByVisibleText(props.getProperty("yearOfDeliveryId13"));
-        Select selectLS13 = new Select(driver.findElement(By.id(("laborSuitabilityId13"))));
-        selectLS13.selectByVisibleText(props.getProperty("laborSuitabilityId13"));
-
-        Select selectYOE14 = new Select(driver.findElement(By.id(("yearOfExecutionId14"))));
-        selectYOE14.selectByVisibleText(props.getProperty("yearOfExecutionId14"));
-        Select selectYOD14 = new Select(driver.findElement(By.id(("yearOfDeliveryId14"))));
-        selectYOD14.selectByVisibleText(props.getProperty("yearOfDeliveryId14"));
-        Select selectLS14 = new Select(driver.findElement(By.id(("laborSuitabilityId14"))));
-        selectLS14.selectByVisibleText(props.getProperty("laborSuitabilityId14"));
-
-        Select selectYOE15 = new Select(driver.findElement(By.id(("yearOfExecutionId15"))));
-        selectYOE15.selectByVisibleText(props.getProperty("yearOfExecutionId15"));
-        Select selectYOD15 = new Select(driver.findElement(By.id(("yearOfDeliveryId15"))));
-        selectYOD15.selectByVisibleText(props.getProperty("yearOfDeliveryId15"));
-        Select selectLS15 = new Select(driver.findElement(By.id(("laborSuitabilityId15"))));
-        selectLS15.selectByVisibleText(props.getProperty("laborSuitabilityId15"));
-
-        Select selectYOE16 = new Select(driver.findElement(By.id(("yearOfExecutionId16"))));
-        selectYOE16.selectByVisibleText(props.getProperty("yearOfExecutionId16"));
-        Select selectYOD16 = new Select(driver.findElement(By.id(("yearOfDeliveryId16"))));
-        selectYOD16.selectByVisibleText(props.getProperty("yearOfDeliveryId16"));
-        Select selectLS16 = new Select(driver.findElement(By.id(("laborSuitabilityId16"))));
-        selectLS16.selectByVisibleText(props.getProperty("laborSuitabilityId16"));
-
-        //#####################################################################################
-
-        Select selectELS0 = new Select(driver.findElement(By.id(("envLaborSuitabilityId0"))));
-        selectELS0.selectByVisibleText(props.getProperty("envLaborSuitabilityId0"));
-
-        Select selectELS1 = new Select(driver.findElement(By.id(("envLaborSuitabilityId1"))));
-        selectELS1.selectByVisibleText(props.getProperty("envLaborSuitabilityId1"));
-
-        Select selectELS2 = new Select(driver.findElement(By.id(("envLaborSuitabilityId2"))));
-        selectELS2.selectByVisibleText(props.getProperty("envLaborSuitabilityId2"));
-
-        Select selectELS3 = new Select(driver.findElement(By.id(("envLaborSuitabilityId3"))));
-        selectELS3.selectByVisibleText(props.getProperty("envLaborSuitabilityId3"));
-
-        Select selectELS4 = new Select(driver.findElement(By.id(("envLaborSuitabilityId4"))));
-        selectELS4.selectByVisibleText(props.getProperty("envLaborSuitabilityId4"));
-
-
-        Select selectELS5 = new Select(driver.findElement(By.id(("envLaborSuitabilityId5"))));
-        selectELS5.selectByVisibleText(props.getProperty("envLaborSuitabilityId5"));
-
-
-        Select selectELS6 = new Select(driver.findElement(By.id(("envLaborSuitabilityId6"))));
-        selectELS6.selectByVisibleText(props.getProperty("envLaborSuitabilityId6"));
-
-
-        Select selectELS7 = new Select(driver.findElement(By.id(("envLaborSuitabilityId7"))));
-        selectELS7.selectByVisibleText(props.getProperty("envLaborSuitabilityId7"));
-
-
-        Select selectELS8 = new Select(driver.findElement(By.id(("envLaborSuitabilityId8"))));
-        selectELS8.selectByVisibleText(props.getProperty("envLaborSuitabilityId8"));
-
-
-        Select selectELS9 = new Select(driver.findElement(By.id(("envLaborSuitabilityId9"))));
-        selectELS9.selectByVisibleText(props.getProperty("envLaborSuitabilityId9"));
-
-
-        Select selectELS10 = new Select(driver.findElement(By.id(("envLaborSuitabilityId10"))));
-        selectELS10.selectByVisibleText(props.getProperty("envLaborSuitabilityId10"));
-
-
-        Select selectELS11 = new Select(driver.findElement(By.id(("envLaborSuitabilityId11"))));
-        selectELS11.selectByVisibleText(props.getProperty("envLaborSuitabilityId11"));
-
-
-        Select selectELS12 = new Select(driver.findElement(By.id(("envLaborSuitabilityId12"))));
-        selectELS12.selectByVisibleText(props.getProperty("envLaborSuitabilityId12"));
-
-
-        Select selectELS13 = new Select(driver.findElement(By.id(("envLaborSuitabilityId13"))));
-        selectELS13.selectByVisibleText(props.getProperty("envLaborSuitabilityId13"));
-
-
-        Select selectELS14 = new Select(driver.findElement(By.id(("envLaborSuitabilityId14"))));
-        selectELS14.selectByVisibleText(props.getProperty("envLaborSuitabilityId14"));
-
-
-        Select selectELS15 = new Select(driver.findElement(By.id(("envLaborSuitabilityId15"))));
-        selectELS15.selectByVisibleText(props.getProperty("envLaborSuitabilityId15"));
-
-
-        Select selectELS16 = new Select(driver.findElement(By.id(("envLaborSuitabilityId16"))));
-        selectELS16.selectByVisibleText(props.getProperty("envLaborSuitabilityId16"));*/
 
     }
 
@@ -608,7 +706,6 @@ public class Diferencial {
 
 
     }
-
 
 
     private void executeANMLogin() throws InterruptedException {
@@ -644,8 +741,6 @@ public class Diferencial {
     }
 
 
-
-
     private WebElement waitElement(String search, String type, String timer) throws InterruptedException {
 
         Thread.sleep(2000);
@@ -659,8 +754,8 @@ public class Diferencial {
             case "path":
                 return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(search)));
             case "link":
-                //return wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(props.getProperty(search))));
-                return wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(search)));
+                return wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(props.getProperty(search))));
+            //return wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(search)));
         }
         return null;
     }
