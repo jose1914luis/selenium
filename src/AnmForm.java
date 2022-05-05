@@ -169,17 +169,11 @@ public class AnmForm {
     public JPanel getRootPanel() {
         return rootPanel;
     }
-    public AnmForm(Properties props) {
+    public AnmForm(Properties props, ChromeDriver driver) {
 
+        this.driver = driver;
         this.props = props;
-        try{
-            System.setProperty("webdriver.chrome.driver", props.getProperty("webdriver"));
-            driver = new ChromeDriver();
-            this.driver.get(props.getProperty("url"));
-        }catch (Exception e){
 
-            showMessageDialog(null, "Configure URL web driver");
-        }
 
 
 

@@ -16,6 +16,8 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
+import static javax.swing.JOptionPane.showMessageDialog;
+
 public class RunSelenium extends JFrame {
 
     private static Properties props = new Properties();
@@ -24,6 +26,7 @@ public class RunSelenium extends JFrame {
 
     private AnmForm anmForm;
     private Configuration configurationForm;
+    private Diferencial diferencialForm;
 
     public RunSelenium() throws IOException, ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException, IllegalAccessException {
 
@@ -34,9 +37,18 @@ public class RunSelenium extends JFrame {
         UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 
 
+        try{
+            System.setProperty("webdriver.chrome.driver", props.getProperty("webdriver"));
+            driver = new ChromeDriver();
+            this.driver.get(props.getProperty("url"));
+        }catch (Exception e){
 
+            showMessageDialog(null, "Error configuring web driver");
+        }
         configurationForm = new Configuration(props);
-        anmForm = new AnmForm(props);
+        anmForm = new AnmForm(props, driver);
+        diferencialForm = new Diferencial(props, driver);
+
         JScrollPane scrollPane = new JScrollPane(configurationForm.getRootPanel());
         add(scrollPane);
 
@@ -74,6 +86,10 @@ public class RunSelenium extends JFrame {
 
         menuItem = new JMenuItem("Concesión diferencial");
         menuItem.getAccessibleContext().setAccessibleDescription("Radicar solicitud de contrato de concesión diferencial");
+        menuItem.addActionListener(e -> {
+
+            scrollPane.setViewportView(diferencialForm.getRootPanel());
+        });
         menu.add(menuItem);
 
 
