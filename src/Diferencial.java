@@ -761,7 +761,7 @@ public class Diferencial {
             WebElement tabEco = driver.findElement(By.xpath("//li[4]//a[1]//uib-tab-heading[1]"));
             tabEco.click();
 
-            paso4();
+            //paso4();
         }
 
 
@@ -807,7 +807,7 @@ public class Diferencial {
         Select personClassificationId2 = new Select(driver.findElement(By.id(("personClassificationId0"))));
         personClassificationId2.selectByVisibleText(props.getProperty("personClassificationId2"));
 
-        if(props.getProperty("personClassificationId2").equals("ersona Natural no obligada a llevar contabilidad")){
+        if(props.getProperty("personClassificationId2").equals("Persona Natural no obligada a llevar contabilidad")){
 
 
             WebElement incomeId0 = driver.findElement(By.id(("incomeId0")));
