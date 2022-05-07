@@ -2070,7 +2070,7 @@
                   <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text value="Timer 2 - seleccion PIN"/>
+                  <text value="Timer 2 - seleccion PIN*"/>
                 </properties>
               </component>
               <component id="63e1" class="javax.swing.JLabel">
@@ -2078,7 +2078,7 @@
                   <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text value="Timer 3 - carga mineral"/>
+                  <text value="Timer 3 - carga mineral*"/>
                 </properties>
               </component>
               <component id="dadb8" class="javax.swing.JLabel">
@@ -2086,7 +2086,7 @@
                   <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text value="Timer 4 - seleccion mineral"/>
+                  <text value="Timer 4 - seleccion mineral*"/>
                 </properties>
               </component>
               <component id="efb36" class="javax.swing.JLabel">
@@ -2102,7 +2102,7 @@
                   <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text value="Timer 6 - entra mapa"/>
+                  <text value="Timer 6 - entra mapa*"/>
                 </properties>
               </component>
               <component id="66f2e" class="javax.swing.JLabel">
@@ -2126,7 +2126,7 @@
                   <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text value="Timer 13 - grupo etnico"/>
+                  <text value="Timer 13 - grupo etnico*"/>
                 </properties>
               </component>
               <component id="6b06d" class="javax.swing.JLabel">
@@ -2142,7 +2142,7 @@
                   <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text value="Timer 11 - pri sel"/>
+                  <text value="Timer 11 - pri sel / Tipo de minería"/>
                 </properties>
               </component>
               <component id="a72a1" class="javax.swing.JLabel">
@@ -2166,7 +2166,7 @@
                   <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text value="Timer 8 - cargar area"/>
+                  <text value="Timer 8 - cargar area*"/>
                 </properties>
               </component>
               <component id="b269e" class="javax.swing.JLabel">
@@ -2174,7 +2174,7 @@
                   <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text value="Timer 7 - ruta mapa"/>
+                  <text value="Timer 7 - ruta mapa*"/>
                 </properties>
               </component>
             </children>

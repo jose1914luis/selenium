@@ -132,6 +132,9 @@ public class Diferencial {
     private JTextField operationIncomeYear1InptId;
     private JTextField operationIncomeYear2InptId;
     private JTextField operationIncomeYear3InptId;
+    private JComboBox earlyExploitationInd;
+    private JComboBox personClassificationId2;
+    private JTextField incomeId0;
     private ChromeDriver driver;
     private Properties props;
 
@@ -143,9 +146,20 @@ public class Diferencial {
         createUIComponents();
 
         ejecutarButton.addActionListener(new ActionListener() {
+
             @Override
             public void actionPerformed(ActionEvent e) {
+                try {
+                    paso1();
+                    paso2();
+                    paso3();
+                    if (props.getProperty("earlyExploitationInd").toString().equals("NO")) {
+                        paso4();
+                    }
 
+                } catch (InterruptedException ex) {
+                    ex.printStackTrace();
+                }
             }
         });
 
@@ -338,7 +352,10 @@ public class Diferencial {
         operationIncomeYear1InptId.setText(props.getProperty("operationIncomeYear1InptId"));
         operationIncomeYear2InptId.setText(props.getProperty("operationIncomeYear2InptId"));
         operationIncomeYear3InptId.setText(props.getProperty("operationIncomeYear3InptId"));
+        earlyExploitationInd.setSelectedItem(props.getProperty("earlyExploitationInd"));
+        personClassificationId2.setSelectedItem(props.getProperty("personClassificationId2"));
 
+        incomeId0.setText(props.getProperty("incomeId0"));
     }
 
 
@@ -460,6 +477,11 @@ public class Diferencial {
             props.setProperty("explorationInvestmentYear2InptId", explorationInvestmentYear2InptId.getText());
             props.setProperty("explorationInvestmentYear3InptId", explorationInvestmentYear3InptId.getText());
 
+            props.setProperty("earlyExploitationInd", earlyExploitationInd.getSelectedItem().toString());
+
+            props.setProperty("personClassificationId2", personClassificationId2.getSelectedItem().toString());
+
+            props.setProperty("incomeId0", incomeId0.getText());
 
             props.store(out, null);
             out.close();
@@ -560,16 +582,14 @@ public class Diferencial {
             btnConfirm.click();
         }
 
+        if (props.getProperty("earlyExploitationInd").toString().equals("SI")) {
 
-        //Thread.sleep(Integer.parseInt(props.getProperty("timer9"))*1000);
-
-        //earlyExploitationIndYesId
-
-        //if (props.getProperty("declareIndId0").toString().equals("SI")) {
-
-        WebElement declareIndId0 = driver.findElement(By.id(("earlyExploitationIndYesId")));
-        declareIndId0.click();
-        //}
+            WebElement declareIndId0 = driver.findElement(By.id(("earlyExploitationIndYesId")));
+            declareIndId0.click();
+        }else{
+            WebElement declareIndId0 = driver.findElement(By.id(("earlyExploitationIndNoId")));
+            declareIndId0.click();
+        }
 
         WebElement buttonNext2 = waitElement("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]", "path", "timer9");
         buttonNext2.click();
@@ -577,6 +597,180 @@ public class Diferencial {
 
     private void paso3() throws InterruptedException {
 
+
+
+        //WebElement tabEco = driver.findElement(By.xpath("//form[@name='p_CaaIataInputAreaDetailsForm']//li[4]"));
+        //tabEco.click();
+
+        WebElement tabInfoDet = waitElement("//div[@id='main']//li[3]//a[1]", "path", "timer10");
+        tabInfoDet.click();
+
+        if (props.getProperty("earlyExploitationInd").toString().equals("SI")) {
+
+            Select typeOfMiningId = new Select(waitElement("typeOfMiningId", "id", "timer11"));
+            typeOfMiningId.selectByVisibleText(props.getProperty("typeOfMiningId"));
+
+            Select systemOfExploitationId = new Select(waitElement("systemOfExploitationId", "id", "timer11"));
+            systemOfExploitationId.selectByVisibleText(props.getProperty("systemOfExploitationId"));
+
+            WebElement btnMineral = waitElement("//button[@class='dropdown-toggle ng-binding btn btn-default']", "path", "timer3");
+            btnMineral.click();
+
+            WebElement labelMineral = waitElement("mineral2", "link", "timer4");
+            labelMineral.click();
+
+            //WebElement btnMineral = waitElement("//button[@class='dropdown-toggle ng-binding btn btn-default']", "path", "timer3");
+            btnMineral.click();
+
+
+            WebElement mineralPriceInptId0 = driver.findElement(By.id(("mineralPriceInptId0")));
+            mineralPriceInptId0.sendKeys(props.getProperty("mineralPriceInptId0"));
+
+            WebElement yearlyProduction1InptId0 = driver.findElement(By.id(("yearlyProduction1InptId0")));
+            yearlyProduction1InptId0.sendKeys(props.getProperty("yearlyProduction1InptId0"));
+
+            WebElement yearlyProduction2InptId0 = driver.findElement(By.id(("yearlyProduction2InptId0")));
+            yearlyProduction2InptId0.sendKeys(props.getProperty("yearlyProduction2InptId0"));
+
+            WebElement yearlyProduction3InptId0 = driver.findElement(By.id(("yearlyProduction3InptId0")));
+            yearlyProduction3InptId0.sendKeys(props.getProperty("yearlyProduction3InptId0"));
+
+            WebElement explorationInvestmentYear1InptId = driver.findElement(By.id(("explorationInvestmentYear1InptId")));
+            explorationInvestmentYear1InptId.sendKeys(props.getProperty("explorationInvestmentYear1InptId"));
+
+            WebElement explorationInvestmentYear2InptId = driver.findElement(By.id(("explorationInvestmentYear2InptId")));
+            explorationInvestmentYear2InptId.sendKeys(props.getProperty("explorationInvestmentYear2InptId"));
+
+            WebElement explorationInvestmentYear3InptId = driver.findElement(By.id(("explorationInvestmentYear3InptId")));
+            explorationInvestmentYear3InptId.sendKeys(props.getProperty("explorationInvestmentYear3InptId"));
+
+
+            //**********************************************************************************************//
+            for (int i = 1; i < 18; i++) {
+
+                if(Boolean.parseBoolean(props.getProperty("checkB"+i))){
+                    WebElement checkB1 = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[1]/tr[" + i + "]/td[2]/input[1]"));
+                    checkB1.click();
+                }
+                //************Aspectos Ambientales Etapa de Exploración************/
+                if(Boolean.parseBoolean(props.getProperty("checkC"+i))){
+                    WebElement revision_ambientalCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[2]/tr[" + i + "]/td[2]/input[1]"));
+                    revision_ambientalCH.click();
+                }
+
+            }
+
+
+            for (int i = 0; i < 34; i++) {
+
+                Select yearOfExecutionId = new Select(driver.findElement(By.id("yearOfExecutionId" + i)));
+                if(i<=16){
+                    yearOfExecutionId.selectByVisibleText(props.getProperty("txtActA" + (i+1)));
+                }else{
+                    //34-17
+                    yearOfExecutionId.selectByVisibleText(props.getProperty("txtActB" + (34-i)));
+                }
+
+
+            }
+
+
+            Select selectTPD = new Select(driver.findElement(By.id(("techProfessionalDesignationId"))));
+            selectTPD.selectByVisibleText(props.getProperty("techProfessionalDesignationId"));
+
+            //Thread.sleep(Integer.parseInt(props.getProperty(""))*1000);
+
+            WebElement techCheckboxId = driver.findElement(By.id(("techCheckboxId")));
+            techCheckboxId.click();
+
+            Select selectTAN = new Select(waitElement("techApplicantNameId", "id", "timer12"));
+            selectTAN.selectByValue(props.getProperty("techApplicantNameId"));
+
+            WebElement buttonAdd = driver.findElement(By.xpath("//button[@data-ng-click='addApplicationContractor(applicantVO); applicantVO=null; professionalDesignationVO=null']"));
+            buttonAdd.click();
+
+            /**********************************************************
+             * Información economica
+             **********************************************************/
+
+            //WebElement tabArea = driver.findElement(By.xpath("//form[@name='p_CaaIataInputAreaDetailsForm']//li[2]"));
+            //tabArea.click();
+            WebElement tabInfoEco = waitElement("//div[@id='main']//li[4]//a[1]", "path", "timer10");
+            tabInfoEco.click();
+
+            for (int i = 1; i < 4; i++) {
+                WebElement operationIncomeYearInptId = driver.findElement(By.id("operationIncomeYear" + i + "InptId"));
+                operationIncomeYearInptId.sendKeys(props.getProperty("operationIncomeYear" + i + "InptId"));
+                for (int j = 0; j < 7; j++) {
+
+                    WebElement yearInptId = driver.findElement(By.id("year" + i + "InptId" + j));
+                    yearInptId.sendKeys(props.getProperty("year" + i + "InptId" + j));
+                }
+
+            }
+            WebElement declarationOfLegalOriginOfFundsChbxId = driver.findElement(By.id(("declarationOfLegalOriginOfFundsChbxId")));
+            declarationOfLegalOriginOfFundsChbxId.click();
+
+            pasoIntermedio();
+
+            WebElement buttonContinuar = driver.findElement(By.xpath("//button[@class='btn btn-labeled bg-color-greenDark txt-color-white ng-scope']"));
+            buttonContinuar.click();
+
+        }else{
+
+            Select selectYOE0 = new Select(waitElement("yearOfExecutionId0", "id", "timer11"));
+            selectYOE0.selectByVisibleText(props.getProperty("yearOfExecutionId0"));
+            Select selectYOD0 = new Select(driver.findElement(By.id(("yearOfDeliveryId0"))));
+            selectYOD0.selectByVisibleText(props.getProperty("yearOfDeliveryId0"));
+            Select selectLS0 = new Select(driver.findElement(By.id(("laborSuitabilityId0"))));
+            selectLS0.selectByVisibleText(props.getProperty("laborSuitabilityId0"));
+
+            for (int i = 1; i < 17; i++) {
+                Select selectYOE1 = new Select(driver.findElement(By.id("yearOfExecutionId"+i)));
+                selectYOE1.selectByVisibleText(props.getProperty("yearOfExecutionId"+i));
+                Select selectYOD1 = new Select(driver.findElement(By.id("yearOfDeliveryId"+i)));
+                selectYOD1.selectByVisibleText(props.getProperty("yearOfDeliveryId"+i));
+                Select selectLS1 = new Select(driver.findElement(By.id("laborSuitabilityId"+i)));
+                selectLS1.selectByVisibleText(props.getProperty("laborSuitabilityId"+i));
+            }
+
+            //#####################################################################################
+
+            for (int i = 0; i < 17; i++) {
+                Select selectELS0 = new Select(driver.findElement(By.id("envLaborSuitabilityId"+i)));
+                selectELS0.selectByVisibleText(props.getProperty("envLaborSuitabilityId"+i));
+            }
+
+            Select selectTPD = new Select(driver.findElement(By.id(("techProfessionalDesignationId"))));
+            selectTPD.selectByVisibleText(props.getProperty("techProfessionalDesignationId"));
+
+            //Thread.sleep(Integer.parseInt(props.getProperty(""))*1000);
+
+            WebElement checkboxAccept = driver.findElement(By.id(("techCheckboxId")));
+            checkboxAccept.click();
+
+            Select selectTAN = new Select(waitElement("techApplicantNameId", "id", "timer12"));
+            selectTAN.selectByValue(props.getProperty("techApplicantNameId"));
+            //selectTAN.selectByVisibleText(props.getProperty("techApplicantNameId"));
+
+            WebElement buttonAdd = driver.findElement(By.xpath("//div[@class='tab-pane ng-scope active']//button[@class='btn btn-labeled bg-color-greenDark txt-color-white']"));
+            buttonAdd.click();
+
+            pasoIntermedio();
+
+            WebElement tabEco = driver.findElement(By.xpath("//li[4]//a[1]//uib-tab-heading[1]"));
+            tabEco.click();
+
+            paso4();
+        }
+
+
+
+
+
+    }
+
+    private void pasoIntermedio() throws InterruptedException {
         WebElement tabArea = driver.findElement(By.xpath("//div[@id='main']//li[2]//a[1]"));
         tabArea.click();
 
@@ -590,121 +784,64 @@ public class Diferencial {
             WebElement additionalEthnicGroupsInSelectedAreaIndId = waitElement("//input[2]", "path", "timer13");
             additionalEthnicGroupsInSelectedAreaIndId.click();
         }
-
-        //WebElement tabEco = driver.findElement(By.xpath("//form[@name='p_CaaIataInputAreaDetailsForm']//li[4]"));
-        //tabEco.click();
-
-        WebElement tabInfoDet = waitElement("//div[@id='main']//li[3]//a[1]", "path", "timer10");
-        tabInfoDet.click();
-
-
-        Select typeOfMiningId = new Select(waitElement("typeOfMiningId", "id", "timer11"));
-        typeOfMiningId.selectByVisibleText(props.getProperty("typeOfMiningId"));
-
-        Select systemOfExploitationId = new Select(driver.findElement(By.id("systemOfExploitationId")));
-        systemOfExploitationId.selectByVisibleText(props.getProperty("systemOfExploitationId"));
-
-        WebElement btnMineral = waitElement("//button[@class='dropdown-toggle ng-binding btn btn-default']", "path", "timer3");
-        btnMineral.click();
-
-        WebElement labelMineral = waitElement("mineral2", "link", "timer4");
-        labelMineral.click();
-
-        //WebElement btnMineral = waitElement("//button[@class='dropdown-toggle ng-binding btn btn-default']", "path", "timer3");
-        btnMineral.click();
-
-
-        WebElement mineralPriceInptId0 = driver.findElement(By.id(("mineralPriceInptId0")));
-        mineralPriceInptId0.sendKeys(props.getProperty("mineralPriceInptId0"));
-
-        WebElement yearlyProduction1InptId0 = driver.findElement(By.id(("yearlyProduction1InptId0")));
-        yearlyProduction1InptId0.sendKeys(props.getProperty(""));
-
-        WebElement yearlyProduction2InptId0 = driver.findElement(By.id(("yearlyProduction2InptId0")));
-        yearlyProduction2InptId0.sendKeys(props.getProperty("yearlyProduction2InptId0"));
-
-        WebElement yearlyProduction3InptId0 = driver.findElement(By.id(("yearlyProduction3InptId0")));
-        yearlyProduction3InptId0.sendKeys(props.getProperty("yearlyProduction3InptId0"));
-
-        WebElement explorationInvestmentYear1InptId = driver.findElement(By.id(("explorationInvestmentYear1InptId")));
-        explorationInvestmentYear1InptId.sendKeys(props.getProperty("explorationInvestmentYear1InptId"));
-
-        WebElement explorationInvestmentYear2InptId = driver.findElement(By.id(("explorationInvestmentYear2InptId")));
-        explorationInvestmentYear2InptId.sendKeys(props.getProperty("explorationInvestmentYear2InptId"));
-
-        WebElement explorationInvestmentYear3InptId = driver.findElement(By.id(("explorationInvestmentYear3InptId")));
-        explorationInvestmentYear3InptId.sendKeys(props.getProperty("explorationInvestmentYear3InptId"));
-
-
-        //**********************************************************************************************//
-        for (int i = 1; i < 18; i++) {
-
-            if(Boolean.parseBoolean(props.getProperty("checkB"+i))){
-                WebElement checkB1 = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[1]/tr[" + i + "]/td[2]/input[1]"));
-                checkB1.click();
-            }
-            //************Aspectos Ambientales Etapa de Exploración************/
-            if(Boolean.parseBoolean(props.getProperty("checkC"+i))){
-                WebElement revision_ambientalCH = driver.findElement(By.xpath("//body[1]/div[2]/div[3]/form[1]/p-pccd-xacd-title-acquisition-detail[1]/article[1]/div[1]/div[1]/div[1]/div[3]/div[1]/p-pccd-xacd-exploration-activities[1]/ext-panel[1]/article[1]/div[1]/div[1]/ng-transclude[1]/div[1]/table[1]/tbody[2]/tr[" + i + "]/td[2]/input[1]"));
-                revision_ambientalCH.click();
-            }
-
-        }
-
-
-
-        for (int i = 0; i < 34; i++) {
-
-            Select yearOfExecutionId = new Select(driver.findElement(By.id("yearOfExecutionId" + i)));
-            yearOfExecutionId.selectByVisibleText(props.getProperty("yearOfExecutionId" + i));
-        }
-
-
-        Select selectTPD = new Select(driver.findElement(By.id(("techProfessionalDesignationId"))));
-        selectTPD.selectByVisibleText(props.getProperty("techProfessionalDesignationId"));
-
-        //Thread.sleep(Integer.parseInt(props.getProperty(""))*1000);
-
-        WebElement techCheckboxId = driver.findElement(By.id(("techCheckboxId")));
-        techCheckboxId.click();
-
-        Select selectTAN = new Select(waitElement("techApplicantNameId", "id", "timer12"));
-        selectTAN.selectByValue(props.getProperty("techApplicantNameId"));
-
-        WebElement buttonAdd = driver.findElement(By.xpath("//button[@data-ng-click='addApplicationContractor(applicantVO); applicantVO=null; professionalDesignationVO=null']"));
-        buttonAdd.click();
-
-        /**********************************************************
-         * Información economica
-         **********************************************************/
-
-        //WebElement tabArea = driver.findElement(By.xpath("//form[@name='p_CaaIataInputAreaDetailsForm']//li[2]"));
-        //tabArea.click();
-        WebElement tabInfoEco = waitElement("//div[@id='main']//li[4]//a[1]", "path", "timer10");
-        tabInfoEco.click();
-
-        for (int i = 1; i < 4; i++) {
-            WebElement operationIncomeYearInptId = driver.findElement(By.id("operationIncomeYear" + i + "InptId"));
-            operationIncomeYearInptId.sendKeys(props.getProperty("operationIncomeYear" + i + "InptId"));
-            for (int j = 0; j < 7; j++) {
-
-                WebElement yearInptId = driver.findElement(By.id("year" + i + "InptId" + j));
-                yearInptId.sendKeys(props.getProperty("year" + i + "InptId" + j));
-            }
-
-        }
-        WebElement declarationOfLegalOriginOfFundsChbxId = driver.findElement(By.id(("declarationOfLegalOriginOfFundsChbxId")));
-        declarationOfLegalOriginOfFundsChbxId.click();
-
-
-        WebElement buttonContinuar = driver.findElement(By.xpath("//button[@class='btn btn-labeled bg-color-greenDark txt-color-white ng-scope']"));
-        buttonContinuar.click();
-
     }
 
     private void paso4() throws InterruptedException {
 
 
+        /**********************************************************
+         * Información economica
+         **********************************************************/
+
+        //Thread.sleep(Integer.parseInt(props.getProperty("timer14"))*1000);
+
+        //Select selectPC = new Select(waitElement("personClassificationId0", "id", "timer14"));
+        //selectPC.selectByVisibleText(props.getProperty("personClassificationId0"));
+
+        if (props.getProperty("declareIndId0").toString().equals("SI")) {
+
+            WebElement declareIndId0 = driver.findElement(By.id(("declareIndId0")));
+            declareIndId0.click();
+        }
+
+        Select personClassificationId2 = new Select(driver.findElement(By.id(("personClassificationId0"))));
+        personClassificationId2.selectByVisibleText(props.getProperty("personClassificationId2"));
+
+        if(props.getProperty("personClassificationId2").equals("ersona Natural no obligada a llevar contabilidad")){
+
+
+            WebElement incomeId0 = driver.findElement(By.id(("incomeId0")));
+            incomeId0.sendKeys(props.getProperty("incomeId0"));
+        }else{
+
+            WebElement currentAssetId0 = driver.findElement(By.id(("currentAssetId0")));
+            currentAssetId0.sendKeys(props.getProperty("currentAssetId0"));
+
+            WebElement currentLiabilitiesId0 = driver.findElement(By.id(("currentLiabilitiesId0")));
+            currentLiabilitiesId0.sendKeys(props.getProperty("currentLiabilitiesId0"));
+
+            WebElement totalAssetId0 = driver.findElement(By.id(("totalAssetId0")));
+            totalAssetId0.sendKeys(props.getProperty("totalAssetId0"));
+
+            WebElement totalLiabilitiesId0 = driver.findElement(By.id(("totalLiabilitiesId0")));
+            totalLiabilitiesId0.sendKeys(props.getProperty("totalLiabilitiesId0"));
+        }
+
+        Select selectEPD = new Select(driver.findElement(By.id(("ecoProfessionalDesignationId"))));
+        selectEPD.selectByVisibleText(props.getProperty("ecoProfessionalDesignationId"));
+
+        Thread.sleep(Integer.parseInt(props.getProperty("timer15")) * 1000);
+
+
+        Select selectEAN = new Select(waitElement("ecoApplicantNameId", "id", "timer15"));
+        //selectEAN.selectByVisibleText(props.getProperty("ecoApplicantNameId"));
+        selectEAN.selectByValue(props.getProperty("ecoApplicantNameId"));
+
+        WebElement buttonAdd2 = driver.findElement(By.xpath(" //div[@class='tab-pane ng-scope active']//span[@class='btn-label ng-binding'][contains(text(),'Agregar')]"));
+        buttonAdd2.click();
+
+        WebElement buttonNext3 = driver.findElement(By.xpath("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]"));
+        buttonNext3.click();
     }
 
 
@@ -728,13 +865,13 @@ public class Diferencial {
         /**********************************************************
          * Panel
          **********************************************************/
-        Thread.sleep(2000);
+        Thread.sleep(Integer.parseInt(props.getProperty("timer1")) * 1000);
 
 
         WebElement menu = driver.findElement(By.xpath("//a[@class='cata-collapse-click menu ng-scope']//span[@class='menu-item-parent ng-binding'][contains(text(),'Solicitudes')]"));
         menu.click();
 
-        Thread.sleep(10000);
+        Thread.sleep(5000);
 
         Select selectCambiarUsuario = new Select(driver.findElement(By.xpath("//select[@aria-label='Cambiar el usuario:']")));
         selectCambiarUsuario.selectByVisibleText(props.getProperty("cambiarUsuario"));
@@ -743,7 +880,7 @@ public class Diferencial {
 
     private WebElement waitElement(String search, String type, String timer) throws InterruptedException {
 
-        Thread.sleep(2000);
+        Thread.sleep(Integer.parseInt(props.getProperty(timer)) * 1000);
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 
         switch (type) {
