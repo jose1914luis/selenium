@@ -202,10 +202,10 @@ public class AnmForm {
 
         ejecutarButton.addActionListener(e -> {
             try {
-                paso1();
-                paso2();
-                paso3();
-                paso4();
+                stepOne();
+                stepTwo();
+                stepThree();
+                stepFour();
             } catch (InterruptedException ex) {
                 ex.printStackTrace();
             }
@@ -213,7 +213,7 @@ public class AnmForm {
 
         paso1Button.addActionListener(e -> {
             try {
-                paso1();
+                stepOne();
             } catch (InterruptedException ex) {
                 ex.printStackTrace();
             }
@@ -221,7 +221,7 @@ public class AnmForm {
 
         paso2Button.addActionListener(e -> {
             try {
-                paso2();
+                stepTwo();
             } catch (InterruptedException ex) {
                 ex.printStackTrace();
             }
@@ -229,7 +229,7 @@ public class AnmForm {
 
         paso3Button.addActionListener(e -> {
             try {
-                paso3();
+                stepThree();
             } catch (InterruptedException ex) {
                 ex.printStackTrace();
             }
@@ -237,7 +237,7 @@ public class AnmForm {
 
         paso4Button.addActionListener(e -> {
             try {
-                paso4();
+                stepFour();
             } catch (InterruptedException ex) {
                 ex.printStackTrace();
             }
@@ -324,7 +324,7 @@ public class AnmForm {
         return null;
     }
 
-    private void paso1() throws InterruptedException {
+    private void stepOne() throws InterruptedException {
         WebElement submenu = driver.findElement(By.xpath("//a[contains(text(),'Radicar solicitud de propuesta')]"));
         submenu.click();
 
@@ -337,7 +337,7 @@ public class AnmForm {
 
     }
 
-    private void paso2() throws InterruptedException {
+    private void stepTwo() throws InterruptedException {
 
         //Ingresar detalles del área
         WebElement btnMineral = waitElement(".btn-default", "css", "timer3");
@@ -398,7 +398,7 @@ public class AnmForm {
         tabInfoTec.click();
     }
 
-    private void paso3() throws InterruptedException {
+    private void stepThree() throws InterruptedException {
 
 
         //Thread.sleep(Integer.parseInt(props.getProperty("timer11"))*1000);
@@ -472,7 +472,7 @@ public class AnmForm {
         tabEco.click();
     }
 
-    private void paso4() throws InterruptedException {
+    private void stepFour() throws InterruptedException {
 
         //Información economica
         if (props.getProperty("declareIndId0").toString().equals("SI")) {
