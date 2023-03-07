@@ -145,91 +145,62 @@ public class Diferencial {
 
         createUIComponents();
 
-        ejecutarButton.addActionListener(new ActionListener() {
-
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                try {
-                    paso1();
-                    paso2();
-                    paso3();
-                    if (props.getProperty("earlyExploitationInd").toString().equals("NO")) {
-                        paso4();
-                    }
-
-                } catch (InterruptedException ex) {
-                    ex.printStackTrace();
-                }
-            }
-        });
-
-        loginButton.addActionListener(new ActionListener() {
-
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                try {
-
-                    executeANMLogin();
-                } catch (InterruptedException ex) {
-                    ex.printStackTrace();
-                }
-            }
-        });
-
-        paso1Button.addActionListener(new ActionListener() {
-
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                try {
-                    paso1();
-                } catch (InterruptedException ex) {
-                    ex.printStackTrace();
-                }
-            }
-        });
-
-        paso2Button.addActionListener(new ActionListener() {
-
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                try {
-                    paso2();
-                } catch (InterruptedException ex) {
-                    ex.printStackTrace();
-                }
-            }
-        });
-
-        paso3Button.addActionListener(new ActionListener() {
-
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                try {
-                    paso3();
-                } catch (InterruptedException ex) {
-                    ex.printStackTrace();
-                }
-            }
-        });
-
-        paso4Button.addActionListener(new ActionListener() {
-
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                try {
+        ejecutarButton.addActionListener(e -> {
+            try {
+                paso1();
+                paso2();
+                paso3();
+                if (props.getProperty("earlyExploitationInd").toString().equals("NO")) {
                     paso4();
-                } catch (InterruptedException ex) {
-                    ex.printStackTrace();
                 }
+
+            } catch (InterruptedException ex) {
+                ex.printStackTrace();
             }
         });
 
-        guardarButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                saveData();
+        loginButton.addActionListener(e -> {
+            try {
+
+                executeANMLogin();
+            } catch (InterruptedException ex) {
+                ex.printStackTrace();
             }
         });
+
+        paso1Button.addActionListener(e -> {
+            try {
+                paso1();
+            } catch (InterruptedException ex) {
+                ex.printStackTrace();
+            }
+        });
+
+        paso2Button.addActionListener(e -> {
+            try {
+                paso2();
+            } catch (InterruptedException ex) {
+                ex.printStackTrace();
+            }
+        });
+
+        paso3Button.addActionListener(e -> {
+            try {
+                paso3();
+            } catch (InterruptedException ex) {
+                ex.printStackTrace();
+            }
+        });
+
+        paso4Button.addActionListener(e -> {
+            try {
+                paso4();
+            } catch (InterruptedException ex) {
+                ex.printStackTrace();
+            }
+        });
+
+        guardarButton.addActionListener(e -> saveData());
 
     }
 

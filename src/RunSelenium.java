@@ -1,19 +1,9 @@
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.time.Duration;
 import java.util.Properties;
 
 import static javax.swing.JOptionPane.showMessageDialog;
@@ -25,7 +15,7 @@ public class RunSelenium extends JFrame {
     private static ChromeDriver driver;
 
     private AnmForm anmForm;
-    private Configuration configurationForm;
+    private ConfigurationForm configurationForm;
     private Diferencial diferencialForm;
 
     public RunSelenium() throws IOException, ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException, IllegalAccessException {
@@ -36,7 +26,6 @@ public class RunSelenium extends JFrame {
 
         UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 
-
         try{
             System.setProperty("webdriver.chrome.driver", props.getProperty("webdriver"));
             driver = new ChromeDriver();
@@ -45,7 +34,7 @@ public class RunSelenium extends JFrame {
 
             showMessageDialog(null, "Error configuring web driver");
         }
-        configurationForm = new Configuration(props);
+        configurationForm = new ConfigurationForm(props);
         anmForm = new AnmForm(props, driver);
         diferencialForm = new Diferencial(props, driver);
 
@@ -59,13 +48,11 @@ public class RunSelenium extends JFrame {
         JRadioButtonMenuItem rbMenuItem;
         JCheckBoxMenuItem cbMenuItem;
 
-//Create the menu bar.
+        //Create the menu bar.
         menuBar = new JMenuBar();
 
-//Build the first menu.
+        //Build the first menu.
         menu = new JMenu("Radicar");
-        //menu.setMnemonic(KeyEvent.VK_A);
-        menu.getAccessibleContext().setAccessibleDescription("Configuración del sistema");
         menuBar.add(menu);
 
         menuItem = new JMenuItem("Configuración");
@@ -91,7 +78,6 @@ public class RunSelenium extends JFrame {
             scrollPane.setViewportView(diferencialForm.getRootPanel());
         });
         menu.add(menuItem);
-
 
         setJMenuBar(menuBar);
 

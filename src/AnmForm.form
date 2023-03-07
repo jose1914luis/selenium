@@ -14,7 +14,7 @@
     </clientProperties>
     <border type="none"/>
     <children>
-      <tabbedpane id="1808" binding="tabbedPane1" default-binding="true">
+      <tabbedpane id="1808" binding="groupPanel">
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="200" height="200"/>
@@ -25,7 +25,7 @@
           <size top="5" left="5" bottom="5" right="5"/>
         </border>
         <children>
-          <grid id="3a85a" layout-manager="GridLayoutManager" row-count="18" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="3a85a" layout-manager="GridLayoutManager" row-count="17" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="5" left="5" bottom="5" right="5"/>
             <constraints>
               <tabbedpane title="Informacion Personal"/>
@@ -205,7 +205,7 @@
                   <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text value="Prefesión"/>
+                  <text value="Profesión"/>
                 </properties>
               </component>
               <component id="92d2a" class="javax.swing.JComboBox" binding="declareIndId0">
@@ -323,16 +323,6 @@
                   <text value=""/>
                 </properties>
               </component>
-              <component id="5c036" class="javax.swing.JCheckBox" binding="radicarCheck">
-                <constraints>
-                  <grid row="17" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-                </constraints>
-                <properties>
-                  <enabled value="false"/>
-                  <selected value="false"/>
-                  <text value="Radicar"/>
-                </properties>
-              </component>
               <component id="9a5e2" class="javax.swing.JLabel">
                 <constraints>
                   <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
@@ -383,7 +373,7 @@
               </component>
             </children>
           </grid>
-          <grid id="5e5cc" layout-manager="GridLayoutManager" row-count="17" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="5e5cc" binding="explorerPanel" layout-manager="GridLayoutManager" row-count="17" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="5" left="5" bottom="5" right="5"/>
             <constraints>
               <tabbedpane title="Actividades exploratorias"/>
@@ -409,6 +399,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfExecutionId3"/>
                 </properties>
               </component>
               <component id="f3b2f" class="javax.swing.JLabel">
@@ -429,6 +420,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfExecutionId4"/>
                 </properties>
               </component>
               <component id="701f6" class="javax.swing.JComboBox" binding="yearOfExecutionId5">
@@ -441,6 +433,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfExecutionId5"/>
                 </properties>
               </component>
               <component id="82202" class="javax.swing.JLabel">
@@ -461,6 +454,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfDeliveryId3"/>
                 </properties>
               </component>
               <component id="bd5a9" class="javax.swing.JComboBox" binding="yearOfDeliveryId4">
@@ -473,6 +467,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfDeliveryId4"/>
                 </properties>
               </component>
               <component id="70086" class="javax.swing.JComboBox" binding="yearOfDeliveryId5">
@@ -485,6 +480,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfDeliveryId5"/>
                 </properties>
               </component>
               <component id="5fe4a" class="javax.swing.JComboBox" binding="laborSuitabilityId3">
@@ -495,6 +491,7 @@
                   <model>
                     <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
                   </model>
+                  <name value="laborSuitabilityId3"/>
                 </properties>
               </component>
               <component id="f3ded" class="javax.swing.JComboBox" binding="laborSuitabilityId4">
@@ -505,6 +502,7 @@
                   <model>
                     <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
                   </model>
+                  <name value="laborSuitabilityId4"/>
                 </properties>
               </component>
               <component id="e1147" class="javax.swing.JComboBox" binding="laborSuitabilityId5">
@@ -515,6 +513,7 @@
                   <model>
                     <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
                   </model>
+                  <name value="laborSuitabilityId5"/>
                 </properties>
               </component>
               <component id="ba6dc" class="javax.swing.JComboBox" binding="yearOfExecutionId6">
@@ -527,6 +526,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfExecutionId6"/>
                 </properties>
               </component>
               <component id="5c1c5" class="javax.swing.JComboBox" binding="yearOfExecutionId7">
@@ -539,6 +539,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfExecutionId7"/>
                 </properties>
               </component>
               <component id="d270f" class="javax.swing.JLabel">
@@ -575,6 +576,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfExecutionId8"/>
                 </properties>
               </component>
               <component id="a0cbf" class="javax.swing.JLabel">
@@ -595,6 +597,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfExecutionId9"/>
                 </properties>
               </component>
               <component id="29b1" class="javax.swing.JLabel">
@@ -615,6 +618,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfExecutionId10"/>
                 </properties>
               </component>
               <component id="32e88" class="javax.swing.JLabel">
@@ -635,6 +639,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfExecutionId11"/>
                 </properties>
               </component>
               <component id="eb478" class="javax.swing.JLabel">
@@ -655,6 +660,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfExecutionId12"/>
                 </properties>
               </component>
               <component id="28371" class="javax.swing.JLabel">
@@ -675,6 +681,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfExecutionId13"/>
                 </properties>
               </component>
               <component id="7a76f" class="javax.swing.JLabel">
@@ -695,6 +702,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfExecutionId14"/>
                 </properties>
               </component>
               <component id="b154e" class="javax.swing.JComboBox" binding="yearOfDeliveryId6">
@@ -707,6 +715,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfDeliveryId6"/>
                 </properties>
               </component>
               <component id="b4ccb" class="javax.swing.JComboBox" binding="yearOfDeliveryId7">
@@ -719,6 +728,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfDeliveryId7"/>
                 </properties>
               </component>
               <component id="cf37" class="javax.swing.JComboBox" binding="yearOfDeliveryId8">
@@ -731,6 +741,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfDeliveryId8"/>
                 </properties>
               </component>
               <component id="3daad" class="javax.swing.JComboBox" binding="yearOfDeliveryId9">
@@ -743,6 +754,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfDeliveryId9"/>
                 </properties>
               </component>
               <component id="62273" class="javax.swing.JComboBox" binding="yearOfDeliveryId10">
@@ -755,6 +767,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfDeliveryId10"/>
                 </properties>
               </component>
               <component id="b1b88" class="javax.swing.JComboBox" binding="yearOfDeliveryId11">
@@ -767,6 +780,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfDeliveryId11"/>
                 </properties>
               </component>
               <component id="1a94e" class="javax.swing.JComboBox" binding="yearOfDeliveryId12">
@@ -779,6 +793,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfDeliveryId12"/>
                 </properties>
               </component>
               <component id="de86f" class="javax.swing.JComboBox" binding="yearOfDeliveryId13">
@@ -791,6 +806,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfDeliveryId13"/>
                 </properties>
               </component>
               <component id="367fe" class="javax.swing.JComboBox" binding="yearOfDeliveryId14">
@@ -803,6 +819,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfDeliveryId14"/>
                 </properties>
               </component>
               <component id="d8ea2" class="javax.swing.JComboBox" binding="laborSuitabilityId6">
@@ -815,6 +832,7 @@
                   <model>
                     <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
                   </model>
+                  <name value="laborSuitabilityId"/>
                 </properties>
               </component>
               <component id="d16e7" class="javax.swing.JComboBox" binding="laborSuitabilityId7">
@@ -828,6 +846,7 @@
                     <item value="Hidrologo"/>
                     <item value="Topografo"/>
                   </model>
+                  <name value="laborSuitabilityId7"/>
                 </properties>
               </component>
               <component id="7c163" class="javax.swing.JComboBox" binding="laborSuitabilityId8">
@@ -840,6 +859,7 @@
                     <item value="Hidrogeologo"/>
                     <item value="Hidrologo"/>
                   </model>
+                  <name value="laborSuitabilityId8"/>
                 </properties>
               </component>
               <component id="c2b5b" class="javax.swing.JComboBox" binding="laborSuitabilityId9">
@@ -850,6 +870,7 @@
                   <model>
                     <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
                   </model>
+                  <name value="laborSuitabilityId9"/>
                 </properties>
               </component>
               <component id="9ae4b" class="javax.swing.JComboBox" binding="laborSuitabilityId10">
@@ -860,6 +881,7 @@
                   <model>
                     <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
                   </model>
+                  <name value="laborSuitabilityId10"/>
                 </properties>
               </component>
               <component id="d65c9" class="javax.swing.JComboBox" binding="laborSuitabilityId11">
@@ -870,6 +892,7 @@
                   <model>
                     <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
                   </model>
+                  <name value="laborSuitabilityId11"/>
                 </properties>
               </component>
               <component id="d1e94" class="javax.swing.JComboBox" binding="laborSuitabilityId12">
@@ -883,6 +906,7 @@
                     <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
                     <item value="Geotecnista"/>
                   </model>
+                  <name value="laborSuitabilityId12"/>
                 </properties>
               </component>
               <component id="8cdae" class="javax.swing.JComboBox" binding="laborSuitabilityId13">
@@ -895,6 +919,7 @@
                     <item value="Hidrogeologo"/>
                     <item value="Hidrologo"/>
                   </model>
+                  <name value="laborSuitabilityId13"/>
                 </properties>
               </component>
               <component id="73621" class="javax.swing.JComboBox" binding="laborSuitabilityId14">
@@ -906,6 +931,7 @@
                     <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
                     <item value="Hidrogeologo"/>
                   </model>
+                  <name value="laborSuitabilityId14"/>
                 </properties>
               </component>
               <component id="3995b" class="javax.swing.JLabel">
@@ -926,6 +952,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfExecutionId15"/>
                 </properties>
               </component>
               <component id="d30d8" class="javax.swing.JLabel">
@@ -946,6 +973,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfExecutionId16"/>
                 </properties>
               </component>
               <component id="c804d" class="javax.swing.JComboBox" binding="yearOfDeliveryId15">
@@ -958,6 +986,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfDeliveryId15"/>
                 </properties>
               </component>
               <component id="2ae0e" class="javax.swing.JComboBox" binding="yearOfDeliveryId16">
@@ -970,6 +999,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfDeliveryId16"/>
                 </properties>
               </component>
               <component id="aa3fd" class="javax.swing.JComboBox" binding="laborSuitabilityId15">
@@ -980,6 +1010,7 @@
                   <model>
                     <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
                   </model>
+                  <name value="laborSuitabilityId15"/>
                 </properties>
               </component>
               <component id="5bf29" class="javax.swing.JComboBox" binding="laborSuitabilityId16">
@@ -990,6 +1021,7 @@
                   <model>
                     <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
                   </model>
+                  <name value="laborSuitabilityId16"/>
                 </properties>
               </component>
               <component id="afb4a" class="javax.swing.JLabel">
@@ -1010,6 +1042,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfExecutionId2"/>
                 </properties>
               </component>
               <component id="3d258" class="javax.swing.JComboBox" binding="yearOfDeliveryId2">
@@ -1022,6 +1055,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfDeliveryId2"/>
                 </properties>
               </component>
               <component id="1d13d" class="javax.swing.JLabel">
@@ -1050,6 +1084,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfExecutionId1"/>
                 </properties>
               </component>
               <component id="5fda0" class="javax.swing.JComboBox" binding="yearOfExecutionId0">
@@ -1062,6 +1097,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfExecutionId0"/>
                 </properties>
               </component>
               <component id="e36be" class="javax.swing.JComboBox" binding="yearOfDeliveryId1">
@@ -1074,6 +1110,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfDeliveryId1"/>
                 </properties>
               </component>
               <component id="edc40" class="javax.swing.JComboBox" binding="yearOfDeliveryId0">
@@ -1086,6 +1123,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="yearOfDeliveryId0"/>
                 </properties>
               </component>
               <component id="cf550" class="javax.swing.JComboBox" binding="laborSuitabilityId2">
@@ -1097,6 +1135,7 @@
                     <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
                     <item value="Topografo"/>
                   </model>
+                  <name value="laborSuitabilityId2"/>
                 </properties>
               </component>
               <component id="4a98f" class="javax.swing.JComboBox" binding="laborSuitabilityId1">
@@ -1108,6 +1147,7 @@
                     <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
                     <item value="Trabajador social o Comunicador o Antropologo"/>
                   </model>
+                  <name value="laborSuitabilityId1"/>
                 </properties>
               </component>
               <component id="8f862" class="javax.swing.JComboBox" binding="laborSuitabilityId0">
@@ -1118,11 +1158,12 @@
                   <model>
                     <item value="Ingeniero de Minas, Ingeniero Geólogo o Geólogo"/>
                   </model>
+                  <name value="laborSuitabilityId0"/>
                 </properties>
               </component>
             </children>
           </grid>
-          <grid id="97289" layout-manager="GridLayoutManager" row-count="17" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="97289" binding="ambientalPanel" layout-manager="GridLayoutManager" row-count="17" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="5" left="5" bottom="5" right="5"/>
             <constraints>
               <tabbedpane title="Actividades Ambientales"/>
@@ -1149,6 +1190,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfDeliveryId0"/>
                 </properties>
               </component>
               <component id="fbbb6" class="javax.swing.JComboBox" binding="envLaborSuitabilityId0">
@@ -1163,6 +1205,7 @@
                     <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
                     <item value="Profesional (GIS)SIG"/>
                   </model>
+                  <name value="envLaborSuitabilityId0"/>
                 </properties>
               </component>
               <component id="36844" class="javax.swing.JLabel">
@@ -1184,6 +1227,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfExecutionId0"/>
                 </properties>
               </component>
               <component id="20f58" class="javax.swing.JComboBox" binding="envYearOfExecutionId1">
@@ -1197,6 +1241,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfExecutionId1"/>
                 </properties>
               </component>
               <component id="e9c40" class="javax.swing.JComboBox" binding="envYearOfDeliveryId1">
@@ -1210,6 +1255,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfDeliveryId1"/>
                 </properties>
               </component>
               <component id="b948" class="javax.swing.JComboBox" binding="envLaborSuitabilityId1">
@@ -1224,6 +1270,7 @@
                     <item value="Ingeniero civil"/>
                     <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
                   </model>
+                  <name value="envLaborSuitabilityId1"/>
                 </properties>
               </component>
               <component id="83e1" class="javax.swing.JLabel">
@@ -1253,6 +1300,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfExecutionId2"/>
                 </properties>
               </component>
               <component id="e5a79" class="javax.swing.JComboBox" binding="envYearOfExecutionId3">
@@ -1266,6 +1314,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfExecutionId3"/>
                 </properties>
               </component>
               <component id="c2620" class="javax.swing.JComboBox" binding="envYearOfDeliveryId2">
@@ -1279,6 +1328,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfDeliveryId2"/>
                 </properties>
               </component>
               <component id="f372e" class="javax.swing.JComboBox" binding="envYearOfDeliveryId3">
@@ -1292,6 +1342,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfDeliveryId3"/>
                 </properties>
               </component>
               <component id="720bd" class="javax.swing.JComboBox" binding="envLaborSuitabilityId2">
@@ -1305,6 +1356,7 @@
                     <item value="Ingeniero civil"/>
                     <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
                   </model>
+                  <name value="envLaborSuitabilityId2"/>
                 </properties>
               </component>
               <component id="f6e9b" class="javax.swing.JComboBox" binding="envLaborSuitabilityId3">
@@ -1319,6 +1371,7 @@
                     <item value="Ingeniero civil"/>
                     <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
                   </model>
+                  <name value="envLaborSuitabilityId3"/>
                 </properties>
               </component>
               <component id="61f40" class="javax.swing.JLabel">
@@ -1388,6 +1441,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfExecutionId4"/>
                 </properties>
               </component>
               <component id="f4747" class="javax.swing.JComboBox" binding="envYearOfExecutionId5">
@@ -1401,6 +1455,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfExecutionId5"/>
                 </properties>
               </component>
               <component id="32ec9" class="javax.swing.JComboBox" binding="envYearOfExecutionId6">
@@ -1414,6 +1469,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfExecutionId6"/>
                 </properties>
               </component>
               <component id="7c6b9" class="javax.swing.JComboBox" binding="envYearOfExecutionId7">
@@ -1427,6 +1483,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfExecutionId7"/>
                 </properties>
               </component>
               <component id="95cdb" class="javax.swing.JComboBox" binding="envYearOfExecutionId8">
@@ -1440,6 +1497,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfExecutionId8"/>
                 </properties>
               </component>
               <component id="cd52c" class="javax.swing.JComboBox" binding="envYearOfExecutionId9">
@@ -1453,6 +1511,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfExecutionId9"/>
                 </properties>
               </component>
               <component id="da78e" class="javax.swing.JComboBox" binding="envYearOfExecutionId10">
@@ -1466,6 +1525,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfExecutionId10"/>
                 </properties>
               </component>
               <component id="9f8ab" class="javax.swing.JComboBox" binding="envYearOfDeliveryId4">
@@ -1479,6 +1539,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfDeliveryId4"/>
                 </properties>
               </component>
               <component id="7d810" class="javax.swing.JComboBox" binding="envYearOfDeliveryId5">
@@ -1492,6 +1553,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfDeliveryId5"/>
                 </properties>
               </component>
               <component id="9d702" class="javax.swing.JComboBox" binding="envYearOfDeliveryId6">
@@ -1505,6 +1567,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfDeliveryId6"/>
                 </properties>
               </component>
               <component id="88b4e" class="javax.swing.JComboBox" binding="envYearOfDeliveryId7">
@@ -1518,6 +1581,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfDeliveryId7"/>
                 </properties>
               </component>
               <component id="88ab4" class="javax.swing.JComboBox" binding="envYearOfDeliveryId8">
@@ -1531,6 +1595,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfDeliveryId8"/>
                 </properties>
               </component>
               <component id="59c9a" class="javax.swing.JComboBox" binding="envYearOfDeliveryId9">
@@ -1544,6 +1609,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfDeliveryId9"/>
                 </properties>
               </component>
               <component id="30377" class="javax.swing.JComboBox" binding="envYearOfDeliveryId10">
@@ -1557,6 +1623,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfDeliveryId10"/>
                 </properties>
               </component>
               <component id="f637f" class="javax.swing.JComboBox" binding="envLaborSuitabilityId4">
@@ -1569,6 +1636,7 @@
                     <item value="Ingeniero civil"/>
                     <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
                   </model>
+                  <name value="envLaborSuitabilityId4"/>
                 </properties>
               </component>
               <component id="c27bc" class="javax.swing.JComboBox" binding="envLaborSuitabilityId5">
@@ -1581,6 +1649,7 @@
                     <item value="Ingeniero civil"/>
                     <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
                   </model>
+                  <name value="envLaborSuitabilityId5"/>
                 </properties>
               </component>
               <component id="4d0" class="javax.swing.JComboBox" binding="envLaborSuitabilityId6">
@@ -1593,6 +1662,7 @@
                     <item value="Ingeniero civil"/>
                     <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
                   </model>
+                  <name value="envLaborSuitabilityId6"/>
                 </properties>
               </component>
               <component id="38131" class="javax.swing.JComboBox" binding="envLaborSuitabilityId7">
@@ -1604,6 +1674,7 @@
                     <item value="Ingeniero civil"/>
                     <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
                   </model>
+                  <name value="envLaborSuitabilityId7"/>
                 </properties>
               </component>
               <component id="6028c" class="javax.swing.JComboBox" binding="envLaborSuitabilityId8">
@@ -1616,6 +1687,7 @@
                     <item value="Ingeniero civil"/>
                     <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
                   </model>
+                  <name value="envLaborSuitabilityId8"/>
                 </properties>
               </component>
               <component id="4a5e5" class="javax.swing.JComboBox" binding="envLaborSuitabilityId9">
@@ -1628,6 +1700,7 @@
                     <item value="Ingeniero civil"/>
                     <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
                   </model>
+                  <name value="envLaborSuitabilityId9"/>
                 </properties>
               </component>
               <component id="5c70e" class="javax.swing.JComboBox" binding="envLaborSuitabilityId10">
@@ -1641,6 +1714,7 @@
                     <item value="Ingeniero forestal, Ecologo o Biologo"/>
                     <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
                   </model>
+                  <name value="envLaborSuitabilityId10"/>
                 </properties>
               </component>
               <component id="4608b" class="javax.swing.JLabel">
@@ -1694,6 +1768,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfExecutionId11"/>
                 </properties>
               </component>
               <component id="d1905" class="javax.swing.JComboBox" binding="envYearOfExecutionId12">
@@ -1707,6 +1782,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfExecutionId12"/>
                 </properties>
               </component>
               <component id="c072a" class="javax.swing.JComboBox" binding="envYearOfExecutionId13">
@@ -1720,6 +1796,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfExecutionId13"/>
                 </properties>
               </component>
               <component id="d1341" class="javax.swing.JComboBox" binding="envYearOfExecutionId14">
@@ -1733,6 +1810,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfExecutionId14"/>
                 </properties>
               </component>
               <component id="b2b18" class="javax.swing.JComboBox" binding="envYearOfExecutionId15">
@@ -1746,6 +1824,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfExecutionId15"/>
                 </properties>
               </component>
               <component id="1da19" class="javax.swing.JComboBox" binding="envYearOfExecutionId16">
@@ -1759,6 +1838,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfExecutionId16"/>
                 </properties>
               </component>
               <component id="bfe83" class="javax.swing.JLabel">
@@ -1780,6 +1860,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfDeliveryId11"/>
                 </properties>
               </component>
               <component id="895a0" class="javax.swing.JComboBox" binding="envYearOfDeliveryId12">
@@ -1793,6 +1874,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfDeliveryId12"/>
                 </properties>
               </component>
               <component id="9cd44" class="javax.swing.JComboBox" binding="envYearOfDeliveryId13">
@@ -1806,6 +1888,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfDeliveryId13"/>
                 </properties>
               </component>
               <component id="a6dde" class="javax.swing.JComboBox" binding="envYearOfDeliveryId14">
@@ -1819,6 +1902,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfDeliveryId14"/>
                 </properties>
               </component>
               <component id="7dce0" class="javax.swing.JComboBox" binding="envYearOfDeliveryId15">
@@ -1832,6 +1916,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfDeliveryId15"/>
                 </properties>
               </component>
               <component id="ab9e4" class="javax.swing.JComboBox" binding="envYearOfDeliveryId16">
@@ -1845,6 +1930,7 @@
                     <item value="2"/>
                     <item value="3"/>
                   </model>
+                  <name value="envYearOfDeliveryId16"/>
                 </properties>
               </component>
               <component id="cbcfb" class="javax.swing.JComboBox" binding="envLaborSuitabilityId11">
@@ -1855,6 +1941,7 @@
                   <model>
                     <item value="Ingeniero forestal, Ecologo o Biologo"/>
                   </model>
+                  <name value="envLaborSuitabilityId11"/>
                 </properties>
               </component>
               <component id="aea3a" class="javax.swing.JComboBox" binding="envLaborSuitabilityId12">
@@ -1865,6 +1952,7 @@
                   <model>
                     <item value="Trabajador social o Comunicador o Antropologo"/>
                   </model>
+                  <name value="envLaborSuitabilityId12"/>
                 </properties>
               </component>
               <component id="94aae" class="javax.swing.JComboBox" binding="envLaborSuitabilityId13">
@@ -1877,6 +1965,7 @@
                     <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
                     <item value="Trabajador social o Comunicador o Antropologo"/>
                   </model>
+                  <name value="envLaborSuitabilityId13"/>
                 </properties>
               </component>
               <component id="2b39d" class="javax.swing.JComboBox" binding="envLaborSuitabilityId14">
@@ -1888,6 +1977,7 @@
                     <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
                     <item value="Trabajador social o Comunicador o Antropologo"/>
                   </model>
+                  <name value="envLaborSuitabilityId14"/>
                 </properties>
               </component>
               <component id="b4a1d" class="javax.swing.JComboBox" binding="envLaborSuitabilityId15">
@@ -1898,6 +1988,7 @@
                   <model>
                     <item value="Arquelogo"/>
                   </model>
+                  <name value="envLaborSuitabilityId15"/>
                 </properties>
               </component>
               <component id="b2f50" class="javax.swing.JComboBox" binding="envLaborSuitabilityId16">
@@ -1910,17 +2001,64 @@
                     <item value="Ingeniero civil"/>
                     <item value="Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental"/>
                   </model>
+                  <name value="envLaborSuitabilityId16"/>
                 </properties>
               </component>
             </children>
           </grid>
-          <grid id="b8664" layout-manager="GridLayoutManager" row-count="15" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="21647" binding="filesPanel" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Archivos"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="7bff" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Archivo Ambiental"/>
+                </properties>
+              </component>
+              <component id="38f1f" class="javax.swing.JTextField" binding="pdfCert">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <name value="pdfCert"/>
+                </properties>
+              </component>
+              <component id="d9d79" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Archivo Geográfico"/>
+                </properties>
+              </component>
+              <component id="b6709" class="javax.swing.JTextField" binding="pdfGeo">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <name value="pdfGeo"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="b8664" binding="configPanel" layout-manager="GridLayoutManager" row-count="15" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="5" left="5" bottom="5" right="5"/>
             <constraints>
               <tabbedpane title="Configuración"/>
             </constraints>
             <properties/>
-            <border type="none"/>
+            <border type="empty"/>
             <children>
               <component id="5fb87" class="javax.swing.JTextField" binding="timer3">
                 <constraints>
@@ -1929,7 +2067,9 @@
                     <maximum-size width="50" height="-1"/>
                   </grid>
                 </constraints>
-                <properties/>
+                <properties>
+                  <name value="timer3"/>
+                </properties>
               </component>
               <component id="cba5d" class="javax.swing.JTextField" binding="timer2">
                 <constraints>
@@ -1938,7 +2078,9 @@
                     <maximum-size width="50" height="-1"/>
                   </grid>
                 </constraints>
-                <properties/>
+                <properties>
+                  <name value="timer2"/>
+                </properties>
               </component>
               <component id="dcea" class="javax.swing.JTextField" binding="timer1">
                 <constraints>
@@ -1947,7 +2089,9 @@
                     <maximum-size width="50" height="-1"/>
                   </grid>
                 </constraints>
-                <properties/>
+                <properties>
+                  <name value="timer1"/>
+                </properties>
               </component>
               <component id="b2b2c" class="javax.swing.JTextField" binding="timer9">
                 <constraints>
@@ -1956,7 +2100,9 @@
                     <maximum-size width="50" height="-1"/>
                   </grid>
                 </constraints>
-                <properties/>
+                <properties>
+                  <name value="timer9"/>
+                </properties>
               </component>
               <component id="44a2e" class="javax.swing.JTextField" binding="timer8">
                 <constraints>
@@ -1965,7 +2111,9 @@
                     <maximum-size width="50" height="-1"/>
                   </grid>
                 </constraints>
-                <properties/>
+                <properties>
+                  <name value="timer8"/>
+                </properties>
               </component>
               <component id="c48ea" class="javax.swing.JTextField" binding="timer7">
                 <constraints>
@@ -1974,7 +2122,9 @@
                     <maximum-size width="50" height="-1"/>
                   </grid>
                 </constraints>
-                <properties/>
+                <properties>
+                  <name value="timer7"/>
+                </properties>
               </component>
               <component id="c7ce2" class="javax.swing.JTextField" binding="timer6">
                 <constraints>
@@ -1983,7 +2133,9 @@
                     <maximum-size width="50" height="-1"/>
                   </grid>
                 </constraints>
-                <properties/>
+                <properties>
+                  <name value="timer6"/>
+                </properties>
               </component>
               <component id="d07a1" class="javax.swing.JTextField" binding="timer5">
                 <constraints>
@@ -1992,7 +2144,9 @@
                     <maximum-size width="50" height="-1"/>
                   </grid>
                 </constraints>
-                <properties/>
+                <properties>
+                  <name value="timer5"/>
+                </properties>
               </component>
               <component id="a87a3" class="javax.swing.JTextField" binding="timer13">
                 <constraints>
@@ -2001,7 +2155,9 @@
                     <maximum-size width="50" height="-1"/>
                   </grid>
                 </constraints>
-                <properties/>
+                <properties>
+                  <name value="timer13"/>
+                </properties>
               </component>
               <component id="524c9" class="javax.swing.JTextField" binding="timer14">
                 <constraints>
@@ -2010,7 +2166,9 @@
                     <maximum-size width="50" height="-1"/>
                   </grid>
                 </constraints>
-                <properties/>
+                <properties>
+                  <name value="timer14"/>
+                </properties>
               </component>
               <component id="c5602" class="javax.swing.JTextField" binding="timer15">
                 <constraints>
@@ -2019,7 +2177,9 @@
                     <maximum-size width="50" height="-1"/>
                   </grid>
                 </constraints>
-                <properties/>
+                <properties>
+                  <name value="timer15"/>
+                </properties>
               </component>
               <component id="388d5" class="javax.swing.JTextField" binding="timer12">
                 <constraints>
@@ -2028,7 +2188,9 @@
                     <maximum-size width="50" height="-1"/>
                   </grid>
                 </constraints>
-                <properties/>
+                <properties>
+                  <name value="timer12"/>
+                </properties>
               </component>
               <component id="4fbde" class="javax.swing.JTextField" binding="timer11">
                 <constraints>
@@ -2037,7 +2199,9 @@
                     <maximum-size width="50" height="-1"/>
                   </grid>
                 </constraints>
-                <properties/>
+                <properties>
+                  <name value="timer11"/>
+                </properties>
               </component>
               <component id="d5a56" class="javax.swing.JTextField" binding="timer4">
                 <constraints>
@@ -2046,7 +2210,9 @@
                     <maximum-size width="50" height="-1"/>
                   </grid>
                 </constraints>
-                <properties/>
+                <properties>
+                  <name value="timer4"/>
+                </properties>
               </component>
               <component id="61cca" class="javax.swing.JTextField" binding="timer10">
                 <constraints>
@@ -2055,7 +2221,9 @@
                     <maximum-size width="50" height="-1"/>
                   </grid>
                 </constraints>
-                <properties/>
+                <properties>
+                  <name value="timer10"/>
+                </properties>
               </component>
               <component id="ed3e1" class="javax.swing.JLabel">
                 <constraints>

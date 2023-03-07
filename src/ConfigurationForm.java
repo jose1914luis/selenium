@@ -7,7 +7,7 @@ import java.util.Properties;
 
 import static javax.swing.JOptionPane.showMessageDialog;
 
-public class Configuration {
+public class ConfigurationForm {
     private JTextField url;
     private JTextField password;
     private JTextField pinSlctId;
@@ -21,16 +21,11 @@ public class Configuration {
         return rootPanel;
     }
 
-    public Configuration(Properties props) {
+    public ConfigurationForm(Properties props) {
 
         this.props = props;
         createUIComponents(props);
-        guardarButton.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent e) {
-                saveData();
-            }
-        });
+        guardarButton.addActionListener(e -> saveData());
     }
 
     private void saveData(){

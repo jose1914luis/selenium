@@ -61,7 +61,6 @@
         <SOURCES />
       </library>
     </orderEntry>
-    <orderEntry type="library" name="selenium-server-standalone-3.141.59" level="project" />
     <orderEntry type="module-library">
       <library>
         <CLASSES>
@@ -71,5 +70,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="selenium-api-4.8.0" level="project" />
   </component>
 </module>

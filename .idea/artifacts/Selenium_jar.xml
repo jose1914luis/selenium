@@ -3,7 +3,6 @@
     <output-path>$PROJECT_DIR$/out/artifacts/Selenium_jar</output-path>
     <root id="archive" name="Selenium.jar">
       <element id="module-output" name="Selenium" />
-      <element id="extracted-dir" path="$PROJECT_DIR$/../selenium-server-standalone-3.141.59.jar" path-in-jar="/" />
     </root>
   </artifact>
 </component>
