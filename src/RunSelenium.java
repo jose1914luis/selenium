@@ -1,4 +1,5 @@
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import javax.swing.*;
 import java.awt.*;
@@ -28,7 +29,9 @@ public class RunSelenium extends JFrame {
 
         try{
             System.setProperty("webdriver.chrome.driver", props.getProperty("webdriver"));
-            driver = new ChromeDriver();
+            ChromeOptions options = new ChromeOptions();
+            options.addArguments("--remote-allow-origins=*");
+            driver = new ChromeDriver(options);
             this.driver.get(props.getProperty("url"));
         }catch (Exception e){
 
