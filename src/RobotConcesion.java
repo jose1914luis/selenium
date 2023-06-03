@@ -11,15 +11,15 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-public class RobotConcesion {
-    private ChromeDriver driver;
-    private Properties props;
+public class RobotConcesion implements Robot{
+    public ChromeDriver driver;
+    public Properties props;
     RobotConcesion(ChromeDriver driver, Properties props){
 
         this.driver = driver;
         this.props = props;
     }
-    private WebElement waitElement(String search, String type, String timer) throws InterruptedException {
+    public WebElement waitElement(String search, String type, String timer) throws InterruptedException {
 
         int times = 10;
 
@@ -52,7 +52,7 @@ public class RobotConcesion {
 
         return null;
     }
-    protected void stepOne() throws InterruptedException {
+    public void stepOne() throws InterruptedException {
         WebElement submenu = driver.findElement(By.xpath("//a[contains(text(),'Radicar solicitud de propuesta')]"));
         submenu.click();
 
@@ -64,7 +64,7 @@ public class RobotConcesion {
         buttonNext1.click();
 
     }
-    protected void stepTwo() throws InterruptedException {
+    public void stepTwo() throws InterruptedException {
 
         //Ingresar detalles del área
         WebElement btnMineral = waitElement(".btn-default", "css", "timer3");
@@ -124,7 +124,7 @@ public class RobotConcesion {
         WebElement tabInfoTec = waitElement("//div[@id='main']//li[3]//a[1]", "path", "timer10");
         tabInfoTec.click();
     }
-    protected void stepThree() throws InterruptedException {
+    public void stepThree() throws InterruptedException {
 
 
         //Thread.sleep(Integer.parseInt(props.getProperty("timer11"))*1000);
@@ -197,7 +197,7 @@ public class RobotConcesion {
         WebElement tabEco = driver.findElement(By.xpath("//form[@name='p_CaaIataInputAreaDetailsForm']//li[4]"));
         tabEco.click();
     }
-    protected void stepFour() throws InterruptedException {
+    public void stepFour() throws InterruptedException {
 
         //Información economica
         if (props.getProperty("declareIndId0").toString().equals("SI")) {
@@ -250,7 +250,7 @@ public class RobotConcesion {
         buttonNext3.click();
 
     }
-    protected void executeANMLogin() throws InterruptedException {
+    public void executeANMLogin() throws InterruptedException {
 
         //login
         WebElement user = driver.findElement(By.id("username"));

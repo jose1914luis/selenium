@@ -16,6 +16,8 @@ public class Util {
                         case JCOMBOBOX:
                             ((JComboBox) component).setSelectedItem(props.getProperty(value));
                             break;
+                        case JCHECKBOX:
+                            ((JCheckBox) component).setSelected(Boolean.parseBoolean(props.getProperty(value)));
                         default:
                             break;
                     }

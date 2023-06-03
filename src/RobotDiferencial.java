@@ -8,48 +8,29 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.time.Duration;
 import java.util.Properties;
 
-public class RobotDiferencial {
+public class RobotDiferencial extends RobotConcesion{
 
-    private ChromeDriver driver;
-    private Properties props;
     RobotDiferencial(ChromeDriver driver, Properties props){
-
-        this.driver = driver;
-        this.props = props;
+        super(driver,props);
     }
-    public void paso1() throws InterruptedException {
-        //WebElement submenu = driver.findElement(By.xpath("//li[4]//ul[1]//li[1]"));
+    public void stepOne() throws InterruptedException {
+
         WebElement submenu = driver.findElement(By.xpath("//a[contains(text(),'Radicar solicitud de contrato de concesión diferencial')]"));
         submenu.click();
 
-        /**********************************************************
-         * Seleccionar usuario
-         **********************************************************/
-
         Select selectPIN = new Select(waitElement("pinSlctId", "id", "timer2"));
 
-        //Select selectPIN = new Select(driver.findElement(By.id(("pinSlctId"));
         selectPIN.selectByVisibleText(props.getProperty("pinSlctId"));
 
-        //Thread.sleep(1000);
-
-
-        //WebElement buttonNext1 =driver.findElementByCssSelector(".btn > .ng-binding");
         WebElement buttonNext1 = driver.findElement(By.xpath("//span[@class='btn-label ng-binding']"));
         buttonNext1.click();
 
     }
-    public void paso2() throws InterruptedException {
-
-        //Thread.sleep(Integer.parseInt(props.getProperty("timer3"))*1000);
-        /**********************************************************
-         * Informacion solicitud
-         **********************************************************/
+    public void stepTwo() throws InterruptedException {
 
         WebElement btnMineral = waitElement(".btn-default", "css", "timer3");
         btnMineral.click();
 
-        //Thread.sleep(Integer.parseInt(props.getProperty("timer4"))*1000);
 
         WebElement labelMineral = waitElement("mineral", "link", "timer4");
         labelMineral.click();
@@ -57,12 +38,7 @@ public class RobotDiferencial {
         Select selectArea = new Select(driver.findElement(By.id(("areaOfConcessionSlctId"))));
         selectArea.selectByVisibleText(props.getProperty("areaOfConcessionSlctId"));
 
-        /**********************************************************
-         * Detalles del area
-         **********************************************************/
 
-
-        //WebElement tabInfoTec = waitElement("//div[@id='main']//li[3]//a[1]", "path", "timer10");
         WebElement tabInfoTec = waitElement("//li[@class='uib-tab nav-item ng-scope ng-isolate-scope']//a[@class='nav-link ng-binding']", "path", "timer10");
         tabInfoTec.click();
 
@@ -89,10 +65,6 @@ public class RobotDiferencial {
 
             WebElement btnContinue = driver.findElement(By.cssSelector("form:nth-child(2) .button"));
             btnContinue.click();
-
-            //driver.switchTo().frame("mapIframeId");
-            //Thread.sleep(Integer.parseInt(props.getProperty("timer7"))*1000);
-
             WebElement pikerLoad = waitElement("//input[@data-gcx-form-item='FilePicker1']", "path", "timer7");
             pikerLoad.sendKeys(props.getProperty("pikerLoad"));
 
@@ -118,7 +90,7 @@ public class RobotDiferencial {
         WebElement buttonNext2 = waitElement("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]", "path", "timer9");
         buttonNext2.click();
     }
-    public void paso3() throws InterruptedException {
+    public void stepThree() throws InterruptedException {
 
 
 
@@ -307,17 +279,7 @@ public class RobotDiferencial {
             additionalEthnicGroupsInSelectedAreaIndId.click();
         }
     }
-    public void paso4() throws InterruptedException {
-
-
-        /**********************************************************
-         * Información economica
-         **********************************************************/
-
-        //Thread.sleep(Integer.parseInt(props.getProperty("timer14"))*1000);
-
-        //Select selectPC = new Select(waitElement("personClassificationId0", "id", "timer14"));
-        //selectPC.selectByVisibleText(props.getProperty("personClassificationId0"));
+    public void stepFour() throws InterruptedException {
 
         if (props.getProperty("declareIndId0").toString().equals("SI")) {
 
@@ -353,7 +315,6 @@ public class RobotDiferencial {
 
         Thread.sleep(Integer.parseInt(props.getProperty("timer15")) * 1000);
 
-
         Select selectEAN = new Select(waitElement("ecoApplicantNameId", "id", "timer15"));
         //selectEAN.selectByVisibleText(props.getProperty("ecoApplicantNameId"));
         selectEAN.selectByValue(props.getProperty("ecoApplicantNameId"));
@@ -364,53 +325,5 @@ public class RobotDiferencial {
         WebElement buttonNext3 = driver.findElement(By.xpath("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]"));
         buttonNext3.click();
     }
-    public void executeANMLogin() throws InterruptedException {
 
-
-        /**********************************************************
-         * Login
-         **********************************************************/
-
-        WebElement user = driver.findElement(By.id("username"));
-        user.sendKeys(props.getProperty("username"));
-
-        WebElement password = driver.findElement(By.id("password"));
-        password.sendKeys(props.getProperty("password"));
-
-        WebElement buttonLogin = driver.findElement(By.id("loginButton"));
-        buttonLogin.click();
-
-
-        /**********************************************************
-         * Panel
-         **********************************************************/
-        Thread.sleep(Integer.parseInt(props.getProperty("timer1")) * 1000);
-
-
-        WebElement menu = driver.findElement(By.xpath("//a[@class='cata-collapse-click menu ng-scope']//span[@class='menu-item-parent ng-binding'][contains(text(),'Solicitudes')]"));
-        menu.click();
-
-        Thread.sleep(5000);
-
-        Select selectCambiarUsuario = new Select(driver.findElement(By.xpath("//select[@aria-label='Cambiar el usuario:']")));
-        selectCambiarUsuario.selectByVisibleText(props.getProperty("cambiarUsuario"));
-    }
-    public WebElement waitElement(String search, String type, String timer) throws InterruptedException {
-
-        Thread.sleep(Integer.parseInt(props.getProperty(timer)) * 1000);
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-
-        switch (type) {
-            case "id":
-                return wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(search)));
-            case "css":
-                return wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(search)));
-            case "path":
-                return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(search)));
-            case "link":
-                return wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(props.getProperty(search))));
-            //return wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(search)));
-        }
-        return null;
-    }
 }
