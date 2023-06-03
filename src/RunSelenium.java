@@ -46,35 +46,35 @@ public class RunSelenium extends JFrame {
         JScrollPane scrollPane = new JScrollPane(configurationForm.getRootPanel());
         add(scrollPane);
 
-        //Where the GUI is created:
-        JMenuBar menuBar;
-        JMenu menu, submenu;
-        JMenuItem menuItem;
-        JRadioButtonMenuItem rbMenuItem;
-        JCheckBoxMenuItem cbMenuItem;
-
-        //Create the menu bar.
-        menuBar = new JMenuBar();
+        JToolBar toolbar = new JToolBar();
+        toolbar.setRollover(true);
 
         JButton button = new JButton("Contrato de concesión");
         button.addActionListener(e -> {
             scrollPane.setViewportView(anmForm.getRootPanel());
         });
-        menuBar.add(button);
+        toolbar.add(button);
+
+        toolbar.addSeparator();
 
         button = new JButton("Concesión diferencial");
         button.addActionListener(e -> {
             scrollPane.setViewportView(diferencialForm.getRootPanel());
         });
-        menuBar.add(button);
+        toolbar.add(button);
+
+        toolbar.addSeparator();
 
         button = new JButton("Configuración");
         button.addActionListener(e -> {
             scrollPane.setViewportView(configurationForm.getRootPanel());
         });
-        menuBar.add(button);
+        toolbar.add(button);
 
-        setJMenuBar(menuBar);
+        toolbar.addSeparator();
+
+        add(toolbar, BorderLayout.NORTH);
+
 
         ImageIcon img = new ImageIcon("Resources/Button-Play-icon.png");
         setIconImage(img.getImage());
