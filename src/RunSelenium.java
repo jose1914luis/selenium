@@ -1,8 +1,11 @@
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.WindowAdapter;
+import java.awt.event.WindowEvent;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
@@ -12,9 +15,7 @@ import static javax.swing.JOptionPane.showMessageDialog;
 public class RunSelenium extends JFrame {
 
     private static Properties props = new Properties();
-
     private static ChromeDriver driver;
-
     private AnmForm anmForm;
     private ConfigurationForm configurationForm;
     private Diferencial diferencialForm;
@@ -27,13 +28,14 @@ public class RunSelenium extends JFrame {
 
         UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 
-        try{
-            System.setProperty("webdriver.chrome.driver", props.getProperty("webdriver"));
+        try {
+            WebDriverManager.chromedriver().setup();
+            //System.setProperty("webdriver.chrome.driver", props.getProperty("webdriver"));
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--remote-allow-origins=*");
             driver = new ChromeDriver(options);
             this.driver.get(props.getProperty("url"));
-        }catch (Exception e){
+        } catch (Exception e) {
 
             showMessageDialog(null, "Error configuring web driver");
         }
@@ -54,33 +56,23 @@ public class RunSelenium extends JFrame {
         //Create the menu bar.
         menuBar = new JMenuBar();
 
-        //Build the first menu.
-        menu = new JMenu("Radicar");
-        menuBar.add(menu);
-
-        menuItem = new JMenuItem("Configuración");
-        menuItem.getAccessibleContext().setAccessibleDescription("Configuración general del sistema");
-        menuItem.addActionListener(e -> {
-
-            scrollPane.setViewportView(configurationForm.getRootPanel());
-        });
-        menu.add(menuItem);
-
-        menuItem = new JMenuItem("Contrato de concesión");
-        menuItem.getAccessibleContext().setAccessibleDescription("Radicar solicitud de propuesta de contrato de concesión");
-        menuItem.addActionListener(e -> {
-
+        JButton button = new JButton("Contrato de concesión");
+        button.addActionListener(e -> {
             scrollPane.setViewportView(anmForm.getRootPanel());
         });
-        menu.add(menuItem);
+        menuBar.add(button);
 
-        menuItem = new JMenuItem("Concesión diferencial");
-        menuItem.getAccessibleContext().setAccessibleDescription("Radicar solicitud de contrato de concesión diferencial");
-        menuItem.addActionListener(e -> {
-
+        button = new JButton("Concesión diferencial");
+        button.addActionListener(e -> {
             scrollPane.setViewportView(diferencialForm.getRootPanel());
         });
-        menu.add(menuItem);
+        menuBar.add(button);
+
+        button = new JButton("Configuración");
+        button.addActionListener(e -> {
+            scrollPane.setViewportView(configurationForm.getRootPanel());
+        });
+        menuBar.add(button);
 
         setJMenuBar(menuBar);
 
@@ -88,20 +80,16 @@ public class RunSelenium extends JFrame {
         setIconImage(img.getImage());
         setPreferredSize(new Dimension(1100, 700));
 
-        setTitle("Radicador v. 2.0");
+        setTitle("Radicador v. 3.0");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         pack();
         setVisible(true);
 
-
-
-
-
-
-
-
+        JButton finalButton = button;
+        addWindowListener(new WindowAdapter() {
+            public void windowOpened(WindowEvent e) {
+                finalButton.requestFocus();
+            }
+        });
     }
-
-
-
 }

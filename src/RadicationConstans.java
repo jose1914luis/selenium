@@ -1,4 +1,4 @@
-public class radicationConstans {
+public class RadicationConstans {
 
     public static final String ANM_PROPERTIES = "anm.properties";
     public static final String YEAROFEXECUTIONID = "yearOfExecutionId";

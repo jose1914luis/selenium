@@ -391,7 +391,9 @@
               </component>
               <component id="d20ca" class="javax.swing.JComboBox" binding="yearOfExecutionId3">
                 <constraints>
-                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="4" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="4" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -412,7 +414,9 @@
               </component>
               <component id="3569c" class="javax.swing.JComboBox" binding="yearOfExecutionId4">
                 <constraints>
-                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -425,7 +429,9 @@
               </component>
               <component id="701f6" class="javax.swing.JComboBox" binding="yearOfExecutionId5">
                 <constraints>
-                  <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -446,7 +452,9 @@
               </component>
               <component id="b1cf6" class="javax.swing.JComboBox" binding="yearOfDeliveryId3">
                 <constraints>
-                  <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -459,7 +467,9 @@
               </component>
               <component id="bd5a9" class="javax.swing.JComboBox" binding="yearOfDeliveryId4">
                 <constraints>
-                  <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -472,7 +482,9 @@
               </component>
               <component id="70086" class="javax.swing.JComboBox" binding="yearOfDeliveryId5">
                 <constraints>
-                  <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -518,7 +530,9 @@
               </component>
               <component id="ba6dc" class="javax.swing.JComboBox" binding="yearOfExecutionId6">
                 <constraints>
-                  <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -531,7 +545,9 @@
               </component>
               <component id="5c1c5" class="javax.swing.JComboBox" binding="yearOfExecutionId7">
                 <constraints>
-                  <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -568,7 +584,9 @@
               </component>
               <component id="36133" class="javax.swing.JComboBox" binding="yearOfExecutionId8">
                 <constraints>
-                  <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -589,7 +607,9 @@
               </component>
               <component id="d46a0" class="javax.swing.JComboBox" binding="yearOfExecutionId9">
                 <constraints>
-                  <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -610,7 +630,9 @@
               </component>
               <component id="6bfcf" class="javax.swing.JComboBox" binding="yearOfExecutionId10">
                 <constraints>
-                  <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -631,7 +653,9 @@
               </component>
               <component id="9b9f5" class="javax.swing.JComboBox" binding="yearOfExecutionId11">
                 <constraints>
-                  <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -652,7 +676,9 @@
               </component>
               <component id="44ee0" class="javax.swing.JComboBox" binding="yearOfExecutionId12">
                 <constraints>
-                  <grid row="12" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="12" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -673,7 +699,9 @@
               </component>
               <component id="d6591" class="javax.swing.JComboBox" binding="yearOfExecutionId13">
                 <constraints>
-                  <grid row="13" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="13" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -694,7 +722,9 @@
               </component>
               <component id="cfc3c" class="javax.swing.JComboBox" binding="yearOfExecutionId14">
                 <constraints>
-                  <grid row="14" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="14" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -707,7 +737,9 @@
               </component>
               <component id="b154e" class="javax.swing.JComboBox" binding="yearOfDeliveryId6">
                 <constraints>
-                  <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -720,7 +752,9 @@
               </component>
               <component id="b4ccb" class="javax.swing.JComboBox" binding="yearOfDeliveryId7">
                 <constraints>
-                  <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -733,7 +767,9 @@
               </component>
               <component id="cf37" class="javax.swing.JComboBox" binding="yearOfDeliveryId8">
                 <constraints>
-                  <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -746,7 +782,9 @@
               </component>
               <component id="3daad" class="javax.swing.JComboBox" binding="yearOfDeliveryId9">
                 <constraints>
-                  <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -759,7 +797,9 @@
               </component>
               <component id="62273" class="javax.swing.JComboBox" binding="yearOfDeliveryId10">
                 <constraints>
-                  <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -772,7 +812,9 @@
               </component>
               <component id="b1b88" class="javax.swing.JComboBox" binding="yearOfDeliveryId11">
                 <constraints>
-                  <grid row="11" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="11" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -785,7 +827,9 @@
               </component>
               <component id="1a94e" class="javax.swing.JComboBox" binding="yearOfDeliveryId12">
                 <constraints>
-                  <grid row="12" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="12" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -798,7 +842,9 @@
               </component>
               <component id="de86f" class="javax.swing.JComboBox" binding="yearOfDeliveryId13">
                 <constraints>
-                  <grid row="13" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="13" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -811,7 +857,9 @@
               </component>
               <component id="367fe" class="javax.swing.JComboBox" binding="yearOfDeliveryId14">
                 <constraints>
-                  <grid row="14" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="14" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -944,7 +992,9 @@
               </component>
               <component id="8eb25" class="javax.swing.JComboBox" binding="yearOfExecutionId15">
                 <constraints>
-                  <grid row="15" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="15" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -965,7 +1015,9 @@
               </component>
               <component id="2f9f6" class="javax.swing.JComboBox" binding="yearOfExecutionId16">
                 <constraints>
-                  <grid row="16" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="16" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -978,7 +1030,9 @@
               </component>
               <component id="c804d" class="javax.swing.JComboBox" binding="yearOfDeliveryId15">
                 <constraints>
-                  <grid row="15" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="15" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -991,7 +1045,9 @@
               </component>
               <component id="2ae0e" class="javax.swing.JComboBox" binding="yearOfDeliveryId16">
                 <constraints>
-                  <grid row="16" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="16" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -1034,7 +1090,9 @@
               </component>
               <component id="4b4d9" class="javax.swing.JComboBox" binding="yearOfExecutionId2">
                 <constraints>
-                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -1047,7 +1105,9 @@
               </component>
               <component id="3d258" class="javax.swing.JComboBox" binding="yearOfDeliveryId2">
                 <constraints>
-                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -1076,7 +1136,9 @@
               </component>
               <component id="7fadd" class="javax.swing.JComboBox" binding="yearOfExecutionId1">
                 <constraints>
-                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -1089,7 +1151,9 @@
               </component>
               <component id="5fda0" class="javax.swing.JComboBox" binding="yearOfExecutionId0">
                 <constraints>
-                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -1102,7 +1166,9 @@
               </component>
               <component id="e36be" class="javax.swing.JComboBox" binding="yearOfDeliveryId1">
                 <constraints>
-                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -1115,7 +1181,9 @@
               </component>
               <component id="edc40" class="javax.swing.JComboBox" binding="yearOfDeliveryId0">
                 <constraints>
-                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <model>
@@ -2006,7 +2074,7 @@
               </component>
             </children>
           </grid>
-          <grid id="21647" binding="filesPanel" layout-manager="GridLayoutManager" row-count="2" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="21647" binding="filesPanel" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="0" left="0" bottom="0" right="0"/>
             <constraints>
               <tabbedpane title="Archivos"/>
@@ -2019,7 +2087,7 @@
                   <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text value="Archivo Ambiental"/>
+                  <text value="Archivo Ambiental (.pdf)"/>
                 </properties>
               </component>
               <component id="38f1f" class="javax.swing.JTextField" binding="pdfCert">
@@ -2037,7 +2105,7 @@
                   <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
-                  <text value="Archivo Geográfico"/>
+                  <text value="Archivo Geográfico (.zip)"/>
                 </properties>
               </component>
               <component id="b6709" class="javax.swing.JTextField" binding="pdfGeo">
@@ -2048,6 +2116,22 @@
                 </constraints>
                 <properties>
                   <name value="pdfGeo"/>
+                </properties>
+              </component>
+              <component id="cfb7e" class="javax.swing.JButton" binding="seleccionarBtn">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Seleccionar"/>
+                </properties>
+              </component>
+              <component id="d72c8" class="javax.swing.JButton" binding="seleccionarBtn2">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Seleccionar"/>
                 </properties>
               </component>
             </children>
