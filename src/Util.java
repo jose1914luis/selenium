@@ -4,11 +4,8 @@ import java.util.Properties;
 
 public class Util {
 
-    public enum componentType {
-        JCOMBOBOX,
-        JTEXTFIELD
-    }
-    static public void setComponentsValue(Properties props, JPanel panel, String value, Util.componentType type) {
+
+    static public void setComponentsValue(Properties props, JPanel panel, String value, Constans.componentType type) {
         Arrays.stream(panel.getComponents())
                 .filter(component -> component.getName() != null && component.getName().equals(value))
                 .forEach(component -> {
@@ -24,7 +21,7 @@ public class Util {
                     }
                 });
     }
-    static public void setPropsValue(Properties props, JPanel panel, String value, Util.componentType type) {
+    static public void setPropsValue(Properties props, JPanel panel, String value, Constans.componentType type) {
         Arrays.stream(panel.getComponents())
                 .filter(component ->  component.getName() != null && component.getName().equals(value))
                 .forEach(component -> {

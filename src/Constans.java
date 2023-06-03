@@ -1,4 +1,4 @@
-public class RadicationConstans {
+public class Constans {
 
     public static final String ANM_PROPERTIES = "anm.properties";
     public static final String YEAROFEXECUTIONID = "yearOfExecutionId";
@@ -7,4 +7,9 @@ public class RadicationConstans {
     public static final String ENVYEAROFEXECUTIONID= "envYearOfExecutionId";
     public static final String ENVYEAROFDELIVERYID= "envYearOfDeliveryId";
     public static final String ENVLABORSUITABILITYID= "envLaborSuitabilityId";
+
+    public static enum componentType {
+        JCOMBOBOX,
+        JTEXTFIELD
+    }
 }

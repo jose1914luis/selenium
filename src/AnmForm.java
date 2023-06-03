@@ -3,7 +3,6 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import javax.swing.*;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.Properties;
 
 import static javax.swing.JOptionPane.showMessageDialog;
@@ -235,7 +234,7 @@ public class AnmForm {
 
             try {
 
-                FileOutputStream out = new FileOutputStream(RadicationConstans.ANM_PROPERTIES);
+                FileOutputStream out = new FileOutputStream(Constans.ANM_PROPERTIES);
 
 
                 props.setProperty("declareIndId0", declareIndId0.getSelectedItem().toString());
@@ -244,16 +243,16 @@ public class AnmForm {
                 for (int i = 0; i < 17; i++) {
 
                     if (i < 15) {
-                        Util.setPropsValue(props,configPanel, "timer" + (i + 1), Util.componentType.JTEXTFIELD);
+                        Util.setPropsValue(props,configPanel, "timer" + (i + 1), Constans.componentType.JTEXTFIELD);
                     }
 
-                    Util.setPropsValue(props,explorerPanel, RadicationConstans.YEAROFEXECUTIONID + i, Util.componentType.JCOMBOBOX);
-                    Util.setPropsValue(props,explorerPanel, RadicationConstans.YEAROFDELIVERYID + i, Util.componentType.JCOMBOBOX);
-                    Util.setPropsValue(props,explorerPanel, RadicationConstans.LABORSUITABILITYID + i, Util.componentType.JCOMBOBOX);
+                    Util.setPropsValue(props,explorerPanel, Constans.YEAROFEXECUTIONID + i, Constans.componentType.JCOMBOBOX);
+                    Util.setPropsValue(props,explorerPanel, Constans.YEAROFDELIVERYID + i, Constans.componentType.JCOMBOBOX);
+                    Util.setPropsValue(props,explorerPanel, Constans.LABORSUITABILITYID + i, Constans.componentType.JCOMBOBOX);
 
-                    Util.setPropsValue(props,ambientalPanel, RadicationConstans.ENVYEAROFEXECUTIONID + i, Util.componentType.JCOMBOBOX);
-                    Util.setPropsValue(props,ambientalPanel, RadicationConstans.ENVYEAROFDELIVERYID + i, Util.componentType.JCOMBOBOX);
-                    Util.setPropsValue(props,ambientalPanel, RadicationConstans.ENVLABORSUITABILITYID + i, Util.componentType.JCOMBOBOX);
+                    Util.setPropsValue(props,ambientalPanel, Constans.ENVYEAROFEXECUTIONID + i, Constans.componentType.JCOMBOBOX);
+                    Util.setPropsValue(props,ambientalPanel, Constans.ENVYEAROFDELIVERYID + i, Constans.componentType.JCOMBOBOX);
+                    Util.setPropsValue(props,ambientalPanel, Constans.ENVLABORSUITABILITYID + i, Constans.componentType.JCOMBOBOX);
                 }
 
                 props.setProperty("mineral", mineral.getText());
@@ -344,17 +343,17 @@ public class AnmForm {
 
             if (i < 15) {
 
-                Util.setComponentsValue(props, configPanel, "timer" + (i + 1), Util.componentType.JTEXTFIELD);
+                Util.setComponentsValue(props, configPanel, "timer" + (i + 1), Constans.componentType.JTEXTFIELD);
             }
 
-            Util.setComponentsValue(props,explorerPanel, RadicationConstans.YEAROFEXECUTIONID + i, Util.componentType.JCOMBOBOX);
-            Util.setComponentsValue(props,explorerPanel, RadicationConstans.YEAROFDELIVERYID + i, Util.componentType.JCOMBOBOX);
-            Util.setComponentsValue(props,explorerPanel, RadicationConstans.LABORSUITABILITYID + i, Util.componentType.JCOMBOBOX);
+            Util.setComponentsValue(props,explorerPanel, Constans.YEAROFEXECUTIONID + i, Constans.componentType.JCOMBOBOX);
+            Util.setComponentsValue(props,explorerPanel, Constans.YEAROFDELIVERYID + i, Constans.componentType.JCOMBOBOX);
+            Util.setComponentsValue(props,explorerPanel, Constans.LABORSUITABILITYID + i, Constans.componentType.JCOMBOBOX);
 
 
-            Util.setComponentsValue(props,ambientalPanel, RadicationConstans.ENVYEAROFEXECUTIONID + i, Util.componentType.JCOMBOBOX);
-            Util.setComponentsValue(props,ambientalPanel, RadicationConstans.ENVYEAROFDELIVERYID + i, Util.componentType.JCOMBOBOX);
-            Util.setComponentsValue(props,ambientalPanel, RadicationConstans.ENVLABORSUITABILITYID + i, Util.componentType.JCOMBOBOX);
+            Util.setComponentsValue(props,ambientalPanel, Constans.ENVYEAROFEXECUTIONID + i, Constans.componentType.JCOMBOBOX);
+            Util.setComponentsValue(props,ambientalPanel, Constans.ENVYEAROFDELIVERYID + i, Constans.componentType.JCOMBOBOX);
+            Util.setComponentsValue(props,ambientalPanel, Constans.ENVLABORSUITABILITYID + i, Constans.componentType.JCOMBOBOX);
         }
 
 

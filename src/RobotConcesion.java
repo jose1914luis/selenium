@@ -143,20 +143,20 @@ public class RobotConcesion {
             final int index = i; // create a final variable for the current index to use inside the lambda expression
             executor.submit(() -> {
                 if(index > 0) {
-                    Select selectYOE1 = new Select(driver.findElement(By.id(RadicationConstans.YEAROFEXECUTIONID + index)));
-                    selectYOE1.selectByVisibleText(props.getProperty(RadicationConstans.YEAROFEXECUTIONID + index));
+                    Select selectYOE1 = new Select(driver.findElement(By.id(Constans.YEAROFEXECUTIONID + index)));
+                    selectYOE1.selectByVisibleText(props.getProperty(Constans.YEAROFEXECUTIONID + index));
 
-                    Select selectYOD1 = new Select(driver.findElement(By.id(RadicationConstans.YEAROFDELIVERYID + index)));
-                    selectYOD1.selectByVisibleText(props.getProperty(RadicationConstans.YEAROFDELIVERYID + index));
+                    Select selectYOD1 = new Select(driver.findElement(By.id(Constans.YEAROFDELIVERYID + index)));
+                    selectYOD1.selectByVisibleText(props.getProperty(Constans.YEAROFDELIVERYID + index));
 
-                    Select selectLS1 = new Select(driver.findElement(By.id(RadicationConstans.LABORSUITABILITYID + index)));
-                    selectLS1.selectByVisibleText(props.getProperty(RadicationConstans.LABORSUITABILITYID + index));
+                    Select selectLS1 = new Select(driver.findElement(By.id(Constans.LABORSUITABILITYID + index)));
+                    selectLS1.selectByVisibleText(props.getProperty(Constans.LABORSUITABILITYID + index));
                 }
 
                 if(index >= 0){
 
-                    Select selectELS0 = new Select(driver.findElement(By.id(RadicationConstans.ENVLABORSUITABILITYID + index)));
-                    selectELS0.selectByVisibleText(props.getProperty(RadicationConstans.ENVLABORSUITABILITYID + index));
+                    Select selectELS0 = new Select(driver.findElement(By.id(Constans.ENVLABORSUITABILITYID + index)));
+                    selectELS0.selectByVisibleText(props.getProperty(Constans.ENVLABORSUITABILITYID + index));
                 }
             });
 
