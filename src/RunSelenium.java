@@ -37,7 +37,7 @@ public class RunSelenium extends JFrame {
             this.driver.get(props.getProperty("url"));
         } catch (Exception e) {
 
-            showMessageDialog(null, "Error configuring web driver");
+            showMessageDialog(null, "Error configuring web driver: " + e.getMessage());
         }
         configurationForm = new ConfigurationForm(props);
         anmForm = new AnmForm(props, driver);
