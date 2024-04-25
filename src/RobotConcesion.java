@@ -11,20 +11,22 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-public class RobotConcesion implements Robot{
+public class RobotConcesion implements Robot {
     public ChromeDriver driver;
     public Properties props;
-    RobotConcesion(ChromeDriver driver, Properties props){
+
+    RobotConcesion(ChromeDriver driver, Properties props) {
 
         this.driver = driver;
         this.props = props;
     }
+
     public WebElement waitElement(String search, String type, String timer) throws InterruptedException {
 
         int times = 10;
 
         do {
-            try{
+            try {
 
                 //Thread.sleep(Integer.parseInt(props.getProperty(timer)) * 1000);
                 WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(props.getProperty(timer))));
@@ -40,18 +42,19 @@ public class RobotConcesion implements Robot{
                         return wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(props.getProperty(search))));
                 }
 
-            }catch (Exception e){
+            } catch (Exception e) {
 
                 System.out.println(e.getMessage());
-            }finally {
+            } finally {
 
                 times--;
             }
 
-        }while(times > 0);
+        } while (times > 0);
 
         return null;
     }
+
     public void stepOne() throws InterruptedException {
         WebElement submenu = driver.findElement(By.xpath("//a[contains(text(),'Radicar solicitud de propuesta')]"));
         submenu.click();
@@ -64,6 +67,7 @@ public class RobotConcesion implements Robot{
         buttonNext1.click();
 
     }
+
     public void stepTwo() throws InterruptedException {
 
         //Ingresar detalles del área
@@ -124,6 +128,7 @@ public class RobotConcesion implements Robot{
         WebElement tabInfoTec = waitElement("//div[@id='main']//li[3]//a[1]", "path", "timer10");
         tabInfoTec.click();
     }
+
     public void stepThree() throws InterruptedException {
 
 
@@ -142,7 +147,7 @@ public class RobotConcesion implements Robot{
 
             final int index = i; // create a final variable for the current index to use inside the lambda expression
             executor.submit(() -> {
-                if(index > 0) {
+                if (index > 0) {
                     Select selectYOE1 = new Select(driver.findElement(By.id(Constans.YEAROFEXECUTIONID + index)));
                     selectYOE1.selectByVisibleText(props.getProperty(Constans.YEAROFEXECUTIONID + index));
 
@@ -153,7 +158,7 @@ public class RobotConcesion implements Robot{
                     selectLS1.selectByVisibleText(props.getProperty(Constans.LABORSUITABILITYID + index));
                 }
 
-                if(index >= 0){
+                if (index >= 0) {
 
                     Select selectELS0 = new Select(driver.findElement(By.id(Constans.ENVLABORSUITABILITYID + index)));
                     selectELS0.selectByVisibleText(props.getProperty(Constans.ENVLABORSUITABILITYID + index));
@@ -197,6 +202,7 @@ public class RobotConcesion implements Robot{
         WebElement tabEco = driver.findElement(By.xpath("//form[@name='p_CaaIataInputAreaDetailsForm']//li[4]"));
         tabEco.click();
     }
+
     public void stepFour() throws InterruptedException {
 
         //Información economica
@@ -230,8 +236,17 @@ public class RobotConcesion implements Robot{
         WebElement buttonAdd2 = driver.findElement(By.xpath(" //div[@class='tab-pane ng-scope active']//span[@class='btn-label ng-binding'][contains(text(),'Agregar')]"));
         buttonAdd2.click();
 
+        WebElement buttonNext3 = driver.findElement(By.xpath("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]"));
+        buttonNext3.click();
+
+        Thread.sleep(Integer.parseInt(props.getProperty("timer15")) * 1000);
+
+    }
+
+    public void stepFive() throws InterruptedException {
+
         //ambiental certification
-        WebElement tabCert = driver.findElement(By.xpath("//form[@name='p_CaaIataInputAreaDetailsForm']//li[5]"));
+        WebElement tabCert = driver.findElement(By.xpath("//form[@name='p_CaaIataAttachDocumentsForm']//li[5]"));
         tabCert.click();
 
         Thread.sleep(Integer.parseInt(props.getProperty("timer15")) * 1000);
@@ -246,10 +261,65 @@ public class RobotConcesion implements Robot{
         bntDeclare.click();
         Thread.sleep(Integer.parseInt(props.getProperty("timer15")) * 1000);
 
+
+        WebElement tabDoc = driver.findElement(By.xpath("//form[@name='p_CaaIataAttachDocumentsForm']//li[6]"));
+        tabDoc.click();
+
+        Thread.sleep(Integer.parseInt(props.getProperty("timer15")) * 1000);
+
+        WebElement pikerFile0 = driver.findElement(By.id(("p_CaaCataMandatoryDocumentToAttachId0")));
+        pikerFile0.sendKeys(props.getProperty("file0"));
+
+        WebElement pikerFile1 = driver.findElement(By.id(("p_CaaCataMandatoryDocumentToAttachId1")));
+        pikerFile1.sendKeys(props.getProperty("file1"));
+
+        WebElement pikerFile2 = driver.findElement(By.id(("p_CaaCataMandatoryDocumentToAttachId2")));
+        pikerFile2.sendKeys(props.getProperty("file2"));
+
+        WebElement pikerFile3 = driver.findElement(By.id(("p_CaaCataMandatoryDocumentToAttachId3")));
+        pikerFile3.sendKeys(props.getProperty("file3"));
+
+        WebElement pikerFile5 = driver.findElement(By.id(("p_CaaCataMandatoryDocumentToAttachId5")));
+        pikerFile5.sendKeys(props.getProperty("file4"));
+
+        WebElement pikerFile6 = driver.findElement(By.id(("p_CaaCataMandatoryDocumentToAttachId6")));
+        pikerFile6.sendKeys(props.getProperty("file5"));
+
+        WebElement pikerFile7 = driver.findElement(By.id(("p_CaaCataMandatoryDocumentToAttachId7")));
+        pikerFile7.sendKeys(props.getProperty("file6"));
+
+        WebElement pikerFile8 = driver.findElement(By.id(("p_CaaCataMandatoryDocumentToAttachId8")));
+        pikerFile8.sendKeys(props.getProperty("file7"));
+
+        int counter = 10;
+        for (int i = 1; props.containsKey("generatedField" + i); i++) {
+
+
+            WebElement pikerFileAgregar = driver.findElement(By.id(("p_CaaCataDocumentToAttachId")));
+            pikerFileAgregar.sendKeys(props.getProperty("generatedField" + i));
+
+            Thread.sleep(Integer.parseInt(props.getProperty("timer15")) * 1000);
+
+
+            // Localiza el combobox por su ID y haz clic en él para abrir las opciones
+            WebElement tipoDoctDropdown = driver.findElement(By.id("p_CaaCataDocumentTypeId" + counter));
+            tipoDoctDropdown.click(); // Esto debería abrir las opciones si no están ya abiertas
+
+            // Espera hasta que las opciones estén visibles
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // Ajusta el tiempo según sea necesario
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ui-select-choices-row-inner")));
+
+
+            WebElement option = driver.findElement(By.xpath("//div[contains(@class, 'ui-select-choices-row-inner')]/span[normalize-space()='" + props.getProperty("generatedCombo" + i) + "']"));
+            option.click(); // Selecciona la opción
+
+            counter++;
+        }
+
         WebElement buttonNext3 = driver.findElement(By.xpath("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]"));
         buttonNext3.click();
-
     }
+
     public void executeANMLogin() throws InterruptedException {
 
         //login

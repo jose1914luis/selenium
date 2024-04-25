@@ -8,6 +8,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="seleniumhq.selenium.java" level="project" />
-    <orderEntry type="library" name="io.github.bonigarcia.webdrivermanager" level="project" />
+    <orderEntry type="library" exported="" name="io.github.bonigarcia.webdrivermanager" level="project" />
+    <orderEntry type="library" exported="" name="intellij.forms_rt" level="project" />
   </component>
 </module>

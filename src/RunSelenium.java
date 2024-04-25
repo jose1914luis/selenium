@@ -78,9 +78,17 @@ public class RunSelenium extends JFrame {
 
         ImageIcon img = new ImageIcon("Resources/Button-Play-icon.png");
         setIconImage(img.getImage());
-        setPreferredSize(new Dimension(1100, 700));
 
-        setTitle("Radicador v. 3.0");
+        // Obtiene el tamaño de la pantalla
+        Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+
+        // Define las dimensiones de la ventana, manteniendo el ancho y ajustando la altura según el tamaño de la pantalla
+        int windowWidth = 1100; // Ancho de la ventana
+        int windowHeight = (int) screenSize.getHeight(); // Altura de la ventana
+
+        setPreferredSize(new Dimension(windowWidth, windowHeight));
+
+        setTitle("Radicador v. 4.0");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         pack();
         setVisible(true);
