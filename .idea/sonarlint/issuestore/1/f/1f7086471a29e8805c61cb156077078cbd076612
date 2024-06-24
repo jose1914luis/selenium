@@ -1,0 +1,501 @@
+
+˜
+java:S1104"WMake loginButton a static final constant or non-public and provide accessors if needed.(™“ÜúÿÿÿÿJ$08d30a2b-f393-4856-ba6f-442081d0c7e3
+›
+java:S1104"ZMake ejecutarButton a static final constant or non-public and provide accessors if needed.(ˆ•‚ıÿÿÿÿJ$774c841a-f552-40e5-80a5-8caddd32b496
+“
+java:S1104"WMake paso1Button a static final constant or non-public and provide accessors if needed.(ëŠÉôJ$3e285b43-0985-4e4b-8465-3bf39c31262e
+˜
+java:S1104"WMake paso2Button a static final constant or non-public and provide accessors if needed.(¿Óó¼ıÿÿÿÿJ$897b40bb-512c-4244-981e-41cc03aa52c0
+˜
+java:S1104"WMake paso3Button a static final constant or non-public and provide accessors if needed.(™¥ŒĞşÿÿÿÿJ$f8b112ba-1eda-4792-b798-b036a058bce5
+˜
+java:S1104"WMake paso4Button a static final constant or non-public and provide accessors if needed.(‰ìØçÿÿÿÿÿJ$f716128a-5dbd-4f31-9872-781583be644c
+V
+java:S1220""Move this file to a named package.J$3e0e5d83-09e8-4914-9d7c-c61e61e9443f
+k
+java:S3740"/Provide the parametrized type for this generic.(‡¿ÌJ$8c840f86-9f4e-4a54-bb24-69f48099fb22
+p
+java:S3740"/Provide the parametrized type for this generic.(¼¬—§úÿÿÿÿJ$9b68509f-c804-4055-8d40-6d33d5978100
+j
+java:S3740"/Provide the parametrized type for this generic.(ÔŠöpJ$4f3da894-0e0e-4ab3-a859-be37a4fe69c2
+p
+java:S3740"/Provide the parametrized type for this generic.(®ã®ÏúÿÿÿÿJ$94d05b2d-2037-4283-8d80-b5f1cc36373b
+p
+java:S3740 "/Provide the parametrized type for this generic.(åíŞíúÿÿÿÿJ$83cfd737-e9a9-4fe5-bd14-5a473ba2eede
+k
+java:S3740!"/Provide the parametrized type for this generic.(–­‚J$a8863b46-c193-45dd-88d8-e847bf001706
+k
+java:S3740""/Provide the parametrized type for this generic.(èäº÷J$6a8c8d7a-090f-445e-a96f-6a81c8792746
+p
+java:S3740#"/Provide the parametrized type for this generic.(İùõÌûÿÿÿÿJ$3ee8201e-3681-438b-95d9-d05cfa2cd70e
+k
+java:S3740$"/Provide the parametrized type for this generic.(ï™şôJ$e82b191a-7efd-4133-ac93-bc6f5e1c6e2e
+p
+java:S3740%"/Provide the parametrized type for this generic.(İš§şÿÿÿÿJ$754c61d8-c367-49ed-8d59-ce9a8538d81d
+p
+java:S3740&"/Provide the parametrized type for this generic.(Ö“‡şÿÿÿÿJ$ebce5af7-06d2-495e-8903-da0de5a38ade
+k
+java:S3740'"/Provide the parametrized type for this generic.(¨Ğº»J$84ccd74a-d4b2-4bcf-9296-59d91e501bb5
+k
+java:S3740("/Provide the parametrized type for this generic.(‚â…’J$1ac43657-8e42-445a-a63d-2d7ff965a3ea
+k
+java:S3740)"/Provide the parametrized type for this generic.(¤À…ÚJ$ca70dfd2-f582-4fb8-b505-82aaece990a8
+k
+java:S3740*"/Provide the parametrized type for this generic.(“ëµßJ$93aaf2e8-4fc8-4c7a-b386-a5fea1c29a05
+p
+java:S3740+"/Provide the parametrized type for this generic.(…Š¥£øÿÿÿÿJ$1a03732d-d27c-4c4e-977b-85a4b1a145ad
+k
+java:S3740,"/Provide the parametrized type for this generic.(…‹J$80a630b1-77c1-44bb-95e1-33c118f3686a
+k
+java:S3740-"/Provide the parametrized type for this generic.(ÉÛæJ$4a800d2e-e028-444a-bbb2-ffdd674ef50c
+k
+java:S3740."/Provide the parametrized type for this generic.(Ü—ÛØJ$511bba0d-c75a-4a23-aab9-d06b3531aaa9
+p
+java:S3740/"/Provide the parametrized type for this generic.(È¥ÿúÿÿÿÿJ$a58c2f97-36a4-41a8-bd57-a96913372070
+k
+java:S37400"/Provide the parametrized type for this generic.(ÄŞÿJ$73503805-6815-45c3-a24e-768f191144f9
+p
+java:S37401"/Provide the parametrized type for this generic.( ĞşåúÿÿÿÿJ$deb0dfce-2104-46ff-9c71-5fc64ff49e81
+p
+java:S37402"/Provide the parametrized type for this generic.(˜ÕÇâùÿÿÿÿJ$4b85d664-9ae0-4e13-bc01-c6c2653b5d2e
+p
+java:S37403"/Provide the parametrized type for this generic.(û¹‚¨úÿÿÿÿJ$4cd781f3-9cd5-4ef8-9a35-f9312358df1d
+p
+java:S37404"/Provide the parametrized type for this generic.(¾Ô²åüÿÿÿÿJ$33c5ba4c-ef7d-42e5-a0f5-177109781612
+k
+java:S37405"/Provide the parametrized type for this generic.(†šJ$fcfd93f8-f378-45ee-b433-6532efafafd3
+k
+java:S37406"/Provide the parametrized type for this generic.(Ò‹Õ·J$81462296-e8be-4ed0-90ec-a2ae00ac6249
+k
+java:S37407"/Provide the parametrized type for this generic.(–àåËJ$eb93137e-12c9-4cb7-8044-11bcd0510e10
+k
+java:S37408"/Provide the parametrized type for this generic.(ÆÅù§J$6203661d-791d-428b-a414-9280b6afc856
+j
+java:S37409"/Provide the parametrized type for this generic.(Ôš†tJ$4efa8ee7-aa1d-406c-a45d-a06e38a00256
+p
+java:S3740:"/Provide the parametrized type for this generic.(ó€Ó¼ûÿÿÿÿJ$bff17145-2e73-4280-a1f9-20748689db06
+p
+java:S3740;"/Provide the parametrized type for this generic.(Îóö‹ÿÿÿÿÿJ$b9617eb4-cf3b-4de6-85c3-89efdd3b1a51
+p
+java:S3740<"/Provide the parametrized type for this generic.(…æñâşÿÿÿÿJ$2262f35d-5b65-4747-9036-fdf5ce04cbd8
+p
+java:S3740="/Provide the parametrized type for this generic.(ºĞÎÂùÿÿÿÿJ$305c4a9a-a92e-491e-a657-a1d66e292ae1
+p
+java:S3740>"/Provide the parametrized type for this generic.(ñ”ÀæúÿÿÿÿJ$ec3f9f3d-57b9-48be-9d36-0c33b10335ab
+p
+java:S3740?"/Provide the parametrized type for this generic.(§¦›šÿÿÿÿÿJ$feeb1014-3da8-43b3-b2cf-ea140210cdfb
+p
+java:S3740@"/Provide the parametrized type for this generic.(‚À²ıÿÿÿÿJ$6e5e87b6-2fd1-415a-98e0-0542a8746dc4
+p
+java:S3740A"/Provide the parametrized type for this generic.(á¹’úÿÿÿÿJ$4d881dfb-bc77-4c0f-9645-8a3f01918004
+k
+java:S3740B"/Provide the parametrized type for this generic.(ƒá¿¸J$eb6a8e62-700d-4c2a-b72d-b644fda8e101
+p
+java:S3740C"/Provide the parametrized type for this generic.(¿Ò°©úÿÿÿÿJ$f72dc531-1305-4e68-bbd4-48904a1ae62f
+p
+java:S3740D"/Provide the parametrized type for this generic.(áœğúÿÿÿÿJ$805ca4dc-24de-45f8-89d9-0c1c49c480a6
+p
+java:S3740E"/Provide the parametrized type for this generic.(İÎŞüÿÿÿÿJ$11d5b718-3c11-432b-b166-0570afb2da46
+p
+java:S3740F"/Provide the parametrized type for this generic.(òî¬¿üÿÿÿÿJ$2e57d696-8a04-42d1-bc98-a0621b9caa7d
+k
+java:S3740G"/Provide the parametrized type for this generic.(ç½ŸîJ$68e4c042-972b-4160-8493-37a8ebacfe33
+k
+java:S3740H"/Provide the parametrized type for this generic.(îÑµ¶J$e15b6b6b-7461-4353-9492-50e4224e39e0
+k
+java:S3740I"/Provide the parametrized type for this generic.(øë„µJ$e519c0b4-8843-4961-a301-5af9b0eab3f9
+p
+java:S3740J"/Provide the parametrized type for this generic.(ÔÂØìúÿÿÿÿJ$0d0b074e-3f02-4e30-8d66-a7f2b99ad847
+p
+java:S3740K"/Provide the parametrized type for this generic.(…ÎÅ›ûÿÿÿÿJ$b95d71fa-ffaa-4849-9e3c-4717ce0d2785
+k
+java:S3740L"/Provide the parametrized type for this generic.(ôì«‘J$f9f0c922-f0bf-4366-bf33-03e09a4d1b12
+k
+java:S3740M"/Provide the parametrized type for this generic.(ê’óÌJ$005c34d8-5ac7-4494-8ebc-212af756fe60
+k
+java:S3740N"/Provide the parametrized type for this generic.(àÏÈJ$e1af098a-4d4c-47c3-a074-9a8ccc3cb8e0
+k
+java:S3740O"/Provide the parametrized type for this generic.(±ä§ÇJ$3721acab-0e51-47cc-a7dd-2c5fb6a3b4cf
+k
+java:S3740P"/Provide the parametrized type for this generic.(²‚Ğ¼J$3c440de7-11e5-4e82-b031-564916b75b3f
+k
+java:S3740Q"/Provide the parametrized type for this generic.(™ÄÌÍJ$d128ca0e-7e12-4dbc-9146-89a36aa3a0c2
+p
+java:S3740R"/Provide the parametrized type for this generic.(ùú’ÈüÿÿÿÿJ$497bcccb-4915-4ab1-b30c-b9c3d60c4033
+k
+java:S3740S"/Provide the parametrized type for this generic.(¿ÊJ$cfdac9c8-f6d9-402e-b222-c6a9f2db39e5
+k
+java:S3740T"/Provide the parametrized type for this generic.(âÄèÎJ$042e5ca6-f8e5-495a-9fc0-69a38e797d9a
+k
+java:S3740U"/Provide the parametrized type for this generic.(Ùø¬ûJ$6babd0bf-0e30-4738-a94d-72e849a059c3
+p
+java:S3740V"/Provide the parametrized type for this generic.(âëÙšùÿÿÿÿJ$66068cea-ae98-4c1f-b7ad-63dd9f62ca0c
+k
+java:S3740W"/Provide the parametrized type for this generic.(ğøºÏJ$2dcdd91a-2bca-4f1b-ba4a-23c2addfcbef
+k
+java:S3740X"/Provide the parametrized type for this generic.(ìôıJ$2b86844b-5670-4000-a268-259ddd613680
+p
+java:S3740Y"/Provide the parametrized type for this generic.(œâÓşıÿÿÿÿJ$ae286604-2523-4a47-b54b-b32d7facef29
+p
+java:S3740Z"/Provide the parametrized type for this generic.(áºœñıÿÿÿÿJ$fe27fed6-f48d-4aa5-8d26-4cabf5db3749
+k
+java:S3740["/Provide the parametrized type for this generic.(÷ËÅªJ$b5c97f70-887c-4949-a403-bdeff120a96d
+k
+java:S3740\"/Provide the parametrized type for this generic.(€ÆñJ$3602e11c-d9fd-4e3f-967d-ca0cc40f22c1
+k
+java:S3740]"/Provide the parametrized type for this generic.(†•Ñ‹J$24bf25df-d0cd-4757-9ef4-d645010e256d
+p
+java:S3740^"/Provide the parametrized type for this generic.(õÁÎœøÿÿÿÿJ$74867081-44ed-402e-9b9b-9ce467bb2f09
+k
+java:S3740_"/Provide the parametrized type for this generic.(À…Á†J$43765e39-50e4-470c-9711-c8ab0a75dd5c
+p
+java:S3740`"/Provide the parametrized type for this generic.(äÅõõüÿÿÿÿJ$341a51d3-c049-4f93-929a-10588ca6fbfa
+k
+java:S3740a"/Provide the parametrized type for this generic.(³ö×€J$5c2067e2-669b-4e44-864a-24b1a6a1b9f0
+k
+java:S3740b"/Provide the parametrized type for this generic.(³ĞÑ’J$e79aa480-8a9c-4c5b-a17c-74ce60962d3a
+p
+java:S3740c"/Provide the parametrized type for this generic.(—ÿáêÿÿÿÿÿJ$14a55208-1605-453b-ad95-f3476878b924
+p
+java:S3740d"/Provide the parametrized type for this generic.(ÄÅáËşÿÿÿÿJ$dc3d1e40-a8d3-4adc-9af7-614970cd8752
+p
+java:S3740e"/Provide the parametrized type for this generic.(ö«ëıÿÿÿÿJ$efe31315-8b7a-4eb2-9d26-a09cef29e6c7
+p
+java:S3740f"/Provide the parametrized type for this generic.(ÈÜØşúÿÿÿÿJ$94f1cc2a-b4f1-407d-8c90-434e344b21ac
+p
+java:S3740g"/Provide the parametrized type for this generic.(ûäø…ûÿÿÿÿJ$c7c5cf1a-e5f6-438a-8e94-7c72c2f91c35
+k
+java:S3740h"/Provide the parametrized type for this generic.(ÉùğÛJ$23a813a0-20a6-431f-bb15-52dad4d66b4b
+k
+java:S3740i"/Provide the parametrized type for this generic.(«¤¯“J$5b05a9cb-f840-463b-98fe-e9b77db1b207
+k
+java:S3740j"/Provide the parametrized type for this generic.(Ó´ÿİJ$f000846b-a5df-4bcb-93a8-478a3a80d939
+p
+java:S3740k"/Provide the parametrized type for this generic.(«‘ŞíúÿÿÿÿJ$baeb2adf-acd9-4ca6-a9cb-7fd1b034b09d
+k
+java:S3740l"/Provide the parametrized type for this generic.(àœºJ$b7161353-517a-4620-8796-0cd7fa9aaa6e
+k
+java:S3740m"/Provide the parametrized type for this generic.(»Ë¹¾J$6f07e29e-a00f-4ffd-90d8-1a35825cc399
+k
+java:S3740n"/Provide the parametrized type for this generic.(Ñ‘ôùJ$341cae10-aa84-4e02-86da-7baa8f2dbefd
+k
+java:S3740o"/Provide the parametrized type for this generic.(Ú®Ô‡J$7bcda811-7441-47b5-a5b3-1b6efff82a4f
+p
+java:S3740p"/Provide the parametrized type for this generic.(‰—®îüÿÿÿÿJ$ab0539d9-e135-4b7d-b7af-6bfc667bac62
+p
+java:S3740q"/Provide the parametrized type for this generic.(÷—¡ÌüÿÿÿÿJ$2aafec88-5a38-4345-b142-5b4fa9476479
+k
+java:S3740r"/Provide the parametrized type for this generic.(±•†ùJ$f7a903a9-89c9-4a0d-8bde-cc4e8ff81b2e
+k
+java:S3740s"/Provide the parametrized type for this generic.(ö½°ŞJ$e5d6bd78-2f0a-43ea-a3a1-c7f258fad76f
+p
+java:S3740t"/Provide the parametrized type for this generic.(²§©øÿÿÿÿJ$26ccf9b0-596c-40eb-aed2-c09b8c091f69
+k
+java:S3740u"/Provide the parametrized type for this generic.(àá×ÊJ$7e317746-0d37-42de-a98d-9478e98896cb
+p
+java:S3740v"/Provide the parametrized type for this generic.(¼ş™§üÿÿÿÿJ$5ebb87be-5b2a-4a1a-a0d4-446c54dbfd95
+p
+java:S3740w"/Provide the parametrized type for this generic.(§É¥ÛşÿÿÿÿJ$82aa7e72-5d07-4392-a194-fff621c0cb9e
+p
+java:S3740x"/Provide the parametrized type for this generic.(ÅœÈ˜ıÿÿÿÿJ$e0ec8bf5-c048-41be-9d86-469a16f255bf
+p
+java:S3740y"/Provide the parametrized type for this generic.(ñÈÖÛşÿÿÿÿJ$218b6a34-c4f8-4cc9-82d7-941a07876bda
+p
+java:S3740z"/Provide the parametrized type for this generic.(Ã°ÏùÿÿÿÿJ$ec3508b1-34bb-4cc6-bab7-4a0c45b1ee9c
+k
+java:S3740{"/Provide the parametrized type for this generic.(ıŸÑÃJ$5b8b0979-ace2-441e-afa3-41848c831f82
+p
+java:S3740|"/Provide the parametrized type for this generic.(ÅÙ§¦şÿÿÿÿJ$7f4fc344-b6f1-4278-86cb-f96d224e4630
+k
+java:S3740}"/Provide the parametrized type for this generic.(‘ªãˆJ$03987dbc-37fc-414c-9851-c09e144e1817
+p
+java:S3740~"/Provide the parametrized type for this generic.(ÉçÚşÿÿÿÿJ$fb8b19b6-8bcf-47fc-8143-05881651d63a
+k
+java:S3740"/Provide the parametrized type for this generic.(”ƒÙ†J$10b0a244-78fa-4a9e-8b8a-403cfb12ece1
+l
+java:S3740€"/Provide the parametrized type for this generic.(¨•ßÏJ$42bb78dd-27c3-45c0-9b63-246da0ee745a
+k
+java:S3740"/Provide the parametrized type for this generic.(û­¼J$bab08413-2b35-44c0-8d7b-e3955524a32b
+k
+java:S3740‚"/Provide the parametrized type for this generic.(Û®çJ$79a9d88b-d361-40e7-a93b-c7338675ef15
+l
+java:S3740‰"/Provide the parametrized type for this generic.(‘¯çÃJ$c2d2b8dd-e2a2-40c9-b0b8-8dd56e3e4f81
+q
+java:S3740›"/Provide the parametrized type for this generic.(¬ıõÿøÿÿÿÿJ$06c0b83c-3852-4a60-bea8-06281547483a
+q
+java:S3740œ"/Provide the parametrized type for this generic.(÷ÁœúÿÿÿÿJ$ca4f30c2-52fd-486d-8813-2f8b9b036cac
+q
+java:S3740"/Provide the parametrized type for this generic.(î…œ­üÿÿÿÿJ$48b242dc-0c3e-48a2-b5bf-3acb1a282b55
+l
+java:S3740"/Provide the parametrized type for this generic.(œâË¹J$d901ce0a-1dfb-46f3-96df-802865a31175
+q
+java:S3740Ÿ"/Provide the parametrized type for this generic.(ÒÆºùÿÿÿÿJ$77462d0c-b02d-4acb-a64d-a5d5446d2d3c
+q
+java:S3740¡"/Provide the parametrized type for this generic.(­Õ­ùÿÿÿÿJ$7c4e5f30-b8fe-4b40-8cc3-2186798117b8
+q
+java:S3740Ã"/Provide the parametrized type for this generic.(ßÛÌ±øÿÿÿÿJ$f0fb5233-550f-4da2-9666-0a2955b37253
+‘
+java:S1192È"ODefine a constant instead of duplicating this literal "generatedField" 4 times.(¾“úÁúÿÿÿÿJ$2b41d6d5-38dd-40b2-b278-cd94d6b4275d
+Œ
+java:S1192É"ODefine a constant instead of duplicating this literal "generatedCombo" 3 times.(­ß³­J$0e79d847-6d91-485d-80a6-20d4d5240183
+
+java:S3776Æ"RRefactor this method to reduce its Cognitive Complexity from 47 to the 15 allowed.( ‹”úJ$a62e6ad5-9f16-4dd2-9b4d-c60d98e12558
+ 
+java:S2142Ó"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(è®ã¶øÿÿÿÿJ$adbaa79e-a10e-4e68-a84b-795f2f3b9738
+ 
+java:S2142ß"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(è®ã¶øÿÿÿÿJ$d40fa8ef-6714-46db-88dd-35aabad21b4f
+ 
+java:S2142ç"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(è®ã¶øÿÿÿÿJ$c27670d1-35de-48b0-91fc-554ba73768b0
+ 
+java:S2142ï"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(è®ã¶øÿÿÿÿJ$5cf27ce4-818d-4ec8-9097-ea67732506f3
+ 
+java:S2142÷"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(è®ã¶øÿÿÿÿJ$be6028ea-ef34-4ed2-b3c9-a195d878679c
+ 
+java:S2142ÿ"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(è®ã¶øÿÿÿÿJ$c5eb39fe-2ba2-462c-8a35-7cfbc8de86ea
+ 
+java:S2142‰"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(è®ã¶øÿÿÿÿJ$01dd36a6-128a-4b0d-b8a6-803e3b868869
+„
+java:S1128"IRemove this unused import 'com.intellij.uiDesigner.core.GridConstraints'.(ş·ô(J$ec663296-fbb9-40ac-bb8d-de37e8df4db6
+w
+java:S1068"6Remove this unused "yearOfExecutionId0" private field.(®ã®ÏúÿÿÿÿJ$65ed5519-0af9-4c47-837f-2b2eea391cd8
+w
+java:S1068 "6Remove this unused "yearOfExecutionId1" private field.(åíŞíúÿÿÿÿJ$5362fb71-165d-4d2c-afef-0c3d53aab375
+r
+java:S1068!"6Remove this unused "yearOfExecutionId2" private field.(–­‚J$5284dbfb-62c8-4210-8188-95351a68037c
+r
+java:S1068""6Remove this unused "yearOfExecutionId4" private field.(èäº÷J$b439cde6-287d-4d9e-a25a-7c0f8493d4b4
+w
+java:S1068#"6Remove this unused "yearOfExecutionId5" private field.(İùõÌûÿÿÿÿJ$f1096e31-a4f7-4c3c-9d76-5c779224fd45
+r
+java:S1068$"6Remove this unused "yearOfExecutionId6" private field.(ï™şôJ$0fbaa41c-c371-414f-9800-be4995cd53e5
+w
+java:S1068%"6Remove this unused "yearOfExecutionId7" private field.(İš§şÿÿÿÿJ$55f8e57f-1b53-414c-be12-16b2686cf088
+w
+java:S1068&"6Remove this unused "yearOfExecutionId8" private field.(Ö“‡şÿÿÿÿJ$6e4c4072-a675-4407-8e61-9c40235af6b6
+r
+java:S1068'"6Remove this unused "yearOfExecutionId9" private field.(¨Ğº»J$eb22c7d2-ce05-4cac-a5a0-e9403f8b9236
+s
+java:S1068("7Remove this unused "yearOfExecutionId10" private field.(‚â…’J$84f15fe2-5ac6-4292-a0d0-4a2fb0d7fe4b
+s
+java:S1068)"7Remove this unused "yearOfExecutionId11" private field.(¤À…ÚJ$1d83f473-1ee0-4f1a-b3b2-3181287ffddf
+s
+java:S1068*"7Remove this unused "yearOfExecutionId12" private field.(“ëµßJ$d35eff89-13ba-4a81-a651-1de7faadac72
+x
+java:S1068+"7Remove this unused "yearOfExecutionId13" private field.(…Š¥£øÿÿÿÿJ$4bf5e829-8a78-4ea6-a6b8-786ecd8777da
+s
+java:S1068,"7Remove this unused "yearOfExecutionId14" private field.(…‹J$3d12de7f-f965-4b46-8627-9d823b1ab20e
+s
+java:S1068-"7Remove this unused "yearOfExecutionId15" private field.(ÉÛæJ$7f872668-5fcb-40cb-8d10-232a6686e580
+s
+java:S1068."7Remove this unused "yearOfExecutionId16" private field.(Ü—ÛØJ$c3ec98a2-1eac-4504-bb96-9e2b02fd8cb0
+y
+java:S1068/"8Remove this unused "envYearOfDeliveryId0" private field.(È¥ÿúÿÿÿÿJ$6b961afd-3432-460e-9c64-a7a0719b13cc
+v
+java:S10680":Remove this unused "envLaborSuitabilityId0" private field.(ÄŞÿJ$a2feb356-1fa7-4b3b-9cf4-a2f742c06797
+y
+java:S10681"8Remove this unused "envYearOfDeliveryId5" private field.( ĞşåúÿÿÿÿJ$753922ae-932c-4860-90dd-c3bb655b6b39
+{
+java:S10682":Remove this unused "envLaborSuitabilityId5" private field.(˜ÕÇâùÿÿÿÿJ$679fb12d-dd9b-4033-8958-89fd4b61730b
+z
+java:S10683"9Remove this unused "envYearOfExecutionId6" private field.(û¹‚¨úÿÿÿÿJ$2ae46d4e-6f46-4f21-b631-fa766d4de3d9
+y
+java:S10684"8Remove this unused "envYearOfDeliveryId6" private field.(¾Ô²åüÿÿÿÿJ$7c5e428a-0bae-430e-ac35-b4f03bccc712
+v
+java:S10685":Remove this unused "envLaborSuitabilityId6" private field.(†šJ$8778577c-ca01-406c-bf49-7417c09f1f3c
+u
+java:S10686"9Remove this unused "envYearOfExecutionId7" private field.(Ò‹Õ·J$78f9f397-bb87-4578-a9ea-b6c1ef6b7836
+t
+java:S10687"8Remove this unused "envYearOfDeliveryId7" private field.(–àåËJ$970ab811-beed-4730-bdac-ad4ef5eddfb3
+v
+java:S10688":Remove this unused "envLaborSuitabilityId7" private field.(ÆÅù§J$45f8b282-a2d3-4572-9e1b-937b56ed7cfa
+t
+java:S10689"9Remove this unused "envYearOfExecutionId8" private field.(Ôš†tJ$d2029fb9-5aa3-4aa4-88f8-6966b566e81c
+y
+java:S1068:"8Remove this unused "envYearOfDeliveryId8" private field.(ó€Ó¼ûÿÿÿÿJ$86fc5528-da73-4315-9580-76e81bc9831e
+{
+java:S1068;":Remove this unused "envLaborSuitabilityId8" private field.(Îóö‹ÿÿÿÿÿJ$d3b42b9e-5eaa-499b-a4ba-47e610cc7640
+z
+java:S1068<"9Remove this unused "envYearOfExecutionId9" private field.(…æñâşÿÿÿÿJ$ecb69a93-6894-4b14-9f9d-1d31142c9539
+y
+java:S1068="8Remove this unused "envYearOfDeliveryId9" private field.(ºĞÎÂùÿÿÿÿJ$d20066ff-43ca-4cc7-b4a9-c1b8eb8d977b
+{
+java:S1068>":Remove this unused "envLaborSuitabilityId9" private field.(ñ”ÀæúÿÿÿÿJ$ddde824f-1035-4753-9341-262629f808a7
+{
+java:S1068?":Remove this unused "envYearOfExecutionId10" private field.(§¦›šÿÿÿÿÿJ$dc5bdbbb-73d6-4ca1-8b23-ec1a4685e090
+z
+java:S1068@"9Remove this unused "envYearOfDeliveryId10" private field.(‚À²ıÿÿÿÿJ$4868fa5c-964c-4c5a-a875-45d20776a5de
+|
+java:S1068A";Remove this unused "envLaborSuitabilityId10" private field.(á¹’úÿÿÿÿJ$82e8dcd5-a94d-47e6-a87b-d03dae2fdb6e
+v
+java:S1068B":Remove this unused "envYearOfExecutionId11" private field.(ƒá¿¸J$97348801-c719-49cb-a32b-6833f5d1a92e
+z
+java:S1068C"9Remove this unused "envYearOfDeliveryId11" private field.(¿Ò°©úÿÿÿÿJ$2b525140-f239-4f55-819f-7f01c6e572e7
+|
+java:S1068D";Remove this unused "envLaborSuitabilityId11" private field.(áœğúÿÿÿÿJ$0bc432f8-62e5-454a-a3c9-2a6c7f3a2fdd
+{
+java:S1068E":Remove this unused "envYearOfExecutionId12" private field.(İÎŞüÿÿÿÿJ$85040093-8c7f-4289-9943-8ffb124d92e3
+{
+java:S1068F":Remove this unused "envYearOfExecutionId13" private field.(òî¬¿üÿÿÿÿJ$6f2a55fe-9496-4401-a728-908d64e365bf
+u
+java:S1068G"9Remove this unused "envYearOfDeliveryId12" private field.(ç½ŸîJ$418a61a3-4855-4261-98dd-bf88e43be4ae
+w
+java:S1068H";Remove this unused "envLaborSuitabilityId12" private field.(îÑµ¶J$abf50fd9-bc66-47f1-884f-e5f79e0c7924
+u
+java:S1068I"9Remove this unused "envYearOfDeliveryId13" private field.(øë„µJ$8257afdd-160e-44d1-ae7d-a1af44bca9d2
+|
+java:S1068J";Remove this unused "envLaborSuitabilityId13" private field.(ÔÂØìúÿÿÿÿJ$745f6ddc-e6d6-49a3-bea0-cfe271a6e181
+{
+java:S1068K":Remove this unused "envYearOfExecutionId14" private field.(…ÎÅ›ûÿÿÿÿJ$1655a417-96eb-437d-9e9e-6af68f5900e4
+u
+java:S1068L"9Remove this unused "envYearOfDeliveryId14" private field.(ôì«‘J$64633ee6-ed38-4b2d-971e-a0cfc5626456
+w
+java:S1068M";Remove this unused "envLaborSuitabilityId14" private field.(ê’óÌJ$4f5a2ec8-5384-43bc-887f-a4da378a27f5
+w
+java:S1068N";Remove this unused "envLaborSuitabilityId16" private field.(àÏÈJ$a28f6155-9f33-4b02-86aa-38fef804ba7f
+w
+java:S1068O";Remove this unused "envLaborSuitabilityId15" private field.(±ä§ÇJ$7c74249b-4067-4b40-918e-494c483fe4d7
+u
+java:S1068P"9Remove this unused "envYearOfDeliveryId15" private field.(²‚Ğ¼J$54ffc72b-e59c-4162-8e18-feaba9424231
+v
+java:S1068Q":Remove this unused "envYearOfExecutionId15" private field.(™ÄÌÍJ$0eecd7ad-db94-4d40-b011-e37767e6416b
+z
+java:S1068R"9Remove this unused "envYearOfDeliveryId16" private field.(ùú’ÈüÿÿÿÿJ$e261f450-f5a8-41d2-9f7b-55f216594998
+v
+java:S1068S":Remove this unused "envYearOfExecutionId16" private field.(¿ÊJ$eced9e48-a5fb-4f9f-ae13-34eb8782facc
+r
+java:S1068T"6Remove this unused "yearOfExecutionId3" private field.(âÄèÎJ$43e87043-9e92-4e85-9447-f160642ef6e6
+q
+java:S1068U"5Remove this unused "yearOfDeliveryId0" private field.(Ùø¬ûJ$6af76486-eade-43e0-88fd-3c1909dbca52
+v
+java:S1068V"5Remove this unused "yearOfDeliveryId1" private field.(âëÙšùÿÿÿÿJ$73933410-ce82-4532-a37e-872bf14ba42c
+q
+java:S1068W"5Remove this unused "yearOfDeliveryId2" private field.(ğøºÏJ$e6f2ccd7-b4e4-412c-9bc5-07899833f87a
+q
+java:S1068X"5Remove this unused "yearOfDeliveryId3" private field.(ìôıJ$96686f85-2ae2-4c3d-8c75-725f4f86c0d6
+v
+java:S1068Y"5Remove this unused "yearOfDeliveryId4" private field.(œâÓşıÿÿÿÿJ$9e8039ce-3fb0-45fb-8042-ab48e30ae7a8
+v
+java:S1068Z"5Remove this unused "yearOfDeliveryId5" private field.(áºœñıÿÿÿÿJ$f9baf708-71e3-4adb-8607-09f93068b890
+q
+java:S1068["5Remove this unused "yearOfDeliveryId6" private field.(÷ËÅªJ$868c176e-32a0-4703-b31f-233d60a7de27
+q
+java:S1068\"5Remove this unused "yearOfDeliveryId7" private field.(€ÆñJ$3d5e4a08-3445-4d6f-af97-fc1224378d7e
+q
+java:S1068]"5Remove this unused "yearOfDeliveryId8" private field.(†•Ñ‹J$6dfd7003-631d-4163-bd3e-50086020c694
+v
+java:S1068^"5Remove this unused "yearOfDeliveryId9" private field.(õÁÎœøÿÿÿÿJ$21b7f712-e93c-4ac8-b12c-8c94ae125d26
+r
+java:S1068_"6Remove this unused "yearOfDeliveryId10" private field.(À…Á†J$bb93e821-5538-4326-8a4e-1d957f7b858d
+w
+java:S1068`"6Remove this unused "yearOfDeliveryId11" private field.(äÅõõüÿÿÿÿJ$25693543-7683-4774-9adc-23c9c2eee65e
+r
+java:S1068a"6Remove this unused "yearOfDeliveryId12" private field.(³ö×€J$c0a48711-09d5-49b4-ba1b-b18791e1bfc8
+r
+java:S1068b"6Remove this unused "yearOfDeliveryId13" private field.(³ĞÑ’J$ad36418b-b0fd-409f-95f4-1c432964213a
+w
+java:S1068c"6Remove this unused "yearOfDeliveryId14" private field.(—ÿáêÿÿÿÿÿJ$6258aace-9d99-4868-aa4d-e8872eada1d7
+w
+java:S1068d"6Remove this unused "yearOfDeliveryId15" private field.(ÄÅáËşÿÿÿÿJ$da61b185-f144-4425-9c32-9d406a5dbeb6
+w
+java:S1068e"6Remove this unused "yearOfDeliveryId16" private field.(ö«ëıÿÿÿÿJ$b3c94945-209c-4189-9f48-dfe60cd18361
+x
+java:S1068f"7Remove this unused "laborSuitabilityId0" private field.(ÈÜØşúÿÿÿÿJ$bfe40bdd-f3d1-406e-8069-0573ccbc2819
+x
+java:S1068g"7Remove this unused "laborSuitabilityId1" private field.(ûäø…ûÿÿÿÿJ$f90ba5d2-0474-4aae-9a58-1c3516ce99f8
+s
+java:S1068h"7Remove this unused "laborSuitabilityId2" private field.(ÉùğÛJ$74219767-f2fb-423f-beaf-926e22940366
+s
+java:S1068i"7Remove this unused "laborSuitabilityId4" private field.(«¤¯“J$d0cb5da0-7759-45d8-bb7e-6ac588a98eea
+s
+java:S1068j"7Remove this unused "laborSuitabilityId5" private field.(Ó´ÿİJ$ff15195a-493e-4f5a-a59a-b9c523fc0b02
+x
+java:S1068k"7Remove this unused "laborSuitabilityId6" private field.(«‘ŞíúÿÿÿÿJ$897701f9-9698-47bf-945a-ff87b3125cb9
+s
+java:S1068l"7Remove this unused "laborSuitabilityId7" private field.(àœºJ$82abae16-9a58-4250-acf8-3fda0da71d93
+s
+java:S1068m"7Remove this unused "laborSuitabilityId8" private field.(»Ë¹¾J$2b56e490-5144-45c5-bc89-2d50e7bf0bde
+s
+java:S1068n"7Remove this unused "laborSuitabilityId9" private field.(Ñ‘ôùJ$c49e354a-6f5a-413f-af40-dc9236f565c9
+t
+java:S1068o"8Remove this unused "laborSuitabilityId10" private field.(Ú®Ô‡J$b52ae33e-eb47-466c-8459-8992f409278b
+y
+java:S1068p"8Remove this unused "laborSuitabilityId11" private field.(‰—®îüÿÿÿÿJ$b9b13c6c-bc44-46ba-81a9-a67e0ddca8b1
+y
+java:S1068q"8Remove this unused "laborSuitabilityId12" private field.(÷—¡ÌüÿÿÿÿJ$c7412759-f448-4740-88bf-30d4b9377295
+t
+java:S1068r"8Remove this unused "laborSuitabilityId13" private field.(±•†ùJ$4e75459b-e581-4b51-8890-9433a7b79d02
+t
+java:S1068s"8Remove this unused "laborSuitabilityId14" private field.(ö½°ŞJ$06f237b2-d517-409e-b0be-59ba807ae995
+y
+java:S1068t"8Remove this unused "laborSuitabilityId15" private field.(²§©øÿÿÿÿJ$e3bf0a00-7de6-43ef-94f0-e4c811553841
+t
+java:S1068u"8Remove this unused "laborSuitabilityId16" private field.(àá×ÊJ$5f8c5d0c-7d31-4ff0-8d3c-46ffcddc4350
+z
+java:S1068v"9Remove this unused "envYearOfExecutionId1" private field.(¼ş™§üÿÿÿÿJ$421b3243-86e1-4f0a-82f3-ce3b4d3b2842
+z
+java:S1068w"9Remove this unused "envYearOfExecutionId2" private field.(§É¥ÛşÿÿÿÿJ$6ccf8abf-0198-4704-904c-67b41f94c6f4
+z
+java:S1068x"9Remove this unused "envYearOfExecutionId3" private field.(ÅœÈ˜ıÿÿÿÿJ$5ef172c1-7b9e-4968-8a44-13c434f294ac
+z
+java:S1068y"9Remove this unused "envYearOfExecutionId4" private field.(ñÈÖÛşÿÿÿÿJ$b76fc771-1279-45b5-af66-1e67c5007f2d
+z
+java:S1068z"9Remove this unused "envYearOfExecutionId5" private field.(Ã°ÏùÿÿÿÿJ$7c226c02-550a-41d2-b25f-8de68c9a2461
+t
+java:S1068{"8Remove this unused "envYearOfDeliveryId1" private field.(ıŸÑÃJ$e9dc32fe-1f34-4afb-a68b-6dbb5fc77def
+y
+java:S1068|"8Remove this unused "envYearOfDeliveryId2" private field.(ÅÙ§¦şÿÿÿÿJ$e79b9af9-a9e3-4dfe-a88e-78ee1f5c9217
+t
+java:S1068}"8Remove this unused "envYearOfDeliveryId4" private field.(‘ªãˆJ$d36ae36c-31f0-47d0-9880-326782c63d22
+{
+java:S1068~":Remove this unused "envLaborSuitabilityId1" private field.(ÉçÚşÿÿÿÿJ$63fffa02-c8c3-413f-b915-b1eadda03d01
+v
+java:S1068":Remove this unused "envLaborSuitabilityId2" private field.(”ƒÙ†J$ce655001-be2e-4929-82f2-373d2337c952
+w
+java:S1068€":Remove this unused "envLaborSuitabilityId4" private field.(¨•ßÏJ$c6ef664c-b9ec-4d51-9380-e43e2c5efa25
+g
+java:S1068Š"*Remove this unused "timer1" private field.(éÂÀÙJ$194c37e7-f34c-43e3-ba4e-aff705d30951
+g
+java:S1068‹"*Remove this unused "timer2" private field.(†Ì¾šJ$7486998d-6ab6-4251-82cc-3ff2ce94327a
+g
+java:S1068Œ"*Remove this unused "timer3" private field.(İö‚ôJ$9e31a9c6-12b8-4509-a9ce-547ab6401856
+l
+java:S1068"*Remove this unused "timer4" private field.(¾ÏìïüÿÿÿÿJ$d1dbfd55-0188-45e6-bfd6-abdf136b6200
+l
+java:S1068"*Remove this unused "timer5" private field.(œòáşüÿÿÿÿJ$bc6f9053-983f-4b2f-94d4-794a184eca59
+l
+java:S1068"*Remove this unused "timer6" private field.(•ŠûÿÿÿÿJ$7d9bef5a-4611-4ebc-b712-ed382f528938
+l
+java:S1068"*Remove this unused "timer7" private field.(Îö¹»ùÿÿÿÿJ$ade0613f-34ef-4689-9cb9-42bc00e64e8c
+l
+java:S1068‘"*Remove this unused "timer8" private field.(Ÿ­ßıÿÿÿÿJ$d2c0be5f-89b1-4a80-9915-4e660c43b69e
+g
+java:S1068’"*Remove this unused "timer9" private field.(”ÑÌ¢J$9d293149-deff-4dfc-800e-4e042d8dd109
+h
+java:S1068“"+Remove this unused "timer10" private field.(×ÎÆ„J$2d026d56-51e9-4087-b914-a8d214e6597a
+m
+java:S1068”"+Remove this unused "timer11" private field.(¶§øşûÿÿÿÿJ$9ca95ddd-16c9-4b89-86ec-0fb3993abbdb
+m
+java:S1068•"+Remove this unused "timer12" private field.(à¶…úûÿÿÿÿJ$ea7882b9-310a-4859-8c11-538dad9dccf5
+m
+java:S1068–"+Remove this unused "timer13" private field.(ÇæŠ¢şÿÿÿÿJ$b4006afb-b4d0-4fa5-953c-88d183265b1b
+m
+java:S1068—"+Remove this unused "timer14" private field.(œİ‚ùÿÿÿÿJ$e6391445-7c39-4346-8a8e-445e239e3a85
+m
+java:S1068˜"+Remove this unused "timer15" private field.(Èß…‹øÿÿÿÿJ$eabbcf5d-9b4e-4bc4-8cee-545b2440a9d5
+p
+java:S1068š".Remove this unused "groupPanel" private field.(Šâù¿ùÿÿÿÿJ$106738b8-3cf1-42dc-a72a-0da99e437137
+{
+java:S1068›"9Remove this unused "envYearOfExecutionId0" private field.(¬ıõÿøÿÿÿÿJ$e73c1239-ea3e-4af2-a10f-1b7d0e9ba851
+y
+java:S1068œ"7Remove this unused "laborSuitabilityId3" private field.(÷ÁœúÿÿÿÿJ$09234130-cbf5-4d47-8e89-a052f6eae9f4
+z
+java:S1068"8Remove this unused "envYearOfDeliveryId3" private field.(î…œ­üÿÿÿÿJ$0a3261ea-92ed-4c9a-b444-514eede4a0ce
+w
+java:S1068":Remove this unused "envLaborSuitabilityId3" private field.(œâË¹J$bcdea682-ecae-417a-9513-92aa32c22c57
+o
+java:S1068Ÿ"-Remove this unused "comboBox3" private field.(ÒÆºùÿÿÿÿJ$7aa42cab-919f-4b89-bb81-1157381b8bfe
+j
+java:S1068¥".Remove this unused "filesPanel" private field.(â‰J$2fd684ee-8f52-4dc6-beff-2e3292dcfb80
+l
+java:S1068¾"*Remove this unused "driver" private field.(®ü¢ğÿÿÿÿÿJ$d57774e5-f1bb-4824-abac-1e877b98a60e

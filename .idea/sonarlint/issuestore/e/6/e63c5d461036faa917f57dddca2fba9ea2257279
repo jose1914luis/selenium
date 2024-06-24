@@ -1,0 +1,13 @@
+
+V
+java:S1220""Move this file to a named package.J$765c3186-6d69-4930-bf44-1f04d808e382
+€
+java:S1854
+"?Remove this useless assignment to local variable "runSelenium".(Ğú×‡úÿÿÿÿJ$cdf82986-ae3b-49fc-91b7-1a0fcc57e53c
+¸
+java:S1130"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(ıÊ×ÊıÿÿÿÿJ$31f420dc-87f1-48e9-bff2-56374b90b1ef
+q
+java:S1481	"0Remove this unused "runSelenium" local variable.(¯¯—ÿÿÿÿÿJ$bd522598-309a-4616-b06e-459b7ed7c0ab
+|	java:S125	"<This block of commented-out lines of code should be removed.(¯¯—ÿÿÿÿÿJ$fbb0f099-0178-41de-9933-65d280fe19b3
+a
+java:S1128"%Remove this unused import 'java.awt'.(ï´µ©J$d1378e39-4eed-4400-beb5-cc50c18162e2
