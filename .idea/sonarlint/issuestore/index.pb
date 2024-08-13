@@ -47,3 +47,15 @@ G.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec,8/6/86
 Q.idea/sonarlint/securityhotspotstore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec,2/c/2cabb939da04d3de3a200bf2b575690e1a16316d
 
 Q.idea/sonarlint/securityhotspotstore/1/f/1f7086471a29e8805c61cb156077078cbd076612,0/2/028847588efab9312b3f781c81a65c0dd5029c2b
+D
+src/Diferencial.java,7/2/721073e5da56b37f687af0b83975ed2a37203960
+>
+anm.properties,7/e/7ea4a9a0870f3d6c82c53f82427916dc2e3adb31
+G
+src/RobotSolicitud.java,7/3/736f6976f3f8aeebeea1f2718aad5092a173cb24
+I
+src/RobotDiferencial.java,4/4/44a6ea18339e927f2f5c5fa1a46f8a826e86232d
+A
+src/Especial.form,a/d/ada4a0b07051c2a1f83a472b488d8936da9ee0d1
+A
+src/Especial.java,6/3/638f37f68f1c635b5460cf45345660753068e95c

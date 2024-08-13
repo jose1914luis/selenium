@@ -1,0 +1,1791 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Diferencial">
+  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="1" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="1106" height="1454"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <tabbedpane id="80b1b" binding="tabbedPane1" default-binding="true">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="200"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="ad96b" layout-manager="GridLayoutManager" row-count="10" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Información Tecnica"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="25339" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Tipo de minería"/>
+                </properties>
+              </component>
+              <component id="5581e" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Sistema de explotación"/>
+                </properties>
+              </component>
+              <component id="8fe95" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="1"/>
+                  <text value="Detalles de los minerales"/>
+                </properties>
+              </component>
+              <component id="f94b7" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Seleccionar minerales"/>
+                </properties>
+              </component>
+              <component id="fde44" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Minerales seleccionados"/>
+                </properties>
+              </component>
+              <component id="8d0b9" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Inversión de la exploración "/>
+                </properties>
+              </component>
+              <component id="8e256" class="javax.swing.JTextField" binding="yearlyProduction3InptId0">
+                <constraints>
+                  <grid row="8" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="6ba3a" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="1"/>
+                  <text value="Método de explotación"/>
+                </properties>
+              </component>
+              <component id="2778d" class="javax.swing.JTextField" binding="yearlyProduction1InptId0">
+                <constraints>
+                  <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="24357" class="javax.swing.JTextField" binding="yearlyProduction2InptId0">
+                <constraints>
+                  <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="2b4ae" class="javax.swing.JTextField" binding="mineralPriceInptId0">
+                <constraints>
+                  <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="77c52" class="javax.swing.JTextField" binding="explorationInvestmentYear1InptId">
+                <constraints>
+                  <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="98eba" class="javax.swing.JTextField" binding="explorationInvestmentYear2InptId">
+                <constraints>
+                  <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="5be3e" class="javax.swing.JTextField" binding="explorationInvestmentYear3InptId">
+                <constraints>
+                  <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="43929" class="javax.swing.JComboBox" binding="typeOfMiningId">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="Cielo Abierto"/>
+                    <item value="Mixta"/>
+                    <item value="Subterráneo"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="d282b" class="javax.swing.JComboBox" binding="systemOfExploitationId">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="Canales longitudinales"/>
+                    <item value="Cantera"/>
+                    <item value="Dársenas y Dragado"/>
+                    <item value="Graveras"/>
+                    <item value="Minería de cajón o descubiertas"/>
+                    <item value="Minería de contorno"/>
+                    <item value="Métodos mixtos o especiales"/>
+                    <item value="Tajo abierto"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="3f82b" class="javax.swing.JTextField" binding="mineral2">
+                <constraints>
+                  <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="6f810" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Desea realizar explotación anticipada?"/>
+                </properties>
+              </component>
+              <component id="7b567" class="javax.swing.JComboBox" binding="earlyExploitationInd">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="60" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="SI"/>
+                    <item value="NO"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="ee621" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Clasificación de persona"/>
+                </properties>
+              </component>
+              <component id="395e1" class="javax.swing.JComboBox" binding="personClassificationId2">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <model>
+                    <item value="Persona Natural no obligada a llevar contabilidad"/>
+                    <item value="Persona Natural obligada a llevar contabilidad"/>
+                  </model>
+                </properties>
+              </component>
+              <component id="3f51e" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Ingreso anual"/>
+                </properties>
+              </component>
+              <component id="c3860" class="javax.swing.JTextField" binding="incomeId0">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+            </children>
+          </grid>
+          <scrollpane id="4cece">
+            <constraints>
+              <tabbedpane title="Actividades de exploración"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <grid id="821c9" binding="activityPanel" layout-manager="GridLayoutManager" row-count="36" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="0" bottom="0" right="0"/>
+                <constraints/>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="5fa89" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="1"/>
+                      <text value="Actividades de exploración"/>
+                    </properties>
+                  </component>
+                  <component id="f59ec" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Revisión bibliográfica"/>
+                    </properties>
+                  </component>
+                  <component id="a2bf6" class="javax.swing.JCheckBox" binding="checkB1">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkB1"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="70baa" class="javax.swing.JComboBox" binding="txtActA1">
+                    <constraints>
+                      <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActA1"/>
+                    </properties>
+                  </component>
+                  <component id="6484d" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Contactos con la comunidad y enfoque social"/>
+                    </properties>
+                  </component>
+                  <component id="c4253" class="javax.swing.JCheckBox" binding="checkB2">
+                    <constraints>
+                      <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkB2"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="f50ae" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Base topográfica del área"/>
+                    </properties>
+                  </component>
+                  <component id="e0583" class="javax.swing.JCheckBox" binding="checkB3">
+                    <constraints>
+                      <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkB3"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="65105" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Cartografía geológica"/>
+                    </properties>
+                  </component>
+                  <component id="55850" class="javax.swing.JCheckBox" binding="checkB4">
+                    <constraints>
+                      <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkB4"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="6a9ad" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Excavación de trincheras y apiques"/>
+                    </properties>
+                  </component>
+                  <component id="5d578" class="javax.swing.JCheckBox" binding="checkB5">
+                    <constraints>
+                      <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkB5"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="dbc55" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Geoquímica y otros análisis"/>
+                    </properties>
+                  </component>
+                  <component id="3e9c7" class="javax.swing.JCheckBox" binding="checkB6">
+                    <constraints>
+                      <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkB6"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="343ad" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Geofísica"/>
+                    </properties>
+                  </component>
+                  <component id="e0386" class="javax.swing.JCheckBox" binding="checkB7">
+                    <constraints>
+                      <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkB7"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="d1c1d" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Estudio de dinámica fluvial del cauce"/>
+                    </properties>
+                  </component>
+                  <component id="784b3" class="javax.swing.JCheckBox" binding="checkB8">
+                    <constraints>
+                      <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkB8"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="fe252" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Características hidrológicas y sedimentológicas del cauce"/>
+                    </properties>
+                  </component>
+                  <component id="93211" class="javax.swing.JCheckBox" binding="checkB9">
+                    <constraints>
+                      <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkB9"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="edb39" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Pozos y Galerías Exploratorias"/>
+                    </properties>
+                  </component>
+                  <component id="acc40" class="javax.swing.JCheckBox" binding="checkB10">
+                    <constraints>
+                      <grid row="10" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkB10"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="8f21e" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Perforaciones profundas"/>
+                    </properties>
+                  </component>
+                  <component id="daa3" class="javax.swing.JCheckBox" binding="checkB11">
+                    <constraints>
+                      <grid row="11" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkB11"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="b1e35" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Muestreo y análisis de calidad"/>
+                    </properties>
+                  </component>
+                  <component id="11d70" class="javax.swing.JCheckBox" binding="checkB12">
+                    <constraints>
+                      <grid row="12" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkB12"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="dae85" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="13" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Estudio geotécnico"/>
+                    </properties>
+                  </component>
+                  <component id="67f8" class="javax.swing.JCheckBox" binding="checkB13">
+                    <constraints>
+                      <grid row="13" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkB13"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="1bf88" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="14" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Estudio Hidrológico"/>
+                    </properties>
+                  </component>
+                  <component id="ba546" class="javax.swing.JCheckBox" binding="checkB14">
+                    <constraints>
+                      <grid row="14" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkB14"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="fbdfe" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="15" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Estudio Hidrogeológico"/>
+                    </properties>
+                  </component>
+                  <component id="42273" class="javax.swing.JCheckBox" binding="checkB15">
+                    <constraints>
+                      <grid row="15" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkB15"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="48935" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="16" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Evaluación del modelo geológico"/>
+                    </properties>
+                  </component>
+                  <component id="cce4f" class="javax.swing.JCheckBox" binding="checkB16">
+                    <constraints>
+                      <grid row="16" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkB16"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="2f1c9" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="17" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Actividades exploratorias adicionales (Se describe en el anexo Tecnico que se allegue)&#9;"/>
+                    </properties>
+                  </component>
+                  <component id="a3c59" class="javax.swing.JCheckBox" binding="checkB17">
+                    <constraints>
+                      <grid row="17" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkB17"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="239c6" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="18" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <font style="1"/>
+                      <text value="Aspectos Ambientales Etapa de Exploración"/>
+                    </properties>
+                  </component>
+                  <component id="be6da" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="19" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Selección optima de Sitios de Campamentos y Helipuertos"/>
+                    </properties>
+                  </component>
+                  <component id="277e7" class="javax.swing.JCheckBox" binding="checkC1">
+                    <constraints>
+                      <grid row="19" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkC1"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="d4f44" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="20" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Manejo de Aguas Lluvias"/>
+                    </properties>
+                  </component>
+                  <component id="dde54" class="javax.swing.JCheckBox" binding="checkC2">
+                    <constraints>
+                      <grid row="20" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkC2"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="fefac" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="21" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Manejo de Aguas Residuales Domesticas"/>
+                    </properties>
+                  </component>
+                  <component id="c074" class="javax.swing.JCheckBox" binding="checkC3">
+                    <constraints>
+                      <grid row="21" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkC3"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="fc372" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="22" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Manejo de Cuerpos de Agua"/>
+                    </properties>
+                  </component>
+                  <component id="982ec" class="javax.swing.JCheckBox" binding="checkC4">
+                    <constraints>
+                      <grid row="22" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkC4"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="de9f4" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="23" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Manejo de Material Particulado y Gases"/>
+                    </properties>
+                  </component>
+                  <component id="ce913" class="javax.swing.JCheckBox" binding="checkC5">
+                    <constraints>
+                      <grid row="23" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkC5"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="b2a" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="24" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Manejo del Ruido"/>
+                    </properties>
+                  </component>
+                  <component id="d1318" class="javax.swing.JCheckBox" binding="checkC6">
+                    <constraints>
+                      <grid row="24" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkC6"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="b6c0c" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="25" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Manejo de Combustibles"/>
+                    </properties>
+                  </component>
+                  <component id="4370d" class="javax.swing.JCheckBox" binding="checkC7">
+                    <constraints>
+                      <grid row="25" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkC7"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="82fcf" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="26" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Manejo de Taludes"/>
+                    </properties>
+                  </component>
+                  <component id="5a44" class="javax.swing.JCheckBox" binding="checkC8">
+                    <constraints>
+                      <grid row="26" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkC8"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="17eef" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="27" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Manejo de Accesos"/>
+                    </properties>
+                  </component>
+                  <component id="b2ef4" class="javax.swing.JCheckBox" binding="checkC9">
+                    <constraints>
+                      <grid row="27" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkC9"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="a88d8" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="28" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Manejo de Residuos Solidos"/>
+                    </properties>
+                  </component>
+                  <component id="5e155" class="javax.swing.JCheckBox" binding="checkC10">
+                    <constraints>
+                      <grid row="28" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkC10"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="19ce7" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="29" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Adecuación y Recuperación de Sitios de Uso Temporal"/>
+                    </properties>
+                  </component>
+                  <component id="8b1c4" class="javax.swing.JCheckBox" binding="checkC11">
+                    <constraints>
+                      <grid row="29" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkC11"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="38489" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="30" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Manejo de Fauna y Flora"/>
+                    </properties>
+                  </component>
+                  <component id="8bebd" class="javax.swing.JCheckBox" binding="checkC12">
+                    <constraints>
+                      <grid row="30" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkC12"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="1ae83" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="31" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Plan de Gestión Social"/>
+                    </properties>
+                  </component>
+                  <component id="be3ee" class="javax.swing.JCheckBox" binding="checkC13">
+                    <constraints>
+                      <grid row="31" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkC13"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="649f6" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="32" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="capacitación de Personal"/>
+                    </properties>
+                  </component>
+                  <component id="34a5c" class="javax.swing.JCheckBox" binding="checkC14">
+                    <constraints>
+                      <grid row="32" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkC14"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="fdca9" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="33" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Contratación de Mano de Obra no Calificada"/>
+                    </properties>
+                  </component>
+                  <component id="20a6" class="javax.swing.JCheckBox" binding="checkC15">
+                    <constraints>
+                      <grid row="33" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkC15"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="51b98" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="34" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Rescate Arqueológico"/>
+                    </properties>
+                  </component>
+                  <component id="20ccd" class="javax.swing.JCheckBox" binding="checkC16">
+                    <constraints>
+                      <grid row="34" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkC16"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="2645f" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="35" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="Manejo de Hundimientos"/>
+                    </properties>
+                  </component>
+                  <component id="77dc6" class="javax.swing.JCheckBox" binding="checkC17">
+                    <constraints>
+                      <grid row="35" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <name value="checkC17"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="983dd" class="javax.swing.JComboBox" binding="txtActA2">
+                    <constraints>
+                      <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActA2"/>
+                    </properties>
+                  </component>
+                  <component id="3f192" class="javax.swing.JComboBox" binding="txtActA3">
+                    <constraints>
+                      <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActA4"/>
+                    </properties>
+                  </component>
+                  <component id="3b4b5" class="javax.swing.JComboBox" binding="txtActA4">
+                    <constraints>
+                      <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                    </properties>
+                  </component>
+                  <component id="ff708" class="javax.swing.JComboBox" binding="txtActA5">
+                    <constraints>
+                      <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActA5"/>
+                    </properties>
+                  </component>
+                  <component id="6c4a2" class="javax.swing.JComboBox" binding="txtActA6">
+                    <constraints>
+                      <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActA6"/>
+                    </properties>
+                  </component>
+                  <component id="b0236" class="javax.swing.JComboBox" binding="txtActA7">
+                    <constraints>
+                      <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActA7"/>
+                    </properties>
+                  </component>
+                  <component id="9577" class="javax.swing.JComboBox" binding="txtActA8">
+                    <constraints>
+                      <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActA8"/>
+                    </properties>
+                  </component>
+                  <component id="1de51" class="javax.swing.JComboBox" binding="txtActA9">
+                    <constraints>
+                      <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActA9"/>
+                    </properties>
+                  </component>
+                  <component id="5583d" class="javax.swing.JComboBox" binding="txtActA10">
+                    <constraints>
+                      <grid row="10" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActA10"/>
+                    </properties>
+                  </component>
+                  <component id="6d306" class="javax.swing.JComboBox" binding="txtActA11">
+                    <constraints>
+                      <grid row="11" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActA11"/>
+                    </properties>
+                  </component>
+                  <component id="ad9ed" class="javax.swing.JComboBox" binding="txtActA12">
+                    <constraints>
+                      <grid row="12" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActA12"/>
+                    </properties>
+                  </component>
+                  <component id="8615d" class="javax.swing.JComboBox" binding="txtActA13">
+                    <constraints>
+                      <grid row="13" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActA13"/>
+                    </properties>
+                  </component>
+                  <component id="396f5" class="javax.swing.JComboBox" binding="txtActA14">
+                    <constraints>
+                      <grid row="14" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActA14"/>
+                    </properties>
+                  </component>
+                  <component id="e531e" class="javax.swing.JComboBox" binding="txtActA15">
+                    <constraints>
+                      <grid row="15" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActA15"/>
+                    </properties>
+                  </component>
+                  <component id="4895" class="javax.swing.JComboBox" binding="txtActA16">
+                    <constraints>
+                      <grid row="16" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActA16"/>
+                    </properties>
+                  </component>
+                  <component id="23705" class="javax.swing.JComboBox" binding="txtActA17">
+                    <constraints>
+                      <grid row="17" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActA17"/>
+                    </properties>
+                  </component>
+                  <component id="18f11" class="javax.swing.JComboBox" binding="txtActB1">
+                    <constraints>
+                      <grid row="19" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActB1"/>
+                    </properties>
+                  </component>
+                  <component id="dd4b5" class="javax.swing.JComboBox" binding="txtActB2">
+                    <constraints>
+                      <grid row="20" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActB2"/>
+                    </properties>
+                  </component>
+                  <component id="29093" class="javax.swing.JComboBox" binding="txtActB3">
+                    <constraints>
+                      <grid row="21" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActB3"/>
+                    </properties>
+                  </component>
+                  <component id="94ddd" class="javax.swing.JComboBox" binding="txtActB4">
+                    <constraints>
+                      <grid row="22" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActB4"/>
+                    </properties>
+                  </component>
+                  <component id="b4d83" class="javax.swing.JComboBox" binding="txtActB5">
+                    <constraints>
+                      <grid row="23" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActB5"/>
+                    </properties>
+                  </component>
+                  <component id="9aee7" class="javax.swing.JComboBox" binding="txtActB6">
+                    <constraints>
+                      <grid row="24" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActB6"/>
+                    </properties>
+                  </component>
+                  <component id="41a1f" class="javax.swing.JComboBox" binding="txtActB8">
+                    <constraints>
+                      <grid row="26" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActB8"/>
+                    </properties>
+                  </component>
+                  <component id="35139" class="javax.swing.JComboBox" binding="txtActB9">
+                    <constraints>
+                      <grid row="27" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActB9"/>
+                    </properties>
+                  </component>
+                  <component id="af0f1" class="javax.swing.JComboBox" binding="txtActB10">
+                    <constraints>
+                      <grid row="28" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActB10"/>
+                    </properties>
+                  </component>
+                  <component id="f73e1" class="javax.swing.JComboBox" binding="txtActB11">
+                    <constraints>
+                      <grid row="29" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActB11"/>
+                    </properties>
+                  </component>
+                  <component id="c97b3" class="javax.swing.JComboBox" binding="txtActB12">
+                    <constraints>
+                      <grid row="30" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActB12"/>
+                    </properties>
+                  </component>
+                  <component id="7b142" class="javax.swing.JComboBox" binding="txtActB13">
+                    <constraints>
+                      <grid row="31" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActB13"/>
+                    </properties>
+                  </component>
+                  <component id="3e96e" class="javax.swing.JComboBox" binding="txtActB14">
+                    <constraints>
+                      <grid row="32" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActB14"/>
+                    </properties>
+                  </component>
+                  <component id="e6d55" class="javax.swing.JComboBox" binding="txtActB15">
+                    <constraints>
+                      <grid row="33" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActB15"/>
+                    </properties>
+                  </component>
+                  <component id="51cbd" class="javax.swing.JComboBox" binding="txtActB16">
+                    <constraints>
+                      <grid row="34" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActB16"/>
+                    </properties>
+                  </component>
+                  <component id="4476c" class="javax.swing.JComboBox" binding="txtActB17">
+                    <constraints>
+                      <grid row="35" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActB17"/>
+                    </properties>
+                  </component>
+                  <component id="37c35" class="javax.swing.JComboBox" binding="txtActB7">
+                    <constraints>
+                      <grid row="25" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                        <minimum-size width="60" height="-1"/>
+                      </grid>
+                    </constraints>
+                    <properties>
+                      <model>
+                        <item value=""/>
+                        <item value="1"/>
+                        <item value="2"/>
+                        <item value="3"/>
+                      </model>
+                      <name value="txtActB7"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+            </children>
+          </scrollpane>
+          <grid id="1c92d" binding="economicPanel" layout-manager="GridLayoutManager" row-count="10" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+            <margin top="0" left="0" bottom="0" right="0"/>
+            <constraints>
+              <tabbedpane title="Información económica"/>
+            </constraints>
+            <properties>
+              <name value="economicPanel"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="1bcee" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="1"/>
+                  <text value="Costos de la Operación"/>
+                </properties>
+              </component>
+              <component id="60528" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Costos de exploración adicional"/>
+                </properties>
+              </component>
+              <component id="fc900" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Inversión en maquinaria y equipo"/>
+                </properties>
+              </component>
+              <component id="c8d04" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Costos de mano de obra directa"/>
+                </properties>
+              </component>
+              <component id="d6958" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Costos de mano de obra indirecta"/>
+                </properties>
+              </component>
+              <component id="3d95e" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Costos ambientales"/>
+                </properties>
+              </component>
+              <component id="7c6a6" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Honorarios administrativos"/>
+                </properties>
+              </component>
+              <component id="58337" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font style="1"/>
+                  <text value="Ingresos de la Operación"/>
+                </properties>
+              </component>
+              <component id="b2c0c" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Ingresos brutos"/>
+                </properties>
+              </component>
+              <component id="9e04f" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <text value="Costos de seguridad y salud en el trabajo"/>
+                </properties>
+              </component>
+              <component id="a96bf" class="javax.swing.JTextField" binding="year1InptId0">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <name value="year1InptId0"/>
+                </properties>
+              </component>
+              <component id="6b3e" class="javax.swing.JTextField" binding="year1InptId1">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <name value="year1InptId1"/>
+                </properties>
+              </component>
+              <component id="95736" class="javax.swing.JTextField" binding="year1InptId2">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <name value="year1InptId2"/>
+                </properties>
+              </component>
+              <component id="cd374" class="javax.swing.JTextField" binding="year1InptId3">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <name value="year1InptId3"/>
+                </properties>
+              </component>
+              <component id="c0754" class="javax.swing.JTextField" binding="year1InptId4">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <name value="year1InptId4"/>
+                </properties>
+              </component>
+              <component id="274ee" class="javax.swing.JTextField" binding="year1InptId5">
+                <constraints>
+                  <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <name value="year1InptId5"/>
+                </properties>
+              </component>
+              <component id="a20f4" class="javax.swing.JTextField" binding="year1InptId6">
+                <constraints>
+                  <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <name value="year1InptId6"/>
+                </properties>
+              </component>
+              <component id="4c6d8" class="javax.swing.JTextField" binding="operationIncomeYear1InptId">
+                <constraints>
+                  <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="a652e" class="javax.swing.JTextField" binding="year2InptId0">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <name value="year2InptId0"/>
+                </properties>
+              </component>
+              <component id="42879" class="javax.swing.JTextField" binding="year3InptId0">
+                <constraints>
+                  <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <name value="year3InptId0"/>
+                </properties>
+              </component>
+              <component id="423cc" class="javax.swing.JTextField" binding="year2InptId1">
+                <constraints>
+                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <name value="year2InptId1"/>
+                </properties>
+              </component>
+              <component id="6023e" class="javax.swing.JTextField" binding="year2InptId2">
+                <constraints>
+                  <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <name value="year2InptId2"/>
+                </properties>
+              </component>
+              <component id="45fd9" class="javax.swing.JTextField" binding="year2InptId3">
+                <constraints>
+                  <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <name value="year2InptId3"/>
+                </properties>
+              </component>
+              <component id="61a14" class="javax.swing.JTextField" binding="year2InptId4">
+                <constraints>
+                  <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <name value="year2InptId4"/>
+                </properties>
+              </component>
+              <component id="7bcb2" class="javax.swing.JTextField" binding="year2InptId5">
+                <constraints>
+                  <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <name value="year2InptId5"/>
+                </properties>
+              </component>
+              <component id="29a9b" class="javax.swing.JTextField" binding="year2InptId6">
+                <constraints>
+                  <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <name value="year2InptId6"/>
+                </properties>
+              </component>
+              <component id="bb41c" class="javax.swing.JTextField" binding="year3InptId1">
+                <constraints>
+                  <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <name value="year3InptId1"/>
+                </properties>
+              </component>
+              <component id="d715c" class="javax.swing.JTextField" binding="year3InptId2">
+                <constraints>
+                  <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <name value="year3InptId2"/>
+                </properties>
+              </component>
+              <component id="72655" class="javax.swing.JTextField" binding="year3InptId3">
+                <constraints>
+                  <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <name value="year3InptId3"/>
+                </properties>
+              </component>
+              <component id="a9ed2" class="javax.swing.JTextField" binding="year3InptId4">
+                <constraints>
+                  <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <name value="year3InptId4"/>
+                </properties>
+              </component>
+              <component id="1e399" class="javax.swing.JTextField" binding="year3InptId5">
+                <constraints>
+                  <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <name value="year3InptId5"/>
+                </properties>
+              </component>
+              <component id="2f404" class="javax.swing.JTextField" binding="year3InptId6">
+                <constraints>
+                  <grid row="7" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <name value="year3InptId6"/>
+                </properties>
+              </component>
+              <component id="241fa" class="javax.swing.JTextField" binding="operationIncomeYear3InptId">
+                <constraints>
+                  <grid row="9" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+              <component id="69481" class="javax.swing.JTextField" binding="operationIncomeYear2InptId">
+                <constraints>
+                  <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="150" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties/>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+      <grid id="437ac" layout-manager="GridLayoutManager" row-count="7" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="b2b60" class="javax.swing.JButton" binding="paso1Button">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Paso 1"/>
+            </properties>
+          </component>
+          <component id="69db8" class="javax.swing.JButton" binding="paso2Button" default-binding="true">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Paso 2"/>
+            </properties>
+          </component>
+          <component id="44d3" class="javax.swing.JButton" binding="paso3Button" default-binding="true">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Paso 3"/>
+            </properties>
+          </component>
+          <component id="90978" class="javax.swing.JButton" binding="paso4Button" default-binding="true">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Paso 4"/>
+            </properties>
+          </component>
+          <component id="b5cc7" class="javax.swing.JButton" binding="loginButton">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Login"/>
+            </properties>
+          </component>
+          <component id="d1d0a" class="javax.swing.JButton" binding="guardarButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Guardar"/>
+            </properties>
+          </component>
+          <component id="7214d" class="javax.swing.JButton" binding="ejecutarButton">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Ejecutar"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

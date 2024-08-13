@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ConfigurationForm">
+  <grid id="27dc6" binding="rootPanel" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="5" left="5" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="704" height="395"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="25a11" layout-manager="GridLayoutManager" row-count="6" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="5" left="5" bottom="5" right="5"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="500" height="-1"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="empty"/>
+        <children>
+          <component id="44afd" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="URL"/>
+            </properties>
+          </component>
+          <component id="552b2" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Usuario"/>
+            </properties>
+          </component>
+          <component id="c7bba" class="javax.swing.JTextField" binding="url">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <minimum-size width="-1" height="20"/>
+                <preferred-size width="381" height="30"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="f943d" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Contraseña"/>
+            </properties>
+          </component>
+          <component id="f49bf" class="javax.swing.JTextField" binding="password">
+            <constraints>
+              <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <minimum-size width="-1" height="20"/>
+                <preferred-size width="381" height="30"/>
+                <maximum-size width="200" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <minimumSize width="100" height="30"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="167a" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Pin"/>
+            </properties>
+          </component>
+          <component id="49371" class="javax.swing.JTextField" binding="pinSlctId">
+            <constraints>
+              <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <minimum-size width="-1" height="20"/>
+                <preferred-size width="381" height="30"/>
+                <maximum-size width="200" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="229e4" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Cambiar Usuario"/>
+            </properties>
+          </component>
+          <component id="d8be8" class="javax.swing.JTextField" binding="cambiarUsuario">
+            <constraints>
+              <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <minimum-size width="-1" height="20"/>
+                <preferred-size width="381" height="30"/>
+                <maximum-size width="200" height="-1"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="85693" class="javax.swing.JTextField" binding="username">
+            <constraints>
+              <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="-1" height="20"/>
+                <preferred-size width="381" height="30"/>
+                <maximum-size width="200" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <minimumSize width="100" height="30"/>
+            </properties>
+          </component>
+          <component id="49307" class="javax.swing.JLabel" binding="Webdriver">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="WebDrive"/>
+            </properties>
+          </component>
+          <component id="8eab" class="javax.swing.JTextField" binding="webdriver">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="500" height="30"/>
+              </grid>
+            </constraints>
+            <properties/>
+          </component>
+          <component id="906fe" class="javax.swing.JButton" binding="guardarButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Guardar"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="46a21" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Configuración General"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

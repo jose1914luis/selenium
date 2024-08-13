@@ -340,7 +340,7 @@ public class RobotConcesion implements Robot {
 
         Thread.sleep(5000);
 
-        Select selectCambiarUsuario = new Select(driver.findElement(By.xpath("//select[@aria-label='Cambiar el usuario:']")));
-        selectCambiarUsuario.selectByVisibleText(props.getProperty("cambiarUsuario"));
+        //Select selectCambiarUsuario = new Select(driver.findElement(By.xpath("//select[@aria-label='Cambiar el usuario:']")));
+        //selectCambiarUsuario.selectByVisibleText(props.getProperty("cambiarUsuario"));
     }
 }

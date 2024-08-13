@@ -1,0 +1,16 @@
+
+V
+java:S1220""Move this file to a named package.J$6568bf64-9f65-4794-a1c1-579bb6b4780c
+†	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿJ$6ff04c9a-8cd1-45e5-97d1-11e0f5c6ce3a
+•
+java:S1450"YRemove the "textField1" field and declare it as a local variable in the relevant methods.(×ŒàÌJ$74905813-cb40-4474-b1c3-d183694a8864
+Ÿ
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(è®ã¶øÿÿÿÿJ$5aea1b4e-c4e4-4772-aa87-c2b8046f7149
+š
+java:S1171%"YMove the contents of this initializer to a standard constructor or to field initializers.(ÒÌâ–øÿÿÿÿJ$f68fe941-3870-489f-95ad-6507847d6446
+Ž	java:S1003"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–­ŒßúÿÿÿÿJ$7dee1ce5-7647-4d47-a453-d16db6632be3
+Ž	java:S100C"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘ ¨úúÿÿÿÿJ$f021066c-33bb-4cac-854b-6b18544f2dcf
+k
+java:S1068"*Remove this unused "driver" private field.(®ü¢ðÿÿÿÿÿJ$924e7fa2-be75-4ce3-8ae7-e7af8f4f81f9
+e
+java:S1068")Remove this unused "props" private field.(Å¡‚æJ$22bc1bef-a1d1-4f83-9d06-6ad8d1c05aec

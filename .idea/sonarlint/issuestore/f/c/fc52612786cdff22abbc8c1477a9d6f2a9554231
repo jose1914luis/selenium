@@ -1,0 +1,18 @@
+
+]
+java:S1220""Move this file to a named package.8àûïØ„2J$be177bfb-ac69-4e53-ba34-42f64b2082dd
+–
+java:S2095&"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(¯”ğşÿÿÿÿ8¸£¦Ù„2J$c04825b6-0a71-4248-8578-3e6b02863d1c
+›	java:S116"TRename this field "Webdriver" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£«„çıÿÿÿÿ8áûïØ„2J$a660765f-106a-4896-9310-530b38fcaac4
+
+java:S1845"VRename field "Webdriver" to prevent any misunderstanding/clash with field "webdriver".(£«„çıÿÿÿÿ8âûïØ„2J$2f924f01-ae93-43da-9dea-dd5d0aa46616
+ 
+java:S1450"XRemove the "Webdriver" field and declare it as a local variable in the relevant methods.(£«„çıÿÿÿÿ8¼£¦Ù„2J$53196d2e-9496-426e-9faa-c97b6f3e9da3
+¡
+java:S1171F"YMove the contents of this initializer to a standard constructor or to field initializers.(ÒÌâ–øÿÿÿÿ8Æ£¦Ù„2J$c79363af-b512-4e3c-8768-c57157c22b77
+•	java:S100T"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–­Œßúÿÿÿÿ8Ç£¦Ù„2J$827f7ec7-8ddb-4a0a-8c7f-6624810c116e
+–	java:S100‡"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘ ¨úúÿÿÿÿ8Ğ£¦Ù„2J$a21f3a72-da62-41a8-ad84-022d914b468d
+z
+java:S1128"7Remove this unused import 'java.awt.event.ActionEvent'.(Úù“‘8¤ñ›Ù„2J$6f75d6a9-d96a-4cca-9623-9aedf95f4eec
+}
+java:S1128":Remove this unused import 'java.awt.event.ActionListener'.(Ìä¹8¤ñ›Ù„2J$7c875aac-b330-4565-b3d0-d7c4d0fe50f5

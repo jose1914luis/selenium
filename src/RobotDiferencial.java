@@ -259,10 +259,6 @@ public class RobotDiferencial extends RobotConcesion{
             //paso4();
         }
 
-
-
-
-
     }
     public void pasoIntermedio() throws InterruptedException {
         WebElement tabArea = driver.findElement(By.xpath("//div[@id='main']//li[2]//a[1]"));

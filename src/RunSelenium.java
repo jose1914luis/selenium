@@ -19,6 +19,7 @@ public class RunSelenium extends JFrame {
     private AnmForm anmForm;
     private ConfigurationForm configurationForm;
     private Diferencial diferencialForm;
+    private Especial especialForm;
 
     public RunSelenium() throws IOException, ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException, IllegalAccessException {
 
@@ -42,6 +43,7 @@ public class RunSelenium extends JFrame {
         configurationForm = new ConfigurationForm(props);
         anmForm = new AnmForm(props, driver);
         diferencialForm = new Diferencial(props, driver);
+        especialForm = new Especial(props,driver);
 
         JScrollPane scrollPane = new JScrollPane(configurationForm.getRootPanel());
         add(scrollPane);
@@ -60,6 +62,14 @@ public class RunSelenium extends JFrame {
         button = new JButton("Concesión diferencial");
         button.addActionListener(e -> {
             scrollPane.setViewportView(diferencialForm.getRootPanel());
+        });
+        toolbar.add(button);
+
+        toolbar.addSeparator();
+
+        button = new JButton("Radicacion especial");
+        button.addActionListener(e -> {
+            scrollPane.setViewportView(especialForm.getRootPanel());
         });
         toolbar.add(button);
 

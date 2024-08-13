@@ -1,41 +1,42 @@
 
 ‚
-java:S2184d"FCast one of the operands of this multiplication operation to a "long".(¢á¹ÚJ$f2faa708-4c72-4bbc-8b0d-68c695788f5f
+java:S2184d"FCast one of the operands of this multiplication operation to a "long".(¢á¹ÚJ$297c2bad-3657-40e0-8337-2c7a51dc41a4
 ‡
-java:S2184s"FCast one of the operands of this multiplication operation to a "long".(™éƒ¬üÿÿÿÿJ$4ee64eb0-7295-49f0-826d-35c96a035068
+java:S2184s"FCast one of the operands of this multiplication operation to a "long".(™éƒ¬üÿÿÿÿJ$2f65ed44-9d8a-478c-9638-77aa19b358e4
 ƒ
-java:S2184æ"FCast one of the operands of this multiplication operation to a "long".(ˆŸÏ J$b0e8e9ca-c74d-430e-a6e7-9d181b69e325
+java:S2184æ"FCast one of the operands of this multiplication operation to a "long".(ˆŸÏ J$f4784b4b-b0c9-469a-ba23-a0593304dbaf
 ƒ
-java:S2184ò"FCast one of the operands of this multiplication operation to a "long".(ˆŸÏ J$30d8d802-b606-4e91-afae-57fe658271c6
+java:S2184ò"FCast one of the operands of this multiplication operation to a "long".(ˆŸÏ J$7e4d4da7-ad8d-4337-a5c5-2cb1a1e07b21
 ƒ
-java:S2184ü"FCast one of the operands of this multiplication operation to a "long".(ˆŸÏ J$25362210-c138-4f1b-8aac-d1ebbe3b69da
+java:S2184ü"FCast one of the operands of this multiplication operation to a "long".(ˆŸÏ J$42a362ae-3906-418b-836e-a49938c41a58
 ƒ
-java:S2184†"FCast one of the operands of this multiplication operation to a "long".(ˆŸÏ J$61de8bbe-c607-4417-b9fa-cb3ba2d3d026
+java:S2184†"FCast one of the operands of this multiplication operation to a "long".(ˆŸÏ J$9374cdc4-3981-4023-ad36-345ccc010863
 ƒ
-java:S2184Œ"FCast one of the operands of this multiplication operation to a "long".(ˆŸÏ J$e5083734-af39-4f9e-a557-d4def5ea2be4
+java:S2184Œ"FCast one of the operands of this multiplication operation to a "long".(ˆŸÏ J$f33df6c3-1bc9-4142-899d-d687b3c9ba0d
 ƒ
-java:S2184­"FCast one of the operands of this multiplication operation to a "long".(ˆŸÏ J$365611e3-d1f4-4cb3-9227-5fa2aa60f5a4
+java:S2184­"FCast one of the operands of this multiplication operation to a "long".(ˆŸÏ J$85cd1506-d1ce-405c-be49-25de368942b4
 ƒ
-java:S2184Ð"FCast one of the operands of this multiplication operation to a "long".(ž´ž³J$e61bceff-71ce-487e-a6ec-3aac2f4cbae4
+java:S2184Ð"FCast one of the operands of this multiplication operation to a "long".(ž´ž³J$45e56dcd-49ea-43e5-8600-8fcf82f4cb43
 Ž
-java:S1104"RMake driver a static final constant or non-public and provide accessors if needed.(—ÝêìJ$e6819e27-477c-4fa9-888f-3656c57a046b
+java:S1104"RMake driver a static final constant or non-public and provide accessors if needed.(—ÝêìJ$bbb9b4dd-b614-4170-baba-484ba75efe07
 Œ
-java:S1104"QMake props a static final constant or non-public and provide accessors if needed.(ñšÃJ$92e6a727-3e5a-49b0-acd7-d797ae826ba6
+java:S1104"QMake props a static final constant or non-public and provide accessors if needed.(ñšÃJ$685ebfef-adc2-4d04-b3a1-cd0ac79385b0
 ~
-java:S4973Á"<Strings and Boxed types should be compared using "equals()".(üÓ·ïÿÿÿÿÿJ$d5fdce69-9927-4a86-8cf7-fe4ac9aa8f90
+java:S4973Á"<Strings and Boxed types should be compared using "equals()".(üÓ·ïÿÿÿÿÿJ$a30831bb-89d3-4734-897b-6b6f1a80711a
 V
-java:S1220""Move this file to a named package.J$e7119f33-fe33-479b-bf56-cf2b917f9e0f
+java:S1220""Move this file to a named package.J$76dbc99c-f816-445b-ac17-2ff207681d84
 Á
-java:S1192{"„Define a constant instead of duplicating this literal "//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]" 3 times.(žÏÛJ$2e7e25d2-36b4-4941-baf4-46421786a7f3
+java:S1192{"„Define a constant instead of duplicating this literal "//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]" 3 times.(žÏÛJ$d95f84e3-b2bc-4523-a10d-20db7e3c2048
 …
-java:S1192æ"HDefine a constant instead of duplicating this literal "timer15" 7 times.(ˆŸÏ J$be5c0b82-2988-43de-bd11-987a7ab35f90
+java:S1192æ"HDefine a constant instead of duplicating this literal "timer15" 7 times.(ˆŸÏ J$2b9df6f1-6688-4a70-b6a8-112ed790e76c
 š
-java:S1192V"^Define a constant instead of duplicating this literal "selectedCellInputMethodSlctId" 3 times.(¦Üœ“J$b61b4310-d06b-4ad3-994e-b982c86e5f68
-w	java:S125"<This block of commented-out lines of code should be removed.(Ü××¿J$bfbca2e3-1b5d-4b04-9d2b-83b5ed79ce23
-]	java:S131"""Add a default case to this switch.(ÜŸ•J$0992b7e0-77fa-4fdd-b34a-a13d1583520b
-k	java:S106/"+Replace this use of System.out by a logger.(©þêÜúÿÿÿÿJ$a34e1897-54a6-4517-9486-2ff0fe8a1539
-}	java:S125‡"<This block of commented-out lines of code should be removed.(½îì¾ûÿÿÿÿJ$35e87c0c-46a8-48d7-bd79-4e15303a386d
-l	java:S106­"+Replace this use of System.out by a logger.(„ÄØÆÿÿÿÿÿJ$2a570529-af09-48ba-bc47-99d2a5356184
+java:S1192V"^Define a constant instead of duplicating this literal "selectedCellInputMethodSlctId" 3 times.(¦Üœ“J$4110ba1a-a097-4d21-9c01-62c873bc2e3a
+w	java:S125"<This block of commented-out lines of code should be removed.(Ü××¿J$5e045fad-ecc3-4151-9260-e5cd3ec167bc
+]	java:S131"""Add a default case to this switch.(ÜŸ•J$ad0543e5-2a66-4804-9cf1-3822ec8b8e10
+k	java:S106/"+Replace this use of System.out by a logger.(©þêÜúÿÿÿÿJ$48d01385-e752-42b1-a6f7-8fc28d1966ae
+}	java:S125‡"<This block of commented-out lines of code should be removed.(½îì¾ûÿÿÿÿJ$9d0d9a9f-26da-48a5-96d8-74d583cdcc73
+l	java:S106­"+Replace this use of System.out by a logger.(„ÄØÆÿÿÿÿÿJ$e099d55e-d7a1-41ee-9b35-10355964f259
 ‡
-java:S1858Ñ"E"getProperty" returns a string, there's no need to call "toString()".(«àˆùÿÿÿÿJ$9d3efa89-c17f-4711-b89c-2b73096c8cec
-}	java:S125é"<This block of commented-out lines of code should be removed.(äì©ªýÿÿÿÿJ$f037e481-3c11-45f0-8b7f-5695e301160c
+java:S1858Ñ"E"getProperty" returns a string, there's no need to call "toString()".(«àˆùÿÿÿÿJ$12aa2223-dd32-43c2-8ca2-687623c7e299
+}	java:S125é"<This block of commented-out lines of code should be removed.(äì©ªýÿÿÿÿJ$1b556011-def4-4242-8d12-1bc7f41b205d
+„	java:S125×"<This block of commented-out lines of code should be removed.(™•íìþÿÿÿÿ8»¦Ùí”2J$e2c73769-0bf1-404e-8669-906f3a544114
