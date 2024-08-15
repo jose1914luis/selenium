@@ -1,4 +1,10 @@
+package main.resources.java.com.robot.core;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
+import main.resources.java.com.robot.core.forms.AnmForm;
+import main.resources.java.com.robot.core.forms.ConfigurationForm;
+import main.resources.java.com.robot.core.forms.Diferencial;
+import main.resources.java.com.robot.core.forms.Especial;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
@@ -12,6 +18,9 @@ import java.util.Properties;
 
 import static javax.swing.JOptionPane.showMessageDialog;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class RunSelenium extends JFrame {
 
     private static Properties props = new Properties();
@@ -23,9 +32,9 @@ public class RunSelenium extends JFrame {
 
     public RunSelenium() throws IOException, ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException, IllegalAccessException {
 
-        FileInputStream in = new FileInputStream("anm.properties");
+        /*FileInputStream in = new FileInputStream("anm.properties");
         props.load(in);
-        in.close();
+        in.close();*/
 
         UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 

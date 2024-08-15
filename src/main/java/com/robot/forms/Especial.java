@@ -1,5 +1,8 @@
+package main.resources.java.com.robot.core.forms;
+
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
+import main.resources.java.com.robot.core.RobotSolicitud;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import javax.swing.*;

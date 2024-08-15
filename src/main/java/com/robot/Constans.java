@@ -1,3 +1,5 @@
+package main.resources.java.com.robot.core;
+
 public class Constans {
 
     public static final String ANM_PROPERTIES = "anm.properties";

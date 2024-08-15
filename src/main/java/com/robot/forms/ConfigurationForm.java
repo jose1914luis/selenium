@@ -1,17 +1,20 @@
+package main.resources.java.com.robot.core.forms;
+
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+import main.resources.java.com.robot.core.services.AnmPropertiesService;
 
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Properties;
 
 import static javax.swing.JOptionPane.showMessageDialog;
-
+@Component
 public class ConfigurationForm {
     private JTextField url;
     private JTextField password;
@@ -21,6 +24,8 @@ public class ConfigurationForm {
     private JTextField webdriver;
     private JLabel Webdriver;
     private Properties props;
+    @Autowired
+    private AnmPropertiesService anmPropertiesService;
 
     public JPanel getRootPanel() {
         return rootPanel;

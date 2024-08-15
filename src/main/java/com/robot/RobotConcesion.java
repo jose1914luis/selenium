@@ -1,3 +1,5 @@
+package main.resources.java.com.robot.core;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,7 +17,7 @@ public class RobotConcesion implements Robot {
     public ChromeDriver driver;
     public Properties props;
 
-    RobotConcesion(ChromeDriver driver, Properties props) {
+    public RobotConcesion(ChromeDriver driver, Properties props) {
 
         this.driver = driver;
         this.props = props;

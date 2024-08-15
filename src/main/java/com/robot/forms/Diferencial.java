@@ -1,21 +1,18 @@
+package main.resources.java.com.robot.core.forms;
+
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
+import main.resources.java.com.robot.core.Constans;
+import main.resources.java.com.robot.core.RobotDiferencial;
+import main.resources.java.com.robot.core.Util;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
 import javax.swing.*;
 import javax.swing.plaf.FontUIResource;
 import javax.swing.text.StyleContext;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.time.Duration;
 import java.util.Locale;
 import java.util.Properties;
 
