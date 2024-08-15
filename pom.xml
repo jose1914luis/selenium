@@ -7,6 +7,14 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.1.2</version> <!-- Por ejemplo, cambia a 2.7.x -->
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+
     <build>
         <sourceDirectory>src</sourceDirectory>
         <resources>
@@ -35,7 +43,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>Principal</mainClass>
+                            <mainClass>main.java.com.robot.Principal</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
@@ -47,7 +55,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>Principal</mainClass>
+                            <mainClass>main.java.com.robot.Principal</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
@@ -64,10 +72,29 @@
                     </execution>
                 </executions>
             </plugin>
+
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
         </plugins>
     </build>
 
     <dependencies>
+
+        <!-- Dependencias de Spring Boot -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>com.twilio.sdk</groupId>
+            <artifactId>twilio</artifactId>
+            <version>8.31.1</version>
+        </dependency>
+
         <dependency>
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
