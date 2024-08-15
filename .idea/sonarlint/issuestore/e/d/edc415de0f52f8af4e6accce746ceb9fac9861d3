@@ -1,0 +1,33 @@
+
+‡
+java:S2184J"FCast one of the operands of this multiplication operation to a "long".(–ƒÛŠøÿÿÿÿJ$cfec7699-fb00-4ce6-bf7c-f323b2b379b7
+‚
+java:S2184Y"FCast one of the operands of this multiplication operation to a "long".(Ìúõ§J$be0d7075-57d7-42fa-90d4-7b372dd277a7
+ƒ
+java:S2184Ì"FCast one of the operands of this multiplication operation to a "long".(ÉËŒçJ$e3efb7f8-b761-4963-b197-cc48a994c984
+ƒ
+java:S2184Ø"FCast one of the operands of this multiplication operation to a "long".(ÉËŒçJ$9fe302b2-23e1-4c30-8400-ff80765e7945
+ƒ
+java:S2184â"FCast one of the operands of this multiplication operation to a "long".(ÉËŒçJ$3bc4439a-ba7b-4d67-8c56-aa0780f5cc28
+ƒ
+java:S2184ì"FCast one of the operands of this multiplication operation to a "long".(ÉËŒçJ$55219a89-82a1-4c86-94b3-47ae1c39c369
+ƒ
+java:S2184ò"FCast one of the operands of this multiplication operation to a "long".(ÉËŒçJ$faf07797-ad99-4978-8391-a26ad3458cc0
+ƒ
+java:S2184“"FCast one of the operands of this multiplication operation to a "long".(ÉËŒçJ$e9ff4ae5-d4ab-4557-bbe5-02d57a61a22b
+ˆ
+java:S2184´"FCast one of the operands of this multiplication operation to a "long".(äÈ±³üÿÿÿÿJ$4ba02f0a-d34b-4116-a1c1-803ece56213c
+~
+java:S4973§"<Strings and Boxed types should be compared using "equals()".(ØÜä©üÿÿÿÿJ$6843aa58-2ca3-4fb9-8db1-201ff5f43995
+Æ
+java:S1192a"„Define a constant instead of duplicating this literal "//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]" 3 times.(€å¦îúÿÿÿÿJ$ba942ee9-f9ea-43e9-b024-29aeb163c50a
+…
+java:S1192Ì"HDefine a constant instead of duplicating this literal "timer15" 7 times.(ÉËŒçJ$c7fab735-b8de-4ecd-9f2d-882c4b7441cf
+š
+java:S1192<"^Define a constant instead of duplicating this literal "selectedCellInputMethodSlctId" 3 times.(ê„˜¼J$37aab159-50dc-458b-8e20-be8f2889a16e
+|	java:S125m"<This block of commented-out lines of code should be removed.(ïÇÚÛùÿÿÿÿJ$fec9e841-d0f6-4e9a-894e-b37da2acd8e8
+l	java:S106“"+Replace this use of System.out by a logger.(„ÄØÆÿÿÿÿÿJ$4407a9a2-4426-47a1-b93b-1459d4e39297
+
+java:S1858·"E"getProperty" returns a string, there's no need to call "toString()".(›£€hJ$ca378f66-3cab-45f2-9a35-5c850f1e978e
+w	java:S125Ï"<This block of commented-out lines of code should be removed.(Áý€aJ$8dade75d-48ec-4cd6-b18c-b99f8299c298
+}	java:S125»"<This block of commented-out lines of code should be removed.(Ž’ÝÿÿÿÿÿJ$640a9c1b-7d46-4148-b995-0d01e409b4bc

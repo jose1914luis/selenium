@@ -1,4 +1,4 @@
-package main.resources.java.com.robot.core;
+package main.java.com.robot;
 
 public class Constans {
 
@@ -22,5 +22,12 @@ public class Constans {
         JCOMBOBOX,
         JTEXTFIELD,
         JCHECKBOX
+    }
+
+    public enum SelectorType{
+        ID,
+        CSS,
+        XPATH,
+        LINK
     }
 }

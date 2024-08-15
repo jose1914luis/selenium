@@ -1,0 +1,13 @@
+
+¸
+java:S1130"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(ýÊ×ÊýÿÿÿÿJ$358dc9dc-bde8-49da-bc9c-3cd24e96e728
+­
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(ýÊ×ÊýÿÿÿÿJ$2b05e3e6-74ad-4d9d-944e-7faffa73d63d
+º
+java:S1130"yRemove the declaration of thrown exception 'java.lang.ClassNotFoundException', as it cannot be thrown from method's body.(ýÊ×ÊýÿÿÿÿJ$ee4fec9f-9f3b-46c3-82f6-df7629c4e6c5
+Æ
+java:S1130"„Remove the declaration of thrown exception 'javax.swing.UnsupportedLookAndFeelException', as it cannot be thrown from method's body.(ýÊ×ÊýÿÿÿÿJ$7b91a286-359e-45c1-b839-f0a7f513621f
+º
+java:S1130"yRemove the declaration of thrown exception 'java.lang.InstantiationException', as it cannot be thrown from method's body.(ýÊ×ÊýÿÿÿÿJ$26b2d60e-0ec1-4e88-9257-6a6f7dce0a5b
+º
+java:S1130"yRemove the declaration of thrown exception 'java.lang.IllegalAccessException', as it cannot be thrown from method's body.(ýÊ×ÊýÿÿÿÿJ$cffff08c-a6c7-430f-a2ba-3325c0ee4c0b

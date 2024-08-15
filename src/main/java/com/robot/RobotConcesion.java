@@ -1,71 +1,43 @@
-package main.resources.java.com.robot.core;
+package main.java.com.robot;
 
+import main.java.com.robot.services.AnmPropertiesService;
+import main.java.com.robot.services.WebDriverService;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import java.time.Duration;
-import java.util.Properties;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-public class RobotConcesion implements Robot {
-    public ChromeDriver driver;
-    public Properties props;
+import static main.java.com.robot.Constans.SelectorType.*;
 
-    public RobotConcesion(ChromeDriver driver, Properties props) {
+@Component
+public class RobotConcesion {
+    private final WebDriverService webDriverService;
+    private AnmPropertiesService anmPropertiesService;
 
-        this.driver = driver;
-        this.props = props;
-    }
+    @Autowired
+    public RobotConcesion(WebDriverService webDriverService, AnmPropertiesService anmPropertiesService) {
 
-    public WebElement waitElement(String search, String type, String timer) throws InterruptedException {
-
-        int times = 10;
-
-        do {
-            try {
-
-                //Thread.sleep(Integer.parseInt(props.getProperty(timer)) * 1000);
-                WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(Integer.parseInt(props.getProperty(timer))));
-
-                switch (type) {
-                    case "id":
-                        return wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(search)));
-                    case "css":
-                        return wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(search)));
-                    case "path":
-                        return wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(search)));
-                    case "link":
-                        return wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(props.getProperty(search))));
-                }
-
-            } catch (Exception e) {
-
-                System.out.println(e.getMessage());
-            } finally {
-
-                times--;
-            }
-
-        } while (times > 0);
-
-        return null;
+        this.webDriverService = webDriverService;
+        this.anmPropertiesService = anmPropertiesService;
     }
 
     public void stepOne() throws InterruptedException {
-        WebElement submenu = driver.findElement(By.xpath("//a[contains(text(),'Radicar solicitud de propuesta')]"));
+        WebElement submenu = webDriverService.findElement(By.xpath("//a[contains(text(),'Radicar solicitud de propuesta')]"));
         submenu.click();
 
         //Seleccionar usuario
-        Select selectPIN = new Select(waitElement("pinSlctId", "id", "timer2"));
-        selectPIN.selectByVisibleText(props.getProperty("pinSlctId"));
+        Select selectPIN = new Select(webDriverService.waitElement("pinSlctId", ID, "timer2"));
+        selectPIN.selectByVisibleText(anmPropertiesService.getProperty("pinSlctId"));
 
-        WebElement buttonNext1 = driver.findElement(By.xpath("//span[@class='btn-label ng-binding']"));
+        WebElement buttonNext1 = webDriverService.findElement(By.xpath("//span[@class='btn-label ng-binding']"));
         buttonNext1.click();
 
     }
@@ -73,74 +45,74 @@ public class RobotConcesion implements Robot {
     public void stepTwo() throws InterruptedException {
 
         //Ingresar detalles del área
-        WebElement btnMineral = waitElement(".btn-default", "css", "timer3");
+        WebElement btnMineral = webDriverService.waitElement(".btn-default", CSS, "timer3");
         btnMineral.click();
 
-        WebElement labelMineral = waitElement("mineral", "link", "timer4");
+        WebElement labelMineral = webDriverService.waitElement("mineral", LINK, "timer4");
         labelMineral.click();
 
-        Select selectArea = new Select(driver.findElement(By.id(("areaOfConcessionSlctId"))));
-        selectArea.selectByVisibleText(props.getProperty("areaOfConcessionSlctId"));
+        Select selectArea = new Select(webDriverService.findElement(By.id(("areaOfConcessionSlctId"))));
+        selectArea.selectByVisibleText(anmPropertiesService.getProperty("areaOfConcessionSlctId"));
 
-        WebElement tabMap = waitElement("//li[@class='uib-tab nav-item ng-scope ng-isolate-scope']", "path", "timer5");
+        WebElement tabMap = webDriverService.waitElement("//li[@class='uib-tab nav-item ng-scope ng-isolate-scope']", XPATH, "timer5");
         tabMap.click();
 
-        Select selectTypeCoord = new Select(driver.findElement(By.id(("selectedCellInputMethodSlctId"))));
-        selectTypeCoord.selectByVisibleText(props.getProperty("selectedCellInputMethodSlctId"));
-        if (props.getProperty("selectedCellInputMethodSlctId").equals("Usando el mapa de selección para dibujar un polígono o ingresar celdas")) {
+        Select selectTypeCoord = new Select(webDriverService.findElement(By.id(("selectedCellInputMethodSlctId"))));
+        selectTypeCoord.selectByVisibleText(anmPropertiesService.getProperty("selectedCellInputMethodSlctId"));
+        if (anmPropertiesService.getProperty("selectedCellInputMethodSlctId").equals("Usando el mapa de selección para dibujar un polígono o ingresar celdas")) {
 
 
-            WebElement currentAssetId0 = driver.findElement(By.id(("cellIdsTxtId")));
-            currentAssetId0.sendKeys(props.getProperty("cells"));
+            WebElement currentAssetId0 = webDriverService.findElement(By.id(("cellIdsTxtId")));
+            currentAssetId0.sendKeys(anmPropertiesService.getProperty("cells"));
 
         } else {
             //old way
 
-            WebElement btnMap = driver.findElement(By.id(("uploadShapeFileMapButtonId")));
+            WebElement btnMap = webDriverService.findElement(By.id(("uploadShapeFileMapButtonId")));
             btnMap.click();
 
-            Thread.sleep(Integer.parseInt(props.getProperty("timer6")) * 1000);
+            Thread.sleep(Integer.parseInt(anmPropertiesService.getProperty("timer6")) * 1000);
 
-            driver.switchTo().frame("mapIframeId");
-            Select selectTypeMap = new Select(driver.findElement(By.xpath("//select[@data-gcx-form-item='ListBox1']")));
-            selectTypeMap.selectByVisibleText(props.getProperty("selectTypeMap"));
+           webDriverService.getDriver().switchTo().frame("mapIframeId");
+            Select selectTypeMap = new Select(webDriverService.findElement(By.xpath("//select[@data-gcx-form-item='ListBox1']")));
+            selectTypeMap.selectByVisibleText(anmPropertiesService.getProperty("selectTypeMap"));
 
-            WebElement btnContinue = driver.findElement(By.cssSelector("form:nth-child(2) .button"));
+            WebElement btnContinue = webDriverService.findElement(By.cssSelector("form:nth-child(2) .button"));
             btnContinue.click();
 
-            WebElement pikerLoad = waitElement("//input[@data-gcx-form-item='FilePicker1']", "path", "timer7");
-            pikerLoad.sendKeys(props.getProperty("pikerLoad"));
+            WebElement pikerLoad = webDriverService.waitElement("//input[@data-gcx-form-item='FilePicker1']", XPATH, "timer7");
+            pikerLoad.sendKeys(anmPropertiesService.getProperty("pikerLoad"));
 
-            WebElement btnLoad = driver.findElement(By.cssSelector("form:nth-child(2) .button"));
+            WebElement btnLoad = webDriverService.findElement(By.cssSelector("form:nth-child(2) .button"));
             btnLoad.click();
 
-            Thread.sleep(Integer.parseInt(props.getProperty("timer8")) * 1000);
+            Thread.sleep(Integer.parseInt(anmPropertiesService.getProperty("timer8")) * 1000);
 
-            driver.switchTo().defaultContent();
-            WebElement btnConfirm = driver.findElement(By.id(("confirmBtnId")));
+           webDriverService.getDriver().switchTo().defaultContent();
+            WebElement btnConfirm = webDriverService.findElement(By.id(("confirmBtnId")));
             btnConfirm.click();
         }
 
 
-        WebElement buttonNext2 = waitElement("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]", "path", "timer9");
+        WebElement buttonNext2 = webDriverService.waitElement("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]", XPATH, "timer9");
         buttonNext2.click();
 
 
         //Información técnica
-        WebElement tabInfoTec = waitElement("//div[@id='main']//li[3]//a[1]", "path", "timer10");
+        WebElement tabInfoTec = webDriverService.waitElement("//div[@id='main']//li[3]//a[1]", XPATH, "timer10");
         tabInfoTec.click();
     }
 
     public void stepThree() throws InterruptedException {
 
 
-        //Thread.sleep(Integer.parseInt(props.getProperty("timer11"))*1000);
-        Select selectYOE0 = new Select(waitElement("yearOfExecutionId0", "id", "timer11"));
-        selectYOE0.selectByVisibleText(props.getProperty("yearOfExecutionId0"));
-        Select selectYOD0 = new Select(driver.findElement(By.id(("yearOfDeliveryId0"))));
-        selectYOD0.selectByVisibleText(props.getProperty("yearOfDeliveryId0"));
-        Select selectLS0 = new Select(driver.findElement(By.id(("laborSuitabilityId0"))));
-        selectLS0.selectByVisibleText(props.getProperty("laborSuitabilityId0"));
+        //Thread.sleep(Integer.parseInt(anmPropertiesService.getProperty("timer11"))*1000);
+        Select selectYOE0 = new Select(webDriverService.waitElement("yearOfExecutionId0", ID, "timer11"));
+        selectYOE0.selectByVisibleText(anmPropertiesService.getProperty("yearOfExecutionId0"));
+        Select selectYOD0 = new Select(webDriverService.findElement(By.id(("yearOfDeliveryId0"))));
+        selectYOD0.selectByVisibleText(anmPropertiesService.getProperty("yearOfDeliveryId0"));
+        Select selectLS0 = new Select(webDriverService.findElement(By.id(("laborSuitabilityId0"))));
+        selectLS0.selectByVisibleText(anmPropertiesService.getProperty("laborSuitabilityId0"));
 
 
         ExecutorService executor = Executors.newFixedThreadPool(4); // create a pool of 4 threads
@@ -150,20 +122,20 @@ public class RobotConcesion implements Robot {
             final int index = i; // create a final variable for the current index to use inside the lambda expression
             executor.submit(() -> {
                 if (index > 0) {
-                    Select selectYOE1 = new Select(driver.findElement(By.id(Constans.YEAROFEXECUTIONID + index)));
-                    selectYOE1.selectByVisibleText(props.getProperty(Constans.YEAROFEXECUTIONID + index));
+                    Select selectYOE1 = new Select(webDriverService.findElement(By.id(Constans.YEAROFEXECUTIONID + index)));
+                    selectYOE1.selectByVisibleText(anmPropertiesService.getProperty(Constans.YEAROFEXECUTIONID + index));
 
-                    Select selectYOD1 = new Select(driver.findElement(By.id(Constans.YEAROFDELIVERYID + index)));
-                    selectYOD1.selectByVisibleText(props.getProperty(Constans.YEAROFDELIVERYID + index));
+                    Select selectYOD1 = new Select(webDriverService.findElement(By.id(Constans.YEAROFDELIVERYID + index)));
+                    selectYOD1.selectByVisibleText(anmPropertiesService.getProperty(Constans.YEAROFDELIVERYID + index));
 
-                    Select selectLS1 = new Select(driver.findElement(By.id(Constans.LABORSUITABILITYID + index)));
-                    selectLS1.selectByVisibleText(props.getProperty(Constans.LABORSUITABILITYID + index));
+                    Select selectLS1 = new Select(webDriverService.findElement(By.id(Constans.LABORSUITABILITYID + index)));
+                    selectLS1.selectByVisibleText(anmPropertiesService.getProperty(Constans.LABORSUITABILITYID + index));
                 }
 
                 if (index >= 0) {
 
-                    Select selectELS0 = new Select(driver.findElement(By.id(Constans.ENVLABORSUITABILITYID + index)));
-                    selectELS0.selectByVisibleText(props.getProperty(Constans.ENVLABORSUITABILITYID + index));
+                    Select selectELS0 = new Select(webDriverService.findElement(By.id(Constans.ENVLABORSUITABILITYID + index)));
+                    selectELS0.selectByVisibleText(anmPropertiesService.getProperty(Constans.ENVLABORSUITABILITYID + index));
                 }
             });
 
@@ -174,175 +146,173 @@ public class RobotConcesion implements Robot {
 
         System.out.println("All tasks have finished processing");
 
-        Select selectTPD = new Select(driver.findElement(By.id(("techProfessionalDesignationId"))));
-        selectTPD.selectByVisibleText(props.getProperty("techProfessionalDesignationId"));
+        Select selectTPD = new Select(webDriverService.findElement(By.id(("techProfessionalDesignationId"))));
+        selectTPD.selectByVisibleText(anmPropertiesService.getProperty("techProfessionalDesignationId"));
 
 
-        WebElement checkboxAccept = driver.findElement(By.id(("technicalCheckboxId")));
+        WebElement checkboxAccept = webDriverService.findElement(By.id(("technicalCheckboxId")));
         checkboxAccept.click();
 
-        Select selectTAN = new Select(waitElement("techApplicantNameId", "id", "timer12"));
-        selectTAN.selectByValue(props.getProperty("techApplicantNameId"));
+        Select selectTAN = new Select(webDriverService.waitElement("techApplicantNameId", ID, "timer12"));
+        selectTAN.selectByValue(anmPropertiesService.getProperty("techApplicantNameId"));
 
-        WebElement buttonAdd = driver.findElement(By.xpath("//div[@class='tab-pane ng-scope active']//button[@class='btn btn-labeled bg-color-greenDark txt-color-white']"));
+        WebElement buttonAdd = webDriverService.findElement(By.xpath("//div[@class='tab-pane ng-scope active']//button[@class='btn btn-labeled bg-color-greenDark txt-color-white']"));
         buttonAdd.click();
 
 
         //Información del area
-        WebElement tabArea = driver.findElement(By.xpath("//form[@name='p_CaaIataInputAreaDetailsForm']//li[2]"));
+        WebElement tabArea = webDriverService.findElement(By.xpath("//form[@name='p_CaaIataInputAreaDetailsForm']//li[2]"));
         tabArea.click();
 
-        if (props.getProperty("additionalEthnicGroupsInSelectedAreaIndId") == "SI") {
+        if (anmPropertiesService.getProperty("additionalEthnicGroupsInSelectedAreaIndId") == "SI") {
 
-            WebElement additionalEthnicGroupsInSelectedAreaIndId = waitElement("//div[@class='tab-pane ng-scope active']//input[1]", "path", "timer13");
+            WebElement additionalEthnicGroupsInSelectedAreaIndId = webDriverService.waitElement("//div[@class='tab-pane ng-scope active']//input[1]", XPATH, "timer13");
             additionalEthnicGroupsInSelectedAreaIndId.click();
         } else {
-            WebElement additionalEthnicGroupsInSelectedAreaIndId = waitElement("//input[2]", "path", "timer13");
+            WebElement additionalEthnicGroupsInSelectedAreaIndId = webDriverService.waitElement("//input[2]", XPATH, "timer13");
             additionalEthnicGroupsInSelectedAreaIndId.click();
         }
 
-        WebElement tabEco = driver.findElement(By.xpath("//form[@name='p_CaaIataInputAreaDetailsForm']//li[4]"));
+        WebElement tabEco = webDriverService.findElement(By.xpath("//form[@name='p_CaaIataInputAreaDetailsForm']//li[4]"));
         tabEco.click();
     }
 
     public void stepFour() throws InterruptedException {
 
         //Información economica
-        if (props.getProperty("declareIndId0").toString().equals("SI")) {
+        if (anmPropertiesService.getProperty("declareIndId0").toString().equals("SI")) {
 
-            WebElement declareIndId0 = driver.findElement(By.id(("declareIndId0")));
+            WebElement declareIndId0 = webDriverService.findElement(By.id(("declareIndId0")));
             declareIndId0.click();
         }
 
-        WebElement currentAssetId0 = driver.findElement(By.id(("currentAssetId0")));
-        currentAssetId0.sendKeys(props.getProperty("currentAssetId0"));
+        WebElement currentAssetId0 = webDriverService.findElement(By.id(("currentAssetId0")));
+        currentAssetId0.sendKeys(anmPropertiesService.getProperty("currentAssetId0"));
 
-        WebElement currentLiabilitiesId0 = driver.findElement(By.id(("currentLiabilitiesId0")));
-        currentLiabilitiesId0.sendKeys(props.getProperty("currentLiabilitiesId0"));
+        WebElement currentLiabilitiesId0 = webDriverService.findElement(By.id(("currentLiabilitiesId0")));
+        currentLiabilitiesId0.sendKeys(anmPropertiesService.getProperty("currentLiabilitiesId0"));
 
-        WebElement totalAssetId0 = driver.findElement(By.id(("totalAssetId0")));
-        totalAssetId0.sendKeys(props.getProperty("totalAssetId0"));
+        WebElement totalAssetId0 = webDriverService.findElement(By.id(("totalAssetId0")));
+        totalAssetId0.sendKeys(anmPropertiesService.getProperty("totalAssetId0"));
 
-        WebElement totalLiabilitiesId0 = driver.findElement(By.id(("totalLiabilitiesId0")));
-        totalLiabilitiesId0.sendKeys(props.getProperty("totalLiabilitiesId0"));
+        WebElement totalLiabilitiesId0 = webDriverService.findElement(By.id(("totalLiabilitiesId0")));
+        totalLiabilitiesId0.sendKeys(anmPropertiesService.getProperty("totalLiabilitiesId0"));
 
-        Select selectEPD = new Select(driver.findElement(By.id(("ecoProfessionalDesignationId"))));
-        selectEPD.selectByVisibleText(props.getProperty("ecoProfessionalDesignationId"));
+        Select selectEPD = new Select(webDriverService.findElement(By.id(("ecoProfessionalDesignationId"))));
+        selectEPD.selectByVisibleText(anmPropertiesService.getProperty("ecoProfessionalDesignationId"));
 
-        Thread.sleep(Integer.parseInt(props.getProperty("timer15")) * 1000);
+        Thread.sleep(Integer.parseInt(anmPropertiesService.getProperty("timer15")) * 1000);
 
-        Select selectEAN = new Select(waitElement("ecoApplicantNameId", "id", "timer15"));
-        //selectEAN.selectByVisibleText(props.getProperty("ecoApplicantNameId"));
-        selectEAN.selectByValue(props.getProperty("ecoApplicantNameId"));
+        Select selectEAN = new Select(webDriverService.waitElement("ecoApplicantNameId", ID, "timer15"));
+        //selectEAN.selectByVisibleText(anmPropertiesService.getProperty("ecoApplicantNameId"));
+        selectEAN.selectByValue(anmPropertiesService.getProperty("ecoApplicantNameId"));
 
-        WebElement buttonAdd2 = driver.findElement(By.xpath(" //div[@class='tab-pane ng-scope active']//span[@class='btn-label ng-binding'][contains(text(),'Agregar')]"));
+        WebElement buttonAdd2 = webDriverService.findElement(By.xpath(" //div[@class='tab-pane ng-scope active']//span[@class='btn-label ng-binding'][contains(text(),'Agregar')]"));
         buttonAdd2.click();
 
-        WebElement buttonNext3 = driver.findElement(By.xpath("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]"));
+        WebElement buttonNext3 = webDriverService.findElement(By.xpath("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]"));
         buttonNext3.click();
 
-        Thread.sleep(Integer.parseInt(props.getProperty("timer15")) * 1000);
+        Thread.sleep(Integer.parseInt(anmPropertiesService.getProperty("timer15")) * 1000);
 
     }
 
     public void stepFive() throws InterruptedException {
 
         //ambiental certification
-        WebElement tabCert = driver.findElement(By.xpath("//form[@name='p_CaaIataAttachDocumentsForm']//li[5]"));
+        WebElement tabCert = webDriverService.findElement(By.xpath("//form[@name='p_CaaIataAttachDocumentsForm']//li[5]"));
         tabCert.click();
 
-        Thread.sleep(Integer.parseInt(props.getProperty("timer15")) * 1000);
+        Thread.sleep(Integer.parseInt(anmPropertiesService.getProperty("timer15")) * 1000);
 
-        WebElement pikerFile = driver.findElement(By.id(("p_CaaCataEnvMandatoryDocumentToAttachId0")));
-        pikerFile.sendKeys(props.getProperty("pdfGeo"));
+        WebElement pikerFile = webDriverService.findElement(By.id(("p_CaaCataEnvMandatoryDocumentToAttachId0")));
+        pikerFile.sendKeys(anmPropertiesService.getProperty("pdfGeo"));
 
-        WebElement pikerCert = driver.findElement(By.id(("p_CaaCataEnvMandatoryDocumentToAttachId1")));
-        pikerCert.sendKeys(props.getProperty("pdfCert"));
+        WebElement pikerCert = webDriverService.findElement(By.id(("p_CaaCataEnvMandatoryDocumentToAttachId1")));
+        pikerCert.sendKeys(anmPropertiesService.getProperty("pdfCert"));
 
-        WebElement bntDeclare = driver.findElement(By.id(("acceptanceOfTermsId")));
+        WebElement bntDeclare = webDriverService.findElement(By.id(("acceptanceOfTermsId")));
         bntDeclare.click();
-        Thread.sleep(Integer.parseInt(props.getProperty("timer15")) * 1000);
+        Thread.sleep(Integer.parseInt(anmPropertiesService.getProperty("timer15")) * 1000);
 
 
-        WebElement tabDoc = driver.findElement(By.xpath("//form[@name='p_CaaIataAttachDocumentsForm']//li[6]"));
+        WebElement tabDoc = webDriverService.findElement(By.xpath("//form[@name='p_CaaIataAttachDocumentsForm']//li[6]"));
         tabDoc.click();
 
-        Thread.sleep(Integer.parseInt(props.getProperty("timer15")) * 1000);
+        Thread.sleep(Integer.parseInt(anmPropertiesService.getProperty("timer15")) * 1000);
 
-        WebElement pikerFile0 = driver.findElement(By.id(("p_CaaCataMandatoryDocumentToAttachId0")));
-        pikerFile0.sendKeys(props.getProperty("file0"));
+        WebElement pikerFile0 = webDriverService.findElement(By.id(("p_CaaCataMandatoryDocumentToAttachId0")));
+        pikerFile0.sendKeys(anmPropertiesService.getProperty("file0"));
 
-        WebElement pikerFile1 = driver.findElement(By.id(("p_CaaCataMandatoryDocumentToAttachId1")));
-        pikerFile1.sendKeys(props.getProperty("file1"));
+        WebElement pikerFile1 = webDriverService.findElement(By.id(("p_CaaCataMandatoryDocumentToAttachId1")));
+        pikerFile1.sendKeys(anmPropertiesService.getProperty("file1"));
 
-        WebElement pikerFile2 = driver.findElement(By.id(("p_CaaCataMandatoryDocumentToAttachId2")));
-        pikerFile2.sendKeys(props.getProperty("file2"));
+        WebElement pikerFile2 = webDriverService.findElement(By.id(("p_CaaCataMandatoryDocumentToAttachId2")));
+        pikerFile2.sendKeys(anmPropertiesService.getProperty("file2"));
 
-        WebElement pikerFile3 = driver.findElement(By.id(("p_CaaCataMandatoryDocumentToAttachId3")));
-        pikerFile3.sendKeys(props.getProperty("file3"));
+        WebElement pikerFile3 = webDriverService.findElement(By.id(("p_CaaCataMandatoryDocumentToAttachId3")));
+        pikerFile3.sendKeys(anmPropertiesService.getProperty("file3"));
 
-        WebElement pikerFile5 = driver.findElement(By.id(("p_CaaCataMandatoryDocumentToAttachId5")));
-        pikerFile5.sendKeys(props.getProperty("file4"));
+        WebElement pikerFile5 = webDriverService.findElement(By.id(("p_CaaCataMandatoryDocumentToAttachId5")));
+        pikerFile5.sendKeys(anmPropertiesService.getProperty("file4"));
 
-        WebElement pikerFile6 = driver.findElement(By.id(("p_CaaCataMandatoryDocumentToAttachId6")));
-        pikerFile6.sendKeys(props.getProperty("file5"));
+        WebElement pikerFile6 = webDriverService.findElement(By.id(("p_CaaCataMandatoryDocumentToAttachId6")));
+        pikerFile6.sendKeys(anmPropertiesService.getProperty("file5"));
 
-        WebElement pikerFile7 = driver.findElement(By.id(("p_CaaCataMandatoryDocumentToAttachId7")));
-        pikerFile7.sendKeys(props.getProperty("file6"));
+        WebElement pikerFile7 = webDriverService.findElement(By.id(("p_CaaCataMandatoryDocumentToAttachId7")));
+        pikerFile7.sendKeys(anmPropertiesService.getProperty("file6"));
 
-        WebElement pikerFile8 = driver.findElement(By.id(("p_CaaCataMandatoryDocumentToAttachId8")));
-        pikerFile8.sendKeys(props.getProperty("file7"));
+        WebElement pikerFile8 = webDriverService.findElement(By.id(("p_CaaCataMandatoryDocumentToAttachId8")));
+        pikerFile8.sendKeys(anmPropertiesService.getProperty("file7"));
 
         int counter = 10;
-        for (int i = 1; props.containsKey("generatedField" + i); i++) {
+        for (int i = 1; anmPropertiesService.getProperties().containsKey("generatedField" + i); i++) {
 
 
-            WebElement pikerFileAgregar = driver.findElement(By.id(("p_CaaCataDocumentToAttachId")));
-            pikerFileAgregar.sendKeys(props.getProperty("generatedField" + i));
+            WebElement pikerFileAgregar = webDriverService.findElement(By.id(("p_CaaCataDocumentToAttachId")));
+            pikerFileAgregar.sendKeys(anmPropertiesService.getProperty("generatedField" + i));
 
-            Thread.sleep(Integer.parseInt(props.getProperty("timer15")) * 1000);
+            Thread.sleep(Integer.parseInt(anmPropertiesService.getProperty("timer15")) * 1000);
 
 
             // Localiza el combobox por su ID y haz clic en él para abrir las opciones
-            WebElement tipoDoctDropdown = driver.findElement(By.id("p_CaaCataDocumentTypeId" + counter));
+            WebElement tipoDoctDropdown = webDriverService.findElement(By.id("p_CaaCataDocumentTypeId" + counter));
             tipoDoctDropdown.click(); // Esto debería abrir las opciones si no están ya abiertas
 
-            // Espera hasta que las opciones estén visibles
-            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // Ajusta el tiempo según sea necesario
+            WebDriverWait wait = new WebDriverWait(webDriverService.getDriver(), Duration.ofSeconds(10)); // Ajusta el tiempo según sea necesario
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ui-select-choices-row-inner")));
 
-
-            WebElement option = driver.findElement(By.xpath("//div[contains(@class, 'ui-select-choices-row-inner')]/span[normalize-space()='" + props.getProperty("generatedCombo" + i) + "']"));
+            WebElement option = webDriverService.findElement(By.xpath("//div[contains(@class, 'ui-select-choices-row-inner')]/span[normalize-space()='" + anmPropertiesService.getProperty("generatedCombo" + i) + "']"));
             option.click(); // Selecciona la opción
 
             counter++;
         }
 
-        WebElement buttonNext3 = driver.findElement(By.xpath("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]"));
+        WebElement buttonNext3 = webDriverService.findElement(By.xpath("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]"));
         buttonNext3.click();
     }
 
     public void executeANMLogin() throws InterruptedException {
 
         //login
-        WebElement user = driver.findElement(By.id("username"));
-        user.sendKeys(props.getProperty("username"));
+        WebElement user = webDriverService.findElement(By.id("username"));
+        user.sendKeys(anmPropertiesService.getProperty("username"));
 
-        WebElement password = driver.findElement(By.id("password"));
-        password.sendKeys(props.getProperty("password"));
+        WebElement password = webDriverService.findElement(By.id("password"));
+        password.sendKeys(anmPropertiesService.getProperty("password"));
 
-        WebElement buttonLogin = driver.findElement(By.id("loginButton"));
+        WebElement buttonLogin = webDriverService.findElement(By.id("loginButton"));
         buttonLogin.click();
 
 
-        Thread.sleep(Integer.parseInt(props.getProperty("timer1")) * 1000);
+        Thread.sleep(Integer.parseInt(anmPropertiesService.getProperty("timer1")) * 1000);
 
-        WebElement menu = driver.findElement(By.xpath("//a[@class='cata-collapse-click menu ng-scope']//span[@class='menu-item-parent ng-binding'][contains(text(),'Solicitudes')]"));
+        WebElement menu = webDriverService.findElement(By.xpath("//a[@class='cata-collapse-click menu ng-scope']//span[@class='menu-item-parent ng-binding'][contains(text(),'Solicitudes')]"));
         menu.click();
 
         Thread.sleep(5000);
 
-        //Select selectCambiarUsuario = new Select(driver.findElement(By.xpath("//select[@aria-label='Cambiar el usuario:']")));
-        //selectCambiarUsuario.selectByVisibleText(props.getProperty("cambiarUsuario"));
+        //Select selectCambiarUsuario = new Select(webDriverService.findElement(By.xpath("//select[@aria-label='Cambiar el usuario:']")));
+        //selectCambiarUsuario.selectByVisibleText(anmPropertiesService.getProperty("cambiarUsuario"));
     }
 }

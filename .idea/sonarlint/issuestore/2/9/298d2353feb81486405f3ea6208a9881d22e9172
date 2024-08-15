@@ -1,0 +1,15 @@
+
+­
+java:S1130"qRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from constructor's body.(µèóJ$2a136f01-a3ec-4332-a485-f94aa8722031
+h
+java:S1602+",Remove useless curly braces around statement(†´¤ÄJ$2345e84e-88b8-472c-80d2-7a14df1889b4
+h
+java:S16023",Remove useless curly braces around statement(†´¤ÄJ$d8be17a9-413b-4e81-86d3-f34de5f1a39b
+h
+java:S1602<",Remove useless curly braces around statement(†´¤ÄJ$d9d6513b-4bf8-45c3-aa3c-7fc67a26287a
+h
+java:S1602D",Remove useless curly braces around statement(†´¤ÄJ$543220df-5bc4-4e21-94be-8684dd1b2ed9
+Š
+java:S3252["IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(Õû»öşÿÿÿÿJ$7ced78ea-355f-4e6f-b12b-771c6106aeaa
+{
+java:S1161a":Add the "@Override" annotation above this method signature(Š¿˜¶ûÿÿÿÿJ$53c4986e-1dca-4b31-8590-c15c2034efc5

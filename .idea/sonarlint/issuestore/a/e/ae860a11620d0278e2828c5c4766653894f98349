@@ -1,0 +1,12 @@
+
+”	java:S116"TRename this field "Webdriver" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£«„çıÿÿÿÿJ$f7585440-d239-4161-bad7-9727c210baa4
+—
+java:S1845"VRename field "Webdriver" to prevent any misunderstanding/clash with field "webdriver".(£«„çıÿÿÿÿJ$8f9ec9ee-c0a0-4803-9d50-9e0c275d76fa
+™
+java:S1450"XRemove the "Webdriver" field and declare it as a local variable in the relevant methods.(£«„çıÿÿÿÿJ$f2faa53c-d77a-4467-a90e-ab540dd4edf6
+š
+java:S1171F"YMove the contents of this initializer to a standard constructor or to field initializers.(ÒÌâ–øÿÿÿÿJ$2e62c8a0-7d94-46ec-98f0-56c772b879a4
+	java:S100T"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–­ŒßúÿÿÿÿJ$28182165-9fad-4917-a66a-caf57c0d0165
+	java:S100‡"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘ ¨úúÿÿÿÿJ$fe353675-b01f-43fb-a568-8b7ced562973
+e
+java:S1068")Remove this unused "props" private field.(Å¡‚æJ$f0dbefc1-d7fb-43e6-b478-8716509cbcb0

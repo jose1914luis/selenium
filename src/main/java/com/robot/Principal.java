@@ -1,4 +1,4 @@
-package main.resources.java.com.robot.core;
+package main.java.com.robot;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -26,7 +26,7 @@ public class Principal {
         // Iniciar Spring Boot
         ApplicationContext context = SpringApplication.run(Principal.class, args);
 
-        // Obtener el bean main.resources.java.com.robot.core.RunSelenium desde el contexto de Spring
+        // Obtener el bean main.java.com.robot.RunSelenium desde el contexto de Spring
         RunSelenium runSelenium = context.getBean(RunSelenium.class);
 
         // Ahora puedes utilizar runSelenium como antes

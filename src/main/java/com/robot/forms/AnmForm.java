@@ -1,10 +1,9 @@
-package main.resources.java.com.robot.core.forms;
+package main.java.com.robot.forms;
 
 import com.intellij.uiDesigner.core.GridLayoutManager;
-import main.resources.java.com.robot.core.Constans;
-import main.resources.java.com.robot.core.RobotConcesion;
-import main.resources.java.com.robot.core.Util;
-import org.openqa.selenium.chrome.ChromeDriver;
+import main.java.com.robot.Constans;
+import main.java.com.robot.RobotConcesion;
+import main.java.com.robot.services.AnmPropertiesService;
 
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
@@ -16,19 +15,22 @@ import java.util.ArrayList;
 import java.util.Properties;
 
 import com.intellij.uiDesigner.core.GridConstraints;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 
 import static javax.swing.JOptionPane.showMessageDialog;
 
+@Component
 public class AnmForm {
 
+    //region Form components
     public JButton loginButton;
     public JButton ejecutarButton;
     public JButton paso1Button;
     public JButton paso2Button;
     public JButton paso3Button;
     public JButton paso4Button;
-    //region Form components
     private JPanel rootPanel;
     private JTextField mineral;
     private JComboBox selectedCellInputMethodSlctId;
@@ -194,20 +196,16 @@ public class AnmForm {
     private JButton agregarButton;
     private JScrollPane panelScroll;
     //endregion
-    private ChromeDriver driver;
-    private Properties props;
-    private RobotConcesion robotConcesion;
+
     // Asumiendo que esto es parte de una clase que maneja la UI
     private ArrayList<JTextField> textFields = new ArrayList<>();
     private ArrayList<JComboBox> comboBoxs = new ArrayList<>();
+    private AnmPropertiesService anmPropertiesService;
 
+    @Autowired
+    public AnmForm(AnmPropertiesService anmPropertiesService, RobotConcesion robotConcesion) {
 
-    public AnmForm(Properties props, ChromeDriver driver) {
-
-        this.driver = driver;
-        this.props = props;
-
-        robotConcesion = new RobotConcesion(driver, props);
+        this.anmPropertiesService = anmPropertiesService;
 
         createUIComponents();
 
@@ -279,65 +277,69 @@ public class AnmForm {
         guardarButton.addActionListener(actionEvent -> {
 
 
-            props.setProperty("declareIndId0", declareIndId0.getSelectedItem().toString());
-            props.setProperty("additionalEthnicGroupsInSelectedAreaIndId", additionalEthnicGroupsInSelectedAreaIndId.getSelectedItem().toString());
+            anmPropertiesService.setProperty("declareIndId0", declareIndId0.getSelectedItem().toString());
+            anmPropertiesService.setProperty("additionalEthnicGroupsInSelectedAreaIndId", additionalEthnicGroupsInSelectedAreaIndId.getSelectedItem().toString());
 
             for (int i = 0; i < 17; i++) {
 
                 if (i < 15) {
-                    Util.setPropsValue(props, configPanel, "timer" + (i + 1), Constans.componentType.JTEXTFIELD);
+                    anmPropertiesService.setPropsValue(configPanel, "timer" + (i + 1), Constans.componentType.JTEXTFIELD);
                 }
 
-                Util.setPropsValue(props, explorerPanel, Constans.YEAROFEXECUTIONID + i, Constans.componentType.JCOMBOBOX);
-                Util.setPropsValue(props, explorerPanel, Constans.YEAROFDELIVERYID + i, Constans.componentType.JCOMBOBOX);
-                Util.setPropsValue(props, explorerPanel, Constans.LABORSUITABILITYID + i, Constans.componentType.JCOMBOBOX);
+                anmPropertiesService.setPropsValue(explorerPanel, Constans.YEAROFEXECUTIONID + i, Constans.componentType.JCOMBOBOX);
+                anmPropertiesService.setPropsValue(explorerPanel, Constans.YEAROFDELIVERYID + i, Constans.componentType.JCOMBOBOX);
+                anmPropertiesService.setPropsValue(explorerPanel, Constans.LABORSUITABILITYID + i, Constans.componentType.JCOMBOBOX);
 
-                Util.setPropsValue(props, ambientalPanel, Constans.ENVYEAROFEXECUTIONID + i, Constans.componentType.JCOMBOBOX);
-                Util.setPropsValue(props, ambientalPanel, Constans.ENVYEAROFDELIVERYID + i, Constans.componentType.JCOMBOBOX);
-                Util.setPropsValue(props, ambientalPanel, Constans.ENVLABORSUITABILITYID + i, Constans.componentType.JCOMBOBOX);
+                anmPropertiesService.setPropsValue(ambientalPanel, Constans.ENVYEAROFEXECUTIONID + i, Constans.componentType.JCOMBOBOX);
+                anmPropertiesService.setPropsValue(ambientalPanel, Constans.ENVYEAROFDELIVERYID + i, Constans.componentType.JCOMBOBOX);
+                anmPropertiesService.setPropsValue(ambientalPanel, Constans.ENVLABORSUITABILITYID + i, Constans.componentType.JCOMBOBOX);
             }
 
-            props.setProperty("mineral", mineral.getText());
+            anmPropertiesService.setProperty("mineral", mineral.getText());
 
-            props.setProperty("areaOfConcessionSlctId", areaOfConcessionSlctId.getSelectedItem().toString());
+            anmPropertiesService.setProperty("areaOfConcessionSlctId", areaOfConcessionSlctId.getSelectedItem().toString());
 
-            props.setProperty("selectedCellInputMethodSlctId", selectedCellInputMethodSlctId.getSelectedItem().toString());
-            props.setProperty("selectTypeMap", selectTypeMap.getSelectedItem().toString());
-            props.setProperty("pikerLoad", pikerLoad.getText());
+            anmPropertiesService.setProperty("selectedCellInputMethodSlctId", selectedCellInputMethodSlctId.getSelectedItem().toString());
+            anmPropertiesService.setProperty("selectTypeMap", selectTypeMap.getSelectedItem().toString());
+            anmPropertiesService.setProperty("pikerLoad", pikerLoad.getText());
 
-            props.setProperty("currentAssetId0", currentAssetId0.getText());
-            props.setProperty("totalLiabilitiesId0", totalLiabilitiesId0.getText());
-            props.setProperty("totalAssetId0", totalAssetId0.getText());
-            props.setProperty("currentLiabilitiesId0", currentLiabilitiesId0.getText());
-            props.setProperty("ecoApplicantNameId", ecoApplicantNameId.getText());
-            props.setProperty("techApplicantNameId", techApplicantNameId.getText());
+            anmPropertiesService.setProperty("currentAssetId0", currentAssetId0.getText());
+            anmPropertiesService.setProperty("totalLiabilitiesId0", totalLiabilitiesId0.getText());
+            anmPropertiesService.setProperty("totalAssetId0", totalAssetId0.getText());
+            anmPropertiesService.setProperty("currentLiabilitiesId0", currentLiabilitiesId0.getText());
+            anmPropertiesService.setProperty("ecoApplicantNameId", ecoApplicantNameId.getText());
+            anmPropertiesService.setProperty("techApplicantNameId", techApplicantNameId.getText());
 
-            props.setProperty("cells", txtCells.getText());
+            anmPropertiesService.setProperty("cells", txtCells.getText());
 
-            props.setProperty("personClassificationId0", personClassificationId0.getSelectedItem().toString());
-            props.setProperty("techProfessionalDesignationId", techProfessionalDesignationId.getSelectedItem().toString());
-            props.setProperty("pdfCert", pdfCert.getText());
-            props.setProperty("pdfGeo", pdfGeo.getText());
+            anmPropertiesService.setProperty("personClassificationId0", personClassificationId0.getSelectedItem().toString());
+            anmPropertiesService.setProperty("techProfessionalDesignationId", techProfessionalDesignationId.getSelectedItem().toString());
+            anmPropertiesService.setProperty("pdfCert", pdfCert.getText());
+            anmPropertiesService.setProperty("pdfGeo", pdfGeo.getText());
 
-            props.setProperty("file0", file0.getText());
-            props.setProperty("file1", file1.getText());
-            props.setProperty("file2", file2.getText());
-            props.setProperty("file3", file3.getText());
-            props.setProperty("file4", file4.getText());
-            props.setProperty("file5", file5.getText());
-            props.setProperty("file6", file6.getText());
-            props.setProperty("file7", file7.getText());
+            anmPropertiesService.setProperty("file0", file0.getText());
+            anmPropertiesService.setProperty("file1", file1.getText());
+            anmPropertiesService.setProperty("file2", file2.getText());
+            anmPropertiesService.setProperty("file3", file3.getText());
+            anmPropertiesService.setProperty("file4", file4.getText());
+            anmPropertiesService.setProperty("file5", file5.getText());
+            anmPropertiesService.setProperty("file6", file6.getText());
+            anmPropertiesService.setProperty("file7", file7.getText());
 
 
             for (int i = 0; i < textFields.size(); i++) {
-                // Aquí asumimos que tienes una instancia de Properties llamada props
+                // Aquí asumimos que tienes una instancia de Properties llamada anmPropertiesService
                 // y que i+1 es el identificador único para cada campo de texto
-                props.setProperty("generatedField" + (i + 1), textFields.get(i).getText());
-                props.setProperty("generatedCombo" + (i + 1), comboBoxs.get(i).getSelectedItem().toString());
+                anmPropertiesService.setProperty("generatedField" + (i + 1), textFields.get(i).getText());
+                anmPropertiesService.setProperty("generatedCombo" + (i + 1), comboBoxs.get(i).getSelectedItem().toString());
 
             }
 
-            saveProperties(props);
+            try {
+                anmPropertiesService.saveProperties();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
 
             showMessageDialog(null, "Datos guardados correctamente");
 
@@ -502,8 +504,8 @@ public class AnmForm {
             JButton deleteButton = new JButton("Eliminar");
             deleteButton.addActionListener(actionEvent -> {
                 // Elimina la fila de la interfaz gráfica
-                Component[] components = new Component[]{comboBox, textField, button, deleteButton};
-                for (Component component : components) {
+                JComponent[] components = new JComponent[]{comboBox, textField, button, deleteButton};
+                for (JComponent component : components) {
                     innerPanel.remove(component);
                 }
                 innerPanel.revalidate();
@@ -516,10 +518,14 @@ public class AnmForm {
                 // Elimina las entradas de las propiedades y actualiza el archivo si es necesario
                 String textFieldKey = "generatedField" + textFields.indexOf(textField);
                 String comboBoxKey = "generatedCombo" + comboBoxs.indexOf(comboBox);
-                props.remove(textFieldKey);
-                props.remove(comboBoxKey);
+                anmPropertiesService.getProperties().remove(textFieldKey);
+                anmPropertiesService.getProperties().remove(comboBoxKey);
                 // Aquí asumimos que tienes un método para guardar las propiedades en el archivo
-                saveProperties(props);
+                try {
+                    anmPropertiesService.saveProperties();
+                } catch (IOException ex) {
+                    throw new RuntimeException(ex);
+                }
             });
             innerPanel.add(deleteButton, gbc);
 
@@ -532,14 +538,6 @@ public class AnmForm {
         });
 
 
-    }
-
-    public void saveProperties(Properties props) {
-        try (FileOutputStream out = new FileOutputStream(Constans.ANM_PROPERTIES)) {
-            props.store(out, "Updated properties");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 
 
@@ -558,12 +556,12 @@ public class AnmForm {
         paso5Button.setIcon(new ImageIcon("Resources/Numbers-5-Black-icon.png"));
         guardarButton.setIcon(new ImageIcon("Resources/Actions-document-save-icon.png"));
 
-        pdfCert.setText(props.getProperty("pdfCert"));
-        pdfGeo.setText(props.getProperty("pdfGeo"));
+        pdfCert.setText(anmPropertiesService.getProperty("pdfCert"));
+        pdfGeo.setText(anmPropertiesService.getProperty("pdfGeo"));
 
 
         // Reconstruye la interfaz de usuario
-        for (int i = 1; props.containsKey("generatedField" + i); i++) {
+        for (int i = 1; anmPropertiesService.getProperties().containsKey("generatedField" + i); i++) {
 
             JPanel innerPanel = (JPanel) panelScroll.getViewport().getView();
             GridBagConstraints gbc = new GridBagConstraints();
@@ -578,7 +576,7 @@ public class AnmForm {
 
             // Crea el JComboBox con los valores anteriores
             String comboBoxKey = "generatedCombo" + i;
-            String comboBoxValue = props.getProperty(comboBoxKey, ""); // Default a cadena vacía si no existe
+            String comboBoxValue = anmPropertiesService.getProperty(comboBoxKey); // Default a cadena vacía si no existe
             // Añadir la primera columna de la nueva fila
             JComboBox<String> comboBox = new JComboBox<>(new String[]{"Certificado de Ingresos por Contador Publico",
                     "Certificado de existencia y representación legal",
@@ -611,7 +609,7 @@ public class AnmForm {
 
             // Crea el JTextField con los valores anteriores
             String textFieldKey = "generatedField" + i;
-            String textFieldValue = props.getProperty(textFieldKey, ""); // Default a cadena vacía si no existe
+            String textFieldValue = anmPropertiesService.getProperty(textFieldKey); // Default a cadena vacía si no existe
             JTextField textField = new JTextField(textFieldValue, 10);
             Dimension textFieldSize = new Dimension(200, textField.getPreferredSize().height); // Puedes ajustar esto según tus necesidades
             textField.setPreferredSize(textFieldSize); // Esto definirá el tamaño preferido del JTextField
@@ -643,8 +641,8 @@ public class AnmForm {
             JButton deleteButton = new JButton("Eliminar");
             deleteButton.addActionListener(actionEvent -> {
                 // Elimina la fila de la interfaz gráfica
-                Component[] components = new Component[]{comboBox, textField, button, deleteButton};
-                for (Component component : components) {
+                JComponent[] components = new JComponent[]{comboBox, textField, button, deleteButton};
+                for (JComponent component : components) {
                     innerPanel.remove(component);
                 }
                 innerPanel.revalidate();
@@ -655,10 +653,14 @@ public class AnmForm {
                 comboBoxs.remove(comboBox);
 
                 // Elimina las entradas de las propiedades y actualiza el archivo si es necesario
-                props.remove(textFieldKey);
-                props.remove(comboBoxKey);
+                anmPropertiesService.getProperties().remove(textFieldKey);
+                anmPropertiesService.getProperties().remove(comboBoxKey);
                 // Aquí asumimos que tienes un método para guardar las propiedades en el archivo
-                saveProperties(props);
+                try {
+                    anmPropertiesService.saveProperties();
+                } catch (IOException e) {
+                    throw new RuntimeException(e);
+                }
             });
             innerPanel.add(deleteButton, gbc);
 
@@ -672,52 +674,52 @@ public class AnmForm {
         panelScroll.repaint();
 
 
-        file0.setText(props.getProperty("file0"));
-        file1.setText(props.getProperty("file1"));
-        file2.setText(props.getProperty("file2"));
-        file3.setText(props.getProperty("file3"));
-        file4.setText(props.getProperty("file4"));
-        file5.setText(props.getProperty("file5"));
-        file6.setText(props.getProperty("file6"));
-        file7.setText(props.getProperty("file7"));
+        file0.setText(anmPropertiesService.getProperty("file0"));
+        file1.setText(anmPropertiesService.getProperty("file1"));
+        file2.setText(anmPropertiesService.getProperty("file2"));
+        file3.setText(anmPropertiesService.getProperty("file3"));
+        file4.setText(anmPropertiesService.getProperty("file4"));
+        file5.setText(anmPropertiesService.getProperty("file5"));
+        file6.setText(anmPropertiesService.getProperty("file6"));
+        file7.setText(anmPropertiesService.getProperty("file7"));
 
 
-        mineral.setText(props.getProperty("mineral"));
+        mineral.setText(anmPropertiesService.getProperty("mineral"));
 
-        areaOfConcessionSlctId.setSelectedItem(props.getProperty("areaOfConcessionSlctId"));
-        selectedCellInputMethodSlctId.setSelectedItem(props.getProperty("selectedCellInputMethodSlctId"));
-        selectTypeMap.setSelectedItem(props.getProperty("selectTypeMap"));
-        declareIndId0.setSelectedItem(props.getProperty("declareIndId0"));
-        additionalEthnicGroupsInSelectedAreaIndId.setSelectedItem(props.getProperty("additionalEthnicGroupsInSelectedAreaIndId"));
-        personClassificationId0.setSelectedItem(props.getProperty("personClassificationId0"));
-        pikerLoad.setText(props.getProperty("pikerLoad"));
-        txtCells.setText(props.getProperty("cells"));
+        areaOfConcessionSlctId.setSelectedItem(anmPropertiesService.getProperty("areaOfConcessionSlctId"));
+        selectedCellInputMethodSlctId.setSelectedItem(anmPropertiesService.getProperty("selectedCellInputMethodSlctId"));
+        selectTypeMap.setSelectedItem(anmPropertiesService.getProperty("selectTypeMap"));
+        declareIndId0.setSelectedItem(anmPropertiesService.getProperty("declareIndId0"));
+        additionalEthnicGroupsInSelectedAreaIndId.setSelectedItem(anmPropertiesService.getProperty("additionalEthnicGroupsInSelectedAreaIndId"));
+        personClassificationId0.setSelectedItem(anmPropertiesService.getProperty("personClassificationId0"));
+        pikerLoad.setText(anmPropertiesService.getProperty("pikerLoad"));
+        txtCells.setText(anmPropertiesService.getProperty("cells"));
 
-        techProfessionalDesignationId.setSelectedItem(props.getProperty("techProfessionalDesignationId"));
+        techProfessionalDesignationId.setSelectedItem(anmPropertiesService.getProperty("techProfessionalDesignationId"));
 
-        currentAssetId0.setText(props.getProperty("currentAssetId0"));
-        totalLiabilitiesId0.setText(props.getProperty("totalLiabilitiesId0"));
-        totalAssetId0.setText(props.getProperty("totalAssetId0"));
-        currentLiabilitiesId0.setText(props.getProperty("currentLiabilitiesId0"));
-        ecoApplicantNameId.setText(props.getProperty("ecoApplicantNameId"));
-        techApplicantNameId.setText(props.getProperty("techApplicantNameId"));
+        currentAssetId0.setText(anmPropertiesService.getProperty("currentAssetId0"));
+        totalLiabilitiesId0.setText(anmPropertiesService.getProperty("totalLiabilitiesId0"));
+        totalAssetId0.setText(anmPropertiesService.getProperty("totalAssetId0"));
+        currentLiabilitiesId0.setText(anmPropertiesService.getProperty("currentLiabilitiesId0"));
+        ecoApplicantNameId.setText(anmPropertiesService.getProperty("ecoApplicantNameId"));
+        techApplicantNameId.setText(anmPropertiesService.getProperty("techApplicantNameId"));
 
 
         for (int i = 0; i < 17; i++) {
 
             if (i < 15) {
 
-                Util.setComponentsValue(props, configPanel, "timer" + (i + 1), Constans.componentType.JTEXTFIELD);
+                anmPropertiesService.setComponentsValue(configPanel, "timer" + (i + 1), Constans.componentType.JTEXTFIELD);
             }
 
-            Util.setComponentsValue(props, explorerPanel, Constans.YEAROFEXECUTIONID + i, Constans.componentType.JCOMBOBOX);
-            Util.setComponentsValue(props, explorerPanel, Constans.YEAROFDELIVERYID + i, Constans.componentType.JCOMBOBOX);
-            Util.setComponentsValue(props, explorerPanel, Constans.LABORSUITABILITYID + i, Constans.componentType.JCOMBOBOX);
+            anmPropertiesService.setComponentsValue(explorerPanel, Constans.YEAROFEXECUTIONID + i, Constans.componentType.JCOMBOBOX);
+            anmPropertiesService.setComponentsValue(explorerPanel, Constans.YEAROFDELIVERYID + i, Constans.componentType.JCOMBOBOX);
+            anmPropertiesService.setComponentsValue(explorerPanel, Constans.LABORSUITABILITYID + i, Constans.componentType.JCOMBOBOX);
 
 
-            Util.setComponentsValue(props, ambientalPanel, Constans.ENVYEAROFEXECUTIONID + i, Constans.componentType.JCOMBOBOX);
-            Util.setComponentsValue(props, ambientalPanel, Constans.ENVYEAROFDELIVERYID + i, Constans.componentType.JCOMBOBOX);
-            Util.setComponentsValue(props, ambientalPanel, Constans.ENVLABORSUITABILITYID + i, Constans.componentType.JCOMBOBOX);
+            anmPropertiesService.setComponentsValue(ambientalPanel, Constans.ENVYEAROFEXECUTIONID + i, Constans.componentType.JCOMBOBOX);
+            anmPropertiesService.setComponentsValue(ambientalPanel, Constans.ENVYEAROFDELIVERYID + i, Constans.componentType.JCOMBOBOX);
+            anmPropertiesService.setComponentsValue(ambientalPanel, Constans.ENVLABORSUITABILITYID + i, Constans.componentType.JCOMBOBOX);
         }
 
 
@@ -1936,7 +1938,7 @@ public class AnmForm {
         label70.setText("Fotococopia documento de identificacion");
         filesPanel.add(label70, new GridConstraints(3, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         final JLabel label71 = new JLabel();
-        label71.setText(" Fotocopia Tarjeta Profesional del Contador");
+        label71.setText("Fotocopia Tarjeta Profesional del Contador");
         filesPanel.add(label71, new GridConstraints(4, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         file0 = new JTextField();
         filesPanel.add(file0, new GridConstraints(2, 1, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_HORIZONTAL, GridConstraints.SIZEPOLICY_WANT_GROW, GridConstraints.SIZEPOLICY_FIXED, null, new Dimension(150, -1), null, 0, false));
@@ -1985,10 +1987,10 @@ public class AnmForm {
         label73.setText("Registro Único Tributario DIAN/RUT actualizado");
         filesPanel.add(label73, new GridConstraints(8, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         final JLabel label74 = new JLabel();
-        label74.setText(" Estados Financieros Propios Certificados  ");
+        label74.setText("Estados Financieros Propios Certificados  ");
         filesPanel.add(label74, new GridConstraints(7, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         final JLabel label75 = new JLabel();
-        label75.setText(" Certificado de existencia y representación legal");
+        label75.setText("Certificado de existencia y representación legal");
         filesPanel.add(label75, new GridConstraints(6, 0, 1, 1, GridConstraints.ANCHOR_WEST, GridConstraints.FILL_NONE, GridConstraints.SIZEPOLICY_FIXED, GridConstraints.SIZEPOLICY_FIXED, null, null, null, 0, false));
         final JLabel label76 = new JLabel();
         label76.setText("Fotocopia tarjeta profesional");

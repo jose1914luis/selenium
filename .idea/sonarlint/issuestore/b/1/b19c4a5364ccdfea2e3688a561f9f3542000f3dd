@@ -1,0 +1,14 @@
+
+ˆ
+java:S1192""GDefine a constant instead of duplicating this literal "timer1" 3 times.(ÕóÛøÿÿÿÿJ$15d2447e-2abb-4b49-a3f0-2d53d39e8c70
+ˆ
+java:S11921"GDefine a constant instead of duplicating this literal "timer4" 4 times.(­ì±şÿÿÿÿJ$b3ad97f1-af6b-40e2-ab88-51342ed51300
+…
+java:S11929"IDefine a constant instead of duplicating this literal "username" 3 times.(±Ô³’J$70b4e60e-03d5-4e34-9016-d2f8f1705da7
+š
+java:S2142v"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(”ı¾J$3c0b6a38-b5a0-40d2-aa21-1aa78caad5cb
+k	java:S106x"+Replace this use of System.out by a logger.(ÇÜÏÔùÿÿÿÿJ$0991c908-5105-4405-8aa5-a8790eed2384
+
+java:S1128	"DRemove this unused import 'org.openqa.selenium.chrome.ChromeDriver'.(†ÈJ$9090e4e7-627a-43e9-8622-53999ecacd00
+m
+java:S1128"1Remove this unused import 'java.util.Properties'.(¬µ²J$65d3a5e1-79a0-47d0-b46b-abbe3b4e3c4f

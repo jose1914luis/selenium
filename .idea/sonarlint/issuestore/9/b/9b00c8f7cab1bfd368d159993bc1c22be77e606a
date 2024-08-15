@@ -1,0 +1,16 @@
+
+†	java:S1121"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿJ$329496d8-e169-4d0c-80f7-5bcd163eed36
+†	java:S112:"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿJ$0ba09168-7cc9-48d7-b72e-5b8a808dfef5
+†	java:S112s"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚ÒéüÿÿÿÿJ$cc6241e3-1cd6-4dfd-8d56-4fbe75f869b6
+‰
+java:S1192Õ"LDefine a constant instead of duplicating this literal "Seleccionar" 5 times.(Ş€Ò›J$b1a58c24-0351-4e21-b5e9-3f5f9cc08185
+
+java:S3776("RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(„ÜÎJ$4445a8dd-13e6-407e-8fae-7d916d9dfbc5
+Ÿ
+java:S21420"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(è®ã¶øÿÿÿÿJ$870335b7-9dda-48ab-9b37-827c8f98cb16
+Ÿ
+java:S21429"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(è®ã¶øÿÿÿÿJ$ac618d76-c14d-469c-ac09-b49ef3ba5076
+›
+java:S1171"YMove the contents of this initializer to a standard constructor or to field initializers.(ÒÌâ–øÿÿÿÿJ$c8642103-f583-4154-b011-991b43298d44
+	java:S100¬"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–­ŒßúÿÿÿÿJ$1700a43d-004a-439f-8f14-f5496c560517
+	java:S100„"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘ ¨úúÿÿÿÿJ$052349d5-a6dc-41aa-8e16-8a358cbcbf41

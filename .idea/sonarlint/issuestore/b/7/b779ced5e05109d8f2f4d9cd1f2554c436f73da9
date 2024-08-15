@@ -1,0 +1,1244 @@
+
+˜
+java:S1104"WMake loginButton a static final constant or non-public and provide accessors if needed.(™“ÜúÿÿÿÿJ$7e74443b-103f-4726-ac0c-c9ecc45ccbdf
+›
+java:S1104"ZMake ejecutarButton a static final constant or non-public and provide accessors if needed.(ˆ•‚ıÿÿÿÿJ$52d24b51-f1a4-4d77-9fe6-9b9d43d0df7d
+“
+java:S1104"WMake paso1Button a static final constant or non-public and provide accessors if needed.(ëŠÉôJ$bc7e9cc7-3e58-4382-b91d-72f7c4259e49
+˜
+java:S1104"WMake paso2Button a static final constant or non-public and provide accessors if needed.(¿Óó¼ıÿÿÿÿJ$3d3a9bba-0e0e-4176-8198-c464da558aba
+˜
+java:S1104 "WMake paso3Button a static final constant or non-public and provide accessors if needed.(™¥ŒĞşÿÿÿÿJ$f5514c01-5518-45db-9d15-8dc6baec5aee
+˜
+java:S1104!"WMake paso4Button a static final constant or non-public and provide accessors if needed.(‰ìØçÿÿÿÿÿJ$7fc5798d-0d8e-4be4-81c3-3120069cb6ae
+‡	java:S112Õ"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚ÒéüÿÿÿÿJ$f022c0b6-2b4e-43c6-aade-a575bc41afb6
+‡	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(¼ÿ¾¹ÿÿÿÿÿJ$29f2646f-3320-4661-aeff-c41ed20812aa
+‡	java:S112–"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚ÒéüÿÿÿÿJ$574636b0-57c5-4a1a-a319-393be47ea197
+k
+java:S3740$"/Provide the parametrized type for this generic.(‡¿ÌJ$da1a93e1-e591-4102-b19a-1f9c8be70fed
+p
+java:S3740%"/Provide the parametrized type for this generic.(¼¬—§úÿÿÿÿJ$5b866c3e-777b-4c10-85c7-a38d1f94d516
+j
+java:S3740'"/Provide the parametrized type for this generic.(ÔŠöpJ$fa8f4d26-9f7f-4d55-852b-5177e3dfeb97
+p
+java:S3740("/Provide the parametrized type for this generic.(®ã®ÏúÿÿÿÿJ$0cb4fd45-9288-4f76-91ea-8ab0f688dff9
+p
+java:S3740)"/Provide the parametrized type for this generic.(åíŞíúÿÿÿÿJ$2a7695eb-6dbb-4197-acc9-ed340082e7a1
+k
+java:S3740*"/Provide the parametrized type for this generic.(–­‚J$9d2b83b6-5d29-492a-9767-19a5a3f0e7a7
+k
+java:S3740+"/Provide the parametrized type for this generic.(èäº÷J$d84bdc47-9b4c-4cc8-bfc0-2eea7929f063
+p
+java:S3740,"/Provide the parametrized type for this generic.(İùõÌûÿÿÿÿJ$7b2393a2-6813-4649-b662-03714270a4ee
+k
+java:S3740-"/Provide the parametrized type for this generic.(ï™şôJ$3678dbda-636d-4dd5-b24d-4e23d082cf9a
+p
+java:S3740."/Provide the parametrized type for this generic.(İš§şÿÿÿÿJ$4ab33d7a-7ba5-4479-98fe-71ca147cc4f8
+p
+java:S3740/"/Provide the parametrized type for this generic.(Ö“‡şÿÿÿÿJ$1dcc52b6-e4f7-49f1-ace5-559ae261d8a7
+k
+java:S37400"/Provide the parametrized type for this generic.(¨Ğº»J$2a73513d-10e7-452f-a1b1-5954f27ea53b
+k
+java:S37401"/Provide the parametrized type for this generic.(‚â…’J$9c487d19-e7f3-4cc3-bd84-ee31170fd868
+k
+java:S37402"/Provide the parametrized type for this generic.(¤À…ÚJ$1cac6520-47af-4507-8b06-ec592704b1c6
+k
+java:S37403"/Provide the parametrized type for this generic.(“ëµßJ$c5e5f75a-162c-4221-9623-73cfa6f013a5
+p
+java:S37404"/Provide the parametrized type for this generic.(…Š¥£øÿÿÿÿJ$554f52cd-7fb8-47fd-8e8f-db11d0299ea8
+k
+java:S37405"/Provide the parametrized type for this generic.(…‹J$6b14fab7-854c-4714-a35f-3b83d6a734c8
+k
+java:S37406"/Provide the parametrized type for this generic.(ÉÛæJ$6337f6f9-c505-45aa-871c-8ddeb551e785
+k
+java:S37407"/Provide the parametrized type for this generic.(Ü—ÛØJ$1359e580-308b-4f13-a999-3d5e00e41276
+p
+java:S37408"/Provide the parametrized type for this generic.(È¥ÿúÿÿÿÿJ$54e2079f-18fe-44fd-940f-c400992cc8e3
+k
+java:S37409"/Provide the parametrized type for this generic.(ÄŞÿJ$01660fd5-0ef6-4edf-a3a5-eb96fabc4038
+p
+java:S3740:"/Provide the parametrized type for this generic.( ĞşåúÿÿÿÿJ$d4fbb099-5a96-44b7-a5dd-63f500771252
+p
+java:S3740;"/Provide the parametrized type for this generic.(˜ÕÇâùÿÿÿÿJ$698aaf03-6b4f-4f8b-a9b4-b47758861c2f
+p
+java:S3740<"/Provide the parametrized type for this generic.(û¹‚¨úÿÿÿÿJ$7ff7c5a6-2082-4ebe-b53e-768b315224b5
+p
+java:S3740="/Provide the parametrized type for this generic.(¾Ô²åüÿÿÿÿJ$c05d80a8-14ab-42fe-ac96-3164aec3e294
+k
+java:S3740>"/Provide the parametrized type for this generic.(†šJ$a3c65dac-5084-4255-8f70-05cf4f6345b2
+k
+java:S3740?"/Provide the parametrized type for this generic.(Ò‹Õ·J$00ef1452-a484-4df9-adb5-d582ee112fc5
+k
+java:S3740@"/Provide the parametrized type for this generic.(–àåËJ$bdc63eb5-d6d5-4159-80f5-19512d75ea78
+k
+java:S3740A"/Provide the parametrized type for this generic.(ÆÅù§J$19a5bad5-9374-4b30-a689-99f37da68da6
+j
+java:S3740B"/Provide the parametrized type for this generic.(Ôš†tJ$bfeb3762-623c-42da-9e3c-965e92a4eee2
+p
+java:S3740C"/Provide the parametrized type for this generic.(ó€Ó¼ûÿÿÿÿJ$de5eb3f6-aefc-4e3d-a521-e365ab8b3082
+p
+java:S3740D"/Provide the parametrized type for this generic.(Îóö‹ÿÿÿÿÿJ$e24d1ae9-bf11-474b-a4dd-fc7b6a448ef1
+p
+java:S3740E"/Provide the parametrized type for this generic.(…æñâşÿÿÿÿJ$3b89a077-2034-46d6-80f8-4a29fa613c92
+p
+java:S3740F"/Provide the parametrized type for this generic.(ºĞÎÂùÿÿÿÿJ$66c61689-5fbb-4455-ac00-dd40caac30f9
+p
+java:S3740G"/Provide the parametrized type for this generic.(ñ”ÀæúÿÿÿÿJ$4ab84a57-bf87-42db-852a-c524273118e3
+p
+java:S3740H"/Provide the parametrized type for this generic.(§¦›šÿÿÿÿÿJ$890083bd-f01a-4056-83a5-d5b0c09db3c6
+p
+java:S3740I"/Provide the parametrized type for this generic.(‚À²ıÿÿÿÿJ$4269c02b-f38a-4293-ada3-1c0f3ff7a4a2
+p
+java:S3740J"/Provide the parametrized type for this generic.(á¹’úÿÿÿÿJ$1d1eeff0-b47a-46e7-bdf5-96983b5f7011
+k
+java:S3740K"/Provide the parametrized type for this generic.(ƒá¿¸J$4ac07324-2937-4274-a570-bde8d05a0387
+p
+java:S3740L"/Provide the parametrized type for this generic.(¿Ò°©úÿÿÿÿJ$61135a44-16d8-43cb-a62a-94d2f9c2df55
+p
+java:S3740M"/Provide the parametrized type for this generic.(áœğúÿÿÿÿJ$2bca55a3-7a9a-48c2-82fc-4705182a567c
+p
+java:S3740N"/Provide the parametrized type for this generic.(İÎŞüÿÿÿÿJ$3de39b6e-1a85-48f1-b632-1a90a70b3660
+p
+java:S3740O"/Provide the parametrized type for this generic.(òî¬¿üÿÿÿÿJ$748f8414-1865-4214-8ff3-d87bb6110140
+k
+java:S3740P"/Provide the parametrized type for this generic.(ç½ŸîJ$616ef4fe-db8e-46fa-bad1-1a567114f36c
+k
+java:S3740Q"/Provide the parametrized type for this generic.(îÑµ¶J$eaabf07c-7000-41da-bd20-e015f5b3d61b
+k
+java:S3740R"/Provide the parametrized type for this generic.(øë„µJ$1b96bd12-3ed9-4271-85be-9843b4e09770
+p
+java:S3740S"/Provide the parametrized type for this generic.(ÔÂØìúÿÿÿÿJ$0a360c3f-bb24-4975-b469-929322087272
+p
+java:S3740T"/Provide the parametrized type for this generic.(…ÎÅ›ûÿÿÿÿJ$a869752b-5e91-4a00-a1bd-4888df32fda5
+k
+java:S3740U"/Provide the parametrized type for this generic.(ôì«‘J$9e7612e5-58d0-4354-8564-89d42f3f8cbb
+k
+java:S3740V"/Provide the parametrized type for this generic.(ê’óÌJ$044f1d0c-de1c-4a43-bd34-521cc0e867f6
+k
+java:S3740W"/Provide the parametrized type for this generic.(àÏÈJ$a7798057-9d63-417f-b4ab-b41ab91885ba
+k
+java:S3740X"/Provide the parametrized type for this generic.(±ä§ÇJ$641dbd4b-1d67-423c-bd3a-076df1c7c083
+k
+java:S3740Y"/Provide the parametrized type for this generic.(²‚Ğ¼J$0a81b134-2c19-411e-84cd-7df540407eda
+k
+java:S3740Z"/Provide the parametrized type for this generic.(™ÄÌÍJ$0f13bdb4-4e93-4b60-bc21-da3de5a780da
+p
+java:S3740["/Provide the parametrized type for this generic.(ùú’ÈüÿÿÿÿJ$46489244-4072-4779-876a-b9fcda82af82
+k
+java:S3740\"/Provide the parametrized type for this generic.(¿ÊJ$bd89c281-f509-4154-b463-dd146673b5dd
+k
+java:S3740]"/Provide the parametrized type for this generic.(âÄèÎJ$d31ca6b1-89c8-4dbc-ad13-65fdf5d0daae
+k
+java:S3740^"/Provide the parametrized type for this generic.(Ùø¬ûJ$95986c15-ba75-46b3-8a95-09f329ca50ba
+p
+java:S3740_"/Provide the parametrized type for this generic.(âëÙšùÿÿÿÿJ$77a2465c-1071-4125-a0ff-e274b46554e7
+k
+java:S3740`"/Provide the parametrized type for this generic.(ğøºÏJ$e1dfea78-00b7-40bb-a375-35df5ac1ae0c
+k
+java:S3740a"/Provide the parametrized type for this generic.(ìôıJ$feacad47-0ad7-4da4-8b24-d02a51ad4e18
+p
+java:S3740b"/Provide the parametrized type for this generic.(œâÓşıÿÿÿÿJ$cea50039-f4b7-46b6-9a6c-30230b43646a
+p
+java:S3740c"/Provide the parametrized type for this generic.(áºœñıÿÿÿÿJ$ece2d948-9566-46c6-85e0-3453b7e18919
+k
+java:S3740d"/Provide the parametrized type for this generic.(÷ËÅªJ$c79973d3-0df2-4f0f-aa7e-0e6de1d79a10
+k
+java:S3740e"/Provide the parametrized type for this generic.(€ÆñJ$2c681efa-fb84-45e3-a690-6372ce0bd4cd
+k
+java:S3740f"/Provide the parametrized type for this generic.(†•Ñ‹J$b1818825-0c0f-4ada-88fb-b7753a60ca8c
+p
+java:S3740g"/Provide the parametrized type for this generic.(õÁÎœøÿÿÿÿJ$768ac794-e774-4538-b2a5-fd7b38654caf
+k
+java:S3740h"/Provide the parametrized type for this generic.(À…Á†J$f7df4d09-3e77-4a1b-a1b2-f6c1b5ce6d68
+p
+java:S3740i"/Provide the parametrized type for this generic.(äÅõõüÿÿÿÿJ$4acb18e5-5bb9-40fc-b07b-a3ac5f6aa82d
+k
+java:S3740j"/Provide the parametrized type for this generic.(³ö×€J$65d63fa2-26ce-4ae2-8cde-144ca715895f
+k
+java:S3740k"/Provide the parametrized type for this generic.(³ĞÑ’J$cc1f3f5b-55fa-4ffd-b76e-322a08e3615a
+p
+java:S3740l"/Provide the parametrized type for this generic.(—ÿáêÿÿÿÿÿJ$cf771d2b-ad2c-4283-a90c-2bb1251e2f9a
+p
+java:S3740m"/Provide the parametrized type for this generic.(ÄÅáËşÿÿÿÿJ$b34948be-bc7c-4cd7-9963-b6d4f429e9af
+p
+java:S3740n"/Provide the parametrized type for this generic.(ö«ëıÿÿÿÿJ$6c963b46-0464-44c9-8ea6-d2b2208f2987
+p
+java:S3740o"/Provide the parametrized type for this generic.(ÈÜØşúÿÿÿÿJ$5e193d72-1573-4e77-8f1b-a2c280c78b44
+p
+java:S3740p"/Provide the parametrized type for this generic.(ûäø…ûÿÿÿÿJ$8869cb69-61e7-41e5-b9ca-1b533e342913
+k
+java:S3740q"/Provide the parametrized type for this generic.(ÉùğÛJ$46d5ee63-a5c2-4be4-a19b-1effdbb17e1c
+k
+java:S3740r"/Provide the parametrized type for this generic.(«¤¯“J$15cc85ea-aabe-49c4-a92d-7076f65d2f38
+k
+java:S3740s"/Provide the parametrized type for this generic.(Ó´ÿİJ$f560e955-f2a2-4df4-b0ce-d29fa4c3e6a9
+p
+java:S3740t"/Provide the parametrized type for this generic.(«‘ŞíúÿÿÿÿJ$a268d8dc-ce92-4f58-ac04-055bcadd1bc3
+k
+java:S3740u"/Provide the parametrized type for this generic.(àœºJ$9b7d5fc6-130f-4aff-b2c6-2b4d0c671044
+k
+java:S3740v"/Provide the parametrized type for this generic.(»Ë¹¾J$6d6be5d7-4b30-46ce-827a-2999cb3e9a6c
+k
+java:S3740w"/Provide the parametrized type for this generic.(Ñ‘ôùJ$a78426ea-5a0e-4adf-8d81-e1688cbeaa8d
+k
+java:S3740x"/Provide the parametrized type for this generic.(Ú®Ô‡J$1111ba5b-8a40-4f2d-a410-f0c3bbd11c08
+p
+java:S3740y"/Provide the parametrized type for this generic.(‰—®îüÿÿÿÿJ$1f333243-01ff-4027-82f8-8c394f5b8810
+p
+java:S3740z"/Provide the parametrized type for this generic.(÷—¡ÌüÿÿÿÿJ$34be93fe-54a0-429e-b472-4c49c65905f7
+k
+java:S3740{"/Provide the parametrized type for this generic.(±•†ùJ$68b85277-924e-43f8-94cb-d082d6b66dde
+k
+java:S3740|"/Provide the parametrized type for this generic.(ö½°ŞJ$d0939fed-f055-4708-b6ef-1061e73b39be
+p
+java:S3740}"/Provide the parametrized type for this generic.(²§©øÿÿÿÿJ$0c199181-c42b-4d81-8f2b-74442a46ebf5
+k
+java:S3740~"/Provide the parametrized type for this generic.(àá×ÊJ$9dc876f9-c6d3-47ea-b27a-24bb04a1c47a
+p
+java:S3740"/Provide the parametrized type for this generic.(¼ş™§üÿÿÿÿJ$7016a345-7e2a-4f51-8fea-034ffc33903e
+q
+java:S3740€"/Provide the parametrized type for this generic.(§É¥ÛşÿÿÿÿJ$6fe499d3-9c4e-42d4-b1b8-a69a4f8a28c3
+q
+java:S3740"/Provide the parametrized type for this generic.(ÅœÈ˜ıÿÿÿÿJ$b05af0a6-491a-466e-90c1-451abd441b00
+q
+java:S3740‚"/Provide the parametrized type for this generic.(ñÈÖÛşÿÿÿÿJ$27380d51-3a05-4d90-b154-93c4ed8cecc6
+q
+java:S3740ƒ"/Provide the parametrized type for this generic.(Ã°ÏùÿÿÿÿJ$23315438-3fcb-4995-9a10-769ec82b4fe0
+l
+java:S3740„"/Provide the parametrized type for this generic.(ıŸÑÃJ$0ba5da29-1d93-44b5-9992-617b149c4480
+q
+java:S3740…"/Provide the parametrized type for this generic.(ÅÙ§¦şÿÿÿÿJ$e5be3a73-6362-4957-85a3-dd4e9268532c
+l
+java:S3740†"/Provide the parametrized type for this generic.(‘ªãˆJ$b66c9ac8-59f3-489b-8f14-b617abc905e0
+q
+java:S3740‡"/Provide the parametrized type for this generic.(ÉçÚşÿÿÿÿJ$373d1710-ec7c-427f-84af-98c00beb909a
+l
+java:S3740ˆ"/Provide the parametrized type for this generic.(”ƒÙ†J$bd9d1fb4-6ace-4240-b73a-1baf77a9093d
+l
+java:S3740‰"/Provide the parametrized type for this generic.(¨•ßÏJ$d0d26fb1-3b28-4e68-b8aa-ac3a91123b3f
+k
+java:S3740Š"/Provide the parametrized type for this generic.(û­¼J$a02b4506-2873-450d-bd12-09644c237412
+k
+java:S3740‹"/Provide the parametrized type for this generic.(Û®çJ$18ab947f-839e-454d-8269-29ee09d3c919
+l
+java:S3740’"/Provide the parametrized type for this generic.(‘¯çÃJ$72fd4e25-bbd1-443a-8b17-04d05f22b263
+q
+java:S3740¤"/Provide the parametrized type for this generic.(¬ıõÿøÿÿÿÿJ$6aa1f7d1-e454-4e6a-a838-49b615b0bfe5
+q
+java:S3740¥"/Provide the parametrized type for this generic.(÷ÁœúÿÿÿÿJ$bc97c76c-7796-47d2-b896-95b712012945
+q
+java:S3740¦"/Provide the parametrized type for this generic.(î…œ­üÿÿÿÿJ$3a1815dd-0105-4281-bfa4-f8526ca041f7
+l
+java:S3740§"/Provide the parametrized type for this generic.(œâË¹J$35b8e552-962c-418b-9a89-23100784fe1a
+q
+java:S3740¨"/Provide the parametrized type for this generic.(ÒÆºùÿÿÿÿJ$6d937f20-a756-499b-b03d-0679ddabd341
+q
+java:S3740ª"/Provide the parametrized type for this generic.(­Õ­ùÿÿÿÿJ$4d647e1c-9f61-444c-b27f-494108fb568a
+q
+java:S3740Ê"/Provide the parametrized type for this generic.(ßÛÌ±øÿÿÿÿJ$ff0b489a-5a98-4573-9baf-5d0c2775bf78
+q
+java:S3740ÿ"/Provide the parametrized type for this generic.(Ä§­ÑÿÿÿÿÿJ$a304bd3e-01a3-4dea-bb4f-7bdbf75b45ff
+q
+java:S3740€"/Provide the parametrized type for this generic.(¤²èÔüÿÿÿÿJ$769c1eaf-afa6-4ace-8e0e-ead2b3bd7967
+q
+java:S3740€"/Provide the parametrized type for this generic.(¤²èÔüÿÿÿÿJ$c81cddce-202c-4ea8-a0a8-89a23a84d525
+q
+java:S3740†"/Provide the parametrized type for this generic.(¹Î°­üÿÿÿÿJ$6449e121-a855-4635-88ab-28decce7e6ec
+l
+java:S3740‡"/Provide the parametrized type for this generic.(áèÓ©J$c26756ae-8730-46d1-b0c8-dff6e1da2c9e
+l
+java:S3740‡"/Provide the parametrized type for this generic.(áèÓ©J$6e2d8b05-d19f-4fd5-afdd-6acc7645f2ff
+l
+java:S3740"/Provide the parametrized type for this generic.(È­ç›J$433b6d0a-b4c4-4015-a5d1-c2a5e3a23255
+q
+java:S3740‘"/Provide the parametrized type for this generic.(°±Ú‘ûÿÿÿÿJ$cbd3715e-79c2-4ec1-a3a8-79193057355a
+q
+java:S3740‘"/Provide the parametrized type for this generic.(°±Ú‘ûÿÿÿÿJ$3899379e-d710-431b-bbc4-5c8e2578a9b8
+l
+java:S3740"/Provide the parametrized type for this generic.(ÆàìÆJ$d350ffba-0273-4c48-afed-fdd5492bcfe8
+q
+java:S3740Ÿ"/Provide the parametrized type for this generic.(ŸÍõâûÿÿÿÿJ$bc5f5a54-ec42-4d74-8064-660015eabeff
+q
+java:S3740Ÿ"/Provide the parametrized type for this generic.(ŸÍõâûÿÿÿÿJ$80e06fcb-bbef-4afd-97c8-64a01dbec9fa
+l
+java:S3740¹"/Provide the parametrized type for this generic.(ÿ—„•J$6069625c-6c87-411f-b374-5804a2bed521
+q
+java:S3740º"/Provide the parametrized type for this generic.(É‘Æ…ùÿÿÿÿJ$83cfca9d-f68f-4a30-acb0-5c36f4ce1c87
+q
+java:S3740º"/Provide the parametrized type for this generic.(É‘Æ…ùÿÿÿÿJ$c0950fed-fd2a-4eb2-b96e-e04902d56bd2
+l
+java:S3740Ç"/Provide the parametrized type for this generic.(‰‹«ÓJ$b4b91898-bd9e-4cc8-a895-66d393ee21ff
+l
+java:S3740È"/Provide the parametrized type for this generic.(ÙÎÎ†J$65f1019b-4009-405c-a920-3108a191331a
+l
+java:S3740È"/Provide the parametrized type for this generic.(ÙÎÎ†J$80f826c8-1538-4a6b-9c06-c34776455455
+q
+java:S3740Ì"/Provide the parametrized type for this generic.(ï–½ÿÿÿÿÿJ$2edcb552-3f93-494e-bbd3-368fbdf7f12c
+q
+java:S3740Í"/Provide the parametrized type for this generic.(ÜíäÓıÿÿÿÿJ$bb7d4de4-8fcd-4ff4-a7b3-703baca50b45
+q
+java:S3740Í"/Provide the parametrized type for this generic.(ÜíäÓıÿÿÿÿJ$708faa23-da4d-4c90-b8b0-a9b929960235
+q
+java:S3740ê"/Provide the parametrized type for this generic.(»à¹ÊşÿÿÿÿJ$4351222c-2967-4c56-9167-95651f599b5a
+q
+java:S3740ë"/Provide the parametrized type for this generic.(İªóÍıÿÿÿÿJ$f2a981ee-18b1-418f-a1fa-d8a14fe29df7
+q
+java:S3740ë"/Provide the parametrized type for this generic.(İªóÍıÿÿÿÿJ$09850891-4e3d-4323-80da-92bb033dba29
+q
+java:S3740ú"/Provide the parametrized type for this generic.(½”‰ÄüÿÿÿÿJ$d74dcd1c-bdd4-46b4-915d-0dde44a3d735
+l
+java:S3740û"/Provide the parametrized type for this generic.(Áƒ“ÿJ$a94dad4f-a501-4a84-adc0-cdaa5159b38a
+l
+java:S3740û"/Provide the parametrized type for this generic.(Áƒ“ÿJ$f6eb3a84-dbd9-4a16-906e-d8baf969b5dd
+q
+java:S3740…"/Provide the parametrized type for this generic.(ŸĞúúÿÿÿÿJ$2fbbef67-02e4-4222-a4d5-472611126834
+q
+java:S3740†"/Provide the parametrized type for this generic.(’«˜ úÿÿÿÿJ$01569a3e-1780-435b-a001-716e1d6bd9dc
+q
+java:S3740†"/Provide the parametrized type for this generic.(’«˜ úÿÿÿÿJ$970242d2-c709-43cc-ad52-88648220a1dc
+q
+java:S3740"/Provide the parametrized type for this generic.(ê»ºúüÿÿÿÿJ$26406e74-1f29-41ec-b77a-f22bb3ae2a58
+l
+java:S3740"/Provide the parametrized type for this generic.(¶²¿ïJ$76dafe35-c642-4591-a923-175aca4a8657
+l
+java:S3740"/Provide the parametrized type for this generic.(¶²¿ïJ$81e82850-474e-42e8-ad9e-872458375eb2
+l
+java:S3740˜"/Provide the parametrized type for this generic.(³¸°J$9450b6f1-3d85-4879-8520-93e1c7a666b7
+q
+java:S3740™"/Provide the parametrized type for this generic.(Ä¡ˆÙùÿÿÿÿJ$75359b44-fa31-4e9b-8ef0-cdd337317e19
+q
+java:S3740™"/Provide the parametrized type for this generic.(Ä¡ˆÙùÿÿÿÿJ$829ee73c-2a2b-49b1-a8db-34521bb23167
+q
+java:S3740 "/Provide the parametrized type for this generic.(Ö‘¸„ÿÿÿÿÿJ$6dda9d9e-584b-4eb0-9a00-f84abcfc6154
+l
+java:S3740¡"/Provide the parametrized type for this generic.(ÕÄ®’J$316e0a15-bfe9-45c4-95b0-cc5faae3bd8d
+l
+java:S3740¡"/Provide the parametrized type for this generic.(ÕÄ®’J$8702c92d-de7a-43b6-9e44-c2dccb944044
+q
+java:S3740¨"/Provide the parametrized type for this generic.(ô‘µ§øÿÿÿÿJ$b54274e9-801c-4020-9527-d6202584cef3
+l
+java:S3740©"/Provide the parametrized type for this generic.(ÎÌÂJ$f026a3ea-1810-4e9e-b2eb-356bb4307b9a
+l
+java:S3740©"/Provide the parametrized type for this generic.(ÎÌÂJ$fd138a9a-7ed3-4539-b971-df7901937d23
+q
+java:S3740°"/Provide the parametrized type for this generic.(²ûÑ—ùÿÿÿÿJ$dc09371b-0eb2-4800-8c61-b798ad227ac0
+l
+java:S3740±"/Provide the parametrized type for this generic.(ÓâğJ$cd46c3e1-4a54-464f-b70f-50c18d8c30b9
+l
+java:S3740±"/Provide the parametrized type for this generic.(ÓâğJ$b43e74fd-8d88-4060-9193-17517fbd0c31
+l
+java:S3740¶"/Provide the parametrized type for this generic.(İæØJ$0eb1be37-3953-44b9-a5d0-b88a17d7b1df
+l
+java:S3740·"/Provide the parametrized type for this generic.(¹„¢J$6fdeec4d-f4bc-4f73-8c08-4799cc9aa1d8
+l
+java:S3740·"/Provide the parametrized type for this generic.(¹„¢J$5313ede0-0cd0-40bf-9074-6214ac86118a
+l
+java:S3740¼"/Provide the parametrized type for this generic.(ò°±èJ$18212b21-6fe5-42ec-b78a-42309f894dfe
+q
+java:S3740½"/Provide the parametrized type for this generic.(ÔÖèŸüÿÿÿÿJ$1d5c4d66-b374-4a33-b251-1d1488878ecf
+q
+java:S3740½"/Provide the parametrized type for this generic.(ÔÖèŸüÿÿÿÿJ$1aafbd7e-8749-43f8-94df-35c912b588cb
+l
+java:S3740Â"/Provide the parametrized type for this generic.(äÀ“²J$916a804e-2f37-4445-ba1a-e5976ca630ca
+q
+java:S3740Ã"/Provide the parametrized type for this generic.(Ä£´îÿÿÿÿÿJ$4e22490c-df69-4d55-b7e5-fafb4aaed7e5
+q
+java:S3740Ã"/Provide the parametrized type for this generic.(Ä£´îÿÿÿÿÿJ$4bb3efb3-cfc0-450d-bde7-07baa9206304
+q
+java:S3740Ê"/Provide the parametrized type for this generic.(£¹ş„ûÿÿÿÿJ$2ff946fe-c283-4736-be26-ebacbf18e2e1
+q
+java:S3740Ë"/Provide the parametrized type for this generic.(ıâ„÷ùÿÿÿÿJ$2744f225-12b7-4632-a7de-fdd88f0f0cd2
+q
+java:S3740Ë"/Provide the parametrized type for this generic.(ıâ„÷ùÿÿÿÿJ$98a7d86c-f794-4ea9-87e5-0bc2561146c0
+k
+java:S3740Û"/Provide the parametrized type for this generic.(ÑëØvJ$7a6434a2-26a5-4dff-9731-db4de5309a4b
+q
+java:S3740Ü"/Provide the parametrized type for this generic.(ñ˜íÂşÿÿÿÿJ$5fbaa43a-dc39-4547-95d5-6bffbe8ceb6c
+q
+java:S3740Ü"/Provide the parametrized type for this generic.(ñ˜íÂşÿÿÿÿJ$b89b609d-2671-47e3-9f7c-da6cf708519a
+l
+java:S3740æ"/Provide the parametrized type for this generic.(ÔÈ¸•J$16a7c676-f660-4c1a-875d-16cc33a15cca
+q
+java:S3740ç"/Provide the parametrized type for this generic.(é®ÈúşÿÿÿÿJ$77c09dc1-ff57-4cac-8a33-f1f2aa485eee
+q
+java:S3740ç"/Provide the parametrized type for this generic.(é®ÈúşÿÿÿÿJ$d7209266-af02-4200-af3d-0f6841d0c043
+q
+java:S3740ñ"/Provide the parametrized type for this generic.(êšÕéûÿÿÿÿJ$4121d101-b461-486d-8162-6b1758c1ca80
+q
+java:S3740ò"/Provide the parametrized type for this generic.(ÿŸéøÿÿÿÿJ$5fcb1c39-5dff-44e9-9733-151f5f72e1aa
+q
+java:S3740ò"/Provide the parametrized type for this generic.(ÿŸéøÿÿÿÿJ$182b0386-a86a-480e-aff5-eb1a6ec0aab1
+k
+java:S3740ü"/Provide the parametrized type for this generic.(¥¡èxJ$80ee7b30-6112-470c-aaf1-f477a0d61923
+l
+java:S3740ı"/Provide the parametrized type for this generic.(ÕşÏÁJ$b2111055-12d4-4243-a5d0-4a43b31e7b39
+l
+java:S3740ı"/Provide the parametrized type for this generic.(ÕşÏÁJ$037d3e59-220d-493d-ac57-42b3ffad2ce1
+l
+java:S3740‡"/Provide the parametrized type for this generic.( íÊÊJ$79993e47-fd74-43c3-bcdf-b5751700b33f
+q
+java:S3740ˆ"/Provide the parametrized type for this generic.(Á·çıÿÿÿÿJ$7beef047-74f8-4f3e-8d5a-6a96f979d163
+q
+java:S3740ˆ"/Provide the parametrized type for this generic.(Á·çıÿÿÿÿJ$fd529050-cd1e-460a-ad3e-9fb27abed5e4
+l
+java:S3740’"/Provide the parametrized type for this generic.(…¶ƒÖJ$c2aae189-f6c2-483b-9d05-93dab2fa0268
+l
+java:S3740“"/Provide the parametrized type for this generic.(‘¼©J$7799f849-6e97-4608-8534-adc52203e90c
+l
+java:S3740“"/Provide the parametrized type for this generic.(‘¼©J$46eccde9-0bf4-4069-b5c1-7505e939d11d
+l
+java:S3740"/Provide the parametrized type for this generic.(‡·ÒøJ$d825cc77-27e7-4c66-b656-2e54084c3e96
+q
+java:S3740"/Provide the parametrized type for this generic.(í§€˜ûÿÿÿÿJ$50726585-2188-4053-808f-e8c860a8b840
+q
+java:S3740"/Provide the parametrized type for this generic.(í§€˜ûÿÿÿÿJ$e34e4cce-edbc-42ca-b97e-bd1468ddd55e
+q
+java:S3740¥"/Provide the parametrized type for this generic.(¶†Ï€üÿÿÿÿJ$84041195-0ca9-482d-93a5-3f22b4f3558a
+q
+java:S3740¦"/Provide the parametrized type for this generic.(™¢ıñıÿÿÿÿJ$fe60ba0f-cee9-446f-bbd3-5c649e0ae80e
+q
+java:S3740¦"/Provide the parametrized type for this generic.(™¢ıñıÿÿÿÿJ$51de36cd-8c98-4196-b9af-01349ab16d82
+l
+java:S3740­"/Provide the parametrized type for this generic.(ê¿îJ$f485dca8-79f1-4c5e-9124-64f4c87642f8
+l
+java:S3740®"/Provide the parametrized type for this generic.(Ô©ÉJ$bfc0c33c-716d-4055-bc19-73016534017c
+l
+java:S3740®"/Provide the parametrized type for this generic.(Ô©ÉJ$4092a9cf-3dd4-4c07-9338-0a91f0b8db05
+l
+java:S3740µ"/Provide the parametrized type for this generic.(ìˆÍJ$7191ca3d-833e-4f67-b4fd-2969fa4b1e6c
+l
+java:S3740¶"/Provide the parametrized type for this generic.(ëÇ¼ˆJ$bbfb26b8-2811-4c2b-ba44-d1222e504e21
+l
+java:S3740¶"/Provide the parametrized type for this generic.(ëÇ¼ˆJ$cad6f979-246c-4f8f-bfd1-774b4c7e6dd7
+q
+java:S3740½"/Provide the parametrized type for this generic.(Ûè©ìşÿÿÿÿJ$0b9759f3-a09c-4e9b-9693-f9b765da8ad6
+q
+java:S3740¾"/Provide the parametrized type for this generic.(ÜíØşÿÿÿÿÿJ$95325be3-3583-4717-ab8a-727da9c3fb20
+q
+java:S3740¾"/Provide the parametrized type for this generic.(ÜíØşÿÿÿÿÿJ$4c4bdbb9-2aff-46b6-90da-a4659c5fed2a
+q
+java:S3740Å"/Provide the parametrized type for this generic.(ÖªöèÿÿÿÿÿJ$43976477-ab78-4dc3-a0cf-83229e25347f
+q
+java:S3740Æ"/Provide the parametrized type for this generic.(ÂÛ³öüÿÿÿÿJ$fbb8da3f-c8c6-44ed-a05f-d026a85182c9
+q
+java:S3740Æ"/Provide the parametrized type for this generic.(ÂÛ³öüÿÿÿÿJ$1b5827f2-8647-4951-b2cd-3cecfc227803
+l
+java:S3740Í"/Provide the parametrized type for this generic.(¢ğö´J$32ea1b02-3e6f-484e-b6fb-28f39d371aa2
+q
+java:S3740Î"/Provide the parametrized type for this generic.(ŒºğÓüÿÿÿÿJ$400f67f2-fe84-46d5-a3f5-97906a1a02da
+q
+java:S3740Î"/Provide the parametrized type for this generic.(ŒºğÓüÿÿÿÿJ$e0653730-e374-4fee-981b-36a606d6e426
+l
+java:S3740Õ"/Provide the parametrized type for this generic.(½¼¼…J$f03f2ff5-f2d6-4245-ad9d-a17183c1babe
+q
+java:S3740Ö"/Provide the parametrized type for this generic.(´œÈßıÿÿÿÿJ$4040f386-31c5-46b2-8f62-b45b76f40a92
+q
+java:S3740Ö"/Provide the parametrized type for this generic.(´œÈßıÿÿÿÿJ$87a0744a-f686-4ef1-ba82-493f00a65fbf
+q
+java:S3740İ"/Provide the parametrized type for this generic.(Â¼‘òúÿÿÿÿJ$790331a6-51fb-4d96-a882-67006ea1072f
+l
+java:S3740Ş"/Provide the parametrized type for this generic.(±óÓJ$b9bfb903-f053-4b0e-bc98-18eb9a93cd3e
+l
+java:S3740Ş"/Provide the parametrized type for this generic.(±óÓJ$e0616480-f57b-475d-b70a-9f3448a60207
+l
+java:S3740å"/Provide the parametrized type for this generic.(Ñ¤ş•J$57d42eec-2112-4bda-927d-9f33daccd56a
+q
+java:S3740æ"/Provide the parametrized type for this generic.(ÄóøœüÿÿÿÿJ$525f970d-eb03-448a-a6b5-bc4297758b02
+q
+java:S3740æ"/Provide the parametrized type for this generic.(ÄóøœüÿÿÿÿJ$37163628-21a5-4f2a-8cf7-ebd8a0bdc77f
+q
+java:S3740í"/Provide the parametrized type for this generic.(ûÖæÓşÿÿÿÿJ$1f18f610-b380-41f2-8cbc-fa0b279790f6
+l
+java:S3740î"/Provide the parametrized type for this generic.(‘ƒŸ›J$b60c4b7b-163c-4d5e-8952-e77331f6cbd6
+l
+java:S3740î"/Provide the parametrized type for this generic.(‘ƒŸ›J$d455de0e-4034-483f-81f9-8b5c55256e35
+q
+java:S3740ó"/Provide the parametrized type for this generic.(÷ò«ÿÿÿÿÿJ$f2e5b415-cffe-420b-a720-5b1f85c02268
+l
+java:S3740ô"/Provide the parametrized type for this generic.(Ä®ÓˆJ$a36cb55c-45df-4265-9abe-e1f332f2f419
+l
+java:S3740ô"/Provide the parametrized type for this generic.(Ä®ÓˆJ$2600b678-012e-43a5-b2f6-6679b179e1b1
+l
+java:S3740ü"/Provide the parametrized type for this generic.(£ûøJ$26504183-2b11-4ec2-a3fd-857a7e818f29
+q
+java:S3740ı"/Provide the parametrized type for this generic.(¡®ú˜úÿÿÿÿJ$c1b9ad23-3b5c-47ed-9327-fa4b5d56763e
+q
+java:S3740ı"/Provide the parametrized type for this generic.(¡®ú˜úÿÿÿÿJ$3becb453-a820-443e-97d3-1f4cfe17b2ed
+q
+java:S3740„	"/Provide the parametrized type for this generic.(¢ëşŞüÿÿÿÿJ$7bf1a71e-5b44-47a2-8950-59ae914266db
+l
+java:S3740…	"/Provide the parametrized type for this generic.(é‘Ú‚J$1431ee28-1248-4a88-807b-7c379845dcc6
+l
+java:S3740…	"/Provide the parametrized type for this generic.(é‘Ú‚J$53d6b8f3-656c-4872-b6af-5615ec6c06f4
+q
+java:S3740Š	"/Provide the parametrized type for this generic.(Ô†û£úÿÿÿÿJ$b677c179-5aa3-46ed-a3bc-328e47c07731
+l
+java:S3740‹	"/Provide the parametrized type for this generic.(´î‰˜J$3ec17cc6-a8c8-450d-8b09-4692c460cc80
+l
+java:S3740‹	"/Provide the parametrized type for this generic.(´î‰˜J$8d2b24b1-79a0-4b17-8d1b-73da89971910
+l
+java:S3740	"/Provide the parametrized type for this generic.(ƒûéJ$c563be80-9b64-48cc-8edd-a6917959a540
+j
+java:S3740‘	"/Provide the parametrized type for this generic.(é¡tJ$519782ef-1ce8-44d1-bdca-b4e6e7e6b57e
+j
+java:S3740‘	"/Provide the parametrized type for this generic.(é¡tJ$c8c24d0f-4ec3-48c3-9d74-554e49a321de
+l
+java:S3740–	"/Provide the parametrized type for this generic.(ê“ä¸J$f6f99674-c52d-447d-ba51-e50ae43d1e2b
+q
+java:S3740—	"/Provide the parametrized type for this generic.(î—İşÿÿÿÿJ$73d6126e-cb93-429f-b7dd-c6db455b3245
+q
+java:S3740—	"/Provide the parametrized type for this generic.(î—İşÿÿÿÿJ$420a0c5e-1737-4032-8ec7-83cad8cdfb18
+q
+java:S3740	"/Provide the parametrized type for this generic.(ÍËäøøÿÿÿÿJ$ac5beb0f-5ac3-4365-9b84-c9c27ae3e0f6
+q
+java:S3740	"/Provide the parametrized type for this generic.(Š¹¶™üÿÿÿÿJ$447b67b5-524a-4bc4-b097-7e88a80eeeb2
+q
+java:S3740	"/Provide the parametrized type for this generic.(Š¹¶™üÿÿÿÿJ$c67e7944-2f2d-40bb-89dd-019de1e7a909
+q
+java:S3740¥	"/Provide the parametrized type for this generic.(àÅÚçúÿÿÿÿJ$e75a701a-4b4e-44f5-9115-de033092ae22
+l
+java:S3740¦	"/Provide the parametrized type for this generic.(‚£´ÖJ$5b6acfeb-85b2-40af-bc4b-e9a9b3305cd2
+l
+java:S3740¦	"/Provide the parametrized type for this generic.(‚£´ÖJ$53ca4633-22b8-469d-abc8-7ccf4fa28a58
+q
+java:S3740¯	"/Provide the parametrized type for this generic.(´æ³ÅúÿÿÿÿJ$d6d01982-b630-46f2-9a1f-76dbe6f71c6b
+q
+java:S3740°	"/Provide the parametrized type for this generic.(ß—ÎûÿÿÿÿJ$75dfbdb3-6fd7-40b3-b465-3b741c980379
+q
+java:S3740°	"/Provide the parametrized type for this generic.(ß—ÎûÿÿÿÿJ$43657d5e-1cbc-49e8-83c4-2b5d0c3af27b
+k
+java:S3740º	"/Provide the parametrized type for this generic.(è‡J$a8619d4b-7df5-424b-b64b-f510f428c05a
+k
+java:S3740»	"/Provide the parametrized type for this generic.(ëîşgJ$f5547888-e8d3-46b9-a86d-6f457893942e
+k
+java:S3740»	"/Provide the parametrized type for this generic.(ëîşgJ$6da35c8d-501d-4d64-99d9-da5c126faa1e
+q
+java:S3740Â	"/Provide the parametrized type for this generic.(Ú¶ûÿÿÿÿÿJ$aa726017-99c7-459f-a318-acfbc59b2a06
+k
+java:S3740Ã	"/Provide the parametrized type for this generic.(õæ°~J$3e70cf4a-7c65-4114-a33a-f63078f68577
+k
+java:S3740Ã	"/Provide the parametrized type for this generic.(õæ°~J$0cd8d304-5308-4498-add8-472f5d56a98d
+l
+java:S3740Ê	"/Provide the parametrized type for this generic.(¼‹J$b1fbc235-9a88-4735-baf1-ddf8b4c4584d
+q
+java:S3740Ë	"/Provide the parametrized type for this generic.(ÍÂ£ÿÿÿÿÿJ$406f568e-96f8-4391-9647-eb716501fa8a
+q
+java:S3740Ë	"/Provide the parametrized type for this generic.(ÍÂ£ÿÿÿÿÿJ$91f95b89-68ad-413b-88b1-8fa86564d9c6
+l
+java:S3740Ò	"/Provide the parametrized type for this generic.(†„ŞÂJ$13b4cc5b-34d3-48ef-a6c9-4b68150c6943
+q
+java:S3740Ó	"/Provide the parametrized type for this generic.(¨€ìéşÿÿÿÿJ$05321eba-4aa7-4a7f-a3d3-a721a92865a2
+q
+java:S3740Ó	"/Provide the parametrized type for this generic.(¨€ìéşÿÿÿÿJ$223e52d8-1246-44bf-b5c5-dfefc153de6f
+l
+java:S3740Ø	"/Provide the parametrized type for this generic.(ÅÉ°ûJ$46465e31-c0e8-407b-824f-5023d7c724f8
+q
+java:S3740Ù	"/Provide the parametrized type for this generic.(©Š½íúÿÿÿÿJ$20bb6a1d-5de8-4524-a82e-de1f8292e264
+q
+java:S3740Ù	"/Provide the parametrized type for this generic.(©Š½íúÿÿÿÿJ$1660302c-9050-4383-877e-ec9a5ea797d0
+l
+java:S3740á	"/Provide the parametrized type for this generic.(Ÿ„…ˆJ$7130819f-97fb-4243-bac8-11defeb8ecf5
+l
+java:S3740â	"/Provide the parametrized type for this generic.(É¢âİJ$451372e3-dcd9-4413-8f73-06edfa9f1207
+l
+java:S3740â	"/Provide the parametrized type for this generic.(É¢âİJ$da841191-2403-4bc5-a4bb-725cf63337f9
+l
+java:S3740é	"/Provide the parametrized type for this generic.(—æêÿJ$e591e61a-581e-4dda-9ddf-b178583f681b
+l
+java:S3740ê	"/Provide the parametrized type for this generic.(÷°çÜJ$4f84e5fe-ea14-4941-9c93-c0cec5855be7
+l
+java:S3740ê	"/Provide the parametrized type for this generic.(÷°çÜJ$cafd8f0a-b958-4bf6-96d2-43d0b50d7b1e
+q
+java:S3740÷	"/Provide the parametrized type for this generic.(î¶ìøÿÿÿÿJ$6388f055-aae6-4ca1-83cd-a4d7f6ba4f9d
+q
+java:S3740ø	"/Provide the parametrized type for this generic.(Ò‹û‘øÿÿÿÿJ$1bc1bab0-c253-4357-af00-d16ce3a9b9e6
+q
+java:S3740ø	"/Provide the parametrized type for this generic.(Ò‹û‘øÿÿÿÿJ$5e6ff274-efd6-47f5-a1fa-ed4bee27434f
+q
+java:S3740ÿ	"/Provide the parametrized type for this generic.(İé†¬şÿÿÿÿJ$77605c85-fd1b-4fe5-89ac-30cf5e8a0599
+q
+java:S3740€
+"/Provide the parametrized type for this generic.(Í´–„ıÿÿÿÿJ$b4fc8a38-cc5c-4a5b-8e02-2f58cbd1aac1
+q
+java:S3740€
+"/Provide the parametrized type for this generic.(Í´–„ıÿÿÿÿJ$805b7622-6c7d-4ffa-9124-c03f9573b098
+l
+java:S3740‡
+"/Provide the parametrized type for this generic.(Ÿ¥èJ$88accdd5-a339-4f9c-ad7e-f33332c63012
+l
+java:S3740ˆ
+"/Provide the parametrized type for this generic.(¡¥º‹J$bce1d2f9-6a4e-4a6d-88e2-2571c775005a
+l
+java:S3740ˆ
+"/Provide the parametrized type for this generic.(¡¥º‹J$ebe652ca-3ddd-48fb-8b00-c75ab9c66b54
+q
+java:S3740
+"/Provide the parametrized type for this generic.(ÜÎ“ úÿÿÿÿJ$a10834e2-bddd-4f1b-8c01-a9bfaed2436c
+q
+java:S3740
+"/Provide the parametrized type for this generic.(ŸØôÎıÿÿÿÿJ$9c4067ab-fcb9-4e1f-9fc9-e89f6c72e276
+q
+java:S3740
+"/Provide the parametrized type for this generic.(ŸØôÎıÿÿÿÿJ$b9e13dc4-a38d-492c-ac36-a3e81f8a2e8b
+q
+java:S3740—
+"/Provide the parametrized type for this generic.(ëàÒæúÿÿÿÿJ$020237d5-ae72-4c62-a01c-c3a5806f6e20
+q
+java:S3740˜
+"/Provide the parametrized type for this generic.(…ñê¡ıÿÿÿÿJ$f60490ff-3738-46e2-9237-c2f4c5bb46fc
+q
+java:S3740˜
+"/Provide the parametrized type for this generic.(…ñê¡ıÿÿÿÿJ$65fe8ad5-0706-4021-a927-611980c64bfd
+l
+java:S3740
+"/Provide the parametrized type for this generic.(õšœŞJ$ac4a22f2-5ef4-4f4c-9f0c-a53c8e50a6a7
+q
+java:S3740Ÿ
+"/Provide the parametrized type for this generic.(Ï­¬óÿÿÿÿÿJ$de9e212b-c4b7-492d-9d3b-05ff6dc51789
+q
+java:S3740Ÿ
+"/Provide the parametrized type for this generic.(Ï­¬óÿÿÿÿÿJ$019216db-4180-4a3f-97b6-a8c8b88bba20
+l
+java:S3740¥
+"/Provide the parametrized type for this generic.(şóâÑJ$c2fb5765-a48e-4ff3-ad9b-30921986fc09
+q
+java:S3740¦
+"/Provide the parametrized type for this generic.(¥ÂĞÙıÿÿÿÿJ$9feddff1-1cd8-4f8d-a7b7-c1b0f2c6f7b6
+q
+java:S3740¦
+"/Provide the parametrized type for this generic.(¥ÂĞÙıÿÿÿÿJ$d970c38a-e973-4352-8cbf-0e4c23f7deb1
+q
+java:S3740±
+"/Provide the parametrized type for this generic.(›àÑüÿÿÿÿJ$ddcab1f1-78ff-4fec-b44e-35b6cae53fcf
+q
+java:S3740³
+"/Provide the parametrized type for this generic.(ÏÜşñÿÿÿÿÿJ$e9ab3786-858d-442a-902f-fdf31d441224
+q
+java:S3740³
+"/Provide the parametrized type for this generic.(ÏÜşñÿÿÿÿÿJ$66237882-1e71-4f0c-ba60-208c16fefbd4
+q
+java:S3740º
+"/Provide the parametrized type for this generic.(¹œàâüÿÿÿÿJ$e1b47e9e-ac03-4318-8227-e91aa1b446b2
+l
+java:S3740»
+"/Provide the parametrized type for this generic.(İ—˜ÀJ$f552c407-9985-4b0b-b376-931a3236a605
+l
+java:S3740»
+"/Provide the parametrized type for this generic.(İ—˜ÀJ$8c48ae3b-704d-4575-885d-077340cda304
+q
+java:S3740Ç
+"/Provide the parametrized type for this generic.(¡ïœÕÿÿÿÿÿJ$e43c2bff-9d7f-4586-b037-a915bbfae245
+q
+java:S3740É
+"/Provide the parametrized type for this generic.(É©âÿÿÿÿÿJ$0f95fe7e-7ea3-43e7-8381-8b190e6d26a0
+q
+java:S3740É
+"/Provide the parametrized type for this generic.(É©âÿÿÿÿÿJ$7303883a-c901-4479-bbf9-f8d2648e461a
+l
+java:S3740Ğ
+"/Provide the parametrized type for this generic.(Ç©³æJ$e39c0dc5-10ee-4e3a-9fee-cb7fe9ae3198
+l
+java:S3740Ò
+"/Provide the parametrized type for this generic.(¹›„ãJ$a29f7f3d-5ab4-4c68-9164-e13bd3bee3c8
+l
+java:S3740Ò
+"/Provide the parametrized type for this generic.(¹›„ãJ$63f80b63-e7e2-4ea0-a3ff-6696ca19d575
+q
+java:S3740Ù
+"/Provide the parametrized type for this generic.(û˜ìÉüÿÿÿÿJ$f714efbe-d342-4997-ba85-0d5889586aaa
+k
+java:S3740Û
+"/Provide the parametrized type for this generic.(Çç¬GJ$b426f3c1-f822-4c88-93fc-08df4a7d6ea6
+k
+java:S3740Û
+"/Provide the parametrized type for this generic.(Çç¬GJ$e3a8a513-4c96-4d77-a5cc-544661112724
+q
+java:S3740â
+"/Provide the parametrized type for this generic.(¢ç²²ÿÿÿÿÿJ$ceb70863-48c9-49a7-9b67-bb2add7039ee
+l
+java:S3740ã
+"/Provide the parametrized type for this generic.(¸’¨åJ$2ef14ebb-ec97-40ee-bf8c-74948bb5ddc0
+l
+java:S3740ã
+"/Provide the parametrized type for this generic.(¸’¨åJ$e73b3af4-ca0d-4a6a-bfef-9a77a3da0272
+l
+java:S3740ò
+"/Provide the parametrized type for this generic.(æ—Ş–J$5c5e6f52-5ef0-470a-b835-755b833e0e69
+l
+java:S3740ô
+"/Provide the parametrized type for this generic.(¿¤ÊÔJ$76f0600a-a561-4762-b0e7-6afc975a00d0
+l
+java:S3740ô
+"/Provide the parametrized type for this generic.(¿¤ÊÔJ$f00339d4-6073-40f0-8e5b-0f364e1c2a53
+k
+java:S3740û
+"/Provide the parametrized type for this generic.(¡‘uJ$a3d14a93-8e79-4593-a505-6010d5fc61b1
+q
+java:S3740ı
+"/Provide the parametrized type for this generic.(°ò£øÿÿÿÿJ$95d8274a-47a2-4fec-a3bb-31deaaf5d9b8
+q
+java:S3740ı
+"/Provide the parametrized type for this generic.(°ò£øÿÿÿÿJ$619684f5-5ac2-4ab4-8f9e-64d5e81a4b60
+q
+java:S3740„"/Provide the parametrized type for this generic.(’§œ€ÿÿÿÿÿJ$eb6bc630-673b-4726-b4b9-a76e922c538e
+l
+java:S3740†"/Provide the parametrized type for this generic.(¶—„õJ$a4d37f04-f003-48fd-81e1-29639e82d45d
+l
+java:S3740†"/Provide the parametrized type for this generic.(¶—„õJ$dfd440cb-ea95-4a7b-881f-b6f00bdae751
+l
+java:S3740"/Provide the parametrized type for this generic.(´‚ƒJ$05ee08a9-a6dd-41cd-aab9-30927626cacc
+l
+java:S3740"/Provide the parametrized type for this generic.(»˜ìçJ$27fdc6f4-3f91-4e3d-840a-c750ae9fdc67
+l
+java:S3740"/Provide the parametrized type for this generic.(»˜ìçJ$cd44faba-18f3-4d2f-a038-10e1e859777a
+q
+java:S3740–"/Provide the parametrized type for this generic.(ËÿıÿÿÿÿJ$ac5fbfe0-9615-45df-ad51-af36da4185d7
+q
+java:S3740—"/Provide the parametrized type for this generic.(°»ˆÖüÿÿÿÿJ$eead5584-74a6-4fda-b54b-89ef6f7f9a76
+q
+java:S3740—"/Provide the parametrized type for this generic.(°»ˆÖüÿÿÿÿJ$f8ecd273-8ad4-41d6-af48-eca297d4a1d0
+q
+java:S3740Ÿ"/Provide the parametrized type for this generic.(¶ÇÀüüÿÿÿÿJ$8fb3a89d-a440-45e1-8309-8f7f86b62d57
+q
+java:S3740 "/Provide the parametrized type for this generic.(öà¯âûÿÿÿÿJ$c5507313-af9a-4a79-8e56-f44eeeafb703
+q
+java:S3740 "/Provide the parametrized type for this generic.(öà¯âûÿÿÿÿJ$7a93e88d-3797-493b-9fb7-401258f07dfc
+l
+java:S3740¾"/Provide the parametrized type for this generic.(®âçºJ$16830f12-5c7e-4a45-bd44-f64d365a6291
+q
+java:S3740À"/Provide the parametrized type for this generic.(„üø—ÿÿÿÿÿJ$459ab371-00bb-4840-b962-b24e0a623a48
+q
+java:S3740À"/Provide the parametrized type for this generic.(„üø—ÿÿÿÿÿJ$fada2198-f7d4-4015-870b-c1beedc85700
+q
+java:S3740Ç"/Provide the parametrized type for this generic.(ÇÏ“ãùÿÿÿÿJ$94c9b01c-2f38-44fd-a45c-888af710fbef
+l
+java:S3740É"/Provide the parametrized type for this generic.(ƒçğJ$2a36ce16-d081-4fe6-bb2f-a9b0d6209e3b
+l
+java:S3740É"/Provide the parametrized type for this generic.(ƒçğJ$5bbd40d5-0bb7-4022-b980-e7cc958d357d
+q
+java:S3740Ğ"/Provide the parametrized type for this generic.(¢§®±üÿÿÿÿJ$de430738-8e2f-43e8-947e-d18cddb86de4
+l
+java:S3740Ò"/Provide the parametrized type for this generic.(İº¨ÈJ$a75c4220-6cac-419a-9ae0-b1d77367c839
+l
+java:S3740Ò"/Provide the parametrized type for this generic.(İº¨ÈJ$d893c633-8620-45ae-a1b8-1a0aad40a5a0
+l
+java:S3740Ù"/Provide the parametrized type for this generic.(Ğˆé¼J$435906ed-ff9d-4b20-91e0-396f6b45a311
+q
+java:S3740Û"/Provide the parametrized type for this generic.(Ü›ØéøÿÿÿÿJ$881aabce-ad43-42f2-8154-3c1d6c16d343
+q
+java:S3740Û"/Provide the parametrized type for this generic.(Ü›ØéøÿÿÿÿJ$9c641b98-338d-448d-a9f5-b12af6f40210
+q
+java:S3740â"/Provide the parametrized type for this generic.(‰Û›øÿÿÿÿJ$35b552ff-8d46-49ff-81e6-aef6e45ae805
+l
+java:S3740ä"/Provide the parametrized type for this generic.(¹Ë‚ÊJ$bd421027-68bf-4196-9f1d-6ba47856651c
+l
+java:S3740ä"/Provide the parametrized type for this generic.(¹Ë‚ÊJ$f5bf7a89-f98d-434a-896c-a5925f6e2850
+l
+java:S3740ë"/Provide the parametrized type for this generic.(Ÿ¨ÚÊJ$4dad5d42-e80d-4cb1-a35d-779db76e4761
+l
+java:S3740í"/Provide the parametrized type for this generic.(“õÄJ$80cf1feb-c999-4c0b-89ce-9c9cdd909d29
+l
+java:S3740í"/Provide the parametrized type for this generic.(“õÄJ$3e07b2bf-f05b-4e6c-8ffb-13af5b84fb09
+l
+java:S3740ô"/Provide the parametrized type for this generic.(”±‡ÉJ$40323e44-df56-4327-b17f-90a7eaf3e3d9
+l
+java:S3740ö"/Provide the parametrized type for this generic.(‚Ê¸„J$f20fadef-9380-4f9b-ad4f-b24a56f3de8c
+l
+java:S3740ö"/Provide the parametrized type for this generic.(‚Ê¸„J$f3bfad9a-e331-4e0c-a4de-9264597bcaaa
+q
+java:S3740ı"/Provide the parametrized type for this generic.(Ç‹ÀÖÿÿÿÿÿJ$e148b3bd-08e7-4716-892d-da425b656337
+l
+java:S3740ÿ"/Provide the parametrized type for this generic.(àŠµ®J$aa46dc41-ab96-4242-ac76-3d929578ec2f
+l
+java:S3740ÿ"/Provide the parametrized type for this generic.(àŠµ®J$212b4042-9e9d-4044-85d0-240373b49c21
+l
+java:S3740†"/Provide the parametrized type for this generic.(ìºŸßJ$1be28c4e-7f9f-473f-a805-3a758df24395
+l
+java:S3740ˆ"/Provide the parametrized type for this generic.(£š‘J$27d89d1e-d55e-42f5-be3d-e1997337f0db
+l
+java:S3740ˆ"/Provide the parametrized type for this generic.(£š‘J$bdd14008-afb7-4b37-8c71-065077537d7d
+l
+java:S3740"/Provide the parametrized type for this generic.(âÌÈ©J$bcc7705d-18ac-49b2-864f-d3de2e0efc26
+q
+java:S3740‘"/Provide the parametrized type for this generic.(…ççÄıÿÿÿÿJ$5710adcd-fcec-41c7-9ff5-6e8b00b6b4ed
+q
+java:S3740‘"/Provide the parametrized type for this generic.(…ççÄıÿÿÿÿJ$66eb7ce7-8785-4e0d-a085-bdec537b9f5e
+q
+java:S3740˜"/Provide the parametrized type for this generic.(¯š‡‹ûÿÿÿÿJ$d17b39b7-1f26-4a2f-b867-74977dce86fb
+l
+java:S3740š"/Provide the parametrized type for this generic.(â¤Ô×J$f09f5430-abfc-4bb7-a5c3-153d7282f9c2
+l
+java:S3740š"/Provide the parametrized type for this generic.(â¤Ô×J$845e6cc8-1d33-4dac-857c-13afa131c5cc
+k
+java:S3740¡"/Provide the parametrized type for this generic.(„²J$3327967f-e729-4fe6-8f65-8ee4ab598dd7
+q
+java:S3740£"/Provide the parametrized type for this generic.(ËÃ³ûúÿÿÿÿJ$4a4df9d0-f593-4e12-b6cc-0910a0aa04bc
+q
+java:S3740£"/Provide the parametrized type for this generic.(ËÃ³ûúÿÿÿÿJ$5aa4570e-149c-422c-ae5a-55528fa8d30e
+q
+java:S3740ª"/Provide the parametrized type for this generic.(ìª¶ÄúÿÿÿÿJ$1a794b2f-532f-4c36-b7f8-bab6168d172c
+q
+java:S3740¬"/Provide the parametrized type for this generic.(°º”ñüÿÿÿÿJ$7ad3e520-3203-4a41-819d-bbee6b6f6c09
+q
+java:S3740¬"/Provide the parametrized type for this generic.(°º”ñüÿÿÿÿJ$2eb95678-5f8b-453e-82a8-52f09097d1b7
+q
+java:S3740³"/Provide the parametrized type for this generic.(¥¬€£ùÿÿÿÿJ$b5da74d4-67cb-4896-9426-81fe9c577d2c
+q
+java:S3740µ"/Provide the parametrized type for this generic.(ùÁããıÿÿÿÿJ$1edecd9b-abfc-4460-a876-c8e085946c82
+q
+java:S3740µ"/Provide the parametrized type for this generic.(ùÁããıÿÿÿÿJ$80e93f0f-95ab-4006-ad99-27a522aa28a6
+l
+java:S3740¼"/Provide the parametrized type for this generic.(È¤öêJ$58c635e6-26b1-4d6b-bd05-8cf4b08e14bc
+l
+java:S3740½"/Provide the parametrized type for this generic.(°îÈÏJ$71207705-0672-44f5-a4f7-5eacd718c230
+l
+java:S3740½"/Provide the parametrized type for this generic.(°îÈÏJ$008c3311-269d-41ca-a1fb-fc81421e9c12
+l
+java:S3740Ä"/Provide the parametrized type for this generic.(ä‡¶ŒJ$45210834-56a9-44af-90de-2de3e98857b3
+q
+java:S3740Å"/Provide the parametrized type for this generic.(˜®¡şÿÿÿÿJ$489843eb-e3f7-4862-8e05-3701283765a7
+q
+java:S3740Å"/Provide the parametrized type for this generic.(˜®¡şÿÿÿÿJ$884bd4c1-7595-4882-82f1-e5e234f96fb6
+q
+java:S3740Ì"/Provide the parametrized type for this generic.(Ö’óıÿÿÿÿJ$fa4b4f4c-26d8-40fe-b6d6-8ee492a558d5
+l
+java:S3740Í"/Provide the parametrized type for this generic.(±·Ø„J$767843be-1e2d-425e-9957-c6452249fd5e
+l
+java:S3740Í"/Provide the parametrized type for this generic.(±·Ø„J$534b52b1-f835-4caa-9fe3-f238199aac38
+q
+java:S3740Ô"/Provide the parametrized type for this generic.(µÆ‚”şÿÿÿÿJ$e3b4bff7-9e00-466b-bb96-bfd9f5f08cb0
+l
+java:S3740Õ"/Provide the parametrized type for this generic.(É³‘ÅJ$dcbf610a-5f2f-45dc-915b-2e9989075685
+l
+java:S3740Õ"/Provide the parametrized type for this generic.(É³‘ÅJ$b046ae83-5b1a-4585-a0c0-92e08dc0263c
+l
+java:S3740Û"/Provide the parametrized type for this generic.(â«ãJ$ca939180-7004-4bb8-9620-3b4ad4470cd0
+l
+java:S3740Ü"/Provide the parametrized type for this generic.(ïÌôŸJ$8bf3a8e0-66ec-4386-a8bc-9f2d07820ff4
+l
+java:S3740Ü"/Provide the parametrized type for this generic.(ïÌôŸJ$77a798f9-8ac7-4a83-a089-b6562cc9605e
+l
+java:S3740ã"/Provide the parametrized type for this generic.(øßÏ˜J$1a185748-c969-442f-add6-ecf401b22c03
+q
+java:S3740ä"/Provide the parametrized type for this generic.(¿Ï”ışÿÿÿÿJ$43e500a9-b978-447d-b0fa-9234b5263650
+q
+java:S3740ä"/Provide the parametrized type for this generic.(¿Ï”ışÿÿÿÿJ$6052e57d-8eaf-42b4-a437-512822d979cf
+l
+java:S3740ë"/Provide the parametrized type for this generic.(ëéˆ†J$a94aef17-28b7-4cdc-959e-3d5a843fc3e7
+k
+java:S3740ì"/Provide the parametrized type for this generic.(±¤UJ$daf178ab-3880-4fc5-b296-b9823c0dce23
+k
+java:S3740ì"/Provide the parametrized type for this generic.(±¤UJ$d633a079-54fc-4bca-aa42-e8757dc5f913
+q
+java:S3740ƒ"/Provide the parametrized type for this generic.(üêÀûÿÿÿÿJ$34dbb8d3-12fe-41db-9941-a7e7b12293f3
+l
+java:S3740…"/Provide the parametrized type for this generic.(ÿ¿´J$044a396c-3475-4d7e-af58-e3d54834161a
+l
+java:S3740…"/Provide the parametrized type for this generic.(ÿ¿´J$dfe62b86-6b51-4f50-b85c-a8ddc81c214d
+q
+java:S3740Œ"/Provide the parametrized type for this generic.(¨ûÄøÿÿÿÿJ$20e006b5-818f-452a-8799-b71eb2f52503
+k
+java:S3740"/Provide the parametrized type for this generic.(·ÃĞ[J$fa8b2906-d5e8-40ba-ba41-f83de015dffa
+k
+java:S3740"/Provide the parametrized type for this generic.(·ÃĞ[J$1b588143-0c53-4072-bcd6-3a3e4e76ea5c
+l
+java:S3740•"/Provide the parametrized type for this generic.(Ù‹èJ$9f18043e-2a73-493b-9b62-1600bbd46ff2
+q
+java:S3740—"/Provide the parametrized type for this generic.(ÊŸåüıÿÿÿÿJ$d23eec10-a3b5-4935-96cf-0a203b188e5f
+q
+java:S3740—"/Provide the parametrized type for this generic.(ÊŸåüıÿÿÿÿJ$5dccec46-16b9-489b-b2d9-fe7b492922d8
+q
+java:S3740"/Provide the parametrized type for this generic.(À£ûÿÿÿÿJ$321d2228-6c39-4454-8c65-9c1721b3ff00
+q
+java:S3740 "/Provide the parametrized type for this generic.(Ë·µëÿÿÿÿÿJ$87808e35-99fb-4530-ab18-4ec3d79178a7
+q
+java:S3740 "/Provide the parametrized type for this generic.(Ë·µëÿÿÿÿÿJ$303f3438-1a5d-4587-8488-871c872427f6
+l
+java:S3740§"/Provide the parametrized type for this generic.(ãˆ‚J$0e815991-0b60-476b-9eb3-906e9e1cfea9
+q
+java:S3740©"/Provide the parametrized type for this generic.(¥êşÿÿÿÿJ$de33fad9-51ea-49a4-8975-4d0beecb6623
+q
+java:S3740©"/Provide the parametrized type for this generic.(¥êşÿÿÿÿJ$57e643a3-25d3-48f9-8a1d-5b94caef64d5
+q
+java:S3740°"/Provide the parametrized type for this generic.(³éÊØøÿÿÿÿJ$531bc838-ab6e-417f-9335-ffb0f26ccc12
+l
+java:S3740²"/Provide the parametrized type for this generic.(¶™½ƒJ$34b1461c-dbb0-420d-bcbf-19dfd4c64feb
+l
+java:S3740²"/Provide the parametrized type for this generic.(¶™½ƒJ$3f4b8119-a48a-4847-bd35-303e733a6936
+q
+java:S3740¼"/Provide the parametrized type for this generic.(Í÷£°ùÿÿÿÿJ$f6e1cd1d-adf7-4026-8a3d-b02fbfb3120c
+k
+java:S3740¾"/Provide the parametrized type for this generic.(¬ÂéHJ$4a9ffaf0-1088-4112-9995-1cbf1b3e090e
+k
+java:S3740¾"/Provide the parametrized type for this generic.(¬ÂéHJ$ef2bda88-10f3-42f3-b553-87834136f2a7
+q
+java:S3740Å"/Provide the parametrized type for this generic.(Ù˜îÛùÿÿÿÿJ$464e5cd5-96eb-4af7-95bc-43dc41043207
+l
+java:S3740Ç"/Provide the parametrized type for this generic.(Ï¦Œ¯J$fa1f11dc-cfe7-4492-9f82-733405463ba3
+l
+java:S3740Ç"/Provide the parametrized type for this generic.(Ï¦Œ¯J$7dc1fb90-bdb9-496e-8dd0-9df534ddd247
+l
+java:S3740Î"/Provide the parametrized type for this generic.(î•¹âJ$b5bb338a-8f60-41f6-9eb1-ca7ca11fab50
+q
+java:S3740Ğ"/Provide the parametrized type for this generic.(Û›×ûÿÿÿÿJ$0413ff6d-475f-4b4a-9095-92f6ee3947ea
+q
+java:S3740Ğ"/Provide the parametrized type for this generic.(Û›×ûÿÿÿÿJ$c2d3c6ca-bc9f-41f5-ad41-f5f58c31108d
+l
+java:S3740×"/Provide the parametrized type for this generic.(·æ†J$f702aa6d-66d2-4915-bb63-8d6c3c20052f
+q
+java:S3740Ù"/Provide the parametrized type for this generic.(ïè¾µùÿÿÿÿJ$4c2c1d0a-3503-4d05-bcf8-6c63e8df0970
+q
+java:S3740Ù"/Provide the parametrized type for this generic.(ïè¾µùÿÿÿÿJ$822afe2b-b5d0-4818-96cd-d8068ac8ca58
+q
+java:S3740à"/Provide the parametrized type for this generic.(À“ÂÕÿÿÿÿÿJ$0ef072a4-4ce3-4027-9943-6efeaafd8dbf
+l
+java:S3740â"/Provide the parametrized type for this generic.(øáÒùJ$193538ca-9b32-4524-a683-0e8a3f43a503
+l
+java:S3740â"/Provide the parametrized type for this generic.(øáÒùJ$4c852efd-9f4c-408a-8f61-2a356a84ebc5
+q
+java:S3740é"/Provide the parametrized type for this generic.(†©ô±üÿÿÿÿJ$1edc47fa-4137-4188-b6f9-342945b32502
+l
+java:S3740ë"/Provide the parametrized type for this generic.(Õ¹ÙJ$e0d26e11-a608-4d42-9da1-7caf391bcbc8
+l
+java:S3740ë"/Provide the parametrized type for this generic.(Õ¹ÙJ$1e5361e5-6dfd-4f74-9db7-30b7a5398f34
+k
+java:S3740ò"/Provide the parametrized type for this generic.(Ù™õtJ$885056f1-3bbf-4837-a3f4-59f0d28e871d
+l
+java:S3740ó"/Provide the parametrized type for this generic.(œÕİîJ$b6d81ab5-dba2-4eee-b95d-2fe2a3deeaee
+l
+java:S3740ó"/Provide the parametrized type for this generic.(œÕİîJ$36199df7-a5c2-466d-9bb6-77f4b9064561
+l
+java:S3740ø"/Provide the parametrized type for this generic.(ŒÏ­J$5612ba8e-64ba-46dc-8eee-bcfdae2acd2f
+l
+java:S3740ù"/Provide the parametrized type for this generic.(ŸúÎ«J$64298018-cd1d-4af3-b922-2dffefde0c1e
+l
+java:S3740ù"/Provide the parametrized type for this generic.(ŸúÎ«J$0a72a68c-3b52-4027-bf43-82c6b1142fcc
+q
+java:S3740ş"/Provide the parametrized type for this generic.(òËà©øÿÿÿÿJ$e1f8b79b-f31b-411e-be10-67cd5d01f9e6
+l
+java:S3740ÿ"/Provide the parametrized type for this generic.(ÕÙğ”J$13e16524-254c-4b67-ba99-0d8cacf0f484
+l
+java:S3740ÿ"/Provide the parametrized type for this generic.(ÕÙğ”J$e1cc1ca1-d6af-4051-b175-ae7b17e31fae
+l
+java:S3740†"/Provide the parametrized type for this generic.(±Éü¬J$33ba62b8-e18d-449c-b6f5-363b5a0ed2db
+l
+java:S3740‡"/Provide the parametrized type for this generic.(«£J$39c6e490-969f-4b5b-80ef-c6038561ce93
+l
+java:S3740‡"/Provide the parametrized type for this generic.(«£J$b316b16a-37e7-491d-81a5-be724fb4fefa
+q
+java:S3740"/Provide the parametrized type for this generic.(§¿Ö©üÿÿÿÿJ$7c5faee1-fb9e-46a4-ba84-4288d3b6dbaf
+l
+java:S3740"/Provide the parametrized type for this generic.(éùÿÜJ$486ba44c-8c2a-469d-a91e-777c8f726e7a
+l
+java:S3740"/Provide the parametrized type for this generic.(éùÿÜJ$c0130810-375e-42cd-ad51-82bef0934b2a
+q
+java:S3740“"/Provide the parametrized type for this generic.(¸ ËÃûÿÿÿÿJ$ce4f55b6-c606-4fe2-a68f-43b72395a414
+q
+java:S3740”"/Provide the parametrized type for this generic.(Ä—„ÅûÿÿÿÿJ$e0a2e20b-5092-4cb5-9727-6e67744769e5
+q
+java:S3740”"/Provide the parametrized type for this generic.(Ä—„ÅûÿÿÿÿJ$efdeb316-82af-4cd2-91bf-8d97cfbb3879
+‘
+java:S1192Í"ODefine a constant instead of duplicating this literal "generatedField" 4 times.(’›ŸùøÿÿÿÿJ$07ddfb0a-5129-4433-a21e-d6b16c3bf0bb
+—
+java:S1192¼
+"UDefine a constant instead of duplicating this literal "Ingeniero ambiental" 10 times.(Å¶ôşÿÿÿÿJ$8840c547-a82d-4fc5-a350-76a6d4dfe4be
+‰
+java:S1192¾"GDefine a constant instead of duplicating this literal "pdfGeo" 3 times.(Õ«ÕéşÿÿÿÿJ$8d6105ad-ceac-4247-ab7a-9901cc23dcb4
+ 
+java:S1192Í"^Define a constant instead of duplicating this literal "Fotocopia tarjeta profesional" 3 times.(ÈÛ”ãÿÿÿÿÿJ$7e127b2b-288f-4926-8d80-54208b1f409f
+£
+java:S1192¾
+"fDefine a constant instead of duplicating this literal "Ingeniero forestal, Ecologo o Biologo" 3 times.(Ùõ‰ÓJ$e3334967-35bd-44ae-a33e-67b2d7b5b047
+¯
+java:S1192Ä"rDefine a constant instead of duplicating this literal "Certificado de existencia y representaciÃ³n legal" 4 times.(ëûÜ‰J$b8789794-22ae-4097-a734-de1b4228beb0
+»
+java:S1192¿
+"Define a constant instead of duplicating this literal "Ing. De minas, Ing. Geologo,Geologo,Ing. Civil,Ing. Ambiental" 14 times.(¸ã”[J$983c70b2-2cde-411b-a031-1bbc114efd1e
+­
+java:S1192Ì"kDefine a constant instead of duplicating this literal "Fotocopia Tarjeta Profesional del Contador" 3 times.(´»‰‡ÿÿÿÿÿJ$01cbec2a-3f1d-4eaf-8016-4f72e571fc74
+²
+java:S1192Ğ"pDefine a constant instead of duplicating this literal "Registro Ãšnico Tributario DIAN/RUT actualizado" 3 times.(Ë¿ÃçşÿÿÿÿJ$a4af1fe0-9201-450f-846f-8ff64a32e595
+…
+java:S1192½"HDefine a constant instead of duplicating this literal "pdfCert" 3 times.(˜€†¯J$c086f77e-0198-476d-9270-f26823e7326d
+
+java:S1192ö"MDefine a constant instead of duplicating this literal "Hidrogeologo" 6 times.(†¦†ùÿÿÿÿJ$3f53cb87-674a-4cfe-88dd-c3871c7369f7
+¥
+java:S1192Ë"hDefine a constant instead of duplicating this literal "Fotococopia documento de identificacion" 3 times.(ìˆ´œJ$e924d3a0-b356-4ef3-89f3-ebb8594c36c7
+‘
+java:S1192Î"ODefine a constant instead of duplicating this literal "generatedCombo" 3 times.(•òØüÿÿÿÿJ$517513b5-f81c-4e62-9cb9-9c7a046098ae
+Š
+java:S1192ë"MDefine a constant instead of duplicating this literal "Seleccionar" 12 times.(–ÚìßJ$e4c726fc-e919-4647-941f-6413d39823a6
+«
+java:S1192¡
+"nDefine a constant instead of duplicating this literal "Trabajador social o Comunicador o Antropologo" 4 times.(†‹ˆÛJ$cd54f6f8-9112-44d3-8245-51b6a694e43f
+µ
+java:S1192²"sDefine a constant instead of duplicating this literal "Ingeniero de Minas, Ingeniero GeÃ³logo o GeÃ³logo" 17 times.(å—ü³ÿÿÿÿÿJ$8a82d1f1-75f4-450b-91cd-b2190b3a95f7
+‡
+java:S1192÷"JDefine a constant instead of duplicating this literal "Hidrologo" 6 times.(úâúÔJ$71e33d61-fc49-4f66-b3e4-b92fa9cc0b3e
+
+java:S1192½
+"QDefine a constant instead of duplicating this literal "Ingeniero civil" 13 times.(½œ†óJ$23492700-3eca-4635-a1c2-4ad45429ccf0
+š
+java:S1450¨"XRemove the "comboBox3" field and declare it as a local variable in the relevant methods.(ÒÆºùÿÿÿÿJ$2511cd1e-b309-4da1-9816-0dde0b92f05c
+¡
+java:S14509"eRemove the "envLaborSuitabilityId0" field and declare it as a local variable in the relevant methods.(ÄŞÿJ$6dfb1aad-1121-4112-96d5-139cf5161530
+§
+java:S1450‡"eRemove the "envLaborSuitabilityId1" field and declare it as a local variable in the relevant methods.(ÉçÚşÿÿÿÿJ$8fc77550-6178-4e5a-8bf4-80748dbc8343
+§
+java:S1450J"fRemove the "envLaborSuitabilityId10" field and declare it as a local variable in the relevant methods.(á¹’úÿÿÿÿJ$e6fa1b36-0383-409b-8f3e-009d426bf4d8
+§
+java:S1450M"fRemove the "envLaborSuitabilityId11" field and declare it as a local variable in the relevant methods.(áœğúÿÿÿÿJ$db9a42dd-078e-4992-8903-16c262555eea
+¢
+java:S1450Q"fRemove the "envLaborSuitabilityId12" field and declare it as a local variable in the relevant methods.(îÑµ¶J$df0dcfab-a0d1-4bc7-8a95-88c6af05dddb
+§
+java:S1450S"fRemove the "envLaborSuitabilityId13" field and declare it as a local variable in the relevant methods.(ÔÂØìúÿÿÿÿJ$7923cb8d-7e1c-4cc6-9543-f943dda05a62
+¢
+java:S1450V"fRemove the "envLaborSuitabilityId14" field and declare it as a local variable in the relevant methods.(ê’óÌJ$c17eddd5-b07d-4a2f-ab6a-1ed26cb44550
+¢
+java:S1450X"fRemove the "envLaborSuitabilityId15" field and declare it as a local variable in the relevant methods.(±ä§ÇJ$81f4fd18-0bfa-4b48-9694-9b6561484b82
+¢
+java:S1450W"fRemove the "envLaborSuitabilityId16" field and declare it as a local variable in the relevant methods.(àÏÈJ$cb0b237e-e8b7-4e6f-9e47-d3981513baf6
+¢
+java:S1450ˆ"eRemove the "envLaborSuitabilityId2" field and declare it as a local variable in the relevant methods.(”ƒÙ†J$a25eff66-226b-4a89-8f08-c3ba189bc5db
+¢
+java:S1450§"eRemove the "envLaborSuitabilityId3" field and declare it as a local variable in the relevant methods.(œâË¹J$f4d7235a-6b9d-4c8b-b9d4-488db464d41c
+¢
+java:S1450‰"eRemove the "envLaborSuitabilityId4" field and declare it as a local variable in the relevant methods.(¨•ßÏJ$1632a512-def7-4a32-803b-0b8f6c5dc4a6
+¦
+java:S1450;"eRemove the "envLaborSuitabilityId5" field and declare it as a local variable in the relevant methods.(˜ÕÇâùÿÿÿÿJ$f9709f3e-e36b-4cfb-bae5-9b32d32c0039
+¡
+java:S1450>"eRemove the "envLaborSuitabilityId6" field and declare it as a local variable in the relevant methods.(†šJ$ea97c717-65dd-498a-b483-78ebe49c4c5e
+¡
+java:S1450A"eRemove the "envLaborSuitabilityId7" field and declare it as a local variable in the relevant methods.(ÆÅù§J$7d122b57-6c77-436a-b7f5-032ffea079da
+¦
+java:S1450D"eRemove the "envLaborSuitabilityId8" field and declare it as a local variable in the relevant methods.(Îóö‹ÿÿÿÿÿJ$7f819f28-ebc4-4423-aa91-272fb9ba02a7
+¦
+java:S1450G"eRemove the "envLaborSuitabilityId9" field and declare it as a local variable in the relevant methods.(ñ”ÀæúÿÿÿÿJ$3756149a-854d-4daf-a72f-f15f7a477ced
+¤
+java:S14508"cRemove the "envYearOfDeliveryId0" field and declare it as a local variable in the relevant methods.(È¥ÿúÿÿÿÿJ$21dda7b6-39e1-46a7-b808-d4d29c8d93cf
+ 
+java:S1450„"cRemove the "envYearOfDeliveryId1" field and declare it as a local variable in the relevant methods.(ıŸÑÃJ$19fe287c-fa29-4a16-9339-bba523dae95f
+¥
+java:S1450I"dRemove the "envYearOfDeliveryId10" field and declare it as a local variable in the relevant methods.(‚À²ıÿÿÿÿJ$fcf55f50-2443-4a8f-b20a-9c33d678453a
+¥
+java:S1450L"dRemove the "envYearOfDeliveryId11" field and declare it as a local variable in the relevant methods.(¿Ò°©úÿÿÿÿJ$8bde6f06-20e1-4f15-97d6-72ddbfdbef8c
+ 
+java:S1450P"dRemove the "envYearOfDeliveryId12" field and declare it as a local variable in the relevant methods.(ç½ŸîJ$4c743710-9876-450b-85da-d984a5d18217
+ 
+java:S1450R"dRemove the "envYearOfDeliveryId13" field and declare it as a local variable in the relevant methods.(øë„µJ$90a284b5-0a0b-4ad0-9ece-20fc1167ff15
+ 
+java:S1450U"dRemove the "envYearOfDeliveryId14" field and declare it as a local variable in the relevant methods.(ôì«‘J$1f2e7464-17a4-451c-83f9-2c2860d552e0
+ 
+java:S1450Y"dRemove the "envYearOfDeliveryId15" field and declare it as a local variable in the relevant methods.(²‚Ğ¼J$5524975a-125b-490d-9c91-71d7bcf9b24d
+¥
+java:S1450["dRemove the "envYearOfDeliveryId16" field and declare it as a local variable in the relevant methods.(ùú’ÈüÿÿÿÿJ$98ead486-e504-4ca9-8f79-9a77a0de006d
+¥
+java:S1450…"cRemove the "envYearOfDeliveryId2" field and declare it as a local variable in the relevant methods.(ÅÙ§¦şÿÿÿÿJ$1034f9f4-d7fb-4b7e-954e-ced56a32a67e
+¥
+java:S1450¦"cRemove the "envYearOfDeliveryId3" field and declare it as a local variable in the relevant methods.(î…œ­üÿÿÿÿJ$676059d6-d888-47ab-9635-88c684f6e5c8
+ 
+java:S1450†"cRemove the "envYearOfDeliveryId4" field and declare it as a local variable in the relevant methods.(‘ªãˆJ$1e442939-da89-4b50-8177-15215bf9d8b1
+¤
+java:S1450:"cRemove the "envYearOfDeliveryId5" field and declare it as a local variable in the relevant methods.( ĞşåúÿÿÿÿJ$bd4f8f6f-2736-4fe0-b63a-d1f52f2bd652
+¤
+java:S1450="cRemove the "envYearOfDeliveryId6" field and declare it as a local variable in the relevant methods.(¾Ô²åüÿÿÿÿJ$e99a8c20-cbec-43eb-8a78-d3f509a9e3a9
+Ÿ
+java:S1450@"cRemove the "envYearOfDeliveryId7" field and declare it as a local variable in the relevant methods.(–àåËJ$aca016df-51f5-4892-b9c0-3fac806542d8
+¤
+java:S1450C"cRemove the "envYearOfDeliveryId8" field and declare it as a local variable in the relevant methods.(ó€Ó¼ûÿÿÿÿJ$53dec5ec-0536-4cb4-97db-60d1618e2238
+¤
+java:S1450F"cRemove the "envYearOfDeliveryId9" field and declare it as a local variable in the relevant methods.(ºĞÎÂùÿÿÿÿJ$aac82d07-b02b-455e-9d7c-06cc1fb6a1ac
+¦
+java:S1450¤"dRemove the "envYearOfExecutionId0" field and declare it as a local variable in the relevant methods.(¬ıõÿøÿÿÿÿJ$f93f22c2-4e24-4ee7-82fa-3e682782be04
+¥
+java:S1450"dRemove the "envYearOfExecutionId1" field and declare it as a local variable in the relevant methods.(¼ş™§üÿÿÿÿJ$651d1d91-fa64-479d-aab2-54eb1336f78a
+¦
+java:S1450H"eRemove the "envYearOfExecutionId10" field and declare it as a local variable in the relevant methods.(§¦›šÿÿÿÿÿJ$3e0793e0-f86f-4b55-a8b1-0276ce7eae24
+¡
+java:S1450K"eRemove the "envYearOfExecutionId11" field and declare it as a local variable in the relevant methods.(ƒá¿¸J$d2c1605b-b596-49ea-8453-082c3f261993
+¦
+java:S1450N"eRemove the "envYearOfExecutionId12" field and declare it as a local variable in the relevant methods.(İÎŞüÿÿÿÿJ$4ec4c9c2-bcac-4a5d-a2a5-c5dbaeb9fb16
+¦
+java:S1450O"eRemove the "envYearOfExecutionId13" field and declare it as a local variable in the relevant methods.(òî¬¿üÿÿÿÿJ$b5409f10-a2c0-40d2-9e97-d8bb0dd6aaf5
+¦
+java:S1450T"eRemove the "envYearOfExecutionId14" field and declare it as a local variable in the relevant methods.(…ÎÅ›ûÿÿÿÿJ$7da5074d-1f84-42c3-8804-afca9e9d7b13
+¡
+java:S1450Z"eRemove the "envYearOfExecutionId15" field and declare it as a local variable in the relevant methods.(™ÄÌÍJ$3451f1b0-1663-4c5f-a212-d5e23c99c7d3
+¡
+java:S1450\"eRemove the "envYearOfExecutionId16" field and declare it as a local variable in the relevant methods.(¿ÊJ$64056f37-9cbd-4a23-b305-f768c1129942
+¦
+java:S1450€"dRemove the "envYearOfExecutionId2" field and declare it as a local variable in the relevant methods.(§É¥ÛşÿÿÿÿJ$4d88c49a-5320-4406-b684-1806ef285008
+¦
+java:S1450"dRemove the "envYearOfExecutionId3" field and declare it as a local variable in the relevant methods.(ÅœÈ˜ıÿÿÿÿJ$fa15bfa7-0840-44cb-a99e-f93d769c1bfc
+¦
+java:S1450‚"dRemove the "envYearOfExecutionId4" field and declare it as a local variable in the relevant methods.(ñÈÖÛşÿÿÿÿJ$4498bb6a-9241-4558-a1fd-ec31a3efcd26
+¦
+java:S1450ƒ"dRemove the "envYearOfExecutionId5" field and declare it as a local variable in the relevant methods.(Ã°ÏùÿÿÿÿJ$3470a143-72ac-4248-bee8-e459d4dfff35
+¥
+java:S1450<"dRemove the "envYearOfExecutionId6" field and declare it as a local variable in the relevant methods.(û¹‚¨úÿÿÿÿJ$7b07b67e-9a68-46fb-a873-d42f9c9c246a
+ 
+java:S1450?"dRemove the "envYearOfExecutionId7" field and declare it as a local variable in the relevant methods.(Ò‹Õ·J$c6229ce6-bb1e-44cc-b1eb-9e18d1c05781
+Ÿ
+java:S1450B"dRemove the "envYearOfExecutionId8" field and declare it as a local variable in the relevant methods.(Ôš†tJ$26ca1b92-4536-48f5-a669-0ce9a82e63bc
+¥
+java:S1450E"dRemove the "envYearOfExecutionId9" field and declare it as a local variable in the relevant methods.(…æñâşÿÿÿÿJ$97d2e021-965f-4f02-b635-84c070a7defc
+•
+java:S1450®"YRemove the "filesPanel" field and declare it as a local variable in the relevant methods.(â‰J$85b92dc3-e83b-4825-9fe4-a1ef65adb499
+›
+java:S1450£"YRemove the "groupPanel" field and declare it as a local variable in the relevant methods.(Šâù¿ùÿÿÿÿJ$34be395f-458e-453f-83b6-89e5367fa4d7
+£
+java:S1450o"bRemove the "laborSuitabilityId0" field and declare it as a local variable in the relevant methods.(ÈÜØşúÿÿÿÿJ$e9838cf3-b2ac-4278-8cb1-a2dc2bab5a9b
+£
+java:S1450p"bRemove the "laborSuitabilityId1" field and declare it as a local variable in the relevant methods.(ûäø…ûÿÿÿÿJ$f4900ee3-9937-4add-a895-18a4fac7a33d
+Ÿ
+java:S1450x"cRemove the "laborSuitabilityId10" field and declare it as a local variable in the relevant methods.(Ú®Ô‡J$8122e299-3286-4162-abf6-9418393a67fd
+¤
+java:S1450y"cRemove the "laborSuitabilityId11" field and declare it as a local variable in the relevant methods.(‰—®îüÿÿÿÿJ$dc7c4349-b7ce-4cc9-b0e1-bab0bc5accc4
+¤
+java:S1450z"cRemove the "laborSuitabilityId12" field and declare it as a local variable in the relevant methods.(÷—¡ÌüÿÿÿÿJ$6c083a48-94ed-4189-80ce-384a11c03745
+Ÿ
+java:S1450{"cRemove the "laborSuitabilityId13" field and declare it as a local variable in the relevant methods.(±•†ùJ$d2534e77-a6d9-4262-afc3-0054fb22599e
+Ÿ
+java:S1450|"cRemove the "laborSuitabilityId14" field and declare it as a local variable in the relevant methods.(ö½°ŞJ$25d7b312-7afc-4178-bdd4-2167535fb188
+¤
+java:S1450}"cRemove the "laborSuitabilityId15" field and declare it as a local variable in the relevant methods.(²§©øÿÿÿÿJ$3f0ef286-cd79-4a3a-b657-d7ceefd3956a
+Ÿ
+java:S1450~"cRemove the "laborSuitabilityId16" field and declare it as a local variable in the relevant methods.(àá×ÊJ$5c2fdff1-77b4-4356-9e98-e3c18b810204
+
+java:S1450q"bRemove the "laborSuitabilityId2" field and declare it as a local variable in the relevant methods.(ÉùğÛJ$767c9e10-2033-47e3-9bf4-f56a4d48e85c
+¤
+java:S1450¥"bRemove the "laborSuitabilityId3" field and declare it as a local variable in the relevant methods.(÷ÁœúÿÿÿÿJ$6542422a-1b43-4129-91a9-7c6b6fba63d4
+
+java:S1450r"bRemove the "laborSuitabilityId4" field and declare it as a local variable in the relevant methods.(«¤¯“J$cbeffb07-7afe-4468-a9d5-d0d9e7ef4c3e
+
+java:S1450s"bRemove the "laborSuitabilityId5" field and declare it as a local variable in the relevant methods.(Ó´ÿİJ$268ff5b5-689c-4073-9003-b07317ad9a06
+£
+java:S1450t"bRemove the "laborSuitabilityId6" field and declare it as a local variable in the relevant methods.(«‘ŞíúÿÿÿÿJ$8088b3ea-88d7-499b-9c38-faeaabf4e885
+
+java:S1450u"bRemove the "laborSuitabilityId7" field and declare it as a local variable in the relevant methods.(àœºJ$69e9328a-40b0-48e0-895c-e641b19723cb
+
+java:S1450v"bRemove the "laborSuitabilityId8" field and declare it as a local variable in the relevant methods.(»Ë¹¾J$8335fe3e-4fba-4483-8244-1c397c59ffa4
+
+java:S1450w"bRemove the "laborSuitabilityId9" field and declare it as a local variable in the relevant methods.(Ñ‘ôùJ$7050d25e-3002-412d-ad46-e457dbc5fb68
+’
+java:S1450“"URemove the "timer1" field and declare it as a local variable in the relevant methods.(éÂÀÙJ$5515480a-fa5d-415e-b914-0c1b769159dc
+“
+java:S1450œ"VRemove the "timer10" field and declare it as a local variable in the relevant methods.(×ÎÆ„J$b2663540-e174-453b-80e3-bafea9d4fd10
+˜
+java:S1450"VRemove the "timer11" field and declare it as a local variable in the relevant methods.(¶§øşûÿÿÿÿJ$10b187bd-ad2b-4716-ba16-335e5548fa56
+˜
+java:S1450"VRemove the "timer12" field and declare it as a local variable in the relevant methods.(à¶…úûÿÿÿÿJ$cb4d30ef-8c54-488e-9407-fcb796cecaa5
+˜
+java:S1450Ÿ"VRemove the "timer13" field and declare it as a local variable in the relevant methods.(ÇæŠ¢şÿÿÿÿJ$e31bd4f0-155b-4337-9c50-b41416907a46
+˜
+java:S1450 "VRemove the "timer14" field and declare it as a local variable in the relevant methods.(œİ‚ùÿÿÿÿJ$d75d9204-2ecb-4028-9eb5-59064f917248
+˜
+java:S1450¡"VRemove the "timer15" field and declare it as a local variable in the relevant methods.(Èß…‹øÿÿÿÿJ$51e1411c-11fc-4d4e-9939-c48c334fccb3
+’
+java:S1450”"URemove the "timer2" field and declare it as a local variable in the relevant methods.(†Ì¾šJ$e36a8353-55a1-4791-9fdf-5f4adffd08e8
+’
+java:S1450•"URemove the "timer3" field and declare it as a local variable in the relevant methods.(İö‚ôJ$ead22c32-4e31-479f-8dad-e4828278baca
+—
+java:S1450–"URemove the "timer4" field and declare it as a local variable in the relevant methods.(¾ÏìïüÿÿÿÿJ$e79811e8-6796-4d7b-9ffa-45633a0fdf52
+—
+java:S1450—"URemove the "timer5" field and declare it as a local variable in the relevant methods.(œòáşüÿÿÿÿJ$07cb8fc2-152b-4f75-acf0-4a167ce4dc55
+—
+java:S1450˜"URemove the "timer6" field and declare it as a local variable in the relevant methods.(•ŠûÿÿÿÿJ$145b7d7b-311c-4c07-ae09-283f8c8e0ed1
+—
+java:S1450™"URemove the "timer7" field and declare it as a local variable in the relevant methods.(Îö¹»ùÿÿÿÿJ$cf9e5765-de9e-467a-a647-8c6e8f2d0452
+—
+java:S1450š"URemove the "timer8" field and declare it as a local variable in the relevant methods.(Ÿ­ßıÿÿÿÿJ$e3627040-0d74-4218-bd4b-f27ab4f7cdbc
+’
+java:S1450›"URemove the "timer9" field and declare it as a local variable in the relevant methods.(”ÑÌ¢J$c253be68-77fa-479f-837d-4c6090138396
+œ
+java:S1450^"`Remove the "yearOfDeliveryId0" field and declare it as a local variable in the relevant methods.(Ùø¬ûJ$b9543f8f-dbb1-435a-a8f1-be99acf52bba
+¡
+java:S1450_"`Remove the "yearOfDeliveryId1" field and declare it as a local variable in the relevant methods.(âëÙšùÿÿÿÿJ$6b2e7a3d-1c0d-4cb9-8272-c9cd1b90aef6
+
+java:S1450h"aRemove the "yearOfDeliveryId10" field and declare it as a local variable in the relevant methods.(À…Á†J$4a9df28a-97f6-4e07-a1bd-a4b461246875
+¢
+java:S1450i"aRemove the "yearOfDeliveryId11" field and declare it as a local variable in the relevant methods.(äÅõõüÿÿÿÿJ$7b4afea2-38b7-407f-97c1-5216c83e7d53
+
+java:S1450j"aRemove the "yearOfDeliveryId12" field and declare it as a local variable in the relevant methods.(³ö×€J$88d94423-59f2-4f29-8797-5f2402820775
+
+java:S1450k"aRemove the "yearOfDeliveryId13" field and declare it as a local variable in the relevant methods.(³ĞÑ’J$f6211a77-b0c2-4c15-b53a-824c582ac465
+¢
+java:S1450l"aRemove the "yearOfDeliveryId14" field and declare it as a local variable in the relevant methods.(—ÿáêÿÿÿÿÿJ$c0b10689-2c64-4686-8aa5-d35200428011
+¢
+java:S1450m"aRemove the "yearOfDeliveryId15" field and declare it as a local variable in the relevant methods.(ÄÅáËşÿÿÿÿJ$97169979-20b6-449d-8949-2031cb567dd4
+¢
+java:S1450n"aRemove the "yearOfDeliveryId16" field and declare it as a local variable in the relevant methods.(ö«ëıÿÿÿÿJ$3bf38d50-21c6-4328-9a5e-265b5846744c
+œ
+java:S1450`"`Remove the "yearOfDeliveryId2" field and declare it as a local variable in the relevant methods.(ğøºÏJ$cfd533fa-c968-4696-8287-9753bf7b3c2a
+œ
+java:S1450a"`Remove the "yearOfDeliveryId3" field and declare it as a local variable in the relevant methods.(ìôıJ$c3685a6d-7872-4fbd-be93-8d1c80a8e8e5
+¡
+java:S1450b"`Remove the "yearOfDeliveryId4" field and declare it as a local variable in the relevant methods.(œâÓşıÿÿÿÿJ$d7512661-d0ed-44ca-a2c4-83389808cbc7
+¡
+java:S1450c"`Remove the "yearOfDeliveryId5" field and declare it as a local variable in the relevant methods.(áºœñıÿÿÿÿJ$04bdddd5-305e-45bb-9895-cb4a8140cdc0
+œ
+java:S1450d"`Remove the "yearOfDeliveryId6" field and declare it as a local variable in the relevant methods.(÷ËÅªJ$81620b4c-3452-419a-b798-5d27ef6e4d57
+œ
+java:S1450e"`Remove the "yearOfDeliveryId7" field and declare it as a local variable in the relevant methods.(€ÆñJ$282d5a75-1c81-4152-ba6e-cc1231f23e8c
+œ
+java:S1450f"`Remove the "yearOfDeliveryId8" field and declare it as a local variable in the relevant methods.(†•Ñ‹J$7efda226-2d25-4977-b893-44543abe9026
+¡
+java:S1450g"`Remove the "yearOfDeliveryId9" field and declare it as a local variable in the relevant methods.(õÁÎœøÿÿÿÿJ$8407c159-a040-460c-bed7-d5e41a267c9c
+¢
+java:S1450("aRemove the "yearOfExecutionId0" field and declare it as a local variable in the relevant methods.(®ã®ÏúÿÿÿÿJ$858bebc3-ba95-4d66-b53d-26cbb66faa32
+¢
+java:S1450)"aRemove the "yearOfExecutionId1" field and declare it as a local variable in the relevant methods.(åíŞíúÿÿÿÿJ$350e815a-d51b-4ffa-bad0-4627f43c5d5b
+
+java:S14501"bRemove the "yearOfExecutionId10" field and declare it as a local variable in the relevant methods.(‚â…’J$c742d8e8-1d3f-4959-90e4-3b3d3bca1ff2
+
+java:S14502"bRemove the "yearOfExecutionId11" field and declare it as a local variable in the relevant methods.(¤À…ÚJ$2be99a4e-9ed0-4660-8259-246ef4099dcb
+
+java:S14503"bRemove the "yearOfExecutionId12" field and declare it as a local variable in the relevant methods.(“ëµßJ$84c64073-7a9d-4175-8767-4eba314e4fb0
+£
+java:S14504"bRemove the "yearOfExecutionId13" field and declare it as a local variable in the relevant methods.(…Š¥£øÿÿÿÿJ$4af53b04-6cad-4355-b573-1af217ac33e2
+
+java:S14505"bRemove the "yearOfExecutionId14" field and declare it as a local variable in the relevant methods.(…‹J$aadc9a1a-2623-499b-843b-05c0858cf7a1
+
+java:S14506"bRemove the "yearOfExecutionId15" field and declare it as a local variable in the relevant methods.(ÉÛæJ$f218506f-dbac-4f92-ba43-5c7a3b10e85f
+
+java:S14507"bRemove the "yearOfExecutionId16" field and declare it as a local variable in the relevant methods.(Ü—ÛØJ$d06c53bf-6628-4afa-9f59-f37e1b314a6d
+
+java:S1450*"aRemove the "yearOfExecutionId2" field and declare it as a local variable in the relevant methods.(–­‚J$d81bd5cb-95e2-4de9-9c1d-18ebf98c878d
+
+java:S1450]"aRemove the "yearOfExecutionId3" field and declare it as a local variable in the relevant methods.(âÄèÎJ$fa9a82b3-843e-487e-9f11-fead21a73b17
+
+java:S1450+"aRemove the "yearOfExecutionId4" field and declare it as a local variable in the relevant methods.(èäº÷J$2034c4a4-375a-4a46-b01f-1e400e7d7920
+¢
+java:S1450,"aRemove the "yearOfExecutionId5" field and declare it as a local variable in the relevant methods.(İùõÌûÿÿÿÿJ$a55a6e28-c335-43e8-888f-4f784417a2f8
+
+java:S1450-"aRemove the "yearOfExecutionId6" field and declare it as a local variable in the relevant methods.(ï™şôJ$becd988a-843e-453b-ae15-fb08c74f3536
+¢
+java:S1450."aRemove the "yearOfExecutionId7" field and declare it as a local variable in the relevant methods.(İš§şÿÿÿÿJ$4eeb1158-315a-4409-bbe5-64763ae38ce2
+¢
+java:S1450/"aRemove the "yearOfExecutionId8" field and declare it as a local variable in the relevant methods.(Ö“‡şÿÿÿÿJ$cbc55686-d2b6-4f51-b213-f700686f829a
+
+java:S14500"aRemove the "yearOfExecutionId9" field and declare it as a local variable in the relevant methods.(¨Ğº»J$99c22459-f44a-47a1-9b05-624197d49242
+
+java:S3776Î"RRefactor this method to reduce its Cognitive Complexity from 52 to the 15 allowed.(ßæ×¤J$f14bdbb3-6d1d-4fe7-a5d7-27bef9b20e94
+ 
+java:S2142Ø"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(è®ã¶øÿÿÿÿJ$969ee779-b7b8-4f2e-b7b9-828b08aafa6a
+ 
+java:S2142ä"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(è®ã¶øÿÿÿÿJ$bc242dca-d682-4188-bea6-64555ba5a5ec
+ 
+java:S2142ì"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(è®ã¶øÿÿÿÿJ$c9a96717-87d5-4551-b89f-aa63f1b6f60b
+ 
+java:S2142ô"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(è®ã¶øÿÿÿÿJ$e8e67383-30e0-43c4-9fba-e17c486776a1
+ 
+java:S2142ü"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(è®ã¶øÿÿÿÿJ$8f5417d8-1405-4302-8576-91335f1eb20c
+ 
+java:S2142„"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(è®ã¶øÿÿÿÿJ$ad3ea846-9b7c-4afb-a92b-017354d5b5e6
+ 
+java:S2142"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(è®ã¶øÿÿÿÿJ$0c65a50a-e782-4d14-bc03-b48ee02f168f
+›
+java:S1171Ù"YMove the contents of this initializer to a standard constructor or to field initializers.(ÒÌâ–øÿÿÿÿJ$69afa621-7b27-45bc-ac32-d215e69eaf6b
+	java:S100ç"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(–­ŒßúÿÿÿÿJ$5f55cd34-af6b-49d2-a7ad-5b9bd616dc13
+	java:S100ö"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‘ ¨úúÿÿÿÿJ$be3cd14f-caca-45c4-8770-43e129c7fb0c
+p
+java:S1128"5Remove this unused import 'java.io.FileOutputStream'.(˜«ªgJ$6a820cdd-a6a2-4573-ac22-bbb0ef8ffded
+m
+java:S1128"1Remove this unused import 'java.util.Properties'.(¬µ²J$2ca6520d-1c33-444c-afc5-659f247ed908

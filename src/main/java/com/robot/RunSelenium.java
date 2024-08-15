@@ -1,58 +1,37 @@
-package main.resources.java.com.robot.core;
+package main.java.com.robot;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
-import main.resources.java.com.robot.core.forms.AnmForm;
-import main.resources.java.com.robot.core.forms.ConfigurationForm;
-import main.resources.java.com.robot.core.forms.Diferencial;
-import main.resources.java.com.robot.core.forms.Especial;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
+import main.java.com.robot.forms.AnmForm;
+import main.java.com.robot.forms.ConfigurationForm;
+import main.java.com.robot.forms.Diferencial;
+import main.java.com.robot.forms.Especial;
+import main.java.com.robot.services.AnmPropertiesService;
+import main.java.com.robot.services.WebDriverService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.util.Properties;
 
 import static javax.swing.JOptionPane.showMessageDialog;
-
-import org.springframework.stereotype.Component;
 
 @Component
 public class RunSelenium extends JFrame {
 
-    private static Properties props = new Properties();
-    private static ChromeDriver driver;
-    private AnmForm anmForm;
-    private ConfigurationForm configurationForm;
-    private Diferencial diferencialForm;
-    private Especial especialForm;
 
-    public RunSelenium() throws IOException, ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException, IllegalAccessException {
-
-        /*FileInputStream in = new FileInputStream("anm.properties");
-        props.load(in);
-        in.close();*/
+    @Autowired
+    public RunSelenium(Diferencial diferencialForm, Especial especialForm, AnmForm anmForm, ConfigurationForm configurationForm, WebDriverService webDriverService, AnmPropertiesService anmPropertiesService) throws IOException, ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException, IllegalAccessException {
 
         UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 
-        try {
-            WebDriverManager.chromedriver().setup();
-            //System.setProperty("webdriver.chrome.driver", props.getProperty("webdriver"));
-            ChromeOptions options = new ChromeOptions();
-            options.addArguments("--remote-allow-origins=*");
-            driver = new ChromeDriver(options);
-            this.driver.get(props.getProperty("url"));
-        } catch (Exception e) {
+        try{
+            webDriverService.openUrl(anmPropertiesService.getProperty("url"));
+        }catch (Exception e){
 
             showMessageDialog(null, "Error configuring web driver: " + e.getMessage());
         }
-        configurationForm = new ConfigurationForm(props);
-        anmForm = new AnmForm(props, driver);
-        diferencialForm = new Diferencial(props, driver);
-        especialForm = new Especial(props,driver);
 
         JScrollPane scrollPane = new JScrollPane(configurationForm.getRootPanel());
         add(scrollPane);
@@ -75,6 +54,7 @@ public class RunSelenium extends JFrame {
         toolbar.add(button);
 
         toolbar.addSeparator();
+
 
         button = new JButton("Radicacion especial");
         button.addActionListener(e -> {

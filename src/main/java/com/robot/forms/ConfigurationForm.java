@@ -1,19 +1,19 @@
-package main.resources.java.com.robot.core.forms;
+package main.java.com.robot.forms;
 
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
+import main.java.com.robot.services.AnmPropertiesService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import main.resources.java.com.robot.core.services.AnmPropertiesService;
 
 import javax.swing.*;
 import javax.swing.border.TitledBorder;
 import java.awt.*;
-import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Properties;
 
 import static javax.swing.JOptionPane.showMessageDialog;
+
 @Component
 public class ConfigurationForm {
     private JTextField url;
@@ -24,31 +24,28 @@ public class ConfigurationForm {
     private JTextField webdriver;
     private JLabel Webdriver;
     private Properties props;
-    @Autowired
     private AnmPropertiesService anmPropertiesService;
 
     public JPanel getRootPanel() {
         return rootPanel;
     }
 
-    public ConfigurationForm(Properties props) {
-
-        this.props = props;
-        createUIComponents(props);
+    @Autowired
+    public ConfigurationForm(AnmPropertiesService anmPropertiesService) {
+        this.anmPropertiesService = anmPropertiesService;
+        createUIComponents();
         guardarButton.addActionListener(e -> saveData());
     }
 
     private void saveData() {
         try {
-            FileOutputStream out = new FileOutputStream("anm.properties");
-            props.setProperty("webdriver", webdriver.getText());
-            props.setProperty("url", url.getText());
-            props.setProperty("cambiarUsuario", cambiarUsuario.getText());
-            props.setProperty("username", username.getText());
-            props.setProperty("password", password.getText());
-            props.setProperty("pinSlctId", pinSlctId.getText());
-            props.store(out, null);
-            out.close();
+            anmPropertiesService.setProperty("webdriver", webdriver.getText());
+            anmPropertiesService.setProperty("url", url.getText());
+            anmPropertiesService.setProperty("cambiarUsuario", cambiarUsuario.getText());
+            anmPropertiesService.setProperty("username", username.getText());
+            anmPropertiesService.setProperty("password", password.getText());
+            anmPropertiesService.setProperty("pinSlctId", pinSlctId.getText());
+            anmPropertiesService.saveProperties(); // Guarda las propiedades en el archivo
             showMessageDialog(null, "Datos guardados correctamente");
         } catch (IOException e) {
             e.printStackTrace();
@@ -56,17 +53,15 @@ public class ConfigurationForm {
         }
     }
 
-    private void createUIComponents(Properties props) {
-
+    private void createUIComponents() {
         guardarButton.setIcon(new ImageIcon("Resources/Actions-document-save-icon.png"));
 
-        //setting properties
-        webdriver.setText(props.getProperty("webdriver"));
-        cambiarUsuario.setText(props.getProperty("cambiarUsuario"));
-        url.setText(props.getProperty("url"));
-        username.setText(props.getProperty("username"));
-        password.setText(props.getProperty("password"));
-        pinSlctId.setText(props.getProperty("pinSlctId"));
+        webdriver.setText(anmPropertiesService.getProperty("webdriver"));
+        cambiarUsuario.setText(anmPropertiesService.getProperty("cambiarUsuario"));
+        url.setText(anmPropertiesService.getProperty("url"));
+        username.setText(anmPropertiesService.getProperty("username"));
+        password.setText(anmPropertiesService.getProperty("password"));
+        pinSlctId.setText(anmPropertiesService.getProperty("pinSlctId"));
     }
 
     private JPanel rootPanel;
@@ -140,4 +135,5 @@ public class ConfigurationForm {
     public JComponent $$$getRootComponent$$$() {
         return rootPanel;
     }
+
 }

@@ -1,11 +1,13 @@
-package main.resources.java.com.robot.core.forms;
+package main.java.com.robot.forms;
 
 import com.intellij.uiDesigner.core.GridConstraints;
 import com.intellij.uiDesigner.core.GridLayoutManager;
-import main.resources.java.com.robot.core.Constans;
-import main.resources.java.com.robot.core.RobotDiferencial;
-import main.resources.java.com.robot.core.Util;
+import main.java.com.robot.Constans;
+import main.java.com.robot.RobotDiferencial;
+import main.java.com.robot.services.AnmPropertiesService;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.swing.*;
 import javax.swing.plaf.FontUIResource;
@@ -18,6 +20,7 @@ import java.util.Properties;
 
 import static javax.swing.JOptionPane.showMessageDialog;
 
+@Component
 public class Diferencial {
 
 
@@ -138,17 +141,14 @@ public class Diferencial {
     private JTextField incomeId0;
     private JPanel activityPanel;
     private JPanel economicPanel;
-    private RobotDiferencial robotDiferencial;
+    
     //endregion
-    private ChromeDriver driver;
-    private Properties props;
+    private AnmPropertiesService anmPropertiesService;
 
-    public Diferencial(Properties props, ChromeDriver driver) {
+    @Autowired
+    public Diferencial(AnmPropertiesService anmPropertiesService, RobotDiferencial robotDiferencial) {
 
-        this.props = props;
-        this.driver = driver;
-        robotDiferencial = new RobotDiferencial(driver, props);
-
+        this.anmPropertiesService = anmPropertiesService;
         createUIComponents();
 
         ejecutarButton.addActionListener(e -> {
@@ -156,7 +156,7 @@ public class Diferencial {
                 robotDiferencial.stepOne();
                 robotDiferencial.stepTwo();
                 robotDiferencial.stepThree();
-                if (props.getProperty("earlyExploitationInd").toString().equals("NO")) {
+                if (anmPropertiesService.getProperty("earlyExploitationInd").equals("NO")) {
                     robotDiferencial.stepFour();
                 }
 
@@ -218,41 +218,41 @@ public class Diferencial {
         paso4Button.setIcon(new ImageIcon("Resources/Numbers-4-Black-icon.png"));
         guardarButton.setIcon(new ImageIcon("Resources/Actions-document-save-icon.png"));
 
-        typeOfMiningId.setSelectedItem(props.getProperty("typeOfMiningId"));
-        systemOfExploitationId.setSelectedItem(props.getProperty("systemOfExploitationId"));
-        mineral2.setText(props.getProperty("mineral2"));
-        mineralPriceInptId0.setText(props.getProperty("mineralPriceInptId0"));
-        yearlyProduction1InptId0.setText(props.getProperty("yearlyProduction1InptId0"));
-        yearlyProduction2InptId0.setText(props.getProperty("yearlyProduction2InptId0"));
-        yearlyProduction3InptId0.setText(props.getProperty("yearlyProduction3InptId0"));
-        explorationInvestmentYear1InptId.setText(props.getProperty("explorationInvestmentYear1InptId"));
-        explorationInvestmentYear2InptId.setText(props.getProperty("explorationInvestmentYear2InptId"));
-        explorationInvestmentYear3InptId.setText(props.getProperty("explorationInvestmentYear3InptId"));
+        typeOfMiningId.setSelectedItem(anmPropertiesService.getProperty("typeOfMiningId"));
+        systemOfExploitationId.setSelectedItem(anmPropertiesService.getProperty("systemOfExploitationId"));
+        mineral2.setText(anmPropertiesService.getProperty("mineral2"));
+        mineralPriceInptId0.setText(anmPropertiesService.getProperty("mineralPriceInptId0"));
+        yearlyProduction1InptId0.setText(anmPropertiesService.getProperty("yearlyProduction1InptId0"));
+        yearlyProduction2InptId0.setText(anmPropertiesService.getProperty("yearlyProduction2InptId0"));
+        yearlyProduction3InptId0.setText(anmPropertiesService.getProperty("yearlyProduction3InptId0"));
+        explorationInvestmentYear1InptId.setText(anmPropertiesService.getProperty("explorationInvestmentYear1InptId"));
+        explorationInvestmentYear2InptId.setText(anmPropertiesService.getProperty("explorationInvestmentYear2InptId"));
+        explorationInvestmentYear3InptId.setText(anmPropertiesService.getProperty("explorationInvestmentYear3InptId"));
 
         for (int i = 1; i < 18; i++) {
 
-            Util.setComponentsValue(props, activityPanel, Constans.CHECKB + i, Constans.componentType.JCHECKBOX);
-            Util.setComponentsValue(props, activityPanel, Constans.CHECKC + i, Constans.componentType.JCHECKBOX);
+            anmPropertiesService.setComponentsValue(activityPanel, Constans.CHECKB + i, Constans.componentType.JCHECKBOX);
+            anmPropertiesService.setComponentsValue(activityPanel, Constans.CHECKC + i, Constans.componentType.JCHECKBOX);
 
-            Util.setComponentsValue(props, activityPanel, Constans.TXTACTA + i, Constans.componentType.JCOMBOBOX);
-            Util.setComponentsValue(props, activityPanel, Constans.TXTACTB + i, Constans.componentType.JCOMBOBOX);
+            anmPropertiesService.setComponentsValue(activityPanel, Constans.TXTACTA + i, Constans.componentType.JCOMBOBOX);
+            anmPropertiesService.setComponentsValue(activityPanel, Constans.TXTACTB + i, Constans.componentType.JCOMBOBOX);
 
             if (i <= 7) {
-                Util.setComponentsValue(props, economicPanel, Constans.YEAR1INPTID + (i - 1), Constans.componentType.JTEXTFIELD);
-                Util.setComponentsValue(props, economicPanel, Constans.YEAR2INPTID + (i - 1), Constans.componentType.JTEXTFIELD);
-                Util.setComponentsValue(props, economicPanel, Constans.YEAR3INPTID + (i - 1), Constans.componentType.JTEXTFIELD);
+                anmPropertiesService.setComponentsValue(economicPanel, Constans.YEAR1INPTID + (i - 1), Constans.componentType.JTEXTFIELD);
+                anmPropertiesService.setComponentsValue(economicPanel, Constans.YEAR2INPTID + (i - 1), Constans.componentType.JTEXTFIELD);
+                anmPropertiesService.setComponentsValue(economicPanel, Constans.YEAR3INPTID + (i - 1), Constans.componentType.JTEXTFIELD);
             }
 
 
         }
 
-        operationIncomeYear1InptId.setText(props.getProperty("operationIncomeYear1InptId"));
-        operationIncomeYear2InptId.setText(props.getProperty("operationIncomeYear2InptId"));
-        operationIncomeYear3InptId.setText(props.getProperty("operationIncomeYear3InptId"));
-        earlyExploitationInd.setSelectedItem(props.getProperty("earlyExploitationInd"));
-        personClassificationId2.setSelectedItem(props.getProperty("personClassificationId2"));
+        operationIncomeYear1InptId.setText(anmPropertiesService.getProperty("operationIncomeYear1InptId"));
+        operationIncomeYear2InptId.setText(anmPropertiesService.getProperty("operationIncomeYear2InptId"));
+        operationIncomeYear3InptId.setText(anmPropertiesService.getProperty("operationIncomeYear3InptId"));
+        earlyExploitationInd.setSelectedItem(anmPropertiesService.getProperty("earlyExploitationInd"));
+        personClassificationId2.setSelectedItem(anmPropertiesService.getProperty("personClassificationId2"));
 
-        incomeId0.setText(props.getProperty("incomeId0"));
+        incomeId0.setText(anmPropertiesService.getProperty("incomeId0"));
     }
 
     private void saveData() {
@@ -262,44 +262,44 @@ public class Diferencial {
             for (int i = 1; i < 18; i++) {
 
 
-                Util.setPropsValue(props, activityPanel, Constans.CHECKB + i, Constans.componentType.JCHECKBOX);
-                Util.setPropsValue(props, activityPanel, Constans.CHECKC + i, Constans.componentType.JCHECKBOX);
+                anmPropertiesService.setPropsValue(activityPanel, Constans.CHECKB + i, Constans.componentType.JCHECKBOX);
+                anmPropertiesService.setPropsValue(activityPanel, Constans.CHECKC + i, Constans.componentType.JCHECKBOX);
 
-                Util.setPropsValue(props, activityPanel, Constans.TXTACTA + i, Constans.componentType.JCOMBOBOX);
-                Util.setPropsValue(props, activityPanel, Constans.TXTACTB + i, Constans.componentType.JCOMBOBOX);
+                anmPropertiesService.setPropsValue(activityPanel, Constans.TXTACTA + i, Constans.componentType.JCOMBOBOX);
+                anmPropertiesService.setPropsValue(activityPanel, Constans.TXTACTB + i, Constans.componentType.JCOMBOBOX);
 
                 if (i <= 7) {
-                    Util.setPropsValue(props, economicPanel, Constans.YEAR1INPTID + (i - 1), Constans.componentType.JTEXTFIELD);
-                    Util.setPropsValue(props, economicPanel, Constans.YEAR2INPTID + (i - 1), Constans.componentType.JTEXTFIELD);
-                    Util.setPropsValue(props, economicPanel, Constans.YEAR3INPTID + (i - 1), Constans.componentType.JTEXTFIELD);
+                    anmPropertiesService.setPropsValue(economicPanel, Constans.YEAR1INPTID + (i - 1), Constans.componentType.JTEXTFIELD);
+                    anmPropertiesService.setPropsValue(economicPanel, Constans.YEAR2INPTID + (i - 1), Constans.componentType.JTEXTFIELD);
+                    anmPropertiesService.setPropsValue(economicPanel, Constans.YEAR3INPTID + (i - 1), Constans.componentType.JTEXTFIELD);
                 }
             }
 
-            props.setProperty("operationIncomeYear1InptId", operationIncomeYear1InptId.getText());
-            props.setProperty("operationIncomeYear2InptId", operationIncomeYear2InptId.getText());
-            props.setProperty("operationIncomeYear3InptId", operationIncomeYear3InptId.getText());
+            anmPropertiesService.getProperties().setProperty("operationIncomeYear1InptId", operationIncomeYear1InptId.getText());
+            anmPropertiesService.getProperties().setProperty("operationIncomeYear2InptId", operationIncomeYear2InptId.getText());
+            anmPropertiesService.getProperties().setProperty("operationIncomeYear3InptId", operationIncomeYear3InptId.getText());
 
-            props.setProperty("systemOfExploitationId", systemOfExploitationId.getSelectedItem().toString());
-            props.setProperty("typeOfMiningId", typeOfMiningId.getSelectedItem().toString());
+            anmPropertiesService.getProperties().setProperty("systemOfExploitationId", systemOfExploitationId.getSelectedItem().toString());
+            anmPropertiesService.getProperties().setProperty("typeOfMiningId", typeOfMiningId.getSelectedItem().toString());
 
-            props.setProperty("mineral2", mineral2.getText());
-            props.setProperty("mineralPriceInptId0", mineralPriceInptId0.getText());
+            anmPropertiesService.getProperties().setProperty("mineral2", mineral2.getText());
+            anmPropertiesService.getProperties().setProperty("mineralPriceInptId0", mineralPriceInptId0.getText());
 
-            props.setProperty("yearlyProduction1InptId0", yearlyProduction1InptId0.getText());
-            props.setProperty("yearlyProduction2InptId0", yearlyProduction2InptId0.getText());
-            props.setProperty("yearlyProduction3InptId0", yearlyProduction3InptId0.getText());
+            anmPropertiesService.getProperties().setProperty("yearlyProduction1InptId0", yearlyProduction1InptId0.getText());
+            anmPropertiesService.getProperties().setProperty("yearlyProduction2InptId0", yearlyProduction2InptId0.getText());
+            anmPropertiesService.getProperties().setProperty("yearlyProduction3InptId0", yearlyProduction3InptId0.getText());
 
-            props.setProperty("explorationInvestmentYear1InptId", explorationInvestmentYear1InptId.getText());
-            props.setProperty("explorationInvestmentYear2InptId", explorationInvestmentYear2InptId.getText());
-            props.setProperty("explorationInvestmentYear3InptId", explorationInvestmentYear3InptId.getText());
+            anmPropertiesService.getProperties().setProperty("explorationInvestmentYear1InptId", explorationInvestmentYear1InptId.getText());
+            anmPropertiesService.getProperties().setProperty("explorationInvestmentYear2InptId", explorationInvestmentYear2InptId.getText());
+            anmPropertiesService.getProperties().setProperty("explorationInvestmentYear3InptId", explorationInvestmentYear3InptId.getText());
 
-            props.setProperty("earlyExploitationInd", earlyExploitationInd.getSelectedItem().toString());
+            anmPropertiesService.getProperties().setProperty("earlyExploitationInd", earlyExploitationInd.getSelectedItem().toString());
 
-            props.setProperty("personClassificationId2", personClassificationId2.getSelectedItem().toString());
+            anmPropertiesService.getProperties().setProperty("personClassificationId2", personClassificationId2.getSelectedItem().toString());
 
-            props.setProperty("incomeId0", incomeId0.getText());
+            anmPropertiesService.getProperties().setProperty("incomeId0", incomeId0.getText());
 
-            props.store(out, null);
+            anmPropertiesService.getProperties().store(out, null);
             out.close();
             showMessageDialog(null, "Datos guardados correctamente");
         } catch (IOException e) {
@@ -1135,4 +1135,5 @@ public class Diferencial {
     public JComponent $$$getRootComponent$$$() {
         return rootPanel;
     }
+
 }
