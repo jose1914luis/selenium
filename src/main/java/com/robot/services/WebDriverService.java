@@ -14,6 +14,8 @@ import org.springframework.stereotype.Service;
 
 import java.time.Duration;
 
+import static main.java.com.robot.Constans.SelectorType.LINK;
+
 @Service
 public class WebDriverService {
 

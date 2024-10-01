@@ -16,7 +16,7 @@ import static main.java.com.robot.Constans.SelectorType.*;
 public class RobotDiferencial{
 
     private final WebDriverService webDriverService;
-    private AnmPropertiesService anmPropertiesService;
+    private final AnmPropertiesService anmPropertiesService;
     public RobotDiferencial(WebDriverService webDriverService, AnmPropertiesService anmPropertiesService) {
 
         this.webDriverService = webDriverService;
@@ -46,7 +46,6 @@ public class RobotDiferencial{
 
         Select selectArea = new Select(webDriverService.findElement(By.id(("areaOfConcessionSlctId"))));
         selectArea.selectByVisibleText(anmPropertiesService.getProperty("areaOfConcessionSlctId"));
-
 
         WebElement tabInfoTec = webDriverService.waitElement("//li[@class='uib-tab nav-item ng-scope ng-isolate-scope']//a[@class='nav-link ng-binding']", XPATH, "timer10");
         tabInfoTec.click();

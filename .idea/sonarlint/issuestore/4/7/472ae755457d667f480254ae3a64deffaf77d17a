@@ -1,5 +1,7 @@
 
-†	java:S112$"FDefine and throw a dedicated exception instead of using a generic one.(—ßàåùÿÿÿÿJ$ab8612c5-95bc-4923-a24d-b521b32f56a3
-†	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(½–ÜşÿÿÿÿJ$60448945-8f24-48ec-b549-370db38ddbaf
-†	java:S112F"FDefine and throw a dedicated exception instead of using a generic one.(½İ»ÇùÿÿÿÿJ$81a3c280-9bbd-4766-bb43-387a6a5674fc
-k	java:S106@"+Replace this use of System.out by a logger.(ôâÊÀûÿÿÿÿJ$b7ea792e-6da1-412a-bf44-2d9669a9a71c
+†	java:S112&"FDefine and throw a dedicated exception instead of using a generic one.(—ßàåùÿÿÿÿJ$46ef859e-cf4a-498e-be95-a5e0f49e7ecf
+†	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(½–ÜşÿÿÿÿJ$8e255cb8-7820-4ad6-9e24-b17b287a0b25
+†	java:S112H"FDefine and throw a dedicated exception instead of using a generic one.(½İ»ÇùÿÿÿÿJ$5bcf0739-7566-4965-aca0-bec4c77dcd24
+k	java:S106B"+Replace this use of System.out by a logger.(ôâÊÀûÿÿÿÿJ$ed6f5f9d-147f-48b2-9c19-8f670b7bac9e
+“
+java:S1128"KRemove this unused import 'main.java.com.robot.Constans.SelectorType.LINK'.(óÀÒ‰ÿÿÿÿÿ8‰½÷¢¤2J$bb981d78-f232-447c-8806-663cbac8dde5
