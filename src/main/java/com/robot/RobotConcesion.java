@@ -31,23 +31,23 @@ public class RobotConcesion {
         isDobleSol = Boolean.parseBoolean(anmPropertiesService.getProperty("secondSol"));
     }
 
-    public void stepOne() throws InterruptedException {
-        webDriverService.findElement(By.xpath("//a[contains(text(),'Radicar solicitud de propuesta')]")).click();
+    public void stepOne(){
+        webDriverService.waitElement("//a[contains(text(),'Radicar solicitud de propuesta')]",XPATH).click();
 
         //Seleccionar usuario
-        new Select(webDriverService.waitElement("pinSlctId", ID, "timer2"))
+        new Select(webDriverService.waitElement("pinSlctId", ID))
                 .selectByVisibleText(anmPropertiesService.getProperty("pinSlctId"));
 
-        webDriverService.findElement(By.xpath("//span[@class='btn-label ng-binding']")).click();
+        webDriverService.waitElement("//span[@class='btn-label ng-binding']",XPATH).click();
 
     }
 
-    public void stepTwo() throws InterruptedException {
+    public void stepTwo(){
 
         //Ingresar detalles del área
-        webDriverService.waitElement(".btn-default", CSS, "timer3").click();
+        webDriverService.waitElement(".btn-default", CSS).click();
 
-        webDriverService.waitElement("mineral", LINK, "timer4").click();
+        webDriverService.waitElement("mineral", LINK).click();
 
         new Select(webDriverService.findElement(By.id(("areaOfConcessionSlctId"))))
                 .selectByVisibleText(anmPropertiesService.getProperty("areaOfConcessionSlctId"));
@@ -55,15 +55,14 @@ public class RobotConcesion {
         if (isDobleSol) {
             webDriverService.findElement(By.id(("applicantNameId"))).sendKeys(anmPropertiesService.getProperty("applicantNameId"));
 
-            webDriverService.waitElement("applicantName", LINK, "timer4").click();
+            webDriverService.waitElement("applicantName", LINK).click();
 
-            webDriverService.waitElement("//span[@class='btn-label ng-binding'][contains(text(),'Agregar')]", XPATH, "timer9").click();
+            webDriverService.waitElement("//span[@class='btn-label ng-binding'][contains(text(),'Agregar')]", XPATH).click();
 
-            Thread.sleep(Integer.parseInt(anmPropertiesService.getProperty("timer15")) * 1000L);
         }
 
 
-        webDriverService.waitElement("//li[@class='uib-tab nav-item ng-scope ng-isolate-scope']", XPATH, "timer5").click();
+        webDriverService.waitElement("//li[@class='uib-tab nav-item ng-scope ng-isolate-scope']", XPATH).click();
 
         Select selectTypeCoord = new Select(webDriverService.findElement(By.id(("selectedCellInputMethodSlctId"))));
         selectTypeCoord.selectByVisibleText(anmPropertiesService.getProperty("selectedCellInputMethodSlctId"));
@@ -78,35 +77,32 @@ public class RobotConcesion {
 
             webDriverService.findElement(By.id(("uploadShapeFileMapButtonId"))).click();
 
-            Thread.sleep(Integer.parseInt(anmPropertiesService.getProperty("timer6")) * 1000);
 
             webDriverService.getDriver().switchTo().frame("mapIframeId");
-            new Select(webDriverService.findElement(By.xpath("//select[@data-gcx-form-item='ListBox1']")))
+            new Select(webDriverService.waitElement("//select[@data-gcx-form-item='ListBox1']",XPATH))
                     .selectByVisibleText(anmPropertiesService.getProperty("selectTypeMap"));
 
             webDriverService.findElement(By.cssSelector("form:nth-child(2) .button")).click();
 
-            WebElement pikerLoad = webDriverService.waitElement("//input[@data-gcx-form-item='FilePicker1']", XPATH, "timer7");
+            WebElement pikerLoad = webDriverService.waitElement("//input[@data-gcx-form-item='FilePicker1']", XPATH);
             pikerLoad.sendKeys(anmPropertiesService.getProperty("pikerLoad"));
 
             webDriverService.findElement(By.cssSelector("form:nth-child(2) .button")).click();
 
-            Thread.sleep(Integer.parseInt(anmPropertiesService.getProperty("timer8")) * 1000);
 
             webDriverService.getDriver().switchTo().defaultContent();
             webDriverService.findElement(By.id(("confirmBtnId"))).click();
         }
 
-        webDriverService.waitElement("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]", XPATH, "timer9").click();
+        webDriverService.waitElement("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]", XPATH).click();
 
-        webDriverService.waitElement("//div[@id='main']//li[3]//a[1]", XPATH, "timer10").click();
+        webDriverService.waitElement("//div[@id='main']//li[3]//a[1]", XPATH).click();
     }
 
     public void stepThree() throws InterruptedException {
 
 
-        //Thread.sleep(Integer.parseInt(anmPropertiesService.getProperty("timer11"))*1000);
-        new Select(webDriverService.waitElement("yearOfExecutionId0", ID, "timer11"))
+        new Select(webDriverService.waitElement("yearOfExecutionId0", ID))
                 .selectByVisibleText(anmPropertiesService.getProperty("yearOfExecutionId0"));
         new Select(webDriverService.findElement(By.id(("yearOfDeliveryId0"))))
                 .selectByVisibleText(anmPropertiesService.getProperty("yearOfDeliveryId0"));
@@ -114,7 +110,9 @@ public class RobotConcesion {
                 .selectByVisibleText(anmPropertiesService.getProperty("laborSuitabilityId0"));
 
 
-        ExecutorService executor = Executors.newFixedThreadPool(4); // create a pool of 4 threads
+        int availableProcessors = Runtime.getRuntime().availableProcessors();
+        ExecutorService executor = Executors.newFixedThreadPool(availableProcessors); // pool de hilos basado en los núcleos de la CPU
+
 
         for (int i = 0; i < 17; i++) {
 
@@ -151,25 +149,25 @@ public class RobotConcesion {
 
         webDriverService.findElement(By.id(("technicalCheckboxId"))).click();
 
-        new Select(webDriverService.waitElement("techApplicantNameId", ID, "timer12"))
+        new Select(webDriverService.waitElement("techApplicantNameId", ID))
                 .selectByValue(anmPropertiesService.getProperty("techApplicantNameId"));
 
-        webDriverService.findElement(By.xpath("//div[@class='tab-pane ng-scope active']//button[@class='btn btn-labeled bg-color-greenDark txt-color-white']")).click();
+        webDriverService.waitElement("//div[@class='tab-pane ng-scope active']//button[@class='btn btn-labeled bg-color-greenDark txt-color-white']",XPATH).click();
 
 
-        webDriverService.findElement(By.xpath("//form[@name='p_CaaIataInputAreaDetailsForm']//li[2]")).click();
+        webDriverService.waitElement("//form[@name='p_CaaIataInputAreaDetailsForm']//li[2]",XPATH).click();
 
         if (anmPropertiesService.getProperty("additionalEthnicGroupsInSelectedAreaIndId") == "SI") {
 
-            webDriverService.waitElement("//div[@class='tab-pane ng-scope active']//input[1]", XPATH, "timer13").click();
+            webDriverService.waitElement("//div[@class='tab-pane ng-scope active']//input[1]", XPATH).click();
         } else {
-           webDriverService.waitElement("//input[2]", XPATH, "timer13").click();
+           webDriverService.waitElement("//input[2]", XPATH).click();
         }
 
-        webDriverService.findElement(By.xpath("//form[@name='p_CaaIataInputAreaDetailsForm']//li[4]")).click();
+        webDriverService.waitElement("//form[@name='p_CaaIataInputAreaDetailsForm']//li[4]",XPATH).click();
     }
 
-    public void stepFour() throws InterruptedException {
+    public void stepFour() {
 
         //Información economica
         if (Boolean.parseBoolean(anmPropertiesService.getProperty("declareIndId0"))) {
@@ -208,24 +206,20 @@ public class RobotConcesion {
         new Select(webDriverService.findElement(By.id(("ecoProfessionalDesignationId"))))
                 .selectByVisibleText(anmPropertiesService.getProperty("ecoProfessionalDesignationId"));
 
-        Thread.sleep(Integer.parseInt(anmPropertiesService.getProperty("timer15")) * 1000);
 
-        new Select(webDriverService.waitElement("ecoApplicantNameId", ID, "timer15"))
-                .selectByValue(anmPropertiesService.getProperty("ecoApplicantNameId"));
+        webDriverService.selectOptionWhenReady("ecoApplicantNameId", anmPropertiesService.getProperty("ecoApplicantNameId"));
 
-        webDriverService.findElement(By.xpath(" //div[@class='tab-pane ng-scope active']//span[@class='btn-label ng-binding'][contains(text(),'Agregar')]")).click();
+        webDriverService.waitElement(" //div[@class='tab-pane ng-scope active']//span[@class='btn-label ng-binding'][contains(text(),'Agregar')]",XPATH).click();
 
-        webDriverService.findElement(By.xpath("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]")).click();
+        webDriverService.waitElement("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]",XPATH).click();
 
-        Thread.sleep(Integer.parseInt(anmPropertiesService.getProperty("timer15")) * 1000);
 
     }
 
-    public void stepFive() throws InterruptedException {
+    public void stepFive(){
 
-        webDriverService.findElement(By.xpath("//form[@name='p_CaaIataAttachDocumentsForm']//li[5]")).click();
+        webDriverService.waitElement("//form[@name='p_CaaIataAttachDocumentsForm']//li[5]",XPATH).click();
 
-        Thread.sleep(Integer.parseInt(anmPropertiesService.getProperty("timer15")) * 1000);
 
         webDriverService.findElement(By.id(("p_CaaCataEnvMandatoryDocumentToAttachId0")))
                 .sendKeys(anmPropertiesService.getProperty("pdfGeo"));
@@ -235,12 +229,10 @@ public class RobotConcesion {
 
         webDriverService.findElement(By.id(("acceptanceOfTermsId"))).click();
 
-        Thread.sleep(Integer.parseInt(anmPropertiesService.getProperty("timer15")) * 1000);
 
 
-        webDriverService.findElement(By.xpath("//form[@name='p_CaaIataAttachDocumentsForm']//li[6]")).click();
+        webDriverService.waitElement("//form[@name='p_CaaIataAttachDocumentsForm']//li[6]",XPATH).click();
 
-        Thread.sleep(Integer.parseInt(anmPropertiesService.getProperty("timer15")) * 1000);
 
         webDriverService.findElement(By.id(("p_CaaCataMandatoryDocumentToAttachId0")))
                 .sendKeys(anmPropertiesService.getProperty("file0"));
@@ -288,8 +280,6 @@ public class RobotConcesion {
             webDriverService.findElement(By.id(("p_CaaCataDocumentToAttachId")))
                     .sendKeys(anmPropertiesService.getProperty("generatedField" + i));
 
-            Thread.sleep(Integer.parseInt(anmPropertiesService.getProperty("timer15")) * 1000);
-
 
             // Localiza el combobox por su ID y haz clic en él para abrir las opciones
            webDriverService.findElement(By.id("p_CaaCataDocumentTypeId" + counter)).click(); // Esto debería abrir las opciones si no están ya abiertas
@@ -303,10 +293,10 @@ public class RobotConcesion {
             counter++;
         }
 
-        webDriverService.findElement(By.xpath("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]")).click();
+        webDriverService.waitElement("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]",XPATH).click();
     }
 
-    public void executeANMLogin() throws InterruptedException {
+    public void executeANMLogin() {
 
         webDriverService.findElement(By.id("username"))
                 .sendKeys(anmPropertiesService.getProperty("username"));
@@ -317,9 +307,7 @@ public class RobotConcesion {
         webDriverService.findElement(By.id("loginButton")).click();
 
 
-        Thread.sleep(Integer.parseInt(anmPropertiesService.getProperty("timer1")) * 1000);
-
-        webDriverService.findElement(By.xpath("//a[@class='cata-collapse-click menu ng-scope']//span[@class='menu-item-parent ng-binding'][contains(text(),'Solicitudes')]")).click();
+        webDriverService.waitElement("//a[@class='cata-collapse-click menu ng-scope']//span[@class='menu-item-parent ng-binding'][contains(text(),'Solicitudes')]", XPATH).click();
 
     }
 }

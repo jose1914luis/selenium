@@ -36,17 +36,17 @@ public class RobotSolicitud{
         WebElement menu = webDriverService.findElement(By.xpath("//a[@class='cata-collapse-click menu ng-scope']//span[@class='menu-item-parent ng-binding'][contains(text(),'Solicitudes')]"));
         menu.click();
 
-        WebElement submenu = webDriverService.waitElement("//a[contains(text(),'Radicar solicitud de Área de Reserva Especial')]", XPATH, "timer9");
+        WebElement submenu = webDriverService.waitElement("//a[contains(text(),'Radicar solicitud de Área de Reserva Especial')]", XPATH);
         submenu.click();
 
-        WebElement buttonNext2 = webDriverService.waitElement("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]", XPATH, "timer9");
+        WebElement buttonNext2 = webDriverService.waitElement("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]", XPATH);
         buttonNext2.click();
 
         //Ingresar detalles del área
-        WebElement btnMineral = webDriverService.waitElement(".btn-default", CSS, "timer3");
+        WebElement btnMineral = webDriverService.waitElement(".btn-default", CSS);
         btnMineral.click();
 
-        WebElement labelMineral = webDriverService.waitElement("mineral", LINK, "timer4");
+        WebElement labelMineral = webDriverService.waitElement("mineral", LINK);
         labelMineral.click();
 
         Select selectArea = new Select(webDriverService.findElement(By.id(("areaOfConcessionSlctId"))));
@@ -58,7 +58,7 @@ public class RobotSolicitud{
 
         //
 
-        WebElement solicitante = webDriverService.waitElement("//a[@title='GEMA VERDE SAS (55127)']", XPATH, "timer4");
+        WebElement solicitante = webDriverService.waitElement("//a[@title='GEMA VERDE SAS (55127)']", XPATH);
         solicitante.click();
 
         WebElement bntAgregar = webDriverService.findElement(By.xpath(("//button[@data-ng-click='addApplicantInfoVO(selectedApplicantInfoVO)']//i[@class='fa fa-plus']")));
@@ -82,7 +82,7 @@ public class RobotSolicitud{
         Select selectTypeCoord = new Select(webDriverService.findElement(By.id(("selectedCellInputMethodSlctId"))));
         selectTypeCoord.selectByVisibleText(anmPropertiesService.getProperty("selectedCellInputMethodSlctId"));
 
-        WebElement cellIdsTxtId = webDriverService.waitElement("cellIdsInptId", ID, "timer4");
+        WebElement cellIdsTxtId = webDriverService.waitElement("cellIdsInptId", ID);
         cellIdsTxtId.sendKeys(anmPropertiesService.getProperty("cells"));
 
         WebElement pikerFile0 = webDriverService.findElement(By.id(("p_PsraRsraMandatoryDocumentToAttachId0")));
@@ -110,7 +110,7 @@ public class RobotSolicitud{
             bntContinuar.click();
 
             try{
-                WebElement bntConfirmar = webDriverService.waitElement("//span[normalize-space()='Confirmar']", XPATH, "timer4");
+                WebElement bntConfirmar = webDriverService.waitElement("//span[normalize-space()='Confirmar']", XPATH);
                 if (bntConfirmar != null) {
                     checkElementAndNotify();
                     terminar = true;

@@ -27,7 +27,7 @@ public class RobotDiferencial{
         WebElement submenu = webDriverService.findElement(By.xpath("//a[contains(text(),'Radicar solicitud de contrato de concesión diferencial')]"));
         submenu.click();
 
-        Select selectPIN = new Select(webDriverService.waitElement("pinSlctId", ID, "timer2"));
+        Select selectPIN = new Select(webDriverService.waitElement("pinSlctId", ID));
 
         selectPIN.selectByVisibleText(anmPropertiesService.getProperty("pinSlctId"));
 
@@ -37,17 +37,17 @@ public class RobotDiferencial{
     }
     public void stepTwo() throws InterruptedException {
 
-        WebElement btnMineral = webDriverService.waitElement(".btn-default", CSS, "timer3");
+        WebElement btnMineral = webDriverService.waitElement(".btn-default", CSS);
         btnMineral.click();
 
 
-        WebElement labelMineral = webDriverService.waitElement("mineral", LINK, "timer4");
+        WebElement labelMineral = webDriverService.waitElement("mineral", LINK);
         labelMineral.click();
 
         Select selectArea = new Select(webDriverService.findElement(By.id(("areaOfConcessionSlctId"))));
         selectArea.selectByVisibleText(anmPropertiesService.getProperty("areaOfConcessionSlctId"));
 
-        WebElement tabInfoTec = webDriverService.waitElement("//li[@class='uib-tab nav-item ng-scope ng-isolate-scope']//a[@class='nav-link ng-binding']", XPATH, "timer10");
+        WebElement tabInfoTec = webDriverService.waitElement("//li[@class='uib-tab nav-item ng-scope ng-isolate-scope']//a[@class='nav-link ng-binding']", XPATH);
         tabInfoTec.click();
 
         Select selectTypeCoord = new Select(webDriverService.findElement(By.id(("selectedCellInputMethodSlctId"))));
@@ -73,7 +73,7 @@ public class RobotDiferencial{
 
             WebElement btnContinue = webDriverService.findElement(By.cssSelector("form:nth-child(2) .button"));
             btnContinue.click();
-            WebElement pikerLoad = webDriverService.waitElement("//input[@data-gcx-form-item='FilePicker1']", XPATH, "timer7");
+            WebElement pikerLoad = webDriverService.waitElement("//input[@data-gcx-form-item='FilePicker1']", XPATH);
             pikerLoad.sendKeys(anmPropertiesService.getProperty("pikerLoad"));
 
             WebElement btnLoad = webDriverService.findElement(By.cssSelector("form:nth-child(2) .button"));
@@ -95,7 +95,7 @@ public class RobotDiferencial{
             declareIndId0.click();
         }
 
-        WebElement buttonNext2 = webDriverService.waitElement("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]", XPATH, "timer9");
+        WebElement buttonNext2 = webDriverService.waitElement("//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]", XPATH);
         buttonNext2.click();
     }
     public void stepThree() throws InterruptedException {
@@ -105,21 +105,21 @@ public class RobotDiferencial{
         //WebElement tabEco = webDriverService.findElement(By.xpath("//form[@name='p_CaaIataInputAreaDetailsForm']//li[4]"));
         //tabEco.click();
 
-        WebElement tabInfoDet = webDriverService.waitElement("//div[@id='main']//li[3]//a[1]", XPATH, "timer10");
+        WebElement tabInfoDet = webDriverService.waitElement("//div[@id='main']//li[3]//a[1]", XPATH);
         tabInfoDet.click();
 
         if (anmPropertiesService.getProperty("earlyExploitationInd").toString().equals("SI")) {
 
-            Select typeOfMiningId = new Select(webDriverService.waitElement("typeOfMiningId", ID, "timer11"));
+            Select typeOfMiningId = new Select(webDriverService.waitElement("typeOfMiningId", ID));
             typeOfMiningId.selectByVisibleText(anmPropertiesService.getProperty("typeOfMiningId"));
 
-            Select systemOfExploitationId = new Select(webDriverService.waitElement("systemOfExploitationId", ID, "timer11"));
+            Select systemOfExploitationId = new Select(webDriverService.waitElement("systemOfExploitationId", ID));
             systemOfExploitationId.selectByVisibleText(anmPropertiesService.getProperty("systemOfExploitationId"));
 
-            WebElement btnMineral = webDriverService.waitElement("//button[@class='dropdown-toggle ng-binding btn btn-default']", XPATH, "timer3");
+            WebElement btnMineral = webDriverService.waitElement("//button[@class='dropdown-toggle ng-binding btn btn-default']", XPATH);
             btnMineral.click();
 
-            WebElement labelMineral = webDriverService.waitElement("mineral2", LINK, "timer4");
+            WebElement labelMineral = webDriverService.waitElement("mineral2", LINK);
             labelMineral.click();
 
             //WebElement btnMineral = webDriverService.waitElement("//button[@class='dropdown-toggle ng-binding btn btn-default']", XPATH, "timer3");
@@ -186,7 +186,7 @@ public class RobotDiferencial{
             WebElement techCheckboxId = webDriverService.findElement(By.id(("techCheckboxId")));
             techCheckboxId.click();
 
-            Select selectTAN = new Select(webDriverService.waitElement("techApplicantNameId", ID, "timer12"));
+            Select selectTAN = new Select(webDriverService.waitElement("techApplicantNameId", ID));
             selectTAN.selectByValue(anmPropertiesService.getProperty("techApplicantNameId"));
 
             WebElement buttonAdd = webDriverService.findElement(By.xpath("//button[@data-ng-click='addApplicationContractor(applicantVO); applicantVO=null; professionalDesignationVO=null']"));
@@ -198,7 +198,7 @@ public class RobotDiferencial{
 
             //WebElement tabArea = webDriverService.findElement(By.xpath("//form[@name='p_CaaIataInputAreaDetailsForm']//li[2]"));
             //tabArea.click();
-            WebElement tabInfoEco = webDriverService.waitElement("//div[@id='main']//li[4]//a[1]", XPATH, "timer10");
+            WebElement tabInfoEco = webDriverService.waitElement("//div[@id='main']//li[4]//a[1]", XPATH);
             tabInfoEco.click();
 
             for (int i = 1; i < 4; i++) {
@@ -221,7 +221,7 @@ public class RobotDiferencial{
 
         }else{
 
-            Select selectYOE0 = new Select(webDriverService.waitElement("yearOfExecutionId0", ID, "timer11"));
+            Select selectYOE0 = new Select(webDriverService.waitElement("yearOfExecutionId0", ID));
             selectYOE0.selectByVisibleText(anmPropertiesService.getProperty("yearOfExecutionId0"));
             Select selectYOD0 = new Select(webDriverService.findElement(By.id(("yearOfDeliveryId0"))));
             selectYOD0.selectByVisibleText(anmPropertiesService.getProperty("yearOfDeliveryId0"));
@@ -252,7 +252,7 @@ public class RobotDiferencial{
             WebElement checkboxAccept = webDriverService.findElement(By.id(("techCheckboxId")));
             checkboxAccept.click();
 
-            Select selectTAN = new Select(webDriverService.waitElement("techApplicantNameId", ID, "timer12"));
+            Select selectTAN = new Select(webDriverService.waitElement("techApplicantNameId", ID));
             selectTAN.selectByValue(anmPropertiesService.getProperty("techApplicantNameId"));
             //selectTAN.selectByVisibleText(anmPropertiesService.getProperty("techApplicantNameId"));
 
@@ -276,10 +276,10 @@ public class RobotDiferencial{
 
         if (anmPropertiesService.getProperty("additionalEthnicGroupsInSelectedAreaIndId") == "SI") {
 
-            WebElement additionalEthnicGroupsInSelectedAreaIndId = webDriverService.waitElement("//div[@class='tab-pane ng-scope active']//input[1]", XPATH, "timer13");
+            WebElement additionalEthnicGroupsInSelectedAreaIndId = webDriverService.waitElement("//div[@class='tab-pane ng-scope active']//input[1]", XPATH);
             additionalEthnicGroupsInSelectedAreaIndId.click();
         } else {
-            WebElement additionalEthnicGroupsInSelectedAreaIndId = webDriverService.waitElement("//input[2]", XPATH, "timer13");
+            WebElement additionalEthnicGroupsInSelectedAreaIndId = webDriverService.waitElement("//input[2]", XPATH);
             additionalEthnicGroupsInSelectedAreaIndId.click();
         }
     }
@@ -319,7 +319,7 @@ public class RobotDiferencial{
 
         Thread.sleep(Integer.parseInt(anmPropertiesService.getProperty("timer15")) * 1000);
 
-        Select selectEAN = new Select(webDriverService.waitElement("ecoApplicantNameId", ID, "timer15"));
+        Select selectEAN = new Select(webDriverService.waitElement("ecoApplicantNameId", ID));
         //selectEAN.selectByVisibleText(anmPropertiesService.getProperty("ecoApplicantNameId"));
         selectEAN.selectByValue(anmPropertiesService.getProperty("ecoApplicantNameId"));
 

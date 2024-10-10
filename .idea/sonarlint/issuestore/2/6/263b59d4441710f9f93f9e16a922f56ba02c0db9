@@ -1,47 +1,47 @@
 
-	java:S117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜âıÔJ$bb5dab02-b9bd-4aaa-a494-798396e666c7
+	java:S117 "QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜âıÔJ$c6e7ec97-3d42-43ae-b885-63547e4b67f8
 ‡
-java:S2184C"FCast one of the operands of this multiplication operation to a "long".(–ƒÛŠøÿÿÿÿJ$77eee9a8-0f28-4bfc-b228-2a73f36c13fb
+java:S2184C"FCast one of the operands of this multiplication operation to a "long".(–ƒÛŠøÿÿÿÿJ$db01bc4a-ec61-4613-9036-a2002b489dc5
 ‚
-java:S2184R"FCast one of the operands of this multiplication operation to a "long".(Ìúõ§J$646cd60e-e727-4e1e-9b5a-922edfa85dd0
+java:S2184R"FCast one of the operands of this multiplication operation to a "long".(Ìúõ§J$ad622ed0-babe-4788-8f23-c9b7f6260a78
 ƒ
-java:S2184À"FCast one of the operands of this multiplication operation to a "long".(ÉËŒçJ$71b4d743-0b10-47fd-8cfa-b61430468f2b
+java:S2184À"FCast one of the operands of this multiplication operation to a "long".(ÉËŒçJ$85fecc26-5d85-4a37-95c9-12b7493c7098
 ~
-java:S4973•"<Strings and Boxed types should be compared using "equals()".(ØÜä©üÿÿÿÿJ$6d63d9e2-9b4d-4fca-b2d4-3800c01c9a4e
+java:S4973•"<Strings and Boxed types should be compared using "equals()".(ØÜä©üÿÿÿÿJ$55341e06-6c9c-471a-a812-8354c9c28b0c
 ›
-java:S1192µ"^Define a constant instead of duplicating this literal "techProfessionalDesignationId" 4 times.(î“ĞˆJ$7daede4b-237e-4699-9381-484e5aece311
+java:S1192µ"^Define a constant instead of duplicating this literal "techProfessionalDesignationId" 4 times.(î“ĞˆJ$889c347a-31cb-457f-a914-5218735c5730
+‘
+java:S1192½"TDefine a constant instead of duplicating this literal "techApplicantNameId" 4 times.(¢ÈëäJ$290c6e13-9686-480a-a744-a2b4ee6ee4c9
 „
-java:S1192q"HDefine a constant instead of duplicating this literal "timer11" 3 times.(ŒöáßJ$bf2b7cb5-10b7-4582-b04e-c4478bf435dc
-‰
-java:S11922"HDefine a constant instead of duplicating this literal "timer10" 3 times.(­×ÅùÿÿÿÿJ$89f32ef0-a226-4a2b-ae4d-a650d9b5bb7d
-–
-java:S1192½"TDefine a constant instead of duplicating this literal "techApplicantNameId" 4 times.(ŞÀ÷‚øÿÿÿÿJ$2b16bb68-745a-4fe1-b3da-003bbb2b1151
-„
-java:S1192Í"GDefine a constant instead of duplicating this literal "InptId" 4 times.(íšƒJ$ee3cc92e-9462-4371-a530-6edba5cd402a
+java:S1192Í"GDefine a constant instead of duplicating this literal "InptId" 4 times.(íšƒJ$6f0fbbdb-653e-4794-ba98-c4ab2c6f8bdf
 š
-java:S11925"^Define a constant instead of duplicating this literal "selectedCellInputMethodSlctId" 3 times.(ê„˜¼J$eeb20d27-c9ba-4440-8cde-cf810689e35f
+java:S11925"^Define a constant instead of duplicating this literal "selectedCellInputMethodSlctId" 3 times.(ê„˜¼J$c4fceaa2-78f0-4277-b89d-b47f03ac663e
 ”
-java:S1192©"RDefine a constant instead of duplicating this literal "yearOfExecutionId" 3 times.(¥Á©¤ûÿÿÿÿJ$03198768-c385-45b2-a16c-cb2cea9531f1
-v	java:S125F"<This block of commented-out lines of code should be removed.(§ü%J$6c1f16c7-9591-4dd9-82ea-473526de1d0f
+java:S1192©"RDefine a constant instead of duplicating this literal "yearOfExecutionId" 3 times.(¥Á©¤ûÿÿÿÿJ$8efa7ef5-b843-4b07-bf3e-fdf6dcad77e7
+º
+java:S1130"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(×ëŞÔ8ÓÀ¸§2J$c400aae6-d403-4388-9c93-1c82882356d9
+v	java:S125F"<This block of commented-out lines of code should be removed.(§ü%J$1b858e27-41f2-4455-bd01-9fca47aed67f
 
-java:S1858Y"E"getProperty" returns a string, there's no need to call "toString()".(èÆë·J$88f3d5e3-a41f-4d10-8493-afbe1330bb74
+java:S1858Y"E"getProperty" returns a string, there's no need to call "toString()".(èÆë·J$9ce57be8-a29d-438f-8044-669e516699f9
 “
-java:S3776e"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(ô¿¼ÆøÿÿÿÿJ$158fbd8c-2740-4644-b06a-8469c21da637
-w	java:S125i"<This block of commented-out lines of code should be removed.(ŒîÁ‡J$1cd881ea-2361-438f-9e24-4b3f1fb9a5af
+java:S3776e"RRefactor this method to reduce its Cognitive Complexity from 25 to the 15 allowed.(ô¿¼ÆøÿÿÿÿJ$1e1ec259-8654-4a61-992d-a0659d9b9454
+w	java:S125i"<This block of commented-out lines of code should be removed.(ŒîÁ‡J$294a5886-8466-4919-b58d-664e71427e05
 
-java:S1858o"E"getProperty" returns a string, there's no need to call "toString()".(èÆë·J$8cd226ed-da51-4e6f-9eda-f0ebd9826c1f
-|	java:S125}"<This block of commented-out lines of code should be removed.(ğ©†°üÿÿÿÿJ$3eac568c-b1cc-4de8-89fe-da17a54dc4ee
-}	java:S125¸"<This block of commented-out lines of code should be removed.(ÉÌ¬¤üÿÿÿÿJ$27671390-f49c-420f-93ca-9ef912ba9b45
-x	java:S125Ç"<This block of commented-out lines of code should be removed.(œ›‘³J$38b43ab0-ee93-48d4-b13e-09a363545801
-}	java:S125ú"<This block of commented-out lines of code should be removed.(ÉÌ¬¤üÿÿÿÿJ$d9fa3915-92ab-44bb-8644-b1ec38b7e137
-}	java:S125"<This block of commented-out lines of code should be removed.(€´‚òşÿÿÿÿJ$6650595f-43b6-4af3-9cfa-0a8ddf8864c9
-x	java:S125‹"<This block of commented-out lines of code should be removed.(Á“êJ$63846ef7-2878-4c07-8340-30825566e1b2
-}	java:S125“"<This block of commented-out lines of code should be removed.(ÍñàİÿÿÿÿÿJ$72813e6d-7997-46cb-a7d6-8488b815ae6b
+java:S1858o"E"getProperty" returns a string, there's no need to call "toString()".(èÆë·J$e64c5c4b-bc31-462b-a8e8-cef5f52d7c33
+|	java:S125}"<This block of commented-out lines of code should be removed.(ğ©†°üÿÿÿÿJ$3ff35b65-fc6c-45c8-aea3-9f6afff28be8
+}	java:S125¸"<This block of commented-out lines of code should be removed.(ÉÌ¬¤üÿÿÿÿJ$887a8c14-0a9f-43dd-b976-1432b7dac8de
+x	java:S125Ç"<This block of commented-out lines of code should be removed.(œ›‘³J$454e8672-ea79-4cf1-9b38-33bbbba308e7
+}	java:S125ú"<This block of commented-out lines of code should be removed.(ÉÌ¬¤üÿÿÿÿJ$4a81bb51-7c71-4935-8c08-bd51438bb574
+}	java:S125"<This block of commented-out lines of code should be removed.(€´‚òşÿÿÿÿJ$7f47df56-1d45-4648-ab0e-597e3f0e6a9f
+x	java:S125‹"<This block of commented-out lines of code should be removed.(Á“êJ$d4ee1dd4-fc78-4285-a48b-1cde43e097e1
+»
+java:S1130"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(Ãÿ®É8óÀ¸§2J$deb9dcfb-fdbf-417f-a4e9-07087254c330
+}	java:S125“"<This block of commented-out lines of code should be removed.(ÍñàİÿÿÿÿÿJ$539a1468-f9de-4250-b28c-c6296d52b3eb
 
-java:S1858 "E"getProperty" returns a string, there's no need to call "toString()".(›£€hJ$83ab87ff-4e29-463c-8ede-c0b1daaeb065
-w	java:S125Ã"<This block of commented-out lines of code should be removed.(Áı€aJ$e16c8cae-3c11-492b-828e-03744ac51552
-}	java:S125á"<This block of commented-out lines of code should be removed.(’İÿÿÿÿÿJ$bf45f4f6-af30-49ad-bc0f-cf827fb5f3e2
+java:S1858 "E"getProperty" returns a string, there's no need to call "toString()".(›£€hJ$8c2101a7-c05c-48dd-be2a-11b89ddfd1e2
+w	java:S125Ã"<This block of commented-out lines of code should be removed.(Áı€aJ$180f810f-151b-4ad8-a03d-232b2c4fd99d
+}	java:S125á"<This block of commented-out lines of code should be removed.(’İÿÿÿÿÿJ$adf82f28-e0eb-4c82-ba2f-7e3488acd628
 
-java:S1128"DRemove this unused import 'org.openqa.selenium.chrome.ChromeDriver'.(†ÈJ$1bf3c78b-7940-400a-b902-72ef5cab49d6
+java:S1128"DRemove this unused import 'org.openqa.selenium.chrome.ChromeDriver'.(†ÈJ$aff5ebb6-4a35-4ef8-80ca-22df83a6d8b3
 m
-java:S1128"1Remove this unused import 'java.util.Properties'.(¬µ²J$9cd977d9-ef08-4dcb-be42-b4af4ba1b667
+java:S1128"1Remove this unused import 'java.util.Properties'.(¬µ²J$862b4234-c342-4c48-89af-39db4ba410ae

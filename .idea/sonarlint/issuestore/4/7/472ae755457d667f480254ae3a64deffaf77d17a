@@ -1,7 +1,8 @@
 
-†	java:S112&"FDefine and throw a dedicated exception instead of using a generic one.(—ßàåùÿÿÿÿJ$46ef859e-cf4a-498e-be95-a5e0f49e7ecf
-†	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(½–ÜşÿÿÿÿJ$8e255cb8-7820-4ad6-9e24-b17b287a0b25
-†	java:S112H"FDefine and throw a dedicated exception instead of using a generic one.(½İ»ÇùÿÿÿÿJ$5bcf0739-7566-4965-aca0-bec4c77dcd24
-k	java:S106B"+Replace this use of System.out by a logger.(ôâÊÀûÿÿÿÿJ$ed6f5f9d-147f-48b2-9c19-8f670b7bac9e
+†	java:S1121"FDefine and throw a dedicated exception instead of using a generic one.(—ßàåùÿÿÿÿJ$9226d031-2f92-43fe-96ab-c984ceaf5434
+†	java:S112!"FDefine and throw a dedicated exception instead of using a generic one.(½–ÜşÿÿÿÿJ$38904cc2-14a0-4521-b4a4-7d57a0e806fe
+	java:S112W"FDefine and throw a dedicated exception instead of using a generic one.(ÒÚƒôıÿÿÿÿ8µ¸¸§2J$3f86d66e-cb75-4209-a623-73fcc5015b73
+}
+java:S1117C":Rename "driver" which hides the field declared at line 24.(ø›ãª8˜¹¸§2J$2c29d58e-0041-48ea-b070-d6556fdab7c0
 “
-java:S1128"KRemove this unused import 'main.java.com.robot.Constans.SelectorType.LINK'.(óÀÒ‰ÿÿÿÿÿ8‰½÷¢¤2J$bb981d78-f232-447c-8806-663cbac8dde5
+java:S1128"KRemove this unused import 'main.java.com.robot.Constans.SelectorType.LINK'.(óÀÒ‰ÿÿÿÿÿ8‰½÷¢¤2J$47d1c262-a0c9-47f8-bebf-10ad70af4e1a

@@ -1,29 +1,18 @@
 
-‡
-java:S2184Q"FCast one of the operands of this multiplication operation to a "long".(–ƒÛŠøÿÿÿÿJ$b932d541-e7b6-4190-8241-c883e90786ef
-‚
-java:S2184^"FCast one of the operands of this multiplication operation to a "long".(Ìúõ§J$cb08b513-5e57-4b2b-9c30-43f185a33577
-ƒ
-java:S2184Ó"FCast one of the operands of this multiplication operation to a "long".(ÉËŒçJ$324a9fe9-7f00-43a0-a1c4-015b29c4d4d1
-ƒ
-java:S2184Ü"FCast one of the operands of this multiplication operation to a "long".(ÉËŒçJ$1d659566-23ab-4545-a335-32ffde78e004
-ƒ
-java:S2184ä"FCast one of the operands of this multiplication operation to a "long".(ÉËŒçJ$0e0aa483-d345-4e2b-aebe-18317f8924fc
-ƒ
-java:S2184î"FCast one of the operands of this multiplication operation to a "long".(ÉËŒçJ$5ac2abd4-6325-469e-9a06-5d22ff276c4a
-ƒ
-java:S2184ó"FCast one of the operands of this multiplication operation to a "long".(ÉËŒçJ$e10d61b2-37ba-40f2-9dc8-5c543698391e
-Š
-java:S2184£"FCast one of the operands of this multiplication operation to a "long".(ÉËŒç8×¾÷¢¤2J$0b6a9f93-43b7-430c-a1b9-210fdcc7d264
-ˆ
-java:S2184À"FCast one of the operands of this multiplication operation to a "long".(äÈ±³üÿÿÿÿJ$2dc3413d-2f13-4d5e-bfad-c183a5fad9f9
 ~
-java:S4973¢"<Strings and Boxed types should be compared using "equals()".(ØÜä©üÿÿÿÿJ$e546245e-a04c-4027-a4ab-7b63c94b582c
-Í
-java:S1192d"„Define a constant instead of duplicating this literal "//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]" 3 times.(´‹Îýøÿÿÿÿ8æ¾÷¢¤2J$2f595ca1-ef04-4914-914e-af6ddf460fc7
-‰
-java:S1192>"HDefine a constant instead of duplicating this literal "timer15" 8 times.(ÙîÍËûÿÿÿÿJ$bde87d2d-73ae-4457-975d-2dfc6b3ad469
+java:S4973 "<Strings and Boxed types should be compared using "equals()".(ØÜä©üÿÿÿÿJ$ab5212e5-c9e2-4b16-9f64-3f82315b8b44
+È
+java:S1192a"„Define a constant instead of duplicating this literal "//span[@class='btn-label ng-binding'][contains(text(),'Continuar')]" 3 times.(ùÇêÒ8´½ž¸§2J$b6906019-a239-4bed-a1ef-907278462237
 š
-java:S1192D"^Define a constant instead of duplicating this literal "selectedCellInputMethodSlctId" 3 times.(ê„˜¼J$b0720f5f-af85-43f7-b721-49566b6d6056
-|	java:S125l"<This block of commented-out lines of code should be removed.(ïÇÚÛùÿÿÿÿJ$c12855a2-014e-45cd-8bfb-5c99be15e741
-l	java:S106’"+Replace this use of System.out by a logger.(„ÄØÆÿÿÿÿÿJ$40ee558e-d628-4e45-99ab-30011026217b
+java:S1192C"^Define a constant instead of duplicating this literal "selectedCellInputMethodSlctId" 3 times.(ê„˜¼J$1c9935af-d697-4285-b5c7-4cc00fd96bce
+º
+java:S1130""wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(×ëÞÔ8¼½ž¸§2J$68ffa3e5-951e-47a8-8888-581035b8620c
+¿
+java:S1130-"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(èÆ„£ýÿÿÿÿ8¾½ž¸§2J$2782886d-ad3a-4913-a839-b4e564fd4b98
+l	java:S106"+Replace this use of System.out by a logger.(„ÄØÆÿÿÿÿÿJ$2acd41a4-e68d-4e1c-a5e6-ada5cca5cb44
+À
+java:S1130ª"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(çÚŠ¼ùÿÿÿÿ8Þ½ž¸§2J$4dd366b6-fa40-4bc3-8e0b-a7934ee8e1cd
+À
+java:S1130Û"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(¬žÇþúÿÿÿÿ8ä½ž¸§2J$0e18e741-d9f3-4652-b1c5-208fd12fb53e
+À
+java:S1130«"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(Å’¨Ïýÿÿÿÿ8ï½ž¸§2J$bde303c8-92e2-44b7-ba48-05a5e61c670b

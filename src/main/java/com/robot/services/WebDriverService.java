@@ -11,9 +11,11 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.openqa.selenium.support.ui.Select;
 
 import java.time.Duration;
 
+import static main.java.com.robot.Constans.SelectorType.ID;
 import static main.java.com.robot.Constans.SelectorType.LINK;
 
 @Service
@@ -33,6 +35,15 @@ public class WebDriverService {
             WebDriverManager.chromedriver().setup();
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--remote-allow-origins=*");
+            options.addArguments("--disable-gpu"); // Desactiva el uso de la GPU para rendimiento en algunos entornos
+            options.addArguments("--no-sandbox"); // Necesario para entornos Linux y mejora la estabilidad
+            options.addArguments("--disable-dev-shm-usage"); // Evita problemas de memoria compartida en contenedores
+            options.addArguments("--disable-extensions"); // Desactiva extensiones para cargar más rápido
+            options.addArguments("--start-maximized"); // Inicia el navegador maximizado para mejor visibilidad
+            options.addArguments("--incognito"); // Inicia en modo incógnito para no utilizar caché
+            options.setExperimentalOption("excludeSwitches", new String[]{"enable-automation"}); // Para que no se detecte como bot
+            options.setExperimentalOption("useAutomationExtension", false);
+
             return new ChromeDriver(options);
         } catch (Exception e) {
             throw new Exception("Error configuring WebDriver: " + e.getMessage(), e);
@@ -47,29 +58,34 @@ public class WebDriverService {
         return this.driver.findElement(by);
     }
 
-    public WebElement waitElement(String search, Constans.SelectorType type, String timer) throws InterruptedException {
-        int retries = 10;
-        int waitTime = Integer.parseInt(propertiesService.getProperties().getProperty(timer));
+    public void selectOptionWhenReady(String elementId, String value) {
+
+        WebElement selectElement = waitElement(elementId, ID);
+        int waitTime = Integer.parseInt(propertiesService.getProperties().getProperty("timerWait"));
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(waitTime));
 
-        while (retries > 0) {
-            try {
-                return switch (type) {
-                    case ID -> wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(search)));
-                    case CSS -> wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(search)));
-                    case XPATH -> wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(search)));
-                    case LINK ->
-                            wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(propertiesService.getProperties().getProperty(search))));
-                    default -> throw new IllegalArgumentException("Tipo de búsqueda no soportado: " + type);
-                };
-            } catch (Exception e) {
-                System.out.println("Error encontrando el elemento: " + e.getMessage());
-                retries--;
-                Thread.sleep(1000); // Esperar antes de reintentar
-            }
-        }
+        wait.until(driver -> new Select(selectElement).getOptions().stream()
+                .anyMatch(option -> option.getAttribute("value").equals(value)));
 
-        throw new RuntimeException("Elemento no encontrado después de múltiples intentos: " + search);
+        // Ahora que las opciones están cargadas, realiza la selección
+        new Select(selectElement).selectByValue(value);
+    }
+
+    public WebElement waitElement(String search, Constans.SelectorType type) {
+        int waitTime = Integer.parseInt(propertiesService.getProperties().getProperty("timerWait"));
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(waitTime));
+
+        try {
+            return switch (type) {
+                case ID -> wait.until(ExpectedConditions.visibilityOfElementLocated(By.id(search)));
+                case CSS -> wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(search)));
+                case XPATH -> wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(search)));
+                case LINK -> wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText(propertiesService.getProperties().getProperty(search))));
+                default -> throw new IllegalArgumentException("Tipo de búsqueda no soportado: " + type);
+            };
+        } catch (Exception e) {
+            throw new RuntimeException("Elemento no encontrado: " + search + " - Error: " + e.getMessage());
+        }
     }
 
     public void openUrl(String url) {
