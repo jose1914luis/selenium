@@ -14,6 +14,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 import com.intellij.uiDesigner.core.GridConstraints;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.TimeoutException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -212,7 +214,7 @@ public class AnmForm {
             try {
 
                 robotConcesion.executeANMLogin();
-            } catch (InterruptedException ex) {
+            } catch (Exception ex) {
                 ex.printStackTrace();
             }
         });
@@ -232,7 +234,7 @@ public class AnmForm {
         paso1Button.addActionListener(e -> {
             try {
                 robotConcesion.stepOne();
-            } catch (InterruptedException ex) {
+            } catch (Exception ex) {
                 ex.printStackTrace();
             }
         });
@@ -240,7 +242,7 @@ public class AnmForm {
         paso2Button.addActionListener(e -> {
             try {
                 robotConcesion.stepTwo();
-            } catch (InterruptedException ex) {
+            } catch (Exception ex) {
                 ex.printStackTrace();
             }
         });
@@ -248,7 +250,7 @@ public class AnmForm {
         paso3Button.addActionListener(e -> {
             try {
                 robotConcesion.stepThree();
-            } catch (InterruptedException ex) {
+            } catch (Exception ex) {
                 ex.printStackTrace();
             }
         });
@@ -256,7 +258,7 @@ public class AnmForm {
         paso4Button.addActionListener(e -> {
             try {
                 robotConcesion.stepFour();
-            } catch (InterruptedException ex) {
+            } catch (Exception ex) {
                 ex.printStackTrace();
             }
         });
@@ -266,7 +268,7 @@ public class AnmForm {
             try {
 
                 robotConcesion.stepFive();
-            } catch (InterruptedException ex) {
+            } catch (Exception ex) {
 
                 ex.printStackTrace();
             }

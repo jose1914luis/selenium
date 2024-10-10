@@ -58,17 +58,32 @@ public class WebDriverService {
         return this.driver.findElement(by);
     }
 
-    public void selectOptionWhenReady(String elementId, String value) {
+    public void sendKeys(By by, String value){
+
+        this.driver.findElement(by).sendKeys(propertiesService.getProperties().getProperty(value));
+    }
+
+    public void selectOptionWhenReady(String elementId, String value, String type) {
 
         WebElement selectElement = waitElement(elementId, ID);
         int waitTime = Integer.parseInt(propertiesService.getProperties().getProperty("timerWait"));
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(waitTime));
 
-        wait.until(driver -> new Select(selectElement).getOptions().stream()
-                .anyMatch(option -> option.getAttribute("value").equals(value)));
+        if(type.equals("value")){
+            wait.until(driver -> new Select(selectElement).getOptions().stream()
+                    .anyMatch(option -> option.getAttribute("value").equals(value)));
 
-        // Ahora que las opciones están cargadas, realiza la selección
-        new Select(selectElement).selectByValue(value);
+            // Ahora que las opciones están cargadas, realiza la selección
+            new Select(selectElement).selectByValue(value);
+
+        } else if (type.equals("text")) {
+
+            wait.until(driver -> new Select(selectElement).getOptions().stream()
+                    .anyMatch(option -> option.getText().equals(value)));
+
+            new Select(selectElement).selectByVisibleText(value);
+        }
+
     }
 
     public WebElement waitElement(String search, Constans.SelectorType type) {
